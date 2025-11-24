@@ -1,0 +1,1793 @@
+[11.08.25|21:15:05] Parameters:
+{'work_dir': 'config/three-stream/pretext', 'config': 'config/three-stream/pretext/pretext_aimclr_v2_3views_cobot_xsub.yaml', 'phase': 'train', 'save_result': True, 'start_epoch': 0, 'num_epoch': 400, 'use_gpu': True, 'device': [2], 'log_interval': 100, 'save_interval': 5, 'eval_interval': -1, 'save_log': True, 'print_log': True, 'pavi_log': False, 'train_feeder': 'feeder.cobot_feeder.Feeder_triple', 'test_feeder': 'feeder.feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': 'data_cobot_clr_zoom/xsub/train_position.npy', 'label_path': 'data_cobot_clr_zoom/xsub/train_label.pkl', 'shear_amplitude': 0.2, 'temperal_padding_ratio': 6, 'mmap': True, 'aug_method': '1234', 'zero_z': True}, 'test_feeder_args': {}, 'batch_size': 64, 'test_batch_size': 64, 'debug': False, 'model': 'net.aimclr_v2_3views_2.AimCLR_v2_3views', 'model_args': {'base_encoder': 'net.ddnet.DDNet_Original', 'pretrain': True, 'feat_d': 1128, 'queue_size': 8192, 'momentum': 0.999, 'Temperature': 0.2, 'mlp': True, 'frame_l': 60, 'joint_n': 48, 'joint_d': 3, 'filters': 16, 'class_num': 19, 'last_feture_dim': 512}, 'weights': None, 'ignore_weights': [], 'base_lr': 0.02, 'step': [120], 'optimizer': 'SGD', 'nesterov': False, 'weight_decay': 0.0001, 'stream': 'all', 'mine_epoch': 40, 'cross_epoch': 80, 'topk1': 4, 'topk2': 20, 'vote': 2}
+
+[11.08.25|21:15:05] ---------- Networks initialized -------------
+[11.08.25|21:15:05] [Network] Total number of parameters : 1.875 M
+[11.08.25|21:15:05] -----------------------------------------------
+[11.08.25|21:15:05] Training epoch: 1
+[11.08.25|21:27:31] Parameters:
+{'work_dir': 'config/three-stream/pretext', 'config': 'config/three-stream/pretext/pretext_aimclr_v2_3views_cobot_xsub.yaml', 'phase': 'train', 'save_result': True, 'start_epoch': 0, 'num_epoch': 400, 'use_gpu': True, 'device': [2], 'log_interval': 100, 'save_interval': 5, 'eval_interval': -1, 'save_log': True, 'print_log': True, 'pavi_log': False, 'train_feeder': 'feeder.cobot_feeder.Feeder_triple', 'test_feeder': 'feeder.feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': 'data_cobot_clr_zoom/xsub/train_position.npy', 'label_path': 'data_cobot_clr_zoom/xsub/train_label.pkl', 'shear_amplitude': 0.2, 'temperal_padding_ratio': 6, 'mmap': True, 'aug_method': '1234', 'zero_z': True}, 'test_feeder_args': {}, 'batch_size': 64, 'test_batch_size': 64, 'debug': False, 'model': 'net.aimclr_v2_3views_2.AimCLR_v2_3views', 'model_args': {'base_encoder': 'net.ddnet.DDNet_Original', 'pretrain': True, 'feat_d': 1128, 'queue_size': 8192, 'momentum': 0.999, 'Temperature': 0.2, 'mlp': True, 'frame_l': 60, 'joint_n': 48, 'joint_d': 3, 'filters': 16, 'class_num': 19, 'last_feture_dim': 512}, 'weights': None, 'ignore_weights': [], 'base_lr': 0.02, 'step': [120], 'optimizer': 'SGD', 'nesterov': False, 'weight_decay': 0.0001, 'stream': 'all', 'mine_epoch': 40, 'cross_epoch': 80, 'topk1': 4, 'topk2': 20, 'vote': 2}
+
+[11.08.25|21:27:31] ---------- Networks initialized -------------
+[11.08.25|21:27:31] [Network] Total number of parameters : 1.741 M
+[11.08.25|21:27:31] -----------------------------------------------
+[11.08.25|21:27:31] Training epoch: 1
+[11.08.25|21:27:35] 	Iter 0 Done. | loss: 16.9498 | loss_motion: 17.0540 | loss_bone: 16.9971 | lr: 0.020000
+[11.08.25|21:29:17] Parameters:
+{'work_dir': 'config/three-stream/pretext', 'config': 'config/three-stream/pretext/pretext_aimclr_v2_3views_cobot_xsub.yaml', 'phase': 'train', 'save_result': True, 'start_epoch': 0, 'num_epoch': 400, 'use_gpu': True, 'device': [2], 'log_interval': 100, 'save_interval': 5, 'eval_interval': -1, 'save_log': True, 'print_log': True, 'pavi_log': False, 'train_feeder': 'feeder.cobot_feeder.Feeder_triple', 'test_feeder': 'feeder.feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': 'data_cobot_clr_zoom/xsub/train_position.npy', 'label_path': 'data_cobot_clr_zoom/xsub/train_label.pkl', 'shear_amplitude': 0.2, 'temperal_padding_ratio': 6, 'mmap': True, 'aug_method': '1234', 'zero_z': True}, 'test_feeder_args': {}, 'batch_size': 64, 'test_batch_size': 64, 'debug': False, 'model': 'net.aimclr_v2_3views_2.AimCLR_v2_3views', 'model_args': {'base_encoder': 'net.ddnet.DDNet_Original', 'pretrain': True, 'feat_d': 1128, 'queue_size': 8192, 'momentum': 0.999, 'Temperature': 0.2, 'mlp': True, 'frame_l': 60, 'joint_n': 48, 'joint_d': 3, 'filters': 16, 'class_num': 19, 'last_feture_dim': 512}, 'weights': None, 'ignore_weights': [], 'base_lr': 0.02, 'step': [120], 'optimizer': 'SGD', 'nesterov': False, 'weight_decay': 0.0001, 'stream': 'all', 'mine_epoch': 40, 'cross_epoch': 80, 'topk1': 4, 'topk2': 20, 'vote': 2}
+
+[11.08.25|21:29:17] ---------- Networks initialized -------------
+[11.08.25|21:29:17] [Network] Total number of parameters : 1.741 M
+[11.08.25|21:29:17] -----------------------------------------------
+[11.08.25|21:29:17] Training epoch: 1
+[11.08.25|21:29:22] 	Iter 0 Done. | loss: 16.9498 | loss_motion: 17.0540 | loss_bone: 16.9971 | lr: 0.020000
+[11.08.25|21:30:32] 	train_mean_loss: 15.931029153906781
+[11.08.25|21:30:32] 	train_mean_loss_motion: 15.624971762947414
+[11.08.25|21:30:32] 	train_mean_loss_bone: 15.691155475118887
+[11.08.25|21:30:32] Training epoch: 2
+[11.08.25|21:31:44] 	train_mean_loss: 15.954859816509744
+[11.08.25|21:31:44] 	train_mean_loss_motion: 15.630452197530996
+[11.08.25|21:31:44] 	train_mean_loss_bone: 15.90130204739778
+[11.08.25|21:31:44] Training epoch: 3
+[11.08.25|21:32:57] 	train_mean_loss: 16.054827482804008
+[11.08.25|21:32:57] 	train_mean_loss_motion: 15.774350871210514
+[11.08.25|21:32:57] 	train_mean_loss_bone: 16.02666776076607
+[11.08.25|21:32:57] Training epoch: 4
+[11.08.25|21:34:11] 	train_mean_loss: 16.21503892152206
+[11.08.25|21:34:11] 	train_mean_loss_motion: 16.0749510474827
+[11.08.25|21:34:11] 	train_mean_loss_bone: 16.379999243694805
+[11.08.25|21:34:11] Training epoch: 5
+[11.08.25|21:34:39] 	Iter 100 Done. | loss: 16.0994 | loss_motion: 16.4855 | loss_bone: 16.2338 | lr: 0.020000
+[11.08.25|21:35:23] 	train_mean_loss: 16.415883271590523
+[11.08.25|21:35:23] 	train_mean_loss_motion: 16.38736107038415
+[11.08.25|21:35:23] 	train_mean_loss_bone: 16.649702818497367
+[11.08.25|21:35:23] The model has been saved as config/three-stream/pretext/epoch5_model.pt.
+[11.08.25|21:35:23] Training epoch: 6
+[11.08.25|21:36:37] 	train_mean_loss: 16.46341721907906
+[11.08.25|21:36:37] 	train_mean_loss_motion: 16.572440935217816
+[11.08.25|21:36:37] 	train_mean_loss_bone: 16.774420613827914
+[11.08.25|21:36:37] Training epoch: 7
+[11.08.25|21:37:51] 	train_mean_loss: 16.57305895763895
+[11.08.25|21:37:51] 	train_mean_loss_motion: 16.618946821793266
+[11.08.25|21:37:51] 	train_mean_loss_bone: 16.894569231116254
+[11.08.25|21:37:51] Training epoch: 8
+[11.08.25|21:39:05] 	train_mean_loss: 16.754058920818828
+[11.08.25|21:39:05] 	train_mean_loss_motion: 16.797318168308426
+[11.08.25|21:39:05] 	train_mean_loss_bone: 16.9617628843888
+[11.08.25|21:39:05] Training epoch: 9
+[11.08.25|21:40:00] 	Iter 200 Done. | loss: 16.9464 | loss_motion: 16.6887 | loss_bone: 16.8608 | lr: 0.020000
+[11.08.25|21:40:19] 	train_mean_loss: 16.761592118636422
+[11.08.25|21:40:19] 	train_mean_loss_motion: 16.75977955693784
+[11.08.25|21:40:19] 	train_mean_loss_bone: 16.87604580754819
+[11.08.25|21:40:19] Training epoch: 10
+[11.08.25|21:41:33] 	train_mean_loss: 16.72665322345236
+[11.08.25|21:41:33] 	train_mean_loss_motion: 16.76610689577849
+[11.08.25|21:41:33] 	train_mean_loss_bone: 17.024476175722867
+[11.08.25|21:41:33] The model has been saved as config/three-stream/pretext/epoch10_model.pt.
+[11.08.25|21:41:33] Training epoch: 11
+[11.08.25|21:42:47] 	train_mean_loss: 16.726102580194887
+[11.08.25|21:42:47] 	train_mean_loss_motion: 16.75497461401898
+[11.08.25|21:42:47] 	train_mean_loss_bone: 16.91477576546047
+[11.08.25|21:42:47] Training epoch: 12
+[11.08.25|21:44:01] 	train_mean_loss: 16.6832739788553
+[11.08.25|21:44:01] 	train_mean_loss_motion: 16.608975203140922
+[11.08.25|21:44:01] 	train_mean_loss_bone: 16.819647664609164
+[11.08.25|21:44:01] Training epoch: 13
+[11.08.25|21:45:14] 	train_mean_loss: 16.681424514107082
+[11.08.25|21:45:14] 	train_mean_loss_motion: 16.698267480601434
+[11.08.25|21:45:14] 	train_mean_loss_bone: 16.780862144801926
+[11.08.25|21:45:14] Training epoch: 14
+[11.08.25|21:45:21] 	Iter 300 Done. | loss: 16.7092 | loss_motion: 16.7374 | loss_bone: 16.7704 | lr: 0.020000
+[11.08.25|21:46:26] 	train_mean_loss: 16.72298530910326
+[11.08.25|21:46:26] 	train_mean_loss_motion: 16.672572177389394
+[11.08.25|21:46:26] 	train_mean_loss_bone: 16.830802005270254
+[11.08.25|21:46:26] Training epoch: 15
+[11.08.25|21:47:40] 	train_mean_loss: 16.752712332684062
+[11.08.25|21:47:40] 	train_mean_loss_motion: 16.720875366874363
+[11.08.25|21:47:40] 	train_mean_loss_bone: 16.8651472174603
+[11.08.25|21:47:40] The model has been saved as config/three-stream/pretext/epoch15_model.pt.
+[11.08.25|21:47:40] Training epoch: 16
+[11.08.25|21:48:54] 	train_mean_loss: 16.647136771160625
+[11.08.25|21:48:54] 	train_mean_loss_motion: 16.711487065190855
+[11.08.25|21:48:54] 	train_mean_loss_bone: 16.80279715164848
+[11.08.25|21:48:54] Training epoch: 17
+[11.08.25|21:50:08] 	train_mean_loss: 16.68469055839207
+[11.08.25|21:50:08] 	train_mean_loss_motion: 16.726404107135274
+[11.08.25|21:50:08] 	train_mean_loss_bone: 16.762647131214973
+[11.08.25|21:50:08] Training epoch: 18
+[11.08.25|21:50:39] 	Iter 400 Done. | loss: 17.0023 | loss_motion: 16.9811 | loss_bone: 16.9380 | lr: 0.020000
+[11.08.25|21:51:21] 	train_mean_loss: 16.67863837532375
+[11.08.25|21:51:21] 	train_mean_loss_motion: 16.774178463479746
+[11.08.25|21:51:21] 	train_mean_loss_bone: 16.839965903240703
+[11.08.25|21:51:21] Training epoch: 19
+[11.08.25|21:52:35] 	train_mean_loss: 16.631994993790336
+[11.08.25|21:52:35] 	train_mean_loss_motion: 16.78802846825641
+[11.08.25|21:52:35] 	train_mean_loss_bone: 16.779610011888586
+[11.08.25|21:52:35] Training epoch: 20
+[11.08.25|21:53:48] 	train_mean_loss: 16.647600008093793
+[11.08.25|21:53:48] 	train_mean_loss_motion: 16.771178287008535
+[11.08.25|21:53:48] 	train_mean_loss_bone: 16.80939649498981
+[11.08.25|21:53:48] The model has been saved as config/three-stream/pretext/epoch20_model.pt.
+[11.08.25|21:53:48] Training epoch: 21
+[11.08.25|21:55:00] 	train_mean_loss: 16.605349499246348
+[11.08.25|21:55:00] 	train_mean_loss_motion: 16.75872097844663
+[11.08.25|21:55:00] 	train_mean_loss_bone: 16.840608928514563
+[11.08.25|21:55:00] Training epoch: 22
+[11.08.25|21:55:57] 	Iter 500 Done. | loss: 16.6488 | loss_motion: 16.7333 | loss_bone: 16.8237 | lr: 0.020000
+[11.08.25|21:56:13] 	train_mean_loss: 16.63932642729386
+[11.08.25|21:56:13] 	train_mean_loss_motion: 16.760457163271695
+[11.08.25|21:56:13] 	train_mean_loss_bone: 16.87572139242421
+[11.08.25|21:56:13] Training epoch: 23
+[11.08.25|21:57:26] 	train_mean_loss: 16.713352452153746
+[11.08.25|21:57:26] 	train_mean_loss_motion: 16.84386460677437
+[11.08.25|21:57:26] 	train_mean_loss_bone: 16.888696090034816
+[11.08.25|21:57:26] Training epoch: 24
+[11.08.25|21:58:38] 	train_mean_loss: 16.7368336553159
+[11.08.25|21:58:38] 	train_mean_loss_motion: 16.72190110579781
+[11.08.25|21:58:38] 	train_mean_loss_bone: 16.91215996120287
+[11.08.25|21:58:38] Training epoch: 25
+[11.08.25|21:59:52] 	train_mean_loss: 16.75712718134341
+[11.08.25|21:59:52] 	train_mean_loss_motion: 16.74563623511273
+[11.08.25|21:59:52] 	train_mean_loss_bone: 16.9268215842869
+[11.08.25|21:59:52] The model has been saved as config/three-stream/pretext/epoch25_model.pt.
+[11.08.25|21:59:52] Training epoch: 26
+[11.08.25|22:01:06] 	train_mean_loss: 16.815621832142707
+[11.08.25|22:01:06] 	train_mean_loss_motion: 16.754421068274457
+[11.08.25|22:01:06] 	train_mean_loss_bone: 16.94699594248896
+[11.08.25|22:01:06] Training epoch: 27
+[11.08.25|22:01:16] 	Iter 600 Done. | loss: 16.7781 | loss_motion: 16.6774 | loss_bone: 16.8632 | lr: 0.020000
+[11.08.25|22:02:19] 	train_mean_loss: 16.738229751586914
+[11.08.25|22:02:19] 	train_mean_loss_motion: 16.745497662088145
+[11.08.25|22:02:19] 	train_mean_loss_bone: 16.909598640773606
+[11.08.25|22:02:19] Training epoch: 28
+[11.08.25|22:03:33] 	train_mean_loss: 16.693505577419113
+[11.08.25|22:03:33] 	train_mean_loss_motion: 16.782421360845152
+[11.08.25|22:03:33] 	train_mean_loss_bone: 16.8717971470045
+[11.08.25|22:03:33] Training epoch: 29
+[11.08.25|22:04:41] 	train_mean_loss: 16.66173337853473
+[11.08.25|22:04:41] 	train_mean_loss_motion: 16.80740273517111
+[11.08.25|22:04:41] 	train_mean_loss_bone: 16.84614198104195
+[11.08.25|22:04:41] Training epoch: 30
+[11.08.25|22:05:48] 	train_mean_loss: 16.629218142965566
+[11.08.25|22:05:48] 	train_mean_loss_motion: 16.82430118063222
+[11.08.25|22:05:48] 	train_mean_loss_bone: 16.864136156828508
+[11.08.25|22:05:48] The model has been saved as config/three-stream/pretext/epoch30_model.pt.
+[11.08.25|22:05:48] Training epoch: 31
+[11.08.25|22:06:21] 	Iter 700 Done. | loss: 16.5971 | loss_motion: 16.7588 | loss_bone: 16.7799 | lr: 0.020000
+[11.08.25|22:06:56] 	train_mean_loss: 16.67577851336935
+[11.08.25|22:06:56] 	train_mean_loss_motion: 16.885579067727793
+[11.08.25|22:06:56] 	train_mean_loss_bone: 16.89533863896909
+[11.08.25|22:06:56] Training epoch: 32
+[11.08.25|22:08:03] 	train_mean_loss: 16.667433946029
+[11.08.25|22:08:03] 	train_mean_loss_motion: 16.874207206394363
+[11.08.25|22:08:03] 	train_mean_loss_bone: 16.853963769000508
+[11.08.25|22:08:03] Training epoch: 33
+[11.08.25|22:09:10] 	train_mean_loss: 16.66663932800293
+[11.08.25|22:09:10] 	train_mean_loss_motion: 16.792635295702063
+[11.08.25|22:09:10] 	train_mean_loss_bone: 16.83653848067574
+[11.08.25|22:09:10] Training epoch: 34
+[11.08.25|22:10:18] 	train_mean_loss: 16.68808937072754
+[11.08.25|22:10:18] 	train_mean_loss_motion: 16.800898510476816
+[11.08.25|22:10:18] 	train_mean_loss_bone: 16.828019100686777
+[11.08.25|22:10:18] Training epoch: 35
+[11.08.25|22:11:13] 	Iter 800 Done. | loss: 16.7881 | loss_motion: 16.8562 | loss_bone: 16.9661 | lr: 0.020000
+[11.08.25|22:11:24] 	train_mean_loss: 16.69148594400157
+[11.08.25|22:11:24] 	train_mean_loss_motion: 16.814690631368887
+[11.08.25|22:11:24] 	train_mean_loss_bone: 16.863455233366594
+[11.08.25|22:11:24] The model has been saved as config/three-stream/pretext/epoch35_model.pt.
+[11.08.25|22:11:24] Training epoch: 36
+[11.08.25|22:12:31] 	train_mean_loss: 16.658445855845574
+[11.08.25|22:12:31] 	train_mean_loss_motion: 16.78129469830057
+[11.08.25|22:12:31] 	train_mean_loss_bone: 16.837261365807574
+[11.08.25|22:12:31] Training epoch: 37
+[11.08.25|22:13:38] 	train_mean_loss: 16.6579473744268
+[11.08.25|22:13:38] 	train_mean_loss_motion: 16.828783532847527
+[11.08.25|22:13:38] 	train_mean_loss_bone: 16.858643324478813
+[11.08.25|22:13:38] Training epoch: 38
+[11.08.25|22:14:46] 	train_mean_loss: 16.627518446549125
+[11.08.25|22:14:46] 	train_mean_loss_motion: 16.752541998158332
+[11.08.25|22:14:46] 	train_mean_loss_bone: 16.78905387546705
+[11.08.25|22:14:46] Training epoch: 39
+[11.08.25|22:15:53] 	train_mean_loss: 16.644246142843496
+[11.08.25|22:15:53] 	train_mean_loss_motion: 16.749382516612176
+[11.08.25|22:15:53] 	train_mean_loss_bone: 16.76806972337806
+[11.08.25|22:15:53] Training epoch: 40
+[11.08.25|22:16:05] 	Iter 900 Done. | loss: 16.7225 | loss_motion: 16.8869 | loss_bone: 16.7220 | lr: 0.020000
+[11.08.25|22:17:00] 	train_mean_loss: 16.61119784479556
+[11.08.25|22:17:00] 	train_mean_loss_motion: 16.75802114735479
+[11.08.25|22:17:00] 	train_mean_loss_bone: 16.76231334520423
+[11.08.25|22:17:01] The model has been saved as config/three-stream/pretext/epoch40_model.pt.
+[11.08.25|22:17:01] Training epoch: 41
+[11.08.25|22:18:08] 	train_mean_loss: 16.366157200025476
+[11.08.25|22:18:08] 	train_mean_loss_motion: 16.434149783590566
+[11.08.25|22:18:08] 	train_mean_loss_bone: 16.487220183662746
+[11.08.25|22:18:08] Training epoch: 42
+[11.08.25|22:19:15] 	train_mean_loss: 16.25632368999979
+[11.08.25|22:19:15] 	train_mean_loss_motion: 16.124825933705207
+[11.08.25|22:19:15] 	train_mean_loss_bone: 16.279256986535113
+[11.08.25|22:19:15] Training epoch: 43
+[11.08.25|22:20:23] 	train_mean_loss: 16.016689093216605
+[11.08.25|22:20:23] 	train_mean_loss_motion: 15.843259687009065
+[11.08.25|22:20:23] 	train_mean_loss_bone: 16.10391206326692
+[11.08.25|22:20:23] Training epoch: 44
+[11.08.25|22:20:58] 	Iter 1000 Done. | loss: 16.0028 | loss_motion: 15.7211 | loss_bone: 15.9870 | lr: 0.020000
+[11.08.25|22:21:30] 	train_mean_loss: 15.868750862453295
+[11.08.25|22:21:30] 	train_mean_loss_motion: 15.67942528102709
+[11.08.25|22:21:30] 	train_mean_loss_bone: 15.969187404798424
+[11.08.25|22:21:30] Training epoch: 45
+[11.08.25|22:22:39] 	train_mean_loss: 15.80260819974153
+[11.08.25|22:22:39] 	train_mean_loss_motion: 15.738197160803754
+[11.08.25|22:22:39] 	train_mean_loss_bone: 15.890993408534838
+[11.08.25|22:22:39] The model has been saved as config/three-stream/pretext/epoch45_model.pt.
+[11.08.25|22:22:39] Training epoch: 46
+[11.08.25|22:23:47] 	train_mean_loss: 15.731767198313838
+[11.08.25|22:23:47] 	train_mean_loss_motion: 15.676934076392133
+[11.08.25|22:23:47] 	train_mean_loss_bone: 15.840757991956627
+[11.08.25|22:23:47] Training epoch: 47
+[11.08.25|22:24:54] 	train_mean_loss: 15.681540820909584
+[11.08.25|22:24:54] 	train_mean_loss_motion: 15.63459645146909
+[11.08.25|22:24:54] 	train_mean_loss_bone: 15.768625135007111
+[11.08.25|22:24:54] Training epoch: 48
+[11.08.25|22:25:52] 	Iter 1100 Done. | loss: 15.5626 | loss_motion: 15.6696 | loss_bone: 15.5511 | lr: 0.020000
+[11.08.25|22:26:01] 	train_mean_loss: 15.533586626467498
+[11.08.25|22:26:01] 	train_mean_loss_motion: 15.712234414142111
+[11.08.25|22:26:01] 	train_mean_loss_bone: 15.746842135553775
+[11.08.25|22:26:01] Training epoch: 49
+[11.08.25|22:27:09] 	train_mean_loss: 15.419950194980787
+[11.08.25|22:27:09] 	train_mean_loss_motion: 15.697243068529213
+[11.08.25|22:27:09] 	train_mean_loss_bone: 15.78099478846011
+[11.08.25|22:27:09] Training epoch: 50
+[11.08.25|22:28:16] 	train_mean_loss: 15.369975255883258
+[11.08.25|22:28:16] 	train_mean_loss_motion: 15.720836639404297
+[11.08.25|22:28:16] 	train_mean_loss_bone: 15.705234030018682
+[11.08.25|22:28:16] The model has been saved as config/three-stream/pretext/epoch50_model.pt.
+[11.08.25|22:28:16] Training epoch: 51
+[11.08.25|22:29:23] 	train_mean_loss: 15.338964379352072
+[11.08.25|22:29:23] 	train_mean_loss_motion: 15.706307784370754
+[11.08.25|22:29:23] 	train_mean_loss_bone: 15.712847129158352
+[11.08.25|22:29:23] Training epoch: 52
+[11.08.25|22:30:31] 	train_mean_loss: 15.281656140866486
+[11.08.25|22:30:31] 	train_mean_loss_motion: 15.752807078154191
+[11.08.25|22:30:31] 	train_mean_loss_bone: 15.642796433490256
+[11.08.25|22:30:31] Training epoch: 53
+[11.08.25|22:30:46] 	Iter 1200 Done. | loss: 15.2159 | loss_motion: 15.9344 | loss_bone: 15.7397 | lr: 0.020000
+[11.08.25|22:31:35] 	train_mean_loss: 15.192156916079314
+[11.08.25|22:31:35] 	train_mean_loss_motion: 15.774504371311354
+[11.08.25|22:31:35] 	train_mean_loss_bone: 15.610521440920623
+[11.08.25|22:31:35] Training epoch: 54
+[11.08.25|22:32:41] 	train_mean_loss: 15.151842822199283
+[11.08.25|22:32:41] 	train_mean_loss_motion: 15.815185671267303
+[11.08.25|22:32:41] 	train_mean_loss_bone: 15.68902409594992
+[11.08.25|22:32:41] Training epoch: 55
+[11.08.25|22:33:48] 	train_mean_loss: 15.288921397665273
+[11.08.25|22:33:48] 	train_mean_loss_motion: 15.793769546177076
+[11.08.25|22:33:48] 	train_mean_loss_bone: 15.638177457063094
+[11.08.25|22:33:48] The model has been saved as config/three-stream/pretext/epoch55_model.pt.
+[11.08.25|22:33:48] Training epoch: 56
+[11.08.25|22:34:56] 	train_mean_loss: 15.217169098232104
+[11.08.25|22:34:56] 	train_mean_loss_motion: 15.747032704560652
+[11.08.25|22:34:56] 	train_mean_loss_bone: 15.591504677482273
+[11.08.25|22:34:56] Training epoch: 57
+[11.08.25|22:35:34] 	Iter 1300 Done. | loss: 15.0788 | loss_motion: 16.1690 | loss_bone: 15.6649 | lr: 0.020000
+[11.08.25|22:36:04] 	train_mean_loss: 15.077720890874447
+[11.08.25|22:36:04] 	train_mean_loss_motion: 15.699568333833113
+[11.08.25|22:36:04] 	train_mean_loss_bone: 15.595295491425887
+[11.08.25|22:36:04] Training epoch: 58
+[11.08.25|22:37:11] 	train_mean_loss: 14.983650580696438
+[11.08.25|22:37:11] 	train_mean_loss_motion: 15.697065436321756
+[11.08.25|22:37:11] 	train_mean_loss_bone: 15.447724591130795
+[11.08.25|22:37:11] Training epoch: 59
+[11.08.25|22:38:18] 	train_mean_loss: 14.959133853083072
+[11.08.25|22:38:18] 	train_mean_loss_motion: 15.781625084255053
+[11.08.25|22:38:18] 	train_mean_loss_bone: 15.475482318712318
+[11.08.25|22:38:18] Training epoch: 60
+[11.08.25|22:39:25] 	train_mean_loss: 14.913955149443254
+[11.08.25|22:39:25] 	train_mean_loss_motion: 15.675766820492951
+[11.08.25|22:39:25] 	train_mean_loss_bone: 15.33880494988483
+[11.08.25|22:39:26] The model has been saved as config/three-stream/pretext/epoch60_model.pt.
+[11.08.25|22:39:26] Training epoch: 61
+[11.08.25|22:40:26] 	Iter 1400 Done. | loss: 14.9293 | loss_motion: 15.4396 | loss_bone: 15.2731 | lr: 0.020000
+[11.08.25|22:40:32] 	train_mean_loss: 14.978192661119545
+[11.08.25|22:40:32] 	train_mean_loss_motion: 15.5517985302469
+[11.08.25|22:40:32] 	train_mean_loss_bone: 15.358766265537428
+[11.08.25|22:40:32] Training epoch: 62
+[11.08.25|22:41:38] 	train_mean_loss: 14.926004700038744
+[11.08.25|22:41:38] 	train_mean_loss_motion: 15.576559066772461
+[11.08.25|22:41:38] 	train_mean_loss_bone: 15.21350914499034
+[11.08.25|22:41:38] Training epoch: 63
+[11.08.25|22:42:42] 	train_mean_loss: 14.950195727141008
+[11.08.25|22:42:42] 	train_mean_loss_motion: 15.561858591826066
+[11.08.25|22:42:42] 	train_mean_loss_bone: 15.196092439734418
+[11.08.25|22:42:42] Training epoch: 64
+[11.08.25|22:43:51] 	train_mean_loss: 15.068721149278725
+[11.08.25|22:43:51] 	train_mean_loss_motion: 15.628144305685293
+[11.08.25|22:43:51] 	train_mean_loss_bone: 15.242556862209154
+[11.08.25|22:43:51] Training epoch: 65
+[11.08.25|22:44:57] 	train_mean_loss: 15.080945305202318
+[11.08.25|22:44:57] 	train_mean_loss_motion: 15.559404207312543
+[11.08.25|22:44:57] 	train_mean_loss_bone: 15.041701109512992
+[11.08.25|22:44:58] The model has been saved as config/three-stream/pretext/epoch65_model.pt.
+[11.08.25|22:44:58] Training epoch: 66
+[11.08.25|22:45:14] 	Iter 1500 Done. | loss: 14.9465 | loss_motion: 15.6722 | loss_bone: 15.1122 | lr: 0.020000
+[11.08.25|22:46:05] 	train_mean_loss: 15.07055900407874
+[11.08.25|22:46:05] 	train_mean_loss_motion: 15.582183837890625
+[11.08.25|22:46:05] 	train_mean_loss_bone: 15.139959335327148
+[11.08.25|22:46:05] Training epoch: 67
+[11.08.25|22:47:12] 	train_mean_loss: 15.045837941377059
+[11.08.25|22:47:12] 	train_mean_loss_motion: 15.558889471966287
+[11.08.25|22:47:12] 	train_mean_loss_bone: 15.019170429395592
+[11.08.25|22:47:12] Training epoch: 68
+[11.08.25|22:48:20] 	train_mean_loss: 15.102904858796492
+[11.08.25|22:48:20] 	train_mean_loss_motion: 15.54983607582424
+[11.08.25|22:48:20] 	train_mean_loss_bone: 15.143935535265053
+[11.08.25|22:48:20] Training epoch: 69
+[11.08.25|22:49:26] 	train_mean_loss: 15.138065835703975
+[11.08.25|22:49:26] 	train_mean_loss_motion: 15.529922070710555
+[11.08.25|22:49:26] 	train_mean_loss_bone: 15.223130143207053
+[11.08.25|22:49:26] Training epoch: 70
+[11.08.25|22:50:08] 	Iter 1600 Done. | loss: 15.2266 | loss_motion: 15.2243 | loss_bone: 15.2605 | lr: 0.020000
+[11.08.25|22:50:34] 	train_mean_loss: 15.156550904978877
+[11.08.25|22:50:34] 	train_mean_loss_motion: 15.42711415498153
+[11.08.25|22:50:34] 	train_mean_loss_bone: 15.102388050245201
+[11.08.25|22:50:34] The model has been saved as config/three-stream/pretext/epoch70_model.pt.
+[11.08.25|22:50:34] Training epoch: 71
+[11.08.25|22:51:38] 	train_mean_loss: 15.196129384248152
+[11.08.25|22:51:38] 	train_mean_loss_motion: 15.462872422259787
+[11.08.25|22:51:38] 	train_mean_loss_bone: 15.13487952688466
+[11.08.25|22:51:38] Training epoch: 72
+[11.08.25|22:52:44] 	train_mean_loss: 15.408452075460684
+[11.08.25|22:52:44] 	train_mean_loss_motion: 15.408509793488875
+[11.08.25|22:52:44] 	train_mean_loss_bone: 15.181691211202871
+[11.08.25|22:52:44] Training epoch: 73
+[11.08.25|22:53:51] 	train_mean_loss: 15.56707174881645
+[11.08.25|22:53:51] 	train_mean_loss_motion: 15.41718744195026
+[11.08.25|22:53:51] 	train_mean_loss_bone: 15.28197839985723
+[11.08.25|22:53:51] Training epoch: 74
+[11.08.25|22:54:55] 	Iter 1700 Done. | loss: 15.7764 | loss_motion: 15.5648 | loss_bone: 15.3442 | lr: 0.020000
+[11.08.25|22:54:57] 	train_mean_loss: 15.715017277261484
+[11.08.25|22:54:57] 	train_mean_loss_motion: 15.35111431453539
+[11.08.25|22:54:57] 	train_mean_loss_bone: 15.434037457341732
+[11.08.25|22:54:57] Training epoch: 75
+[11.08.25|22:56:05] 	train_mean_loss: 15.899903836457625
+[11.08.25|22:56:05] 	train_mean_loss_motion: 15.21114975473155
+[11.08.25|22:56:05] 	train_mean_loss_bone: 15.516393122465715
+[11.08.25|22:56:06] The model has been saved as config/three-stream/pretext/epoch75_model.pt.
+[11.08.25|22:56:06] Training epoch: 76
+[11.08.25|22:57:13] 	train_mean_loss: 15.97556964210842
+[11.08.25|22:57:13] 	train_mean_loss_motion: 15.226625649825387
+[11.08.25|22:57:13] 	train_mean_loss_bone: 15.673774926558785
+[11.08.25|22:57:13] Training epoch: 77
+[11.08.25|22:58:20] 	train_mean_loss: 15.995179798292076
+[11.08.25|22:58:20] 	train_mean_loss_motion: 15.133204377215842
+[11.08.25|22:58:20] 	train_mean_loss_bone: 15.909394430077594
+[11.08.25|22:58:20] Training epoch: 78
+[11.08.25|22:59:28] 	train_mean_loss: 16.128547005031418
+[11.08.25|22:59:28] 	train_mean_loss_motion: 15.153972791588824
+[11.08.25|22:59:28] 	train_mean_loss_bone: 15.789003330728281
+[11.08.25|22:59:28] Training epoch: 79
+[11.08.25|22:59:49] 	Iter 1800 Done. | loss: 16.2083 | loss_motion: 15.1098 | loss_bone: 16.5539 | lr: 0.020000
+[11.08.25|23:00:34] 	train_mean_loss: 16.163516251937203
+[11.08.25|23:00:34] 	train_mean_loss_motion: 15.355084419250488
+[11.08.25|23:00:34] 	train_mean_loss_bone: 15.855564366216244
+[11.08.25|23:00:34] Training epoch: 80
+[11.08.25|23:01:42] 	train_mean_loss: 16.16938997351605
+[11.08.25|23:01:42] 	train_mean_loss_motion: 15.461623150369395
+[11.08.25|23:01:42] 	train_mean_loss_bone: 15.569002358809762
+[11.08.25|23:01:42] The model has been saved as config/three-stream/pretext/epoch80_model.pt.
+[11.08.25|23:01:42] Training epoch: 81
+[11.08.25|23:02:49] 	train_mean_loss: 17.215103812839676
+[11.08.25|23:02:49] 	train_mean_loss_motion: 16.327428900677226
+[11.08.25|23:02:49] 	train_mean_loss_bone: 17.13152960072393
+[11.08.25|23:02:49] Training epoch: 82
+[11.08.25|23:03:57] 	train_mean_loss: 16.770271964695144
+[11.08.25|23:03:57] 	train_mean_loss_motion: 16.13292362378991
+[11.08.25|23:03:57] 	train_mean_loss_bone: 17.180956135625426
+[11.08.25|23:03:57] Training epoch: 83
+[11.08.25|23:04:41] 	Iter 1900 Done. | loss: 16.2616 | loss_motion: 16.2942 | loss_bone: 16.4368 | lr: 0.020000
+[11.08.25|23:05:04] 	train_mean_loss: 16.459575321363367
+[11.08.25|23:05:04] 	train_mean_loss_motion: 16.446284874625828
+[11.08.25|23:05:04] 	train_mean_loss_bone: 16.775301808896273
+[11.08.25|23:05:04] Training epoch: 84
+[11.08.25|23:06:12] 	train_mean_loss: 16.367702567059062
+[11.08.25|23:06:12] 	train_mean_loss_motion: 16.182068658911664
+[11.08.25|23:06:12] 	train_mean_loss_bone: 16.942004659901496
+[11.08.25|23:06:12] Training epoch: 85
+[11.08.25|23:07:18] 	train_mean_loss: 16.31257380609927
+[11.08.25|23:07:18] 	train_mean_loss_motion: 16.096645147904105
+[11.08.25|23:07:18] 	train_mean_loss_bone: 17.19971225572669
+[11.08.25|23:07:18] The model has been saved as config/three-stream/pretext/epoch85_model.pt.
+[11.08.25|23:07:18] Training epoch: 86
+[11.08.25|23:08:25] 	train_mean_loss: 16.439823731132176
+[11.08.25|23:08:25] 	train_mean_loss_motion: 16.063828053681746
+[11.08.25|23:08:25] 	train_mean_loss_bone: 17.073808006618332
+[11.08.25|23:08:25] Training epoch: 87
+[11.08.25|23:09:33] 	Iter 2000 Done. | loss: 16.4360 | loss_motion: 16.0464 | loss_bone: 17.0300 | lr: 0.020000
+[11.08.25|23:09:33] 	train_mean_loss: 16.399391588957414
+[11.08.25|23:09:33] 	train_mean_loss_motion: 16.050506633260976
+[11.08.25|23:09:33] 	train_mean_loss_bone: 16.8000721309496
+[11.08.25|23:09:33] Training epoch: 88
+[11.08.25|23:10:40] 	train_mean_loss: 16.4775157596754
+[11.08.25|23:10:40] 	train_mean_loss_motion: 16.13052347432012
+[11.08.25|23:10:40] 	train_mean_loss_bone: 16.82816206890604
+[11.08.25|23:10:40] Training epoch: 89
+[11.08.25|23:11:45] 	train_mean_loss: 16.536398680313773
+[11.08.25|23:11:45] 	train_mean_loss_motion: 16.204945813054625
+[11.08.25|23:11:45] 	train_mean_loss_bone: 16.8573694643767
+[11.08.25|23:11:45] Training epoch: 90
+[11.08.25|23:12:52] 	train_mean_loss: 16.533756173175313
+[11.08.25|23:12:52] 	train_mean_loss_motion: 16.232764036759086
+[11.08.25|23:12:52] 	train_mean_loss_bone: 16.941011926402215
+[11.08.25|23:12:52] The model has been saved as config/three-stream/pretext/epoch90_model.pt.
+[11.08.25|23:12:52] Training epoch: 91
+[11.08.25|23:14:00] 	train_mean_loss: 16.562114715576172
+[11.08.25|23:14:00] 	train_mean_loss_motion: 16.258618230405062
+[11.08.25|23:14:00] 	train_mean_loss_bone: 16.829550038213316
+[11.08.25|23:14:00] Training epoch: 92
+[11.08.25|23:14:24] 	Iter 2100 Done. | loss: 16.6879 | loss_motion: 16.2238 | loss_bone: 16.8200 | lr: 0.020000
+[11.08.25|23:15:06] 	train_mean_loss: 16.615170105643895
+[11.08.25|23:15:06] 	train_mean_loss_motion: 16.245110387387484
+[11.08.25|23:15:06] 	train_mean_loss_bone: 16.823756508205246
+[11.08.25|23:15:06] Training epoch: 93
+[11.08.25|23:16:13] 	train_mean_loss: 16.618673656297766
+[11.08.25|23:16:13] 	train_mean_loss_motion: 16.265500773554262
+[11.08.25|23:16:13] 	train_mean_loss_bone: 16.75406663314156
+[11.08.25|23:16:13] Training epoch: 94
+[11.08.25|23:17:20] 	train_mean_loss: 16.533910336701766
+[11.08.25|23:17:20] 	train_mean_loss_motion: 16.29195802108101
+[11.08.25|23:17:20] 	train_mean_loss_bone: 16.436530403468918
+[11.08.25|23:17:20] Training epoch: 95
+[11.08.25|23:18:27] 	train_mean_loss: 16.538411430690598
+[11.08.25|23:18:27] 	train_mean_loss_motion: 16.298522037008535
+[11.08.25|23:18:27] 	train_mean_loss_bone: 16.44627902818763
+[11.08.25|23:18:27] The model has been saved as config/three-stream/pretext/epoch95_model.pt.
+[11.08.25|23:18:27] Training epoch: 96
+[11.08.25|23:19:11] 	Iter 2200 Done. | loss: 16.4586 | loss_motion: 16.2400 | loss_bone: 16.3400 | lr: 0.020000
+[11.08.25|23:19:32] 	train_mean_loss: 16.54250426914381
+[11.08.25|23:19:32] 	train_mean_loss_motion: 16.285014774488367
+[11.08.25|23:19:32] 	train_mean_loss_bone: 16.331418908160664
+[11.08.25|23:19:32] Training epoch: 97
+[11.08.25|23:20:38] 	train_mean_loss: 16.49198216977327
+[11.08.25|23:20:38] 	train_mean_loss_motion: 16.25941002887228
+[11.08.25|23:20:38] 	train_mean_loss_bone: 16.36272073828656
+[11.08.25|23:20:38] Training epoch: 98
+[11.08.25|23:21:44] 	train_mean_loss: 16.402179966802183
+[11.08.25|23:21:44] 	train_mean_loss_motion: 16.29612176314644
+[11.08.25|23:21:44] 	train_mean_loss_bone: 16.419603430706523
+[11.08.25|23:21:44] Training epoch: 99
+[11.08.25|23:22:51] 	train_mean_loss: 16.50487178304921
+[11.08.25|23:22:51] 	train_mean_loss_motion: 16.31301498413086
+[11.08.25|23:22:51] 	train_mean_loss_bone: 16.447819502457328
+[11.08.25|23:22:51] Training epoch: 100
+[11.08.25|23:23:59] 	train_mean_loss: 16.413762382839035
+[11.08.25|23:23:59] 	train_mean_loss_motion: 16.301819759866465
+[11.08.25|23:23:59] 	train_mean_loss_bone: 16.547485185706098
+[11.08.25|23:23:59] The model has been saved as config/three-stream/pretext/epoch100_model.pt.
+[11.08.25|23:23:59] Training epoch: 101
+[11.08.25|23:24:02] 	Iter 2300 Done. | loss: 16.6233 | loss_motion: 16.5073 | loss_bone: 16.5779 | lr: 0.020000
+[11.08.25|23:25:05] 	train_mean_loss: 16.429205770077914
+[11.08.25|23:25:05] 	train_mean_loss_motion: 16.308660921843156
+[11.08.25|23:25:05] 	train_mean_loss_bone: 16.5593669725501
+[11.08.25|23:25:05] Training epoch: 102
+[11.08.25|23:26:13] 	train_mean_loss: 16.390324385269828
+[11.08.25|23:26:13] 	train_mean_loss_motion: 16.306761119676672
+[11.08.25|23:26:13] 	train_mean_loss_bone: 16.58322939665421
+[11.08.25|23:26:13] Training epoch: 103
+[11.08.25|23:27:20] 	train_mean_loss: 16.45557453321374
+[11.08.25|23:27:20] 	train_mean_loss_motion: 16.366035129712976
+[11.08.25|23:27:20] 	train_mean_loss_bone: 16.65824558423913
+[11.08.25|23:27:20] Training epoch: 104
+[11.08.25|23:28:27] 	train_mean_loss: 16.426185524981953
+[11.08.25|23:28:27] 	train_mean_loss_motion: 16.370252775109332
+[11.08.25|23:28:27] 	train_mean_loss_bone: 16.611907212630562
+[11.08.25|23:28:27] Training epoch: 105
+[11.08.25|23:28:54] 	Iter 2400 Done. | loss: 16.4769 | loss_motion: 16.2852 | loss_bone: 16.5165 | lr: 0.020000
+[11.08.25|23:29:33] 	train_mean_loss: 16.40728942207668
+[11.08.25|23:29:33] 	train_mean_loss_motion: 16.35774848772132
+[11.08.25|23:29:33] 	train_mean_loss_bone: 16.517133878624957
+[11.08.25|23:29:33] The model has been saved as config/three-stream/pretext/epoch105_model.pt.
+[11.08.25|23:29:33] Training epoch: 106
+[11.08.25|23:30:40] 	train_mean_loss: 16.38595025435738
+[11.08.25|23:30:40] 	train_mean_loss_motion: 16.333108984905742
+[11.08.25|23:30:40] 	train_mean_loss_bone: 16.64129456229832
+[11.08.25|23:30:40] Training epoch: 107
+[11.08.25|23:31:48] 	train_mean_loss: 16.353990471881367
+[11.08.25|23:31:48] 	train_mean_loss_motion: 16.337520101796027
+[11.08.25|23:31:48] 	train_mean_loss_bone: 16.66884248153023
+[11.08.25|23:31:48] Training epoch: 108
+[11.08.25|23:32:55] 	train_mean_loss: 16.39038964976435
+[11.08.25|23:32:55] 	train_mean_loss_motion: 16.3065882143767
+[11.08.25|23:32:55] 	train_mean_loss_bone: 16.611061510832414
+[11.08.25|23:32:55] Training epoch: 109
+[11.08.25|23:33:43] 	Iter 2500 Done. | loss: 16.4986 | loss_motion: 16.2294 | loss_bone: 16.4425 | lr: 0.020000
+[11.08.25|23:34:01] 	train_mean_loss: 16.338270436162535
+[11.08.25|23:34:01] 	train_mean_loss_motion: 16.294769950534988
+[11.08.25|23:34:01] 	train_mean_loss_bone: 16.563155962073285
+[11.08.25|23:34:01] Training epoch: 110
+[11.08.25|23:35:20] 	train_mean_loss: 16.314294649207074
+[11.08.25|23:35:20] 	train_mean_loss_motion: 16.326892769855
+[11.08.25|23:35:20] 	train_mean_loss_bone: 16.595219238944676
+[11.08.25|23:35:20] The model has been saved as config/three-stream/pretext/epoch110_model.pt.
+[11.08.25|23:35:20] Training epoch: 111
+[11.08.25|23:36:35] 	train_mean_loss: 16.33815052198327
+[11.08.25|23:36:35] 	train_mean_loss_motion: 16.327837487925652
+[11.08.25|23:36:35] 	train_mean_loss_bone: 16.497437601504117
+[11.08.25|23:36:35] Training epoch: 112
+[11.08.25|23:37:51] 	train_mean_loss: 16.310285070668098
+[11.08.25|23:37:51] 	train_mean_loss_motion: 16.327839726987094
+[11.08.25|23:37:51] 	train_mean_loss_bone: 16.471132858939793
+[11.08.25|23:37:51] Training epoch: 113
+[11.08.25|23:39:04] 	train_mean_loss: 16.279888236004375
+[11.08.25|23:39:04] 	train_mean_loss_motion: 16.287489683731742
+[11.08.25|23:39:04] 	train_mean_loss_bone: 16.44345183994459
+[11.08.25|23:39:04] Training epoch: 114
+[11.08.25|23:39:13] 	Iter 2600 Done. | loss: 16.2728 | loss_motion: 15.9895 | loss_bone: 16.3254 | lr: 0.020000
+[11.08.25|23:40:17] 	train_mean_loss: 16.266860464344855
+[11.08.25|23:40:17] 	train_mean_loss_motion: 16.20118754843007
+[11.08.25|23:40:17] 	train_mean_loss_bone: 16.41844193831734
+[11.08.25|23:40:17] Training epoch: 115
+[11.08.25|23:41:29] 	train_mean_loss: 16.283859833427098
+[11.08.25|23:41:29] 	train_mean_loss_motion: 16.1414270815642
+[11.08.25|23:41:29] 	train_mean_loss_bone: 16.37831613291865
+[11.08.25|23:41:29] The model has been saved as config/three-stream/pretext/epoch115_model.pt.
+[11.08.25|23:41:29] Training epoch: 116
+[11.08.25|23:42:39] 	train_mean_loss: 16.19836239192797
+[11.08.25|23:42:39] 	train_mean_loss_motion: 16.04261186848516
+[11.08.25|23:42:39] 	train_mean_loss_bone: 16.250409582386848
+[11.08.25|23:42:39] Training epoch: 117
+[11.08.25|23:43:52] 	train_mean_loss: 16.12370130290156
+[11.08.25|23:43:52] 	train_mean_loss_motion: 16.082121102706246
+[11.08.25|23:43:52] 	train_mean_loss_bone: 16.18207707612411
+[11.08.25|23:43:52] Training epoch: 118
+[11.08.25|23:44:24] 	Iter 2700 Done. | loss: 16.1413 | loss_motion: 15.9571 | loss_bone: 16.3512 | lr: 0.020000
+[11.08.25|23:45:02] 	train_mean_loss: 16.058687666188117
+[11.08.25|23:45:02] 	train_mean_loss_motion: 16.07314064191735
+[11.08.25|23:45:02] 	train_mean_loss_bone: 16.199708814206332
+[11.08.25|23:45:02] Training epoch: 119
+[11.08.25|23:46:09] 	train_mean_loss: 16.057321963102922
+[11.08.25|23:46:09] 	train_mean_loss_motion: 16.13480294269064
+[11.08.25|23:46:09] 	train_mean_loss_bone: 16.22725171628206
+[11.08.25|23:46:09] Training epoch: 120
+[11.08.25|23:47:17] 	train_mean_loss: 16.07474940756093
+[11.08.25|23:47:17] 	train_mean_loss_motion: 16.16229003408681
+[11.08.25|23:47:17] 	train_mean_loss_bone: 16.079378003659457
+[11.08.25|23:47:17] The model has been saved as config/three-stream/pretext/epoch120_model.pt.
+[11.08.25|23:47:17] Training epoch: 121
+[11.08.25|23:48:24] 	train_mean_loss: 16.059820589811906
+[11.08.25|23:48:24] 	train_mean_loss_motion: 16.17752730328104
+[11.08.25|23:48:24] 	train_mean_loss_bone: 16.098513520282246
+[11.08.25|23:48:24] Training epoch: 122
+[11.08.25|23:49:17] 	Iter 2800 Done. | loss: 15.9386 | loss_motion: 16.0190 | loss_bone: 16.0226 | lr: 0.002000
+[11.08.25|23:49:31] 	train_mean_loss: 16.02114441083825
+[11.08.25|23:49:31] 	train_mean_loss_motion: 16.14717151807702
+[11.08.25|23:49:31] 	train_mean_loss_bone: 16.088363896245543
+[11.08.25|23:49:31] Training epoch: 123
+[11.08.25|23:50:38] 	train_mean_loss: 16.06318643818731
+[11.08.25|23:50:38] 	train_mean_loss_motion: 16.187772419141687
+[11.08.25|23:50:38] 	train_mean_loss_bone: 16.212293376093324
+[11.08.25|23:50:38] Training epoch: 124
+[11.08.25|23:51:45] 	train_mean_loss: 16.083680650462274
+[11.08.25|23:51:45] 	train_mean_loss_motion: 16.220495928888734
+[11.08.25|23:51:45] 	train_mean_loss_bone: 16.21057369398034
+[11.08.25|23:51:45] Training epoch: 125
+[11.08.25|23:52:52] 	train_mean_loss: 16.08656866654106
+[11.08.25|23:52:52] 	train_mean_loss_motion: 16.254908603170644
+[11.08.25|23:52:52] 	train_mean_loss_bone: 16.23369212772535
+[11.08.25|23:52:52] The model has been saved as config/three-stream/pretext/epoch125_model.pt.
+[11.08.25|23:52:52] Training epoch: 126
+[11.08.25|23:54:00] 	train_mean_loss: 16.085543715435527
+[11.08.25|23:54:00] 	train_mean_loss_motion: 16.25013309976329
+[11.08.25|23:54:00] 	train_mean_loss_bone: 16.29573788850204
+[11.08.25|23:54:00] Training epoch: 127
+[11.08.25|23:54:09] 	Iter 2900 Done. | loss: 15.9978 | loss_motion: 16.0939 | loss_bone: 16.0566 | lr: 0.002000
+[11.08.25|23:55:07] 	train_mean_loss: 16.054776772208836
+[11.08.25|23:55:07] 	train_mean_loss_motion: 16.245442224585492
+[11.08.25|23:55:07] 	train_mean_loss_bone: 16.269679732944656
+[11.08.25|23:55:07] Training epoch: 128
+[11.08.25|23:56:14] 	train_mean_loss: 16.112745533818785
+[11.08.25|23:56:14] 	train_mean_loss_motion: 16.34560891856318
+[11.08.25|23:56:14] 	train_mean_loss_bone: 16.25250190237294
+[11.08.25|23:56:14] Training epoch: 129
+[11.08.25|23:57:21] 	train_mean_loss: 16.00946563223134
+[11.08.25|23:57:21] 	train_mean_loss_motion: 16.321310416511867
+[11.08.25|23:57:21] 	train_mean_loss_bone: 16.27042181595512
+[11.08.25|23:57:21] Training epoch: 130
+[11.08.25|23:58:28] 	train_mean_loss: 16.03427551103675
+[11.08.25|23:58:28] 	train_mean_loss_motion: 16.276541336722996
+[11.08.25|23:58:28] 	train_mean_loss_bone: 16.25593260060186
+[11.08.25|23:58:28] The model has been saved as config/three-stream/pretext/epoch130_model.pt.
+[11.08.25|23:58:28] Training epoch: 131
+[11.08.25|23:59:01] 	Iter 3000 Done. | loss: 15.7804 | loss_motion: 16.0772 | loss_bone: 16.1245 | lr: 0.002000
+[11.08.25|23:59:35] 	train_mean_loss: 15.994660999463951
+[11.08.25|23:59:35] 	train_mean_loss_motion: 16.308241885641348
+[11.08.25|23:59:35] 	train_mean_loss_bone: 16.307449921317723
+[11.08.25|23:59:35] Training epoch: 132
+[11.09.25|00:00:43] 	train_mean_loss: 16.017349367556363
+[11.09.25|00:00:43] 	train_mean_loss_motion: 16.268070386803668
+[11.09.25|00:00:43] 	train_mean_loss_bone: 16.251830557118293
+[11.09.25|00:00:43] Training epoch: 133
+[11.09.25|00:01:49] 	train_mean_loss: 16.034420469532844
+[11.09.25|00:01:49] 	train_mean_loss_motion: 16.29592638430388
+[11.09.25|00:01:49] 	train_mean_loss_bone: 16.280673068502676
+[11.09.25|00:01:49] Training epoch: 134
+[11.09.25|00:02:57] 	train_mean_loss: 16.003091024315875
+[11.09.25|00:02:57] 	train_mean_loss_motion: 16.392140720201574
+[11.09.25|00:02:57] 	train_mean_loss_bone: 16.326325458029043
+[11.09.25|00:02:57] Training epoch: 135
+[11.09.25|00:03:53] 	Iter 3100 Done. | loss: 16.0599 | loss_motion: 16.2881 | loss_bone: 16.0180 | lr: 0.002000
+[11.09.25|00:04:04] 	train_mean_loss: 15.980279466380244
+[11.09.25|00:04:04] 	train_mean_loss_motion: 16.289205592611562
+[11.09.25|00:04:04] 	train_mean_loss_bone: 16.248274139736008
+[11.09.25|00:04:04] The model has been saved as config/three-stream/pretext/epoch135_model.pt.
+[11.09.25|00:04:04] Training epoch: 136
+[11.09.25|00:05:12] 	train_mean_loss: 16.034181180207625
+[11.09.25|00:05:12] 	train_mean_loss_motion: 16.276253534399945
+[11.09.25|00:05:12] 	train_mean_loss_bone: 16.226059457530145
+[11.09.25|00:05:12] Training epoch: 137
+[11.09.25|00:06:19] 	train_mean_loss: 15.971127385678498
+[11.09.25|00:06:19] 	train_mean_loss_motion: 16.29955237844716
+[11.09.25|00:06:19] 	train_mean_loss_bone: 16.265804456627887
+[11.09.25|00:06:19] Training epoch: 138
+[11.09.25|00:07:27] 	train_mean_loss: 15.987911348757537
+[11.09.25|00:07:27] 	train_mean_loss_motion: 16.29077094534169
+[11.09.25|00:07:27] 	train_mean_loss_bone: 16.247133255004883
+[11.09.25|00:07:27] Training epoch: 139
+[11.09.25|00:08:34] 	train_mean_loss: 16.019593155902363
+[11.09.25|00:08:34] 	train_mean_loss_motion: 16.25116953642472
+[11.09.25|00:08:34] 	train_mean_loss_bone: 16.22549641650656
+[11.09.25|00:08:34] Training epoch: 140
+[11.09.25|00:08:46] 	Iter 3200 Done. | loss: 16.0408 | loss_motion: 16.6890 | loss_bone: 16.1708 | lr: 0.002000
+[11.09.25|00:09:41] 	train_mean_loss: 16.000639874002207
+[11.09.25|00:09:41] 	train_mean_loss_motion: 16.209107108738113
+[11.09.25|00:09:41] 	train_mean_loss_bone: 16.246614207392152
+[11.09.25|00:09:41] The model has been saved as config/three-stream/pretext/epoch140_model.pt.
+[11.09.25|00:09:41] Training epoch: 141
+[11.09.25|00:10:49] 	train_mean_loss: 15.996525515680728
+[11.09.25|00:10:49] 	train_mean_loss_motion: 16.25723631485649
+[11.09.25|00:10:49] 	train_mean_loss_bone: 16.243957187818445
+[11.09.25|00:10:49] Training epoch: 142
+[11.09.25|00:11:56] 	train_mean_loss: 16.022987199866254
+[11.09.25|00:11:56] 	train_mean_loss_motion: 16.189285029535707
+[11.09.25|00:11:56] 	train_mean_loss_bone: 16.211053309233293
+[11.09.25|00:11:56] Training epoch: 143
+[11.09.25|00:13:04] 	train_mean_loss: 15.976593598075535
+[11.09.25|00:13:04] 	train_mean_loss_motion: 16.251128113788106
+[11.09.25|00:13:04] 	train_mean_loss_bone: 16.205918270608652
+[11.09.25|00:13:04] Training epoch: 144
+[11.09.25|00:13:39] 	Iter 3300 Done. | loss: 15.9036 | loss_motion: 16.2300 | loss_bone: 16.1680 | lr: 0.002000
+[11.09.25|00:14:11] 	train_mean_loss: 15.965647282807723
+[11.09.25|00:14:11] 	train_mean_loss_motion: 16.186290450718094
+[11.09.25|00:14:11] 	train_mean_loss_bone: 16.231745512589164
+[11.09.25|00:14:11] Training epoch: 145
+[11.09.25|00:15:18] 	train_mean_loss: 15.975064650825832
+[11.09.25|00:15:18] 	train_mean_loss_motion: 16.288066034731656
+[11.09.25|00:15:18] 	train_mean_loss_bone: 16.20546830218771
+[11.09.25|00:15:18] The model has been saved as config/three-stream/pretext/epoch145_model.pt.
+[11.09.25|00:15:18] Training epoch: 146
+[11.09.25|00:16:25] 	train_mean_loss: 15.96306029610012
+[11.09.25|00:16:25] 	train_mean_loss_motion: 16.2094494363536
+[11.09.25|00:16:25] 	train_mean_loss_bone: 16.172242206075918
+[11.09.25|00:16:25] Training epoch: 147
+[11.09.25|00:17:33] 	train_mean_loss: 15.956120491027832
+[11.09.25|00:17:33] 	train_mean_loss_motion: 16.185737900111985
+[11.09.25|00:17:33] 	train_mean_loss_bone: 16.220456911169965
+[11.09.25|00:17:33] Training epoch: 148
+[11.09.25|00:18:31] 	Iter 3400 Done. | loss: 16.0534 | loss_motion: 16.5523 | loss_bone: 16.3619 | lr: 0.002000
+[11.09.25|00:18:39] 	train_mean_loss: 15.972113816634469
+[11.09.25|00:18:39] 	train_mean_loss_motion: 16.215624684872836
+[11.09.25|00:18:39] 	train_mean_loss_bone: 16.163838345071543
+[11.09.25|00:18:39] Training epoch: 149
+[11.09.25|00:19:47] 	train_mean_loss: 16.03524805151898
+[11.09.25|00:19:47] 	train_mean_loss_motion: 16.265103257220723
+[11.09.25|00:19:47] 	train_mean_loss_bone: 16.194685728653617
+[11.09.25|00:19:47] Training epoch: 150
+[11.09.25|00:20:54] 	train_mean_loss: 15.975489160288936
+[11.09.25|00:20:54] 	train_mean_loss_motion: 16.170684109563414
+[11.09.25|00:20:54] 	train_mean_loss_bone: 16.168486885402512
+[11.09.25|00:20:54] The model has been saved as config/three-stream/pretext/epoch150_model.pt.
+[11.09.25|00:20:54] Training epoch: 151
+[11.09.25|00:22:02] 	train_mean_loss: 15.959277774976647
+[11.09.25|00:22:02] 	train_mean_loss_motion: 16.22124883402949
+[11.09.25|00:22:02] 	train_mean_loss_bone: 16.15939596424932
+[11.09.25|00:22:02] Training epoch: 152
+[11.09.25|00:23:09] 	train_mean_loss: 15.897978450941002
+[11.09.25|00:23:09] 	train_mean_loss_motion: 16.26881860650104
+[11.09.25|00:23:09] 	train_mean_loss_bone: 16.19000691952913
+[11.09.25|00:23:09] Training epoch: 153
+[11.09.25|00:23:24] 	Iter 3500 Done. | loss: 15.7858 | loss_motion: 15.9553 | loss_bone: 16.0138 | lr: 0.002000
+[11.09.25|00:24:16] 	train_mean_loss: 15.976263792618461
+[11.09.25|00:24:16] 	train_mean_loss_motion: 16.237114491670027
+[11.09.25|00:24:16] 	train_mean_loss_bone: 16.177598206893258
+[11.09.25|00:24:16] Training epoch: 154
+[11.09.25|00:25:24] 	train_mean_loss: 15.883376287377398
+[11.09.25|00:25:24] 	train_mean_loss_motion: 16.31154255245043
+[11.09.25|00:25:24] 	train_mean_loss_bone: 16.126275643058445
+[11.09.25|00:25:24] Training epoch: 155
+[11.09.25|00:26:31] 	train_mean_loss: 15.92392282900603
+[11.09.25|00:26:31] 	train_mean_loss_motion: 16.233282296553902
+[11.09.25|00:26:31] 	train_mean_loss_bone: 16.168744501860246
+[11.09.25|00:26:32] The model has been saved as config/three-stream/pretext/epoch155_model.pt.
+[11.09.25|00:26:32] Training epoch: 156
+[11.09.25|00:27:39] 	train_mean_loss: 15.894433684971021
+[11.09.25|00:27:39] 	train_mean_loss_motion: 16.101718073305875
+[11.09.25|00:27:39] 	train_mean_loss_bone: 16.16106991145922
+[11.09.25|00:27:39] Training epoch: 157
+[11.09.25|00:28:17] 	Iter 3600 Done. | loss: 15.9723 | loss_motion: 16.3428 | loss_bone: 16.0979 | lr: 0.002000
+[11.09.25|00:28:46] 	train_mean_loss: 15.86360736515211
+[11.09.25|00:28:46] 	train_mean_loss_motion: 16.15057012309199
+[11.09.25|00:28:46] 	train_mean_loss_bone: 16.171210786570672
+[11.09.25|00:28:46] Training epoch: 158
+[11.09.25|00:29:54] 	train_mean_loss: 15.896605698958687
+[11.09.25|00:29:54] 	train_mean_loss_motion: 16.15060619685961
+[11.09.25|00:29:54] 	train_mean_loss_bone: 16.16497284433116
+[11.09.25|00:29:54] Training epoch: 159
+[11.09.25|00:31:01] 	train_mean_loss: 15.848185207532799
+[11.09.25|00:31:01] 	train_mean_loss_motion: 16.151847673499066
+[11.09.25|00:31:01] 	train_mean_loss_bone: 16.170668975166652
+[11.09.25|00:31:01] Training epoch: 160
+[11.09.25|00:32:08] 	train_mean_loss: 15.851788976918096
+[11.09.25|00:32:08] 	train_mean_loss_motion: 16.18229289676832
+[11.09.25|00:32:08] 	train_mean_loss_bone: 16.142029472019363
+[11.09.25|00:32:08] The model has been saved as config/three-stream/pretext/epoch160_model.pt.
+[11.09.25|00:32:08] Training epoch: 161
+[11.09.25|00:33:10] 	Iter 3700 Done. | loss: 15.3981 | loss_motion: 16.0647 | loss_bone: 16.4352 | lr: 0.002000
+[11.09.25|00:33:16] 	train_mean_loss: 15.807879655257516
+[11.09.25|00:33:16] 	train_mean_loss_motion: 16.14053431801174
+[11.09.25|00:33:16] 	train_mean_loss_bone: 16.122375198032547
+[11.09.25|00:33:16] Training epoch: 162
+[11.09.25|00:34:23] 	train_mean_loss: 15.814003115114959
+[11.09.25|00:34:23] 	train_mean_loss_motion: 16.119411178257156
+[11.09.25|00:34:23] 	train_mean_loss_bone: 16.19187193331511
+[11.09.25|00:34:23] Training epoch: 163
+[11.09.25|00:35:30] 	train_mean_loss: 15.745958991672682
+[11.09.25|00:35:30] 	train_mean_loss_motion: 16.12771183511485
+[11.09.25|00:35:30] 	train_mean_loss_bone: 16.1934059391851
+[11.09.25|00:35:30] Training epoch: 164
+[11.09.25|00:36:38] 	train_mean_loss: 15.766604216202445
+[11.09.25|00:36:38] 	train_mean_loss_motion: 16.113371144170348
+[11.09.25|00:36:38] 	train_mean_loss_bone: 16.170582398124363
+[11.09.25|00:36:38] Training epoch: 165
+[11.09.25|00:37:45] 	train_mean_loss: 15.771725447281547
+[11.09.25|00:37:45] 	train_mean_loss_motion: 16.071267957272738
+[11.09.25|00:37:45] 	train_mean_loss_bone: 16.181901061016582
+[11.09.25|00:37:45] The model has been saved as config/three-stream/pretext/epoch165_model.pt.
+[11.09.25|00:37:45] Training epoch: 166
+[11.09.25|00:38:03] 	Iter 3800 Done. | loss: 15.6402 | loss_motion: 15.8996 | loss_bone: 16.1099 | lr: 0.002000
+[11.09.25|00:38:52] 	train_mean_loss: 15.781550863514775
+[11.09.25|00:38:52] 	train_mean_loss_motion: 16.200531420500383
+[11.09.25|00:38:52] 	train_mean_loss_bone: 16.18057031216829
+[11.09.25|00:38:53] Training epoch: 167
+[11.09.25|00:40:00] 	train_mean_loss: 15.756236490995988
+[11.09.25|00:40:00] 	train_mean_loss_motion: 16.127919860508133
+[11.09.25|00:40:00] 	train_mean_loss_bone: 16.151352882385254
+[11.09.25|00:40:00] Training epoch: 168
+[11.09.25|00:41:07] 	train_mean_loss: 15.769209239793861
+[11.09.25|00:41:07] 	train_mean_loss_motion: 16.14225093178127
+[11.09.25|00:41:07] 	train_mean_loss_bone: 16.16077472852624
+[11.09.25|00:41:07] Training epoch: 169
+[11.09.25|00:42:14] 	train_mean_loss: 15.819790052331012
+[11.09.25|00:42:14] 	train_mean_loss_motion: 16.12409450696862
+[11.09.25|00:42:14] 	train_mean_loss_bone: 16.1632544890694
+[11.09.25|00:42:14] Training epoch: 170
+[11.09.25|00:42:56] 	Iter 3900 Done. | loss: 15.7058 | loss_motion: 16.1626 | loss_bone: 16.0166 | lr: 0.002000
+[11.09.25|00:43:21] 	train_mean_loss: 15.759679338206416
+[11.09.25|00:43:21] 	train_mean_loss_motion: 16.113283737846043
+[11.09.25|00:43:21] 	train_mean_loss_bone: 16.130631737087082
+[11.09.25|00:43:21] The model has been saved as config/three-stream/pretext/epoch170_model.pt.
+[11.09.25|00:43:21] Training epoch: 171
+[11.09.25|00:44:28] 	train_mean_loss: 15.764216298642365
+[11.09.25|00:44:28] 	train_mean_loss_motion: 16.123921269955844
+[11.09.25|00:44:28] 	train_mean_loss_bone: 16.116534357485563
+[11.09.25|00:44:28] Training epoch: 172
+[11.09.25|00:45:35] 	train_mean_loss: 15.809778047644574
+[11.09.25|00:45:35] 	train_mean_loss_motion: 16.12270164489746
+[11.09.25|00:45:35] 	train_mean_loss_bone: 16.189092345859695
+[11.09.25|00:45:35] Training epoch: 173
+[11.09.25|00:46:43] 	train_mean_loss: 15.744252992712934
+[11.09.25|00:46:43] 	train_mean_loss_motion: 16.001927292865254
+[11.09.25|00:46:43] 	train_mean_loss_bone: 16.13432834459388
+[11.09.25|00:46:43] Training epoch: 174
+[11.09.25|00:47:47] 	Iter 4000 Done. | loss: 16.1121 | loss_motion: 16.1119 | loss_bone: 16.2677 | lr: 0.002000
+[11.09.25|00:47:50] 	train_mean_loss: 15.800902366638184
+[11.09.25|00:47:50] 	train_mean_loss_motion: 16.099442979563836
+[11.09.25|00:47:50] 	train_mean_loss_bone: 16.170697046362836
+[11.09.25|00:47:50] Training epoch: 175
+[11.09.25|00:48:57] 	train_mean_loss: 15.786130988079568
+[11.09.25|00:48:57] 	train_mean_loss_motion: 16.036358708920687
+[11.09.25|00:48:57] 	train_mean_loss_bone: 16.161426585653555
+[11.09.25|00:48:57] The model has been saved as config/three-stream/pretext/epoch175_model.pt.
+[11.09.25|00:48:57] Training epoch: 176
+[11.09.25|00:50:05] 	train_mean_loss: 15.741114409073539
+[11.09.25|00:50:05] 	train_mean_loss_motion: 16.12919504746147
+[11.09.25|00:50:05] 	train_mean_loss_bone: 16.144701169884723
+[11.09.25|00:50:05] Training epoch: 177
+[11.09.25|00:51:12] 	train_mean_loss: 15.706731049910836
+[11.09.25|00:51:12] 	train_mean_loss_motion: 16.016163660132367
+[11.09.25|00:51:12] 	train_mean_loss_bone: 16.17192085929539
+[11.09.25|00:51:12] Training epoch: 178
+[11.09.25|00:52:16] 	train_mean_loss: 15.692914838376252
+[11.09.25|00:52:16] 	train_mean_loss_motion: 16.01450070090916
+[11.09.25|00:52:16] 	train_mean_loss_bone: 16.129925976628844
+[11.09.25|00:52:16] Training epoch: 179
+[11.09.25|00:52:35] 	Iter 4100 Done. | loss: 15.5616 | loss_motion: 16.1792 | loss_bone: 16.2078 | lr: 0.002000
+[11.09.25|00:53:19] 	train_mean_loss: 15.735597734865935
+[11.09.25|00:53:19] 	train_mean_loss_motion: 16.05642318725586
+[11.09.25|00:53:19] 	train_mean_loss_bone: 16.20486014822255
+[11.09.25|00:53:19] Training epoch: 180
+[11.09.25|00:54:24] 	train_mean_loss: 15.618919040845787
+[11.09.25|00:54:24] 	train_mean_loss_motion: 16.050994790118672
+[11.09.25|00:54:24] 	train_mean_loss_bone: 16.221366509147312
+[11.09.25|00:54:24] The model has been saved as config/three-stream/pretext/epoch180_model.pt.
+[11.09.25|00:54:24] Training epoch: 181
+[11.09.25|00:55:28] 	train_mean_loss: 15.656053833339525
+[11.09.25|00:55:28] 	train_mean_loss_motion: 16.083684838336445
+[11.09.25|00:55:28] 	train_mean_loss_bone: 16.14975170467211
+[11.09.25|00:55:28] Training epoch: 182
+[11.09.25|00:56:29] 	train_mean_loss: 15.620708465576172
+[11.09.25|00:56:29] 	train_mean_loss_motion: 16.036723261294156
+[11.09.25|00:56:29] 	train_mean_loss_bone: 16.171018268751062
+[11.09.25|00:56:29] Training epoch: 183
+[11.09.25|00:57:09] 	Iter 4200 Done. | loss: 15.4980 | loss_motion: 16.0136 | loss_bone: 15.9383 | lr: 0.002000
+[11.09.25|00:57:31] 	train_mean_loss: 15.670095858366594
+[11.09.25|00:57:31] 	train_mean_loss_motion: 16.144915705141813
+[11.09.25|00:57:31] 	train_mean_loss_bone: 16.14268394138502
+[11.09.25|00:57:31] Training epoch: 184
+[11.09.25|00:58:32] 	train_mean_loss: 15.66473330622134
+[11.09.25|00:58:32] 	train_mean_loss_motion: 15.98733781731647
+[11.09.25|00:58:32] 	train_mean_loss_bone: 16.14345762004023
+[11.09.25|00:58:32] Training epoch: 185
+[11.09.25|00:59:32] 	train_mean_loss: 15.677734292071799
+[11.09.25|00:59:32] 	train_mean_loss_motion: 16.143815828406293
+[11.09.25|00:59:32] 	train_mean_loss_bone: 16.169921709143598
+[11.09.25|00:59:32] The model has been saved as config/three-stream/pretext/epoch185_model.pt.
+[11.09.25|00:59:32] Training epoch: 186
+[11.09.25|01:00:34] 	train_mean_loss: 15.648975289386252
+[11.09.25|01:00:34] 	train_mean_loss_motion: 16.024152133775793
+[11.09.25|01:00:34] 	train_mean_loss_bone: 16.0972724997479
+[11.09.25|01:00:34] Training epoch: 187
+[11.09.25|01:01:37] 	Iter 4300 Done. | loss: 15.6143 | loss_motion: 15.7644 | loss_bone: 16.0130 | lr: 0.002000
+[11.09.25|01:01:37] 	train_mean_loss: 15.592890366264012
+[11.09.25|01:01:37] 	train_mean_loss_motion: 16.010708974755328
+[11.09.25|01:01:37] 	train_mean_loss_bone: 16.061834749968156
+[11.09.25|01:01:37] Training epoch: 188
+[11.09.25|01:02:39] 	train_mean_loss: 15.592713812123174
+[11.09.25|01:02:39] 	train_mean_loss_motion: 16.00880763841712
+[11.09.25|01:02:39] 	train_mean_loss_bone: 16.091530426688816
+[11.09.25|01:02:39] Training epoch: 189
+[11.09.25|01:03:42] 	train_mean_loss: 15.623593040134596
+[11.09.25|01:03:42] 	train_mean_loss_motion: 16.03960016499395
+[11.09.25|01:03:42] 	train_mean_loss_bone: 16.132352331410285
+[11.09.25|01:03:42] Training epoch: 190
+[11.09.25|01:04:43] 	train_mean_loss: 15.64890948585842
+[11.09.25|01:04:43] 	train_mean_loss_motion: 15.986818562383236
+[11.09.25|01:04:43] 	train_mean_loss_bone: 16.10726907978887
+[11.09.25|01:04:43] The model has been saved as config/three-stream/pretext/epoch190_model.pt.
+[11.09.25|01:04:43] Training epoch: 191
+[11.09.25|01:05:47] 	train_mean_loss: 15.684806657874066
+[11.09.25|01:05:47] 	train_mean_loss_motion: 15.930758144544518
+[11.09.25|01:05:47] 	train_mean_loss_bone: 16.107442192409348
+[11.09.25|01:05:47] Training epoch: 192
+[11.09.25|01:06:08] 	Iter 4400 Done. | loss: 15.3918 | loss_motion: 16.0025 | loss_bone: 16.0345 | lr: 0.002000
+[11.09.25|01:06:46] 	train_mean_loss: 15.632701210353686
+[11.09.25|01:06:46] 	train_mean_loss_motion: 15.946869020876678
+[11.09.25|01:06:46] 	train_mean_loss_bone: 16.088289012079652
+[11.09.25|01:06:46] Training epoch: 193
+[11.09.25|01:07:48] 	train_mean_loss: 15.611467485842498
+[11.09.25|01:07:48] 	train_mean_loss_motion: 16.007883486540422
+[11.09.25|01:07:48] 	train_mean_loss_bone: 16.06459791763969
+[11.09.25|01:07:48] Training epoch: 194
+[11.09.25|01:08:48] 	train_mean_loss: 15.702740088753078
+[11.09.25|01:08:48] 	train_mean_loss_motion: 15.998374980428945
+[11.09.25|01:08:48] 	train_mean_loss_bone: 16.07714495451554
+[11.09.25|01:08:48] Training epoch: 195
+[11.09.25|01:09:50] 	train_mean_loss: 15.609236219654912
+[11.09.25|01:09:50] 	train_mean_loss_motion: 15.936145160509193
+[11.09.25|01:09:50] 	train_mean_loss_bone: 16.00673530412757
+[11.09.25|01:09:50] The model has been saved as config/three-stream/pretext/epoch195_model.pt.
+[11.09.25|01:09:50] Training epoch: 196
+[11.09.25|01:10:37] 	Iter 4500 Done. | loss: 15.5524 | loss_motion: 16.0424 | loss_bone: 15.8178 | lr: 0.002000
+[11.09.25|01:10:57] 	train_mean_loss: 15.593850840692935
+[11.09.25|01:10:57] 	train_mean_loss_motion: 16.00314293736997
+[11.09.25|01:10:57] 	train_mean_loss_bone: 16.088849565257195
+[11.09.25|01:10:57] Training epoch: 197
+[11.09.25|01:12:01] 	train_mean_loss: 15.524101589037025
+[11.09.25|01:12:01] 	train_mean_loss_motion: 15.799467957538107
+[11.09.25|01:12:01] 	train_mean_loss_bone: 16.009798588960066
+[11.09.25|01:12:01] Training epoch: 198
+[11.09.25|01:13:04] 	train_mean_loss: 15.611075940339461
+[11.09.25|01:13:04] 	train_mean_loss_motion: 15.894333300383195
+[11.09.25|01:13:04] 	train_mean_loss_bone: 16.0607269535894
+[11.09.25|01:13:04] Training epoch: 199
+[11.09.25|01:14:03] 	train_mean_loss: 15.547025307365086
+[11.09.25|01:14:03] 	train_mean_loss_motion: 15.860861280690068
+[11.09.25|01:14:04] 	train_mean_loss_bone: 16.04693014725395
+[11.09.25|01:14:04] Training epoch: 200
+[11.09.25|01:15:06] 	train_mean_loss: 15.575725887132728
+[11.09.25|01:15:06] 	train_mean_loss_motion: 15.87786110587742
+[11.09.25|01:15:06] 	train_mean_loss_bone: 16.070825245069422
+[11.09.25|01:15:07] The model has been saved as config/three-stream/pretext/epoch200_model.pt.
+[11.09.25|01:15:07] Training epoch: 201
+[11.09.25|01:15:10] 	Iter 4600 Done. | loss: 15.6150 | loss_motion: 16.5249 | loss_bone: 16.1223 | lr: 0.002000
+[11.09.25|01:16:07] 	train_mean_loss: 15.562286252560822
+[11.09.25|01:16:07] 	train_mean_loss_motion: 15.93977107172427
+[11.09.25|01:16:07] 	train_mean_loss_bone: 16.050536031308383
+[11.09.25|01:16:07] Training epoch: 202
+[11.09.25|01:17:09] 	train_mean_loss: 15.541824133499809
+[11.09.25|01:17:09] 	train_mean_loss_motion: 15.865447541941768
+[11.09.25|01:17:09] 	train_mean_loss_bone: 16.038695293924082
+[11.09.25|01:17:09] Training epoch: 203
+[11.09.25|01:18:10] 	train_mean_loss: 15.555948008661685
+[11.09.25|01:18:10] 	train_mean_loss_motion: 15.976516433384107
+[11.09.25|01:18:10] 	train_mean_loss_bone: 15.98784351348877
+[11.09.25|01:18:10] Training epoch: 204
+[11.09.25|01:19:12] 	train_mean_loss: 15.482551864955736
+[11.09.25|01:19:12] 	train_mean_loss_motion: 16.06898610488228
+[11.09.25|01:19:12] 	train_mean_loss_bone: 15.994602452153744
+[11.09.25|01:19:12] Training epoch: 205
+[11.09.25|01:19:37] 	Iter 4700 Done. | loss: 15.3028 | loss_motion: 15.5888 | loss_bone: 16.0862 | lr: 0.002000
+[11.09.25|01:20:13] 	train_mean_loss: 15.479218151258385
+[11.09.25|01:20:13] 	train_mean_loss_motion: 15.911644189254098
+[11.09.25|01:20:13] 	train_mean_loss_bone: 15.962621771770975
+[11.09.25|01:20:13] The model has been saved as config/three-stream/pretext/epoch205_model.pt.
+[11.09.25|01:20:13] Training epoch: 206
+[11.09.25|01:21:13] 	train_mean_loss: 15.55706608813742
+[11.09.25|01:21:13] 	train_mean_loss_motion: 15.860136405281398
+[11.09.25|01:21:13] 	train_mean_loss_bone: 15.973445892333984
+[11.09.25|01:21:13] Training epoch: 207
+[11.09.25|01:22:15] 	train_mean_loss: 15.540712605351986
+[11.09.25|01:22:15] 	train_mean_loss_motion: 15.938724434894064
+[11.09.25|01:22:15] 	train_mean_loss_bone: 15.979579096255096
+[11.09.25|01:22:15] Training epoch: 208
+[11.09.25|01:23:14] 	train_mean_loss: 15.519633085831352
+[11.09.25|01:23:14] 	train_mean_loss_motion: 15.899191192958666
+[11.09.25|01:23:14] 	train_mean_loss_bone: 15.968069657035496
+[11.09.25|01:23:14] Training epoch: 209
+[11.09.25|01:24:04] 	Iter 4800 Done. | loss: 15.3977 | loss_motion: 15.4967 | loss_bone: 15.7890 | lr: 0.002000
+[11.09.25|01:24:22] 	train_mean_loss: 15.549615279487941
+[11.09.25|01:24:22] 	train_mean_loss_motion: 15.942893608756687
+[11.09.25|01:24:22] 	train_mean_loss_bone: 15.965889764868695
+[11.09.25|01:24:22] Training epoch: 210
+[11.09.25|01:25:24] 	train_mean_loss: 15.498205102008322
+[11.09.25|01:25:24] 	train_mean_loss_motion: 15.863511997720469
+[11.09.25|01:25:24] 	train_mean_loss_bone: 15.952533017034115
+[11.09.25|01:25:24] The model has been saved as config/three-stream/pretext/epoch210_model.pt.
+[11.09.25|01:25:24] Training epoch: 211
+[11.09.25|01:26:25] 	train_mean_loss: 15.495377747908883
+[11.09.25|01:26:25] 	train_mean_loss_motion: 15.872288745382559
+[11.09.25|01:26:25] 	train_mean_loss_bone: 15.948268102562945
+[11.09.25|01:26:25] Training epoch: 212
+[11.09.25|01:27:27] 	train_mean_loss: 15.511908323868461
+[11.09.25|01:27:27] 	train_mean_loss_motion: 15.905776479969854
+[11.09.25|01:27:27] 	train_mean_loss_bone: 15.979613884635594
+[11.09.25|01:27:27] Training epoch: 213
+[11.09.25|01:28:29] 	train_mean_loss: 15.42307476375414
+[11.09.25|01:28:29] 	train_mean_loss_motion: 15.90634528450344
+[11.09.25|01:28:29] 	train_mean_loss_bone: 15.946989059448242
+[11.09.25|01:28:29] Training epoch: 214
+[11.09.25|01:28:35] 	Iter 4900 Done. | loss: 15.5792 | loss_motion: 15.8534 | loss_bone: 16.0252 | lr: 0.002000
+[11.09.25|01:29:31] 	train_mean_loss: 15.481476576431938
+[11.09.25|01:29:31] 	train_mean_loss_motion: 15.891109342160432
+[11.09.25|01:29:31] 	train_mean_loss_bone: 15.932788392771846
+[11.09.25|01:29:31] Training epoch: 215
+[11.09.25|01:30:31] 	train_mean_loss: 15.496020856110945
+[11.09.25|01:30:31] 	train_mean_loss_motion: 15.878399848937988
+[11.09.25|01:30:31] 	train_mean_loss_bone: 15.971311320429264
+[11.09.25|01:30:31] The model has been saved as config/three-stream/pretext/epoch215_model.pt.
+[11.09.25|01:30:31] Training epoch: 216
+[11.09.25|01:31:37] 	train_mean_loss: 15.437685137209685
+[11.09.25|01:31:37] 	train_mean_loss_motion: 15.971497038136357
+[11.09.25|01:31:37] 	train_mean_loss_bone: 15.934224958005158
+[11.09.25|01:31:37] Training epoch: 217
+[11.09.25|01:32:43] 	train_mean_loss: 15.4448358701623
+[11.09.25|01:32:43] 	train_mean_loss_motion: 15.845438749893852
+[11.09.25|01:32:43] 	train_mean_loss_bone: 15.968822976817256
+[11.09.25|01:32:43] Training epoch: 218
+[11.09.25|01:33:12] 	Iter 5000 Done. | loss: 15.3369 | loss_motion: 16.0646 | loss_bone: 15.8006 | lr: 0.002000
+[11.09.25|01:33:49] 	train_mean_loss: 15.428178704303244
+[11.09.25|01:33:49] 	train_mean_loss_motion: 15.850062080051588
+[11.09.25|01:33:49] 	train_mean_loss_bone: 15.907918681269107
+[11.09.25|01:33:49] Training epoch: 219
+[11.09.25|01:34:52] 	train_mean_loss: 15.424063848412555
+[11.09.25|01:34:52] 	train_mean_loss_motion: 16.025976139566172
+[11.09.25|01:34:52] 	train_mean_loss_bone: 15.917738914489746
+[11.09.25|01:34:52] Training epoch: 220
+[11.09.25|01:35:58] 	train_mean_loss: 15.47347292692765
+[11.09.25|01:35:58] 	train_mean_loss_motion: 15.887396066085152
+[11.09.25|01:35:58] 	train_mean_loss_bone: 15.96993529278299
+[11.09.25|01:35:58] The model has been saved as config/three-stream/pretext/epoch220_model.pt.
+[11.09.25|01:35:58] Training epoch: 221
+[11.09.25|01:37:02] 	train_mean_loss: 15.404287379720937
+[11.09.25|01:37:02] 	train_mean_loss_motion: 15.94926987523618
+[11.09.25|01:37:02] 	train_mean_loss_bone: 15.913779839225437
+[11.09.25|01:37:02] Training epoch: 222
+[11.09.25|01:37:49] 	Iter 5100 Done. | loss: 15.2987 | loss_motion: 15.6385 | loss_bone: 15.7553 | lr: 0.002000
+[11.09.25|01:38:04] 	train_mean_loss: 15.412440465844195
+[11.09.25|01:38:04] 	train_mean_loss_motion: 15.935155827066172
+[11.09.25|01:38:04] 	train_mean_loss_bone: 15.926007104956586
+[11.09.25|01:38:04] Training epoch: 223
+[11.09.25|01:39:05] 	train_mean_loss: 15.44941172392472
+[11.09.25|01:39:05] 	train_mean_loss_motion: 16.010319129280422
+[11.09.25|01:39:05] 	train_mean_loss_bone: 15.997130352517832
+[11.09.25|01:39:05] Training epoch: 224
+[11.09.25|01:40:07] 	train_mean_loss: 15.400539564049762
+[11.09.25|01:40:07] 	train_mean_loss_motion: 15.922312487726627
+[11.09.25|01:40:07] 	train_mean_loss_bone: 15.932903994684635
+[11.09.25|01:40:07] Training epoch: 225
+[11.09.25|01:41:08] 	train_mean_loss: 15.42796280073083
+[11.09.25|01:41:08] 	train_mean_loss_motion: 15.852238364841627
+[11.09.25|01:41:08] 	train_mean_loss_bone: 15.975360206935717
+[11.09.25|01:41:08] The model has been saved as config/three-stream/pretext/epoch225_model.pt.
+[11.09.25|01:41:08] Training epoch: 226
+[11.09.25|01:42:15] 	train_mean_loss: 15.375915237095045
+[11.09.25|01:42:15] 	train_mean_loss_motion: 15.815737268199092
+[11.09.25|01:42:15] 	train_mean_loss_bone: 15.860602337381113
+[11.09.25|01:42:15] Training epoch: 227
+[11.09.25|01:42:24] 	Iter 5200 Done. | loss: 15.3074 | loss_motion: 15.9995 | loss_bone: 16.1636 | lr: 0.002000
+[11.09.25|01:43:20] 	train_mean_loss: 15.410341179889182
+[11.09.25|01:43:20] 	train_mean_loss_motion: 15.862471082936162
+[11.09.25|01:43:20] 	train_mean_loss_bone: 15.900486365608547
+[11.09.25|01:43:20] Training epoch: 228
+[11.09.25|01:44:26] 	train_mean_loss: 15.384709606999936
+[11.09.25|01:44:26] 	train_mean_loss_motion: 15.90490780705991
+[11.09.25|01:44:26] 	train_mean_loss_bone: 15.9096971180128
+[11.09.25|01:44:26] Training epoch: 229
+[11.09.25|01:45:31] 	train_mean_loss: 15.43078323032545
+[11.09.25|01:45:31] 	train_mean_loss_motion: 15.872208512347678
+[11.09.25|01:45:31] 	train_mean_loss_bone: 15.878825146219004
+[11.09.25|01:45:31] Training epoch: 230
+[11.09.25|01:46:38] 	train_mean_loss: 15.373023406318996
+[11.09.25|01:46:38] 	train_mean_loss_motion: 15.820019348807957
+[11.09.25|01:46:38] 	train_mean_loss_bone: 15.902778418167777
+[11.09.25|01:46:38] The model has been saved as config/three-stream/pretext/epoch230_model.pt.
+[11.09.25|01:46:38] Training epoch: 231
+[11.09.25|01:47:09] 	Iter 5300 Done. | loss: 15.5624 | loss_motion: 15.6308 | loss_bone: 15.8459 | lr: 0.002000
+[11.09.25|01:47:43] 	train_mean_loss: 15.403140233910602
+[11.09.25|01:47:43] 	train_mean_loss_motion: 15.885848211205523
+[11.09.25|01:47:43] 	train_mean_loss_bone: 15.914983293284541
+[11.09.25|01:47:43] Training epoch: 232
+[11.09.25|01:48:49] 	train_mean_loss: 15.425809901693594
+[11.09.25|01:48:49] 	train_mean_loss_motion: 15.923764477605404
+[11.09.25|01:48:49] 	train_mean_loss_bone: 15.873776643172555
+[11.09.25|01:48:49] Training epoch: 233
+[11.09.25|01:49:55] 	train_mean_loss: 15.354519346485967
+[11.09.25|01:49:55] 	train_mean_loss_motion: 15.767741908197818
+[11.09.25|01:49:55] 	train_mean_loss_bone: 15.885750646176545
+[11.09.25|01:49:55] Training epoch: 234
+[11.09.25|01:51:00] 	train_mean_loss: 15.401430254397185
+[11.09.25|01:51:00] 	train_mean_loss_motion: 15.885837886644447
+[11.09.25|01:51:00] 	train_mean_loss_bone: 15.87625325244406
+[11.09.25|01:51:00] Training epoch: 235
+[11.09.25|01:51:55] 	Iter 5400 Done. | loss: 15.6056 | loss_motion: 15.4832 | loss_bone: 16.3231 | lr: 0.002000
+[11.09.25|01:52:06] 	train_mean_loss: 15.342798274496328
+[11.09.25|01:52:06] 	train_mean_loss_motion: 15.851837075274924
+[11.09.25|01:52:06] 	train_mean_loss_bone: 15.867658780968707
+[11.09.25|01:52:07] The model has been saved as config/three-stream/pretext/epoch235_model.pt.
+[11.09.25|01:52:07] Training epoch: 236
+[11.09.25|01:53:12] 	train_mean_loss: 15.34091621896495
+[11.09.25|01:53:12] 	train_mean_loss_motion: 15.789826683376146
+[11.09.25|01:53:12] 	train_mean_loss_bone: 15.86713807479195
+[11.09.25|01:53:12] Training epoch: 237
+[11.09.25|01:54:18] 	train_mean_loss: 15.340385934580928
+[11.09.25|01:54:18] 	train_mean_loss_motion: 15.847263543502145
+[11.09.25|01:54:18] 	train_mean_loss_bone: 15.869277083355447
+[11.09.25|01:54:18] Training epoch: 238
+[11.09.25|01:55:23] 	train_mean_loss: 15.327941396962041
+[11.09.25|01:55:23] 	train_mean_loss_motion: 15.892380133919094
+[11.09.25|01:55:23] 	train_mean_loss_bone: 15.846258163452148
+[11.09.25|01:55:23] Training epoch: 239
+[11.09.25|01:56:29] 	train_mean_loss: 15.396973568460215
+[11.09.25|01:56:29] 	train_mean_loss_motion: 15.746448102204695
+[11.09.25|01:56:29] 	train_mean_loss_bone: 15.8404831678971
+[11.09.25|01:56:29] Training epoch: 240
+[11.09.25|01:56:41] 	Iter 5500 Done. | loss: 15.5221 | loss_motion: 15.6822 | loss_bone: 16.0209 | lr: 0.002000
+[11.09.25|01:57:34] 	train_mean_loss: 15.32861095926036
+[11.09.25|01:57:34] 	train_mean_loss_motion: 15.783042368681535
+[11.09.25|01:57:34] 	train_mean_loss_bone: 15.84020817798117
+[11.09.25|01:57:35] The model has been saved as config/three-stream/pretext/epoch240_model.pt.
+[11.09.25|01:57:35] Training epoch: 241
+[11.09.25|01:58:40] 	train_mean_loss: 15.375209932741912
+[11.09.25|01:58:40] 	train_mean_loss_motion: 15.821037831513777
+[11.09.25|01:58:40] 	train_mean_loss_bone: 15.862203846807065
+[11.09.25|01:58:40] Training epoch: 242
+[11.09.25|01:59:48] 	train_mean_loss: 15.37127341394839
+[11.09.25|01:59:48] 	train_mean_loss_motion: 15.855820365574049
+[11.09.25|01:59:48] 	train_mean_loss_bone: 15.874412121980086
+[11.09.25|01:59:48] Training epoch: 243
+[11.09.25|02:00:53] 	train_mean_loss: 15.346355023591414
+[11.09.25|02:00:53] 	train_mean_loss_motion: 15.759193130161451
+[11.09.25|02:00:53] 	train_mean_loss_bone: 15.838092140529467
+[11.09.25|02:00:53] Training epoch: 244
+[11.09.25|02:01:28] 	Iter 5600 Done. | loss: 15.0731 | loss_motion: 15.5599 | loss_bone: 15.7204 | lr: 0.002000
+[11.09.25|02:01:58] 	train_mean_loss: 15.383469996245012
+[11.09.25|02:01:58] 	train_mean_loss_motion: 15.882763987002166
+[11.09.25|02:01:58] 	train_mean_loss_bone: 15.863869791445525
+[11.09.25|02:01:58] Training epoch: 245
+[11.09.25|02:03:03] 	train_mean_loss: 15.33299790257993
+[11.09.25|02:03:03] 	train_mean_loss_motion: 15.817296028137207
+[11.09.25|02:03:03] 	train_mean_loss_bone: 15.802436870077383
+[11.09.25|02:03:04] The model has been saved as config/three-stream/pretext/epoch245_model.pt.
+[11.09.25|02:03:04] Training epoch: 246
+[11.09.25|02:04:09] 	train_mean_loss: 15.292588772981063
+[11.09.25|02:04:09] 	train_mean_loss_motion: 15.81516867098601
+[11.09.25|02:04:09] 	train_mean_loss_bone: 15.85806593687638
+[11.09.25|02:04:09] Training epoch: 247
+[11.09.25|02:05:14] 	train_mean_loss: 15.353071834730065
+[11.09.25|02:05:14] 	train_mean_loss_motion: 15.812943002452021
+[11.09.25|02:05:14] 	train_mean_loss_bone: 15.76803792041281
+[11.09.25|02:05:14] Training epoch: 248
+[11.09.25|02:06:12] 	Iter 5700 Done. | loss: 15.6391 | loss_motion: 15.7314 | loss_bone: 15.8970 | lr: 0.002000
+[11.09.25|02:06:20] 	train_mean_loss: 15.373548217441725
+[11.09.25|02:06:20] 	train_mean_loss_motion: 15.705215412637461
+[11.09.25|02:06:20] 	train_mean_loss_bone: 15.805733100227688
+[11.09.25|02:06:20] Training epoch: 249
+[11.09.25|02:07:26] 	train_mean_loss: 15.308323611383853
+[11.09.25|02:07:26] 	train_mean_loss_motion: 15.818850931913957
+[11.09.25|02:07:26] 	train_mean_loss_bone: 15.83587124036706
+[11.09.25|02:07:26] Training epoch: 250
+[11.09.25|02:08:32] 	train_mean_loss: 15.385762214660645
+[11.09.25|02:08:32] 	train_mean_loss_motion: 15.765030197475268
+[11.09.25|02:08:32] 	train_mean_loss_bone: 15.890344122181768
+[11.09.25|02:08:32] The model has been saved as config/three-stream/pretext/epoch250_model.pt.
+[11.09.25|02:08:32] Training epoch: 251
+[11.09.25|02:09:38] 	train_mean_loss: 15.31348352846892
+[11.09.25|02:09:38] 	train_mean_loss_motion: 15.877833615178647
+[11.09.25|02:09:38] 	train_mean_loss_bone: 15.826667827108633
+[11.09.25|02:09:38] Training epoch: 252
+[11.09.25|02:10:44] 	train_mean_loss: 15.356721712195355
+[11.09.25|02:10:44] 	train_mean_loss_motion: 15.683143076689348
+[11.09.25|02:10:44] 	train_mean_loss_bone: 15.848012260768725
+[11.09.25|02:10:44] Training epoch: 253
+[11.09.25|02:10:59] 	Iter 5800 Done. | loss: 15.4069 | loss_motion: 15.7605 | loss_bone: 15.9624 | lr: 0.002000
+[11.09.25|02:11:50] 	train_mean_loss: 15.370779369188392
+[11.09.25|02:11:50] 	train_mean_loss_motion: 15.72677123028299
+[11.09.25|02:11:50] 	train_mean_loss_bone: 15.820271326147992
+[11.09.25|02:11:50] Training epoch: 254
+[11.09.25|02:12:55] 	train_mean_loss: 15.359997127367103
+[11.09.25|02:12:55] 	train_mean_loss_motion: 15.894024807473887
+[11.09.25|02:12:55] 	train_mean_loss_bone: 15.821870306263799
+[11.09.25|02:12:55] Training epoch: 255
+[11.09.25|02:14:02] 	train_mean_loss: 15.363001533176588
+[11.09.25|02:14:02] 	train_mean_loss_motion: 15.818268195442531
+[11.09.25|02:14:02] 	train_mean_loss_bone: 15.854702825131623
+[11.09.25|02:14:02] The model has been saved as config/three-stream/pretext/epoch255_model.pt.
+[11.09.25|02:14:02] Training epoch: 256
+[11.09.25|02:15:08] 	train_mean_loss: 15.29613042914349
+[11.09.25|02:15:08] 	train_mean_loss_motion: 15.728640141694441
+[11.09.25|02:15:08] 	train_mean_loss_bone: 15.874345240385637
+[11.09.25|02:15:08] Training epoch: 257
+[11.09.25|02:15:45] 	Iter 5900 Done. | loss: 15.7906 | loss_motion: 16.1488 | loss_bone: 15.9462 | lr: 0.002000
+[11.09.25|02:16:12] 	train_mean_loss: 15.3184232711792
+[11.09.25|02:16:12] 	train_mean_loss_motion: 15.724495017010232
+[11.09.25|02:16:12] 	train_mean_loss_bone: 15.83076464611551
+[11.09.25|02:16:12] Training epoch: 258
+[11.09.25|02:17:18] 	train_mean_loss: 15.352791620337445
+[11.09.25|02:17:18] 	train_mean_loss_motion: 15.927982081537662
+[11.09.25|02:17:18] 	train_mean_loss_bone: 15.83436862282131
+[11.09.25|02:17:18] Training epoch: 259
+[11.09.25|02:18:24] 	train_mean_loss: 15.313613476960555
+[11.09.25|02:18:24] 	train_mean_loss_motion: 15.751739833665932
+[11.09.25|02:18:24] 	train_mean_loss_bone: 15.814824726270592
+[11.09.25|02:18:24] Training epoch: 260
+[11.09.25|02:19:29] 	train_mean_loss: 15.310111792191215
+[11.09.25|02:19:29] 	train_mean_loss_motion: 15.76638354425845
+[11.09.25|02:19:29] 	train_mean_loss_bone: 15.770776790121328
+[11.09.25|02:19:29] The model has been saved as config/three-stream/pretext/epoch260_model.pt.
+[11.09.25|02:19:29] Training epoch: 261
+[11.09.25|02:20:30] 	Iter 6000 Done. | loss: 14.9677 | loss_motion: 15.5549 | loss_bone: 15.5952 | lr: 0.002000
+[11.09.25|02:20:35] 	train_mean_loss: 15.262637884720512
+[11.09.25|02:20:35] 	train_mean_loss_motion: 15.828226545582647
+[11.09.25|02:20:35] 	train_mean_loss_bone: 15.703477320463762
+[11.09.25|02:20:35] Training epoch: 262
+[11.09.25|02:21:41] 	train_mean_loss: 15.306203925091287
+[11.09.25|02:21:41] 	train_mean_loss_motion: 15.775410776552947
+[11.09.25|02:21:41] 	train_mean_loss_bone: 15.77927245264468
+[11.09.25|02:21:41] Training epoch: 263
+[11.09.25|02:22:47] 	train_mean_loss: 15.223943503006645
+[11.09.25|02:22:47] 	train_mean_loss_motion: 15.771436318107273
+[11.09.25|02:22:47] 	train_mean_loss_bone: 15.80396851249363
+[11.09.25|02:22:47] Training epoch: 264
+[11.09.25|02:23:53] 	train_mean_loss: 15.291272785352623
+[11.09.25|02:23:53] 	train_mean_loss_motion: 15.777548126552416
+[11.09.25|02:23:53] 	train_mean_loss_bone: 15.774784710096275
+[11.09.25|02:23:53] Training epoch: 265
+[11.09.25|02:24:59] 	train_mean_loss: 15.290251151375148
+[11.09.25|02:24:59] 	train_mean_loss_motion: 15.803236961364746
+[11.09.25|02:24:59] 	train_mean_loss_bone: 15.798779694930367
+[11.09.25|02:24:59] The model has been saved as config/three-stream/pretext/epoch265_model.pt.
+[11.09.25|02:24:59] Training epoch: 266
+[11.09.25|02:25:17] 	Iter 6100 Done. | loss: 15.3888 | loss_motion: 15.3597 | loss_bone: 15.6894 | lr: 0.002000
+[11.09.25|02:26:06] 	train_mean_loss: 15.288676718006963
+[11.09.25|02:26:06] 	train_mean_loss_motion: 15.86965677012568
+[11.09.25|02:26:06] 	train_mean_loss_bone: 15.80921923595926
+[11.09.25|02:26:06] Training epoch: 267
+[11.09.25|02:27:11] 	train_mean_loss: 15.298654058705205
+[11.09.25|02:27:11] 	train_mean_loss_motion: 15.907880409904148
+[11.09.25|02:27:11] 	train_mean_loss_bone: 15.760985830555791
+[11.09.25|02:27:11] Training epoch: 268
+[11.09.25|02:28:17] 	train_mean_loss: 15.34955414481785
+[11.09.25|02:28:17] 	train_mean_loss_motion: 15.74274900685186
+[11.09.25|02:28:17] 	train_mean_loss_bone: 15.797356398209281
+[11.09.25|02:28:17] Training epoch: 269
+[11.09.25|02:29:23] 	train_mean_loss: 15.180861224298893
+[11.09.25|02:29:23] 	train_mean_loss_motion: 15.695812018021293
+[11.09.25|02:29:23] 	train_mean_loss_bone: 15.712799569834834
+[11.09.25|02:29:23] Training epoch: 270
+[11.09.25|02:30:02] 	Iter 6200 Done. | loss: 15.2745 | loss_motion: 15.5446 | loss_bone: 15.7233 | lr: 0.002000
+[11.09.25|02:30:28] 	train_mean_loss: 15.3474817690642
+[11.09.25|02:30:28] 	train_mean_loss_motion: 15.781499282173488
+[11.09.25|02:30:28] 	train_mean_loss_bone: 15.746092132900072
+[11.09.25|02:30:28] The model has been saved as config/three-stream/pretext/epoch270_model.pt.
+[11.09.25|02:30:28] Training epoch: 271
+[11.09.25|02:31:33] 	train_mean_loss: 15.245684043220852
+[11.09.25|02:31:33] 	train_mean_loss_motion: 15.745656345201576
+[11.09.25|02:31:33] 	train_mean_loss_bone: 15.784881177155867
+[11.09.25|02:31:33] Training epoch: 272
+[11.09.25|02:32:38] 	train_mean_loss: 15.249779493912406
+[11.09.25|02:32:38] 	train_mean_loss_motion: 15.794946504675824
+[11.09.25|02:32:38] 	train_mean_loss_bone: 15.751023499862008
+[11.09.25|02:32:38] Training epoch: 273
+[11.09.25|02:33:44] 	train_mean_loss: 15.245691797007686
+[11.09.25|02:33:44] 	train_mean_loss_motion: 15.780310506406037
+[11.09.25|02:33:44] 	train_mean_loss_bone: 15.743954534115998
+[11.09.25|02:33:44] Training epoch: 274
+[11.09.25|02:34:45] 	Iter 6300 Done. | loss: 15.3267 | loss_motion: 15.6259 | loss_bone: 15.7305 | lr: 0.002000
+[11.09.25|02:34:48] 	train_mean_loss: 15.235493079475734
+[11.09.25|02:34:48] 	train_mean_loss_motion: 15.782612468885338
+[11.09.25|02:34:48] 	train_mean_loss_bone: 15.772934208745541
+[11.09.25|02:34:48] Training epoch: 275
+[11.09.25|02:35:52] 	train_mean_loss: 15.232032070989193
+[11.09.25|02:35:52] 	train_mean_loss_motion: 15.717770161836043
+[11.09.25|02:35:52] 	train_mean_loss_bone: 15.776864964029063
+[11.09.25|02:35:52] The model has been saved as config/three-stream/pretext/epoch275_model.pt.
+[11.09.25|02:35:52] Training epoch: 276
+[11.09.25|02:36:56] 	train_mean_loss: 15.250870290009871
+[11.09.25|02:36:56] 	train_mean_loss_motion: 15.735638825789742
+[11.09.25|02:36:56] 	train_mean_loss_bone: 15.765919643899668
+[11.09.25|02:36:56] Training epoch: 277
+[11.09.25|02:38:00] 	train_mean_loss: 15.211749989053477
+[11.09.25|02:38:00] 	train_mean_loss_motion: 15.548690712970236
+[11.09.25|02:38:00] 	train_mean_loss_bone: 15.771513814511506
+[11.09.25|02:38:00] Training epoch: 278
+[11.09.25|02:39:05] 	train_mean_loss: 15.248128725134809
+[11.09.25|02:39:05] 	train_mean_loss_motion: 15.70414451930834
+[11.09.25|02:39:05] 	train_mean_loss_bone: 15.72652990921684
+[11.09.25|02:39:05] Training epoch: 279
+[11.09.25|02:39:26] 	Iter 6400 Done. | loss: 15.1362 | loss_motion: 15.3226 | loss_bone: 15.7027 | lr: 0.002000
+[11.09.25|02:40:10] 	train_mean_loss: 15.347417831420898
+[11.09.25|02:40:10] 	train_mean_loss_motion: 15.597937459531037
+[11.09.25|02:40:10] 	train_mean_loss_bone: 15.787779269011125
+[11.09.25|02:40:10] Training epoch: 280
+[11.09.25|02:41:16] 	train_mean_loss: 15.196816983430281
+[11.09.25|02:41:16] 	train_mean_loss_motion: 15.70399346558944
+[11.09.25|02:41:16] 	train_mean_loss_bone: 15.73490109650985
+[11.09.25|02:41:16] The model has been saved as config/three-stream/pretext/epoch280_model.pt.
+[11.09.25|02:41:16] Training epoch: 281
+[11.09.25|02:42:22] 	train_mean_loss: 15.226385531218156
+[11.09.25|02:42:22] 	train_mean_loss_motion: 15.650965483292289
+[11.09.25|02:42:22] 	train_mean_loss_bone: 15.729810922042184
+[11.09.25|02:42:22] Training epoch: 282
+[11.09.25|02:43:29] 	train_mean_loss: 15.152947550234588
+[11.09.25|02:43:29] 	train_mean_loss_motion: 15.627090619957965
+[11.09.25|02:43:29] 	train_mean_loss_bone: 15.707502904145613
+[11.09.25|02:43:29] Training epoch: 283
+[11.09.25|02:44:13] 	Iter 6500 Done. | loss: 15.2854 | loss_motion: 15.8704 | loss_bone: 15.7986 | lr: 0.002000
+[11.09.25|02:44:35] 	train_mean_loss: 15.192891452623451
+[11.09.25|02:44:35] 	train_mean_loss_motion: 15.644357059312904
+[11.09.25|02:44:35] 	train_mean_loss_bone: 15.749053416044816
+[11.09.25|02:44:35] Training epoch: 284
+[11.09.25|02:45:40] 	train_mean_loss: 15.084869218909223
+[11.09.25|02:45:40] 	train_mean_loss_motion: 15.56962954479715
+[11.09.25|02:45:40] 	train_mean_loss_bone: 15.689427417257559
+[11.09.25|02:45:40] Training epoch: 285
+[11.09.25|02:46:46] 	train_mean_loss: 15.183698737103006
+[11.09.25|02:46:46] 	train_mean_loss_motion: 15.667688742927883
+[11.09.25|02:46:46] 	train_mean_loss_bone: 15.690356752146846
+[11.09.25|02:46:46] The model has been saved as config/three-stream/pretext/epoch285_model.pt.
+[11.09.25|02:46:46] Training epoch: 286
+[11.09.25|02:47:53] 	train_mean_loss: 15.202105688012164
+[11.09.25|02:47:53] 	train_mean_loss_motion: 15.631077973738961
+[11.09.25|02:47:53] 	train_mean_loss_bone: 15.677977810735287
+[11.09.25|02:47:53] Training epoch: 287
+[11.09.25|02:48:58] 	Iter 6600 Done. | loss: 14.9501 | loss_motion: 15.3990 | loss_bone: 15.5722 | lr: 0.002000
+[11.09.25|02:48:58] 	train_mean_loss: 15.110920284105385
+[11.09.25|02:48:58] 	train_mean_loss_motion: 15.532049676646357
+[11.09.25|02:48:58] 	train_mean_loss_bone: 15.683765452841055
+[11.09.25|02:48:58] Training epoch: 288
+[11.09.25|02:50:03] 	train_mean_loss: 15.171987450641135
+[11.09.25|02:50:03] 	train_mean_loss_motion: 15.556839113650115
+[11.09.25|02:50:03] 	train_mean_loss_bone: 15.739537322002908
+[11.09.25|02:50:03] Training epoch: 289
+[11.09.25|02:51:10] 	train_mean_loss: 15.194580865942914
+[11.09.25|02:51:10] 	train_mean_loss_motion: 15.639046876326852
+[11.09.25|02:51:10] 	train_mean_loss_bone: 15.755085696344791
+[11.09.25|02:51:10] Training epoch: 290
+[11.09.25|02:52:15] 	train_mean_loss: 15.172310041344684
+[11.09.25|02:52:15] 	train_mean_loss_motion: 15.620021612747855
+[11.09.25|02:52:15] 	train_mean_loss_bone: 15.720350224038828
+[11.09.25|02:52:16] The model has been saved as config/three-stream/pretext/epoch290_model.pt.
+[11.09.25|02:52:16] Training epoch: 291
+[11.09.25|02:53:22] 	train_mean_loss: 15.134316941966182
+[11.09.25|02:53:22] 	train_mean_loss_motion: 15.531156249668287
+[11.09.25|02:53:22] 	train_mean_loss_bone: 15.720473869987156
+[11.09.25|02:53:22] Training epoch: 292
+[11.09.25|02:53:46] 	Iter 6700 Done. | loss: 14.9624 | loss_motion: 15.2355 | loss_bone: 15.5639 | lr: 0.002000
+[11.09.25|02:54:29] 	train_mean_loss: 15.105625235516092
+[11.09.25|02:54:29] 	train_mean_loss_motion: 15.597239908964738
+[11.09.25|02:54:29] 	train_mean_loss_bone: 15.646658897399902
+[11.09.25|02:54:29] Training epoch: 293
+[11.09.25|02:55:36] 	train_mean_loss: 15.192330940910008
+[11.09.25|02:55:36] 	train_mean_loss_motion: 15.781816109367039
+[11.09.25|02:55:36] 	train_mean_loss_bone: 15.780181967693826
+[11.09.25|02:55:36] Training epoch: 294
+[11.09.25|02:56:43] 	train_mean_loss: 15.236825528352156
+[11.09.25|02:56:43] 	train_mean_loss_motion: 15.542815084042756
+[11.09.25|02:56:43] 	train_mean_loss_bone: 15.730818582617719
+[11.09.25|02:56:43] Training epoch: 295
+[11.09.25|02:57:50] 	train_mean_loss: 15.226408295009447
+[11.09.25|02:57:50] 	train_mean_loss_motion: 15.61045451786207
+[11.09.25|02:57:50] 	train_mean_loss_bone: 15.682516802912174
+[11.09.25|02:57:50] The model has been saved as config/three-stream/pretext/epoch295_model.pt.
+[11.09.25|02:57:50] Training epoch: 296
+[11.09.25|02:58:36] 	Iter 6800 Done. | loss: 14.7678 | loss_motion: 15.5771 | loss_bone: 15.6050 | lr: 0.002000
+[11.09.25|02:58:56] 	train_mean_loss: 15.162011022153107
+[11.09.25|02:58:56] 	train_mean_loss_motion: 15.557807963827383
+[11.09.25|02:58:56] 	train_mean_loss_bone: 15.674803443576979
+[11.09.25|02:58:56] Training epoch: 297
+[11.09.25|03:00:01] 	train_mean_loss: 15.134714126586914
+[11.09.25|03:00:01] 	train_mean_loss_motion: 15.496874850729238
+[11.09.25|03:00:01] 	train_mean_loss_bone: 15.675876949144447
+[11.09.25|03:00:01] Training epoch: 298
+[11.09.25|03:01:07] 	train_mean_loss: 15.175082828687584
+[11.09.25|03:01:07] 	train_mean_loss_motion: 15.462096836255943
+[11.09.25|03:01:07] 	train_mean_loss_bone: 15.688021328138268
+[11.09.25|03:01:07] Training epoch: 299
+[11.09.25|03:02:13] 	train_mean_loss: 15.281621476878291
+[11.09.25|03:02:13] 	train_mean_loss_motion: 15.544057804605234
+[11.09.25|03:02:13] 	train_mean_loss_bone: 15.652316632478133
+[11.09.25|03:02:13] Training epoch: 300
+[11.09.25|03:03:19] 	train_mean_loss: 15.159012006676715
+[11.09.25|03:03:19] 	train_mean_loss_motion: 15.578636998715607
+[11.09.25|03:03:19] 	train_mean_loss_bone: 15.706645509471064
+[11.09.25|03:03:19] The model has been saved as config/three-stream/pretext/epoch300_model.pt.
+[11.09.25|03:03:19] Training epoch: 301
+[11.09.25|03:03:23] 	Iter 6900 Done. | loss: 15.2123 | loss_motion: 15.2916 | loss_bone: 15.6863 | lr: 0.002000
+[11.09.25|03:04:26] 	train_mean_loss: 15.11724156918733
+[11.09.25|03:04:26] 	train_mean_loss_motion: 15.515854089156441
+[11.09.25|03:04:26] 	train_mean_loss_bone: 15.715833000514818
+[11.09.25|03:04:26] Training epoch: 302
+[11.09.25|03:05:32] 	train_mean_loss: 15.141167060188625
+[11.09.25|03:05:32] 	train_mean_loss_motion: 15.540646428647248
+[11.09.25|03:05:32] 	train_mean_loss_bone: 15.743562076402748
+[11.09.25|03:05:32] Training epoch: 303
+[11.09.25|03:06:37] 	train_mean_loss: 15.113494375477666
+[11.09.25|03:06:37] 	train_mean_loss_motion: 15.448242146035899
+[11.09.25|03:06:37] 	train_mean_loss_bone: 15.693925857543945
+[11.09.25|03:06:37] Training epoch: 304
+[11.09.25|03:07:43] 	train_mean_loss: 15.120812250220258
+[11.09.25|03:07:43] 	train_mean_loss_motion: 15.545719229656717
+[11.09.25|03:07:43] 	train_mean_loss_bone: 15.709562094315238
+[11.09.25|03:07:43] Training epoch: 305
+[11.09.25|03:08:10] 	Iter 7000 Done. | loss: 15.1826 | loss_motion: 15.5783 | loss_bone: 15.7574 | lr: 0.002000
+[11.09.25|03:08:50] 	train_mean_loss: 15.09190099135689
+[11.09.25|03:08:50] 	train_mean_loss_motion: 15.620159273562225
+[11.09.25|03:08:50] 	train_mean_loss_bone: 15.664928353351096
+[11.09.25|03:08:50] The model has been saved as config/three-stream/pretext/epoch305_model.pt.
+[11.09.25|03:08:50] Training epoch: 306
+[11.09.25|03:09:56] 	train_mean_loss: 15.1729444835497
+[11.09.25|03:09:56] 	train_mean_loss_motion: 15.611643625342328
+[11.09.25|03:09:56] 	train_mean_loss_bone: 15.726288463758385
+[11.09.25|03:09:56] Training epoch: 307
+[11.09.25|03:11:02] 	train_mean_loss: 15.162664081739342
+[11.09.25|03:11:02] 	train_mean_loss_motion: 15.516289462213932
+[11.09.25|03:11:02] 	train_mean_loss_bone: 15.738036819126295
+[11.09.25|03:11:02] Training epoch: 308
+[11.09.25|03:12:08] 	train_mean_loss: 15.128160725469174
+[11.09.25|03:12:08] 	train_mean_loss_motion: 15.509643015654191
+[11.09.25|03:12:08] 	train_mean_loss_bone: 15.66775890018629
+[11.09.25|03:12:08] Training epoch: 309
+[11.09.25|03:12:57] 	Iter 7100 Done. | loss: 14.9775 | loss_motion: 15.3634 | loss_bone: 15.5473 | lr: 0.002000
+[11.09.25|03:13:14] 	train_mean_loss: 15.019260489422342
+[11.09.25|03:13:14] 	train_mean_loss_motion: 15.39845673934273
+[11.09.25|03:13:14] 	train_mean_loss_bone: 15.642676187598187
+[11.09.25|03:13:14] Training epoch: 310
+[11.09.25|03:14:21] 	train_mean_loss: 15.097346554631772
+[11.09.25|03:14:21] 	train_mean_loss_motion: 15.468563162762186
+[11.09.25|03:14:21] 	train_mean_loss_bone: 15.689768335093623
+[11.09.25|03:14:21] The model has been saved as config/three-stream/pretext/epoch310_model.pt.
+[11.09.25|03:14:21] Training epoch: 311
+[11.09.25|03:15:27] 	train_mean_loss: 15.10111203400985
+[11.09.25|03:15:27] 	train_mean_loss_motion: 15.41426542530889
+[11.09.25|03:15:27] 	train_mean_loss_bone: 15.634427651115086
+[11.09.25|03:15:27] Training epoch: 312
+[11.09.25|03:16:33] 	train_mean_loss: 15.06808094356371
+[11.09.25|03:16:33] 	train_mean_loss_motion: 15.414668290511422
+[11.09.25|03:16:33] 	train_mean_loss_bone: 15.620540535968283
+[11.09.25|03:16:33] Training epoch: 313
+[11.09.25|03:17:40] 	train_mean_loss: 15.044935267904531
+[11.09.25|03:17:40] 	train_mean_loss_motion: 15.399409211200217
+[11.09.25|03:17:40] 	train_mean_loss_bone: 15.636271476745605
+[11.09.25|03:17:40] Training epoch: 314
+[11.09.25|03:17:46] 	Iter 7200 Done. | loss: 15.0625 | loss_motion: 15.4496 | loss_bone: 15.6602 | lr: 0.002000
+[11.09.25|03:18:46] 	train_mean_loss: 15.099423076795494
+[11.09.25|03:18:46] 	train_mean_loss_motion: 15.667267426200535
+[11.09.25|03:18:46] 	train_mean_loss_bone: 15.63706286057182
+[11.09.25|03:18:46] Training epoch: 315
+[11.09.25|03:19:53] 	train_mean_loss: 15.126895738684613
+[11.09.25|03:19:53] 	train_mean_loss_motion: 15.461480638255244
+[11.09.25|03:19:53] 	train_mean_loss_bone: 15.616480744403342
+[11.09.25|03:19:53] The model has been saved as config/three-stream/pretext/epoch315_model.pt.
+[11.09.25|03:19:53] Training epoch: 316
+[11.09.25|03:21:00] 	train_mean_loss: 15.121141682500424
+[11.09.25|03:21:00] 	train_mean_loss_motion: 15.533616563548213
+[11.09.25|03:21:00] 	train_mean_loss_bone: 15.614649979964547
+[11.09.25|03:21:00] Training epoch: 317
+[11.09.25|03:22:06] 	train_mean_loss: 15.023964591648268
+[11.09.25|03:22:06] 	train_mean_loss_motion: 15.503916035527768
+[11.09.25|03:22:06] 	train_mean_loss_bone: 15.586048375005307
+[11.09.25|03:22:06] Training epoch: 318
+[11.09.25|03:22:35] 	Iter 7300 Done. | loss: 15.0367 | loss_motion: 15.2933 | loss_bone: 15.8737 | lr: 0.002000
+[11.09.25|03:23:12] 	train_mean_loss: 15.027797491654105
+[11.09.25|03:23:12] 	train_mean_loss_motion: 15.530977000360904
+[11.09.25|03:23:12] 	train_mean_loss_bone: 15.65021506599758
+[11.09.25|03:23:12] Training epoch: 319
+[11.09.25|03:24:17] 	train_mean_loss: 15.153011487877887
+[11.09.25|03:24:17] 	train_mean_loss_motion: 15.616276865420135
+[11.09.25|03:24:17] 	train_mean_loss_bone: 15.680252738620924
+[11.09.25|03:24:17] Training epoch: 320
+[11.09.25|03:25:22] 	train_mean_loss: 15.161402287690535
+[11.09.25|03:25:22] 	train_mean_loss_motion: 15.419420076453168
+[11.09.25|03:25:22] 	train_mean_loss_bone: 15.641914367675781
+[11.09.25|03:25:22] The model has been saved as config/three-stream/pretext/epoch320_model.pt.
+[11.09.25|03:25:22] Training epoch: 321
+[11.09.25|03:26:27] 	train_mean_loss: 15.088391801585322
+[11.09.25|03:26:27] 	train_mean_loss_motion: 15.579864543417226
+[11.09.25|03:26:27] 	train_mean_loss_bone: 15.593487034673275
+[11.09.25|03:26:27] Training epoch: 322
+[11.09.25|03:27:18] 	Iter 7400 Done. | loss: 14.9470 | loss_motion: 15.6574 | loss_bone: 15.7736 | lr: 0.002000
+[11.09.25|03:27:32] 	train_mean_loss: 14.970588684082031
+[11.09.25|03:27:32] 	train_mean_loss_motion: 15.442487467890201
+[11.09.25|03:27:32] 	train_mean_loss_bone: 15.621230166891348
+[11.09.25|03:27:32] Training epoch: 323
+[11.09.25|03:28:37] 	train_mean_loss: 15.162052817966627
+[11.09.25|03:28:37] 	train_mean_loss_motion: 15.477488103120223
+[11.09.25|03:28:37] 	train_mean_loss_bone: 15.6899181863536
+[11.09.25|03:28:37] Training epoch: 324
+[11.09.25|03:29:41] 	train_mean_loss: 15.106989819070566
+[11.09.25|03:29:41] 	train_mean_loss_motion: 15.463399887084961
+[11.09.25|03:29:41] 	train_mean_loss_bone: 15.621880448382834
+[11.09.25|03:29:41] Training epoch: 325
+[11.09.25|03:30:46] 	train_mean_loss: 15.110337257385254
+[11.09.25|03:30:46] 	train_mean_loss_motion: 15.40034468277641
+[11.09.25|03:30:46] 	train_mean_loss_bone: 15.590689244477645
+[11.09.25|03:30:46] The model has been saved as config/three-stream/pretext/epoch325_model.pt.
+[11.09.25|03:30:46] Training epoch: 326
+[11.09.25|03:31:51] 	train_mean_loss: 15.076116437497346
+[11.09.25|03:31:51] 	train_mean_loss_motion: 15.412964074508004
+[11.09.25|03:31:51] 	train_mean_loss_bone: 15.558201582535453
+[11.09.25|03:31:51] Training epoch: 327
+[11.09.25|03:32:00] 	Iter 7500 Done. | loss: 15.2811 | loss_motion: 16.0280 | loss_bone: 15.5574 | lr: 0.002000
+[11.09.25|03:32:55] 	train_mean_loss: 14.970650880233102
+[11.09.25|03:32:55] 	train_mean_loss_motion: 15.355652560358463
+[11.09.25|03:32:55] 	train_mean_loss_bone: 15.54426562267801
+[11.09.25|03:32:55] Training epoch: 328
+[11.09.25|03:34:00] 	train_mean_loss: 15.062549300815748
+[11.09.25|03:34:00] 	train_mean_loss_motion: 15.366240667260211
+[11.09.25|03:34:00] 	train_mean_loss_bone: 15.597180200659711
+[11.09.25|03:34:00] Training epoch: 329
+[11.09.25|03:35:04] 	train_mean_loss: 15.195537898851478
+[11.09.25|03:35:04] 	train_mean_loss_motion: 15.507648302161176
+[11.09.25|03:35:04] 	train_mean_loss_bone: 15.532425299934719
+[11.09.25|03:35:04] Training epoch: 330
+[11.09.25|03:36:10] 	train_mean_loss: 15.120636525361434
+[11.09.25|03:36:10] 	train_mean_loss_motion: 15.510242006053096
+[11.09.25|03:36:10] 	train_mean_loss_bone: 15.576863040094791
+[11.09.25|03:36:10] The model has been saved as config/three-stream/pretext/epoch330_model.pt.
+[11.09.25|03:36:10] Training epoch: 331
+[11.09.25|03:36:41] 	Iter 7600 Done. | loss: 14.8511 | loss_motion: 14.6358 | loss_bone: 15.3922 | lr: 0.002000
+[11.09.25|03:37:14] 	train_mean_loss: 15.045686473017154
+[11.09.25|03:37:14] 	train_mean_loss_motion: 15.477326724840248
+[11.09.25|03:37:14] 	train_mean_loss_bone: 15.560545465220576
+[11.09.25|03:37:14] Training epoch: 332
+[11.09.25|03:38:20] 	train_mean_loss: 14.95796307273533
+[11.09.25|03:38:20] 	train_mean_loss_motion: 15.461817451145338
+[11.09.25|03:38:20] 	train_mean_loss_bone: 15.541329259457795
+[11.09.25|03:38:20] Training epoch: 333
+[11.09.25|03:39:23] 	train_mean_loss: 14.970970319664996
+[11.09.25|03:39:23] 	train_mean_loss_motion: 15.433028635771379
+[11.09.25|03:39:23] 	train_mean_loss_bone: 15.585986593495244
+[11.09.25|03:39:23] Training epoch: 334
+[11.09.25|03:40:27] 	train_mean_loss: 15.093283114225969
+[11.09.25|03:40:27] 	train_mean_loss_motion: 15.386961024740469
+[11.09.25|03:40:27] 	train_mean_loss_bone: 15.585619428883428
+[11.09.25|03:40:27] Training epoch: 335
+[11.09.25|03:41:21] 	Iter 7700 Done. | loss: 15.0354 | loss_motion: 15.1775 | loss_bone: 15.9533 | lr: 0.002000
+[11.09.25|03:41:32] 	train_mean_loss: 14.957909832830014
+[11.09.25|03:41:32] 	train_mean_loss_motion: 15.368630409240723
+[11.09.25|03:41:32] 	train_mean_loss_bone: 15.548409669295602
+[11.09.25|03:41:32] The model has been saved as config/three-stream/pretext/epoch335_model.pt.
+[11.09.25|03:41:32] Training epoch: 336
+[11.09.25|03:42:39] 	train_mean_loss: 14.882384880729344
+[11.09.25|03:42:39] 	train_mean_loss_motion: 15.468751948812734
+[11.09.25|03:42:39] 	train_mean_loss_bone: 15.529975020367166
+[11.09.25|03:42:39] Training epoch: 337
+[11.09.25|03:43:46] 	train_mean_loss: 14.920693646306576
+[11.09.25|03:43:46] 	train_mean_loss_motion: 15.489071099654488
+[11.09.25|03:43:46] 	train_mean_loss_bone: 15.583332269088082
+[11.09.25|03:43:46] Training epoch: 338
+[11.09.25|03:44:52] 	train_mean_loss: 14.956069697504459
+[11.09.25|03:44:52] 	train_mean_loss_motion: 15.448760322902514
+[11.09.25|03:44:52] 	train_mean_loss_bone: 15.536725417427395
+[11.09.25|03:44:53] Training epoch: 339
+[11.09.25|03:45:59] 	train_mean_loss: 14.994964724001678
+[11.09.25|03:45:59] 	train_mean_loss_motion: 15.470974092898162
+[11.09.25|03:45:59] 	train_mean_loss_bone: 15.494423658951469
+[11.09.25|03:45:59] Training epoch: 340
+[11.09.25|03:46:11] 	Iter 7800 Done. | loss: 14.8114 | loss_motion: 15.4369 | loss_bone: 15.4946 | lr: 0.002000
+[11.09.25|03:47:06] 	train_mean_loss: 14.995667540508768
+[11.09.25|03:47:06] 	train_mean_loss_motion: 15.33664384095565
+[11.09.25|03:47:06] 	train_mean_loss_bone: 15.569817667422088
+[11.09.25|03:47:06] The model has been saved as config/three-stream/pretext/epoch340_model.pt.
+[11.09.25|03:47:06] Training epoch: 341
+[11.09.25|03:48:13] 	train_mean_loss: 15.051262855529785
+[11.09.25|03:48:13] 	train_mean_loss_motion: 15.434381111808445
+[11.09.25|03:48:13] 	train_mean_loss_bone: 15.520306711611541
+[11.09.25|03:48:13] Training epoch: 342
+[11.09.25|03:49:19] 	train_mean_loss: 14.94325641963793
+[11.09.25|03:49:19] 	train_mean_loss_motion: 15.38963794708252
+[11.09.25|03:49:19] 	train_mean_loss_bone: 15.512520251066789
+[11.09.25|03:49:19] Training epoch: 343
+[11.09.25|03:50:24] 	train_mean_loss: 15.043321277784264
+[11.09.25|03:50:24] 	train_mean_loss_motion: 15.454641922660496
+[11.09.25|03:50:24] 	train_mean_loss_bone: 15.515258042708687
+[11.09.25|03:50:24] Training epoch: 344
+[11.09.25|03:50:58] 	Iter 7900 Done. | loss: 15.5960 | loss_motion: 15.4878 | loss_bone: 15.4704 | lr: 0.002000
+[11.09.25|03:51:28] 	train_mean_loss: 14.989965272986371
+[11.09.25|03:51:28] 	train_mean_loss_motion: 15.306352408035941
+[11.09.25|03:51:28] 	train_mean_loss_bone: 15.50938253817351
+[11.09.25|03:51:29] Training epoch: 345
+[11.09.25|03:52:33] 	train_mean_loss: 15.025312465170156
+[11.09.25|03:52:33] 	train_mean_loss_motion: 15.402711909750234
+[11.09.25|03:52:33] 	train_mean_loss_bone: 15.470342304395592
+[11.09.25|03:52:33] The model has been saved as config/three-stream/pretext/epoch345_model.pt.
+[11.09.25|03:52:33] Training epoch: 346
+[11.09.25|03:53:36] 	train_mean_loss: 14.966967292453932
+[11.09.25|03:53:36] 	train_mean_loss_motion: 15.334056232286537
+[11.09.25|03:53:36] 	train_mean_loss_bone: 15.510630317356275
+[11.09.25|03:53:36] Training epoch: 347
+[11.09.25|03:54:40] 	train_mean_loss: 14.934576407722805
+[11.09.25|03:54:40] 	train_mean_loss_motion: 15.412480851878291
+[11.09.25|03:54:40] 	train_mean_loss_bone: 15.498964019443678
+[11.09.25|03:54:40] Training epoch: 348
+[11.09.25|03:55:34] 	Iter 8000 Done. | loss: 14.9353 | loss_motion: 15.6459 | loss_bone: 15.5348 | lr: 0.002000
+[11.09.25|03:55:42] 	train_mean_loss: 15.003253273341967
+[11.09.25|03:55:42] 	train_mean_loss_motion: 15.257497953331988
+[11.09.25|03:55:42] 	train_mean_loss_bone: 15.46481352267058
+[11.09.25|03:55:42] Training epoch: 349
+[11.09.25|03:56:47] 	train_mean_loss: 15.019630763841713
+[11.09.25|03:56:47] 	train_mean_loss_motion: 15.422450355861498
+[11.09.25|03:56:47] 	train_mean_loss_bone: 15.540341211401898
+[11.09.25|03:56:47] Training epoch: 350
+[11.09.25|03:57:51] 	train_mean_loss: 14.958777303281037
+[11.09.25|03:57:51] 	train_mean_loss_motion: 15.288162189981211
+[11.09.25|03:57:51] 	train_mean_loss_bone: 15.437655905018682
+[11.09.25|03:57:51] The model has been saved as config/three-stream/pretext/epoch350_model.pt.
+[11.09.25|03:57:51] Training epoch: 351
+[11.09.25|03:58:55] 	train_mean_loss: 14.994632472162662
+[11.09.25|03:58:55] 	train_mean_loss_motion: 15.25944415382717
+[11.09.25|03:58:55] 	train_mean_loss_bone: 15.548452501711639
+[11.09.25|03:58:55] Training epoch: 352
+[11.09.25|03:59:58] 	train_mean_loss: 14.919278269228728
+[11.09.25|03:59:58] 	train_mean_loss_motion: 15.302857481915018
+[11.09.25|03:59:58] 	train_mean_loss_bone: 15.541402194810951
+[11.09.25|03:59:58] Training epoch: 353
+[11.09.25|04:00:12] 	Iter 8100 Done. | loss: 14.8235 | loss_motion: 15.1032 | loss_bone: 15.3243 | lr: 0.002000
+[11.09.25|04:01:03] 	train_mean_loss: 14.989969170611838
+[11.09.25|04:01:03] 	train_mean_loss_motion: 15.217671062635338
+[11.09.25|04:01:03] 	train_mean_loss_bone: 15.531478052553924
+[11.09.25|04:01:03] Training epoch: 354
+[11.09.25|04:02:09] 	train_mean_loss: 14.972327356753143
+[11.09.25|04:02:09] 	train_mean_loss_motion: 15.449864926545516
+[11.09.25|04:02:09] 	train_mean_loss_bone: 15.496896826702615
+[11.09.25|04:02:09] Training epoch: 355
+[11.09.25|04:03:15] 	train_mean_loss: 14.99522590637207
+[11.09.25|04:03:15] 	train_mean_loss_motion: 15.37253943733547
+[11.09.25|04:03:15] 	train_mean_loss_bone: 15.513228416442871
+[11.09.25|04:03:15] The model has been saved as config/three-stream/pretext/epoch355_model.pt.
+[11.09.25|04:03:15] Training epoch: 356
+[11.09.25|04:04:18] 	train_mean_loss: 14.990561485290527
+[11.09.25|04:04:18] 	train_mean_loss_motion: 15.538130055303158
+[11.09.25|04:04:18] 	train_mean_loss_bone: 15.478002589681875
+[11.09.25|04:04:18] Training epoch: 357
+[11.09.25|04:04:55] 	Iter 8200 Done. | loss: 15.2166 | loss_motion: 14.9713 | loss_bone: 15.3125 | lr: 0.002000
+[11.09.25|04:05:22] 	train_mean_loss: 15.005756378173828
+[11.09.25|04:05:22] 	train_mean_loss_motion: 15.327237087747324
+[11.09.25|04:05:22] 	train_mean_loss_bone: 15.466669165569803
+[11.09.25|04:05:22] Training epoch: 358
+[11.09.25|04:06:27] 	train_mean_loss: 14.945234506026559
+[11.09.25|04:06:27] 	train_mean_loss_motion: 15.385490293088166
+[11.09.25|04:06:27] 	train_mean_loss_bone: 15.459083183952
+[11.09.25|04:06:27] Training epoch: 359
+[11.09.25|04:07:34] 	train_mean_loss: 14.935837952987008
+[11.09.25|04:07:34] 	train_mean_loss_motion: 15.3171269789986
+[11.09.25|04:07:34] 	train_mean_loss_bone: 15.461251258850098
+[11.09.25|04:07:34] Training epoch: 360
+[11.09.25|04:08:38] 	train_mean_loss: 14.925938108692998
+[11.09.25|04:08:38] 	train_mean_loss_motion: 15.231615232384723
+[11.09.25|04:08:38] 	train_mean_loss_bone: 15.463615790657375
+[11.09.25|04:08:38] The model has been saved as config/three-stream/pretext/epoch360_model.pt.
+[11.09.25|04:08:38] Training epoch: 361
+[11.09.25|04:09:36] 	Iter 8300 Done. | loss: 14.5378 | loss_motion: 14.9977 | loss_bone: 15.3866 | lr: 0.002000
+[11.09.25|04:09:42] 	train_mean_loss: 14.920737598253334
+[11.09.25|04:09:42] 	train_mean_loss_motion: 15.311023670694102
+[11.09.25|04:09:42] 	train_mean_loss_bone: 15.468869499538256
+[11.09.25|04:09:42] Training epoch: 362
+[11.09.25|04:10:46] 	train_mean_loss: 15.046239852905273
+[11.09.25|04:10:46] 	train_mean_loss_motion: 15.530525000199027
+[11.09.25|04:10:46] 	train_mean_loss_bone: 15.532889532006305
+[11.09.25|04:10:46] Training epoch: 363
+[11.09.25|04:11:52] 	train_mean_loss: 14.945407079613727
+[11.09.25|04:11:52] 	train_mean_loss_motion: 15.303845820219621
+[11.09.25|04:11:52] 	train_mean_loss_bone: 15.575131623641305
+[11.09.25|04:11:52] Training epoch: 364
+[11.09.25|04:12:59] 	train_mean_loss: 14.914773941040039
+[11.09.25|04:12:59] 	train_mean_loss_motion: 15.253388280453889
+[11.09.25|04:12:59] 	train_mean_loss_bone: 15.474608877430791
+[11.09.25|04:12:59] Training epoch: 365
+[11.09.25|04:14:05] 	train_mean_loss: 14.908983064734418
+[11.09.25|04:14:05] 	train_mean_loss_motion: 15.335071605184805
+[11.09.25|04:14:05] 	train_mean_loss_bone: 15.451789026675018
+[11.09.25|04:14:05] The model has been saved as config/three-stream/pretext/epoch365_model.pt.
+[11.09.25|04:14:05] Training epoch: 366
+[11.09.25|04:14:23] 	Iter 8400 Done. | loss: 15.7886 | loss_motion: 15.2042 | loss_bone: 15.4026 | lr: 0.002000
+[11.09.25|04:15:10] 	train_mean_loss: 14.93587066816247
+[11.09.25|04:15:10] 	train_mean_loss_motion: 15.29652504298998
+[11.09.25|04:15:10] 	train_mean_loss_bone: 15.43977115465247
+[11.09.25|04:15:10] Training epoch: 367
+[11.09.25|04:16:15] 	train_mean_loss: 15.00172756029212
+[11.09.25|04:16:15] 	train_mean_loss_motion: 15.285346362901771
+[11.09.25|04:16:15] 	train_mean_loss_bone: 15.481650311013926
+[11.09.25|04:16:15] Training epoch: 368
+[11.09.25|04:17:20] 	train_mean_loss: 14.902295112609863
+[11.09.25|04:17:20] 	train_mean_loss_motion: 15.131419969641644
+[11.09.25|04:17:20] 	train_mean_loss_bone: 15.439137707585873
+[11.09.25|04:17:20] Training epoch: 369
+[11.09.25|04:18:25] 	train_mean_loss: 14.925770386405613
+[11.09.25|04:18:25] 	train_mean_loss_motion: 15.155074700065281
+[11.09.25|04:18:25] 	train_mean_loss_bone: 15.460450089496115
+[11.09.25|04:18:25] Training epoch: 370
+[11.09.25|04:19:04] 	Iter 8500 Done. | loss: 14.8115 | loss_motion: 15.2019 | loss_bone: 15.4786 | lr: 0.002000
+[11.09.25|04:19:29] 	train_mean_loss: 14.852328798045283
+[11.09.25|04:19:29] 	train_mean_loss_motion: 15.258183686629586
+[11.09.25|04:19:29] 	train_mean_loss_bone: 15.402907910554305
+[11.09.25|04:19:29] The model has been saved as config/three-stream/pretext/epoch370_model.pt.
+[11.09.25|04:19:29] Training epoch: 371
+[11.09.25|04:20:32] 	train_mean_loss: 14.822839529617973
+[11.09.25|04:20:32] 	train_mean_loss_motion: 15.171043395996094
+[11.09.25|04:20:32] 	train_mean_loss_bone: 15.453358691671621
+[11.09.25|04:20:32] Training epoch: 372
+[11.09.25|04:21:34] 	train_mean_loss: 14.895979093468707
+[11.09.25|04:21:34] 	train_mean_loss_motion: 15.269461963487709
+[11.09.25|04:21:34] 	train_mean_loss_bone: 15.417743019435717
+[11.09.25|04:21:34] Training epoch: 373
+[11.09.25|04:22:37] 	train_mean_loss: 14.879114068072775
+[11.09.25|04:22:37] 	train_mean_loss_motion: 15.246529786483102
+[11.09.25|04:22:37] 	train_mean_loss_bone: 15.438250873399818
+[11.09.25|04:22:37] Training epoch: 374
+[11.09.25|04:23:37] 	Iter 8600 Done. | loss: 14.6717 | loss_motion: 15.0137 | loss_bone: 15.2986 | lr: 0.002000
+[11.09.25|04:23:40] 	train_mean_loss: 14.832915181699006
+[11.09.25|04:23:40] 	train_mean_loss_motion: 15.15513221077297
+[11.09.25|04:23:40] 	train_mean_loss_bone: 15.423411244931428
+[11.09.25|04:23:40] Training epoch: 375
+[11.09.25|04:24:43] 	train_mean_loss: 14.827038764953613
+[11.09.25|04:24:43] 	train_mean_loss_motion: 15.329285746035369
+[11.09.25|04:24:43] 	train_mean_loss_bone: 15.415999205216117
+[11.09.25|04:24:44] The model has been saved as config/three-stream/pretext/epoch375_model.pt.
+[11.09.25|04:24:44] Training epoch: 376
+[11.09.25|04:25:47] 	train_mean_loss: 14.843221042467201
+[11.09.25|04:25:47] 	train_mean_loss_motion: 15.241917983345363
+[11.09.25|04:25:47] 	train_mean_loss_bone: 15.455515985903533
+[11.09.25|04:25:47] Training epoch: 377
+[11.09.25|04:26:50] 	train_mean_loss: 14.816631690315578
+[11.09.25|04:26:50] 	train_mean_loss_motion: 15.25966159157131
+[11.09.25|04:26:50] 	train_mean_loss_bone: 15.454639393350352
+[11.09.25|04:26:50] Training epoch: 378
+[11.09.25|04:27:53] 	train_mean_loss: 14.886946056200111
+[11.09.25|04:27:53] 	train_mean_loss_motion: 15.243336387302564
+[11.09.25|04:27:53] 	train_mean_loss_bone: 15.433014869689941
+[11.09.25|04:27:53] Training epoch: 379
+[11.09.25|04:28:13] 	Iter 8700 Done. | loss: 15.5540 | loss_motion: 15.4106 | loss_bone: 15.6501 | lr: 0.002000
+[11.09.25|04:28:57] 	train_mean_loss: 14.853272438049316
+[11.09.25|04:28:57] 	train_mean_loss_motion: 15.198886332304582
+[11.09.25|04:28:57] 	train_mean_loss_bone: 15.391633489857549
+[11.09.25|04:28:57] Training epoch: 380
+[11.09.25|04:29:59] 	train_mean_loss: 14.876198146654213
+[11.09.25|04:29:59] 	train_mean_loss_motion: 15.094953578451406
+[11.09.25|04:29:59] 	train_mean_loss_bone: 15.406105373216713
+[11.09.25|04:29:59] The model has been saved as config/three-stream/pretext/epoch380_model.pt.
+[11.09.25|04:29:59] Training epoch: 381
+[11.09.25|04:31:02] 	train_mean_loss: 14.849091073741084
+[11.09.25|04:31:02] 	train_mean_loss_motion: 15.454462300176205
+[11.09.25|04:31:02] 	train_mean_loss_bone: 15.387600774350373
+[11.09.25|04:31:02] Training epoch: 382
+[11.09.25|04:32:06] 	train_mean_loss: 14.912551340849504
+[11.09.25|04:32:06] 	train_mean_loss_motion: 15.389237320941428
+[11.09.25|04:32:06] 	train_mean_loss_bone: 15.386298179626465
+[11.09.25|04:32:06] Training epoch: 383
+[11.09.25|04:32:50] 	Iter 8800 Done. | loss: 14.5347 | loss_motion: 14.8913 | loss_bone: 15.4180 | lr: 0.002000
+[11.09.25|04:33:12] 	train_mean_loss: 14.760855799135955
+[11.09.25|04:33:12] 	train_mean_loss_motion: 15.149712106455928
+[11.09.25|04:33:12] 	train_mean_loss_bone: 15.350621886875318
+[11.09.25|04:33:12] Training epoch: 384
+[11.09.25|04:34:18] 	train_mean_loss: 14.87326891525932
+[11.09.25|04:34:18] 	train_mean_loss_motion: 15.090035397073496
+[11.09.25|04:34:18] 	train_mean_loss_bone: 15.367074095684549
+[11.09.25|04:34:18] Training epoch: 385
+[11.09.25|04:35:24] 	train_mean_loss: 14.762323503908904
+[11.09.25|04:35:24] 	train_mean_loss_motion: 15.03221781357475
+[11.09.25|04:35:24] 	train_mean_loss_bone: 15.353386961895486
+[11.09.25|04:35:24] The model has been saved as config/three-stream/pretext/epoch385_model.pt.
+[11.09.25|04:35:24] Training epoch: 386
+[11.09.25|04:36:28] 	train_mean_loss: 14.85739044521166
+[11.09.25|04:36:28] 	train_mean_loss_motion: 15.162874512050463
+[11.09.25|04:36:28] 	train_mean_loss_bone: 15.41369106458581
+[11.09.25|04:36:28] Training epoch: 387
+[11.09.25|04:37:32] 	Iter 8900 Done. | loss: 15.0140 | loss_motion: 15.2958 | loss_bone: 15.5585 | lr: 0.002000
+[11.09.25|04:37:32] 	train_mean_loss: 14.791689997134002
+[11.09.25|04:37:32] 	train_mean_loss_motion: 15.088838991911516
+[11.09.25|04:37:32] 	train_mean_loss_bone: 15.412484998288361
+[11.09.25|04:37:32] Training epoch: 388
+[11.09.25|04:38:36] 	train_mean_loss: 14.812890550364619
+[11.09.25|04:38:36] 	train_mean_loss_motion: 15.165991036788277
+[11.09.25|04:38:36] 	train_mean_loss_bone: 15.402796455051588
+[11.09.25|04:38:36] Training epoch: 389
+[11.09.25|04:39:39] 	train_mean_loss: 14.8886369207631
+[11.09.25|04:39:39] 	train_mean_loss_motion: 15.206765548042629
+[11.09.25|04:39:39] 	train_mean_loss_bone: 15.433228451272715
+[11.09.25|04:39:39] Training epoch: 390
+[11.09.25|04:40:44] 	train_mean_loss: 14.78855796482252
+[11.09.25|04:40:44] 	train_mean_loss_motion: 15.178117876467498
+[11.09.25|04:40:44] 	train_mean_loss_bone: 15.399358376212742
+[11.09.25|04:40:44] The model has been saved as config/three-stream/pretext/epoch390_model.pt.
+[11.09.25|04:40:44] Training epoch: 391
+[11.09.25|04:41:48] 	train_mean_loss: 14.841220938641092
+[11.09.25|04:41:48] 	train_mean_loss_motion: 15.195234298706055
+[11.09.25|04:41:48] 	train_mean_loss_bone: 15.392991356227709
+[11.09.25|04:41:48] Training epoch: 392
+[11.09.25|04:42:10] 	Iter 9000 Done. | loss: 14.7146 | loss_motion: 15.1479 | loss_bone: 15.5425 | lr: 0.002000
+[11.09.25|04:42:52] 	train_mean_loss: 14.891876718272334
+[11.09.25|04:42:52] 	train_mean_loss_motion: 14.996632617452871
+[11.09.25|04:42:52] 	train_mean_loss_bone: 15.366374140200408
+[11.09.25|04:42:52] Training epoch: 393
+[11.09.25|04:43:57] 	train_mean_loss: 14.786334079244863
+[11.09.25|04:43:57] 	train_mean_loss_motion: 15.020454116489576
+[11.09.25|04:43:57] 	train_mean_loss_bone: 15.39480209350586
+[11.09.25|04:43:57] Training epoch: 394
+[11.09.25|04:45:02] 	train_mean_loss: 14.758316164431365
+[11.09.25|04:45:02] 	train_mean_loss_motion: 15.010110440461531
+[11.09.25|04:45:02] 	train_mean_loss_bone: 15.327460703642473
+[11.09.25|04:45:02] Training epoch: 395
+[11.09.25|04:46:06] 	train_mean_loss: 14.689911676489789
+[11.09.25|04:46:06] 	train_mean_loss_motion: 15.251398874365766
+[11.09.25|04:46:06] 	train_mean_loss_bone: 15.339324826779572
+[11.09.25|04:46:06] The model has been saved as config/three-stream/pretext/epoch395_model.pt.
+[11.09.25|04:46:06] Training epoch: 396
+[11.09.25|04:46:50] 	Iter 9100 Done. | loss: 14.8090 | loss_motion: 14.8140 | loss_bone: 15.3327 | lr: 0.002000
+[11.09.25|04:47:10] 	train_mean_loss: 14.770035370536473
+[11.09.25|04:47:10] 	train_mean_loss_motion: 15.08953393023947
+[11.09.25|04:47:10] 	train_mean_loss_bone: 15.308140547379203
+[11.09.25|04:47:10] Training epoch: 397
+[11.09.25|04:48:13] 	train_mean_loss: 14.975257832071055
+[11.09.25|04:48:13] 	train_mean_loss_motion: 15.02398917985999
+[11.09.25|04:48:13] 	train_mean_loss_bone: 15.306380064591117
+[11.09.25|04:48:13] Training epoch: 398
+[11.09.25|04:49:16] 	train_mean_loss: 14.802337190379268
+[11.09.25|04:49:16] 	train_mean_loss_motion: 15.198503328406293
+[11.09.25|04:49:16] 	train_mean_loss_bone: 15.31556519218113
+[11.09.25|04:49:16] Training epoch: 399
+[11.09.25|04:50:21] 	train_mean_loss: 14.751180648803711
+[11.09.25|04:50:21] 	train_mean_loss_motion: 15.136130208554475
+[11.09.25|04:50:21] 	train_mean_loss_bone: 15.369907462078592
+[11.09.25|04:50:21] Training epoch: 400
+[11.09.25|04:51:25] 	train_mean_loss: 14.80644532908564
+[11.09.25|04:51:25] 	train_mean_loss_motion: 14.92953404136326
+[11.09.25|04:51:25] 	train_mean_loss_bone: 15.33108089281165
+[11.09.25|04:51:25] The model has been saved as config/three-stream/pretext/epoch400_model.pt.

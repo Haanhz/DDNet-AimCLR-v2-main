@@ -1,0 +1,56 @@
+work_dir: config\three-stream\pretext
+
+# feeder
+train_feeder: feeder.cobot_feeder.Feeder_triple
+train_feeder_args:
+  data_path: data_cobot_clr_zoom/xsub/train_position.npy
+  label_path: data_cobot_clr_zoom/xsub/train_label.pkl
+  shear_amplitude: 0.2
+  temperal_padding_ratio: 6
+  mmap: True
+  aug_method: '1234'
+  zero_z: True
+
+# model
+model: net.aimclr_v2_3views_2.AimCLR_v2_3views
+model_args:
+  base_encoder: net.ddnet.DDNet_Original
+  pretrain: True
+  feat_d: 1128
+  queue_size: 8192
+  momentum: 0.999
+  Temperature: 0.2
+  mlp: True
+  frame_l: 60
+  joint_n: 48
+  joint_d: 3
+  filters: 16
+  class_num: 19
+  last_feture_dim: 640
+
+# optim
+nesterov: False
+weight_decay: 1e-4
+base_lr: 0.02
+optimizer: SGD
+step: [120]
+
+# training
+device: [2]
+batch_size: 64
+test_batch_size: 64
+num_epoch: 400
+start_epoch: 0
+stream: 'all'
+num_worker: 4
+
+# cross training
+topk1: 4
+topk2: 20
+vote: 2
+mine_epoch: 40
+cross_epoch: 80
+
+# log
+save_interval: 100
+eval_interval: -1
