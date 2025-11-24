@@ -25,7 +25,7 @@ def analyze_file_quality(file_path: Path, treat_zero_as_missing: bool = False, z
     try:
         # Load data
         data = np.load(file_path)
-        data = to_LJ3(data)
+        #data = to_LJ3(data)
         
         T, J, C = data.shape  # frames, joints, coordinates
         
@@ -125,13 +125,13 @@ def main():
                        help='Root directory containing action subdirectories')
     parser.add_argument('--backup_dir', type=Path, default='output/actions_raw_backup',
                        help='Backup directory for removed files')
-    parser.add_argument('--max_missing_pct', type=float, default=15.0,
+    parser.add_argument('--max_missing_pct', type=float, default=40.0,
                        help='Maximum allowed missing percentage (default: 15.0)')
-    parser.add_argument('--max_missing_per_frame', type=float, default=8.0,
+    parser.add_argument('--max_missing_per_frame', type=float, default=21.0,
                        help='Maximum average missing joints per frame (default: 8.0)')
     parser.add_argument('--max_high_missing_ratio', type=float, default=30.0,
                        help='Maximum ratio of frames with >50%% missing joints (default: 30.0)')
-    parser.add_argument('--max_gap_percentage', type=float, default=70.0,
+    parser.add_argument('--max_gap_percentage', type=float, default=60.0,
                        help='Maximum gap length as percentage of action length (default: 70.0)')
     parser.add_argument('--max_avg_gap_length', type=float, default=10.0,
                        help='Maximum average gap length in frames (default: 10.0)')
