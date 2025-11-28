@@ -33,9 +33,21 @@ $ python main.py pretrain_aimclr_v2_3views --config config/three-stream/pretext/
 
 Example for linear evaluation of **CoboCLR**. You can change `.yaml` files in `config/three-stream/linear` folder.
 ```bash
-
-# Linear_eval on NTU RGB+D xsub for three-stream
 $ python main.py linear_evaluation --config config/three-stream/linear/linear_eval_aimclr_v2_3views_cobot_xsub.yaml
+```
+
+## Full finetune
+
+Example for full finetuning of **CoboCLR**. You can change `.yaml` files in `config/three-stream/finetune` folder.
+```bash
+$ python main.py linear_evaluation --config config/three-stream/finetune/finetune_aimclr_v2_3views_cobot_xsub.yaml
+```
+
+## Semi-supervised
+
+Example for semi-supervised of **CoboCLR**. You can change `semi.yaml` files in `config/three-stream/finetune` folder.
+```bash
+$ python main.py linear_evaluation --config config/three-stream/finetune/finetune_aimclr_v2_3views_cobot_xsub_semi.yaml
 ```
 
 
