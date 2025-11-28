@@ -146,12 +146,12 @@ def main():
     
     args = parser.parse_args()
     
-    print("🚀 COBOT Action Quality Cleaner (Comprehensive)")
+    print("COBOT Action Quality Cleaner (Comprehensive)")
     print("=" * 60)
-    print(f"📁 Actions root: {args.actions_root}")
-    print(f"💾 Backup directory: {args.backup_dir}")
-    print(f"🔍 Mode: {'EXECUTE' if args.execute else 'DRY RUN'}")
-    print(f"📊 Quality thresholds:")
+    print(f"Actions root: {args.actions_root}")
+    print(f"Backup directory: {args.backup_dir}")
+    print(f"Mode: {'EXECUTE' if args.execute else 'DRY RUN'}")
+    print(f"Quality thresholds:")
     print(f"   Max missing %: {args.max_missing_pct:.1f}%")
     print(f"   Max missing per frame: {args.max_missing_per_frame:.1f}")
     print(f"   Max high missing ratio: {args.max_high_missing_ratio:.1f}%")
@@ -163,10 +163,10 @@ def main():
     # Find all .npy files
     npy_files = list(args.actions_root.rglob("*.npy"))
     if not npy_files:
-        print("❌ No .npy files found!")
+        print("No .npy files found!")
         return
     
-    print(f"🔍 Analyzing file quality...")
+    print(f"Analyzing file quality...")
     
     # Analyze each file
     results = []
@@ -185,7 +185,7 @@ def main():
         error_files = pd.DataFrame()
     
     if df.empty:
-        print("❌ No valid files found!")
+        print("No valid files found!")
         return
     
     # Apply quality thresholds
@@ -203,20 +203,20 @@ def main():
     
     # Print results
     print("\n" + "=" * 70)
-    print("📊 COMPREHENSIVE QUALITY ANALYSIS REPORT")
+    print("COMPREHENSIVE QUALITY ANALYSIS REPORT")
     print("=" * 70)
     print()
-    print(f"📁 Total files analyzed: {len(df):,}")
-    print(f"✅ High quality files: {len(high_quality_files):,}")
-    print(f"❌ Low quality files: {len(low_quality_files):,}")
-    print(f"📊 Quality rate: {len(high_quality_files)/len(df)*100:.1f}%")
+    print(f"Total files analyzed: {len(df):,}")
+    print(f"High quality files: {len(high_quality_files):,}")
+    print(f"Low quality files: {len(low_quality_files):,}")
+    print(f"Quality rate: {len(high_quality_files)/len(df)*100:.1f}%")
     
     if len(error_files) > 0:
-        print(f"⚠️  Files with errors: {len(error_files):,}")
+        print(f"Files with errors: {len(error_files):,}")
     
     # Show quality statistics
     if not df.empty:
-        print(f"\n📈 Quality Statistics:")
+        print(f"\nQuality Statistics:")
         print(f"   Missing %: {df['missing_percentage'].mean():.2f}% ± {df['missing_percentage'].std():.2f}%")
         print(f"   Missing per frame: {df['missing_per_frame'].mean():.2f} ± {df['missing_per_frame'].std():.2f}")
         print(f"   High missing ratio: {df['high_missing_ratio'].mean():.2f}% ± {df['high_missing_ratio'].std():.2f}%")
@@ -226,7 +226,7 @@ def main():
     
     # Show low quality files
     if len(low_quality_files) > 0:
-        print(f"\n❌ LOW QUALITY FILES TO REMOVE:")
+        print(f"\nLOW QUALITY FILES TO REMOVE:")
         print("-" * 60)
         
         # Group by reason for removal
@@ -255,17 +255,17 @@ def main():
     
     # Save analysis
     df.to_csv('quality_analysis_comprehensive.csv', index=False)
-    print(f"💾 Quality analysis saved to: quality_analysis_comprehensive.csv")
+    print(f"Quality analysis saved to: quality_analysis_comprehensive.csv")
     
     if len(low_quality_files) == 0:
-        print("✅ No low-quality files to remove!")
-        print("\n🎉 Quality cleaning analysis complete!")
-        print("💡 To actually remove files, run with --execute flag")
+        print("No low-quality files to remove!")
+        print("\nQuality cleaning analysis complete!")
+        print("To actually remove files, run with --execute flag")
         return
     
     # Execute removal if requested
     if args.execute:
-        print(f"\n🗑️  REMOVING LOW QUALITY FILES...")
+        print(f"\nREMOVING LOW QUALITY FILES...")
         
         # Create backup directory
         args.backup_dir.mkdir(parents=True, exist_ok=True)
@@ -283,17 +283,17 @@ def main():
                 shutil.move(str(file_path), str(backup_path))
                 removed_count += 1
                 
-                print(f"  ✅ Moved: {file_path.name} → {backup_path}")
+                print(f"  Moved: {file_path.name} → {backup_path}")
                 
             except Exception as e:
-                print(f"  ❌ Failed to move {file_path.name}: {e}")
+                print(f"  Failed to move {file_path.name}: {e}")
         
-        print(f"\n🎉 Successfully removed {removed_count} low-quality files!")
-        print(f"💾 Files backed up to: {args.backup_dir}")
+        print(f"\nSuccessfully removed {removed_count} low-quality files!")
+        print(f"Files backed up to: {args.backup_dir}")
         
     else:
-        print(f"\n💡 DRY RUN: {len(low_quality_files)} files would be removed")
-        print("💡 To actually remove files, run with --execute flag")
+        print(f"\nDRY RUN: {len(low_quality_files)} files would be removed")
+        print("To actually remove files, run with --execute flag")
 
 if __name__ == "__main__":
     main()

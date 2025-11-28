@@ -14,7 +14,7 @@ import json
 
 # No external imports needed - using improved fallback implementations
 RECOVERY_AVAILABLE = False
-print("📝 Using improved fallback implementation")
+print("Using improved fallback implementation")
 
 
 def build_mask_fallback(X: np.ndarray) -> np.ndarray:
@@ -49,7 +49,7 @@ def pchip_fill_fallback(X: np.ndarray, M: np.ndarray, max_gap: int) -> Tuple[np.
     try:
         from scipy.interpolate import PchipInterpolator
     except ImportError:
-        print("❌ Scipy not available for PCHIP interpolation")
+        print("Scipy not available for PCHIP interpolation")
         return X.copy(), np.zeros((X.shape[0], X.shape[1]), dtype=bool)
     
     T, J, C = X.shape
@@ -280,7 +280,7 @@ def clean_micro_gaps(X: np.ndarray, max_gap: int = 5) -> Tuple[np.ndarray, Dict]
     T, J, C = X.shape
     assert J == 48 and C == 3, f"Expected (T, 48, 3), got {X.shape}"
     
-    print(f"  📊 Input shape: {X.shape}")
+    print(f"Input shape: {X.shape}")
     
     # Step 1: Build mask of valid data
     if RECOVERY_AVAILABLE:
@@ -289,7 +289,7 @@ def clean_micro_gaps(X: np.ndarray, max_gap: int = 5) -> Tuple[np.ndarray, Dict]
         M = build_mask_fallback(X)
     
     valid_ratio = M.mean()
-    print(f"  🔍 Valid data ratio: {valid_ratio:.2%}")
+    print(f"Valid data ratio: {valid_ratio:.2%}")
     
     # Debug: Show gap statistics
     gaps_found = 0
@@ -311,7 +311,7 @@ def clean_micro_gaps(X: np.ndarray, max_gap: int = 5) -> Tuple[np.ndarray, Dict]
                 else:
                     t += 1
     
-    print(f"  🔍 Joints with gaps: {gaps_found}/{M.shape[1]} (total fillable gaps: {total_gaps})")
+    print(f"Joints with gaps: {gaps_found}/{M.shape[1]} (total fillable gaps: {total_gaps})")
     
     # Step 2: PCHIP fill only tiny gaps
     start_time = time.time()
@@ -322,7 +322,7 @@ def clean_micro_gaps(X: np.ndarray, max_gap: int = 5) -> Tuple[np.ndarray, Dict]
     
     pchip_time = time.time() - start_time
     imputed_ratio = imputed.sum() / imputed.size
-    print(f"  🎯 PCHIP filled {imputed.sum():,} joints ({imputed_ratio:.2%}) in {pchip_time:.3f}s")
+    print(f"PCHIP filled {imputed.sum():,} joints ({imputed_ratio:.2%}) in {pchip_time:.3f}s")
     
     # Step 3: Compute target finger bone lengths from ORIGINAL observations only
     start_time = time.time()
@@ -332,7 +332,7 @@ def clean_micro_gaps(X: np.ndarray, max_gap: int = 5) -> Tuple[np.ndarray, Dict]
         targets = compute_target_bone_lengths_fallback(X, M)  # Use original X and M, not imputed
     
     bone_time = time.time() - start_time
-    print(f"  📏 Computed {len(targets)} target bone lengths from original observations in {bone_time:.3f}s")
+    print(f"Computed {len(targets)} target bone lengths from original observations in {bone_time:.3f}s")
     
     # Step 4: Project filled joints to enforce target lengths
     start_time = time.time()
@@ -342,7 +342,7 @@ def clean_micro_gaps(X: np.ndarray, max_gap: int = 5) -> Tuple[np.ndarray, Dict]
         X2 = project_bone_lengths_fallback(X1, imputed, targets)
     
     project_time = time.time() - start_time
-    print(f"  🔧 Bone length projection completed in {project_time:.3f}s")
+    print(f"Bone length projection completed in {project_time:.3f}s")
     
     # Step 5: Cross-fade on reappearance to kill "blink" effect
     start_time = time.time()
@@ -353,7 +353,7 @@ def clean_micro_gaps(X: np.ndarray, max_gap: int = 5) -> Tuple[np.ndarray, Dict]
     X3 = crossfade_on_reappear(X3, X.copy(), M, LEFT_HAND, K=5)
     
     crossfade_time = time.time() - start_time
-    print(f"  🎭 Cross-fade on reappearance completed in {crossfade_time:.3f}s")
+    print(f"Cross-fade on reappearance completed in {crossfade_time:.3f}s")
     
     # Step 6: Final validation - measure actual improvement
     # Count frames where we successfully filled gaps
@@ -411,13 +411,13 @@ def clean_micro_gaps(X: np.ndarray, max_gap: int = 5) -> Tuple[np.ndarray, Dict]
         }
     }
     
-    print(f"  ✅ Final valid ratio: {final_valid_ratio:.2%} (improvement: {improvement:+.2%})")
+    print(f"Final valid ratio: {final_valid_ratio:.2%} (improvement: {improvement:+.2%})")
     
     # Debug: Check if data was actually modified
     if np.array_equal(X, X3):
-        print(f"  ⚠️  WARNING: Output data is identical to input data!")
+        print(f"WARNING: Output data is identical to input data!")
     else:
-        print(f"  ✅ Data was successfully modified")
+        print(f"Data was successfully modified")
     
     return X3, stats
 
@@ -425,7 +425,7 @@ def clean_micro_gaps(X: np.ndarray, max_gap: int = 5) -> Tuple[np.ndarray, Dict]
 def process_single_file(npy_path: Path, output_dir: Path, max_gap: int = 5) -> Optional[Dict]:
     """Process a single .npy file"""
     try:
-        print(f"\n🔄 Processing: {npy_path.name}")
+        print(f"\nProcessing: {npy_path.name}")
         
         # Load data
         X = np.load(str(npy_path)).astype(np.float32)
@@ -445,11 +445,11 @@ def process_single_file(npy_path: Path, output_dir: Path, max_gap: int = 5) -> O
             'output': os.path.getsize(output_path) / (1024 * 1024)
         }
         
-        print(f"  💾 Saved to: {output_path}")
+        print(f"Saved to: {output_path}")
         return stats
         
     except Exception as e:
-        print(f"  ❌ Error processing {npy_path.name}: {e}")
+        print(f"Error processing {npy_path.name}: {e}")
         return None
 
 
@@ -470,12 +470,12 @@ def main():
     
     args = parser.parse_args()
     
-    print("🦴 MICRO-GAP CLEANING TEST")
+    print("MICRO-GAP CLEANING TEST")
     print("=" * 60)
-    print(f"📁 Actions root: {args.actions_root}")
-    print(f"📤 Output directory: {args.output_dir}")
-    print(f"🎯 Max gap size: {args.max_gap} frames")
-    print(f"📊 Recovery joints available: {RECOVERY_AVAILABLE}")
+    print(f"Actions root: {args.actions_root}")
+    print(f"Output directory: {args.output_dir}")
+    print(f"Max gap size: {args.max_gap} frames")
+    print(f"Recovery joints available: {RECOVERY_AVAILABLE}")
     print("=" * 60)
     
     # Create output directory
@@ -487,9 +487,9 @@ def main():
     
     if args.limit_actions:
         action_dirs = action_dirs[:args.limit_actions]
-        print(f"🎬 Found {total_actions} action directories (processing {len(action_dirs)} due to --limit_actions)")
+        print(f"Found {total_actions} action directories (processing {len(action_dirs)} due to --limit_actions)")
     else:
-        print(f"🎬 Found {total_actions} action directories (processing ALL)")
+        print(f"Found {total_actions} action directories (processing ALL)")
     
     all_stats = []
     total_processed = 0
@@ -498,7 +498,7 @@ def main():
     start_time = time.time()
     
     for action_dir in action_dirs:
-        print(f"\n📂 Processing action: {action_dir.name}")
+        print(f"\nProcessing action: {action_dir.name}")
         
         # Find .npy files in this action
         npy_files = sorted(action_dir.glob("*.npy"))
@@ -506,9 +506,9 @@ def main():
         
         if args.per_action:
             npy_files = npy_files[:args.per_action]
-            print(f"  📄 Found {total_files_in_action} .npy files (processing {len(npy_files)} due to --per_action)")
+            print(f"Found {total_files_in_action} .npy files (processing {len(npy_files)} due to --per_action)")
         else:
-            print(f"  📄 Found {total_files_in_action} .npy files (processing ALL)")
+            print(f"Found {total_files_in_action} .npy files (processing ALL)")
         
         # Create action subdirectory in output
         action_output_dir = args.output_dir / action_dir.name
@@ -528,41 +528,41 @@ def main():
             if total_processed % 10 == 0:
                 elapsed = time.time() - start_time
                 rate = total_processed / elapsed
-                print(f"  📈 Progress: {total_processed} processed, {rate:.1f} files/sec")
+                print(f"Progress: {total_processed} processed, {rate:.1f} files/sec")
     
     total_time = time.time() - start_time
     
     # Summary
     print(f"\n{'='*60}")
-    print("📊 MICRO-GAP CLEANING SUMMARY")
+    print("MICRO-GAP CLEANING SUMMARY")
     print(f"{'='*60}")
     
     # Count total available files
     total_available_files = sum(len(list(p.glob("*.npy"))) for p in args.actions_root.iterdir() if p.is_dir())
     
-    print(f"📁 Total actions available: {total_actions}")
-    print(f"📄 Total files available: {total_available_files}")
-    print(f"✅ Successfully processed: {total_successful}/{total_processed}")
+    print(f"Total actions available: {total_actions}")
+    print(f"Total files available: {total_available_files}")
+    print(f"Successfully processed: {total_successful}/{total_processed}")
     if args.limit_actions or args.per_action:
-        print(f"🔒 Processing limited by: " + 
+        print(f"Processing limited by: " + 
               (f"--limit_actions {args.limit_actions}" if args.limit_actions else "") +
               (" + " if args.limit_actions and args.per_action else "") +
               (f"--per_action {args.per_action}" if args.per_action else ""))
     else:
-        print(f"🚀 Processing: ALL data (no limits)")
+        print(f"Processing: ALL data (no limits)")
     
-    print(f"⏱️  Total time: {total_time:.1f}s")
-    print(f"🚀 Average rate: {total_processed/total_time:.1f} files/sec")
+    print(f"Total time: {total_time:.1f}s")
+    print(f"Average rate: {total_processed/total_time:.1f} files/sec")
     
     if all_stats:
         # Compute aggregate statistics
         improvements = [s['improvement'] for s in all_stats]
         imputed_ratios = [s['imputed_ratio'] for s in all_stats]
         
-        print(f"\n📈 AGGREGATE STATISTICS:")
-        print(f"  📊 Data improvement: {np.mean(improvements):+.2%} ± {np.std(improvements):.2%}")
-        print(f"  🎯 Imputed joints: {np.mean(imputed_ratios):.2%} ± {np.std(imputed_ratios):.2%}")
-        print(f"  📏 Target bones computed: {np.mean([s['target_bones'] for s in all_stats]):.1f}")
+        print(f"\nAGGREGATE STATISTICS:")
+        print(f"Data improvement: {np.mean(improvements):+.2%} ± {np.std(improvements):.2%}")
+        print(f"Imputed joints: {np.mean(imputed_ratios):.2%} ± {np.std(imputed_ratios):.2%}")
+        print(f"Target bones computed: {np.mean([s['target_bones'] for s in all_stats]):.1f}")
         
         # Save detailed statistics
         if args.save_stats:
@@ -577,10 +577,10 @@ def main():
                     },
                     'files': all_stats
                 }, f, indent=2)
-            print(f"  💾 Detailed stats saved to: {args.save_stats}")
+            print(f"Detailed stats saved to: {args.save_stats}")
     
-    print(f"\n🎉 Micro-gap cleaning test completed!")
-    print(f"📁 Cleaned files saved to: {args.output_dir}")
+    print(f"\nMicro-gap cleaning test completed!")
+    print(f"Cleaned files saved to: {args.output_dir}")
 
 
 def fit_to_length(data, target_length, method='uniform-sample'):

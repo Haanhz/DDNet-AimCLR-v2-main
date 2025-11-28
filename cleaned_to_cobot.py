@@ -22,18 +22,18 @@ def setup_logging() -> None:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description='Convert cleaned raw action segments back to NTU format for training'
+        description='Convert cleaned raw action segments back to COBOT format for COBO_CLR training'
     )
     parser.add_argument('--cleaned_root', type=Path, required=True,
                        help='Root directory containing cleaned action folders')
-    parser.add_argument('--out_root', type=Path, default=Path('cobot_dataset_frame64'),
-                       help='Output directory for NTU format data')
+    parser.add_argument('--out_root', type=Path, default=Path('cobot_dataset'),
+                       help='Output directory for COBOT format data')
     parser.add_argument('--max_frame', type=int, default=60,
                        help='Maximum number of frames per sample')
     parser.add_argument('--resample', type=str, choices=['pad', 'center-crop', 'uniform-sample', 'zoom'],
-                       default='uniform-sample', help='Policy for segments longer than max_frame')
+                       default='zoom', help='Policy for segments longer than max_frame')
     parser.add_argument('--split_strategy', type=str, choices=['random', 'cross_subject'], 
-                       default='random', help='Strategy for train/val split: random (80/20) or cross_subject (odd/even subjects)')
+                       default='cross_subject', help='Strategy for train/val split: random (80/20) or cross_subject (odd/even subjects)')
     return parser.parse_args()
 
 
@@ -64,7 +64,6 @@ def zoom(p, target_l=64, joints_num=25, joints_dim=3):
             p_copy[:, m, n] = medfilt(p_copy[:, m, n], 3)
             p_new[:, m, n] = inter.zoom(p_copy[:, m, n], target_l/l)[:target_l]
     return p_new
-
 
 
 def fit_to_length(data: np.ndarray, max_frame: int, policy: str) -> np.ndarray:
@@ -209,19 +208,18 @@ def write_ntu_data(samples: List[Dict], output_path: Path, max_frame: int, resam
     output_path.parent.mkdir(parents=True, exist_ok=True)
     
     # Prepare data array
-    data = np.empty((len(samples), 3, max_frame, 48, 1), dtype=np.float32)
+    data = np.empty((len(samples), max_frame, 48, 3), dtype=np.float32)
     names = []
     labels = []
     
-    for i, sample in enumerate(tqdm(samples, desc='Converting to NTU format')):
-        # Convert to NTU format
+    for i, sample in enumerate(tqdm(samples, desc='Converting to COBOT format')):
         all_data = sample['segment']
         
         # Resample to fixed length
         if resample_policy in ["uniform-sample", "center-crop", "pad"]:
             fitted_data = fit_to_length(all_data, max_frame, resample_policy)
         elif resample_policy == "zoom":
-            fitted_data = zoom(all_data, max_frame, 25, 3)
+            fitted_data = zoom(all_data, max_frame, 48, 3)
         
         # Store
         data[i] = fitted_data

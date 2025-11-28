@@ -235,16 +235,10 @@ class DDNet_Original(nn.Module):
         # max pool over (B,C,D) C channels
         x = torch.max(x, dim=1).values
 
-        features = self.linear0(x) # 1024
+        features = self.linear0(x) 
         #print(_x)
         if self.class_num == 19:
             x = self.linear1(x)
             x = self.linear2(x)
-            features = self.linear3(x) # 20
+            features = self.linear3(x) 
         return features
-
-
-model = DDNet_Original(60,48,3,1128,16,19)
-print(model.linear0[0].linear.in_features)
-for name, param in model.named_parameters():
-    print(name)

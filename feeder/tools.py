@@ -47,14 +47,14 @@ def random_spatial_flip(seq, p=0.5):
         return seq
 
 
-# def random_time_flip(seq, p=0.5):
-#     T = seq.shape[0]
-#     if random.random() < p:
-#         time_range_order = [i for i in range(T)]
-#         time_range_reverse = list(reversed(time_range_order))
-#         return seq[time_range_reverse, :, :]
-#     else:
-#         return seq
+def random_time_flip(seq, p=0.5):
+    T = seq.shape[0]
+    if random.random() < p:
+        time_range_order = [i for i in range(T)]
+        time_range_reverse = list(reversed(time_range_order))
+        return seq[time_range_reverse, :, :]
+    else:
+        return seq
 
 
 def random_rotate(seq, is_2d=False):
@@ -150,29 +150,29 @@ class GaussianBlurConv(nn.Module):
 
         return x.numpy()
 
-# class Zero_out_axis(object):
-#     def __init__(self, axis = None):
-#         self.first_axis = axis
+class Zero_out_axis(object):
+    def __init__(self, axis = None):
+        self.first_axis = axis
 
 
-#     def __call__(self, data_numpy):
-#         if self.first_axis != None:
-#             axis_next = self.first_axis
-#         else:
-#             axis_next = random.randint(0,2)
+    def __call__(self, data_numpy):
+        if self.first_axis != None:
+            axis_next = self.first_axis
+        else:
+            axis_next = random.randint(0,2)
 
-#         temp = data_numpy.copy()
-#         T, V, C = data_numpy.shape
-#         x_new = np.zeros((T, V))
-#         temp[:,:,axis_next] = x_new
-#         return temp
+        temp = data_numpy.copy()
+        T, V, C = data_numpy.shape
+        x_new = np.zeros((T, V))
+        temp[:,:,axis_next] = x_new
+        return temp
 
-# def axis_mask(data_numpy, p=0.5):
-#     am = Zero_out_axis()
-#     if random.random() < p:
-#         return am(data_numpy)
-#     else:
-#         return data_numpy
+def axis_mask(data_numpy, p=0.5):
+    am = Zero_out_axis()
+    if random.random() < p:
+        return am(data_numpy)
+    else:
+        return data_numpy
     
     
 def random_scale_2d(data_numpy, scale_range=(0.8, 1.2), p=0.5):
@@ -267,5 +267,5 @@ def random_hand_emphasis_2d(data_numpy, emphasis_factor=1.5, p=0.3):
 
 if __name__ == '__main__':
     data_seq = np.ones((3, 50, 25, 2))
-    data_seq = shear(data_seq)
+    data_seq = axis_mask(data_seq)
     print(data_seq.shape)

@@ -187,6 +187,7 @@ cython_debug/
 *.zip
 *.csv
 *.pkl
+*.pickle
 *.gz
 action_segment/
 Annotation_v4/

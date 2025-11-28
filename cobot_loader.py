@@ -3,7 +3,7 @@
 # from sklearn import preprocessing
 # from pathlib import Path
 # import sys
-#Viết 1 hàm nhận vào train_data_v2.npy và biến đổi như trên để trả về X_0, X_1
+
 import numpy as np
 from net.utils import *
 import torch
