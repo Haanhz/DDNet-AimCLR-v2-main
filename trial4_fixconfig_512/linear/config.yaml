@@ -27,6 +27,7 @@ model: net.aimclr_v2_3views_2.AimCLR_v2_3views
 model_args:
     base_encoder: net.ddnet.DDNet_Original
     class_num: 19
+    feat_d: 1128
     filters: 16
     frame_l: 60
     joint_d: 3
@@ -34,7 +35,7 @@ model_args:
     last_feture_dim: 512
     pretrain: false
 nesterov: false
-num_epoch: 200
+num_epoch: 400
 num_worker: 4
 optimizer: SGD
 pavi_log: false
