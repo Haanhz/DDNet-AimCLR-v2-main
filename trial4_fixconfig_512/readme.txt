@@ -1,1 +1,0 @@
-config kết quả tốt nhất hiện tại
