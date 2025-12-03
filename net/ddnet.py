@@ -94,9 +94,9 @@ class spatialDropout1D(nn.Module):
 
 
 class DDNet_Original(nn.Module):
-    def __init__(self, frame_l, joint_n, joint_d, feat_d, filters, class_num):
+    def __init__(self, frame_l, joint_n, joint_d, feat_d, filters, class_num, pretrain=True):
         super(DDNet_Original, self).__init__()
-        self.class_num = class_num
+        self.pretrain=pretrain
         # JCD part
         self.jcd_conv1 = nn.Sequential(
             c1D(frame_l, feat_d, 2 * filters, 1),
@@ -146,55 +146,23 @@ class DDNet_Original(nn.Module):
 
         self.block3 = nn.Sequential(
             block(frame_l//8, 4 * filters, 8 * filters, 3), spatialDropout1D(0.1))
-
-        self.linear0 = nn.Sequential(
-            d1D(8 * filters, 512),
-        )
-        # if 'ViT-B/16' == run_name:
-        #     self.linear0 = nn.Sequential(
-        #     d1D(8 * filters, 512),
-        #     )
             
-        # if 'ViT-L/14' == run_name:
-        #     self.linear0 = nn.Sequential(
-        #     d1D(8 * filters, 768),
-        #     )
-        # if 'ViT-L/14@336px' == run_name:
-        #     self.linear0 = nn.Sequential(
-        #     d1D(8 * filters, 768),
-        #     )
-        
-        # if 'RN50x64' == run_name:
-        #     self.linear0 = nn.Sequential(
-        #     d1D(8 * filters, 1024),
-        #     )
-        # if 'RN50x16' == run_name:
-        #     self.linear0 = nn.Sequential(
-        #     d1D(8 * filters, 768),
-        #     )
-        # if 'RN50' == run_name:
-        #     self.linear0 = nn.Sequential(
-        #     d1D(8 * filters, 1024),
-        #     )
-        # if 'RN101' == run_name:
-        #     self.linear0 = nn.Sequential(
-        #     d1D(8 * filters, 512),
-        #     )
-        # if 'RN50x4' == run_name:
-        #     self.linear0 = nn.Sequential(
-        #     d1D(8 * filters, 640),
-        #     )
+        if self.pretrain:
 
-        self.linear1 = nn.Sequential(
-            d1D(8 * filters, 128),
-            nn.Dropout(0.5)
-        )
-        self.linear2 = nn.Sequential(
-            d1D(128, 128),
-            nn.Dropout(0.5)
-        )
+          self.linear0 = nn.Sequential(
+              d1D(8 * filters, class_num)
+          )
         
-        self.linear3 = nn.Linear(128, class_num)
+        else:
+          self.linear1 = nn.Sequential(
+              d1D(8 * filters, 128),
+              nn.Dropout(0.5)
+          )
+          self.linear2 = nn.Sequential(
+              d1D(128, 128),
+              nn.Dropout(0.5)
+          )
+          self.linear3 = nn.Linear(128, class_num)
 
     def forward(self, M, P=None):
         x = self.jcd_conv1(M)
@@ -235,10 +203,11 @@ class DDNet_Original(nn.Module):
         # max pool over (B,C,D) C channels
         x = torch.max(x, dim=1).values
 
-        features = self.linear0(x) 
-        #print(_x)
-        if self.class_num == 19:
-            x = self.linear1(x)
-            x = self.linear2(x)
-            features = self.linear3(x) 
+        if self.pretrain:
+          features = self.linear0(x) # 1024
+        
+        else:
+          x = self.linear1(x)
+          x = self.linear2(x)
+          features = self.linear3(x) 
         return features

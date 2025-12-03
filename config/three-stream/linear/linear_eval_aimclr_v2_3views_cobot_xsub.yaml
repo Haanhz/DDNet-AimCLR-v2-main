@@ -1,6 +1,6 @@
 work_dir: config/three-stream/linear
 
-weights: config/three-stream/pretext/epoch400_model.pt
+weights: trial4_fixconfig_512\pretext\epoch400_model.pt
 ignore_weights: [encoder_q.linear3, encoder_q_motion.linear3, encoder_q_bone.linear3, encoder_q.linear0, encoder_q_motion.linear0, encoder_q_bone.linear0, encoder_k, encoder_k_motion, encoder_k_bone, queue, queue_motion, queue_bone]
 
 # feeder
@@ -44,9 +44,10 @@ step: [80]
 # training
 device: [0]
 batch_size: 64
-test_batch_size: 64
+test_batch_size: 1
 num_epoch: 200
 stream: 'all'
+phase: 'test'
 
 # log
 save_interval: -1

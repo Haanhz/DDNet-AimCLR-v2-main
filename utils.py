@@ -11,42 +11,6 @@ import copy
 from scipy.signal import medfilt
 from scipy.spatial.distance import cdist
 
-# Temple resizing function
-# interpolate l frames to target_l frames
-
-
-def zoom(p, target_l=64, joints_num=25, joints_dim=3):
-    p_copy = copy.deepcopy(p)
-    l = p_copy.shape[0]
-    p_new = np.empty([target_l, joints_num, joints_dim])
-    for m in range(joints_num):
-        for n in range(joints_dim):
-            # p_new[:, m, n] = medfilt(p_new[:, m, n], 3) # make no sense. p_new is empty.
-            p_copy[:, m, n] = medfilt(p_copy[:, m, n], 3)
-            p_new[:, m, n] = inter.zoom(p_copy[:, m, n], target_l/l)[:target_l]
-    return p_new
-
-
-# Calculate JCD feature
-def norm_scale(x):
-    return (x-np.mean(x))/np.mean(x)
-
-
-def get_CG(p, C):
-    M = []
-    # upper triangle index with offset 1, which means upper triangle without diagonal
-    iu = np.triu_indices(C.joint_n, 1, C.joint_n)
-    for f in range(C.frame_l):
-        # iterate all frames, calc all frame's JCD Matrix
-        # p[f].shape (15,2)
-        d_m = cdist(p[f], p[f], 'euclidean')
-        d_m = d_m[iu]
-        # the upper triangle of Matrix and then flattned to a vector. Shape(105)
-        M.append(d_m)
-    M = np.stack(M)
-    M = norm_scale(M)  # normalize
-    return M
-
 
 def poses_diff(x):
     _, H, W, _ = x.shape

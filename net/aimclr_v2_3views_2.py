@@ -16,6 +16,8 @@ class AimCLR_v2_3views(nn.Module):
         super().__init__()
         base_encoder = import_class(base_encoder)
         self.pretrain = pretrain
+        self.C = CConfig()
+        self.data_generator = Cdata_generator
         self.Bone = [(42, 44), (44, 46), (43, 45), (45, 47), (42, 43),
                             (0, 1), (1, 2), (2, 3), (3, 4),
                             (0, 5), (5, 6), (6, 7), (7, 8), 
@@ -30,27 +32,27 @@ class AimCLR_v2_3views(nn.Module):
 
         if not self.pretrain: #dự đoán
             self.encoder_q = base_encoder(frame_l = frame_l, joint_n = joint_n, joint_d = joint_d, feat_d = feat_d, 
-                                          filters = filters, class_num = class_num)
+                                          filters = filters, class_num = class_num, pretrain = pretrain)
             self.encoder_q_motion = base_encoder(frame_l = frame_l, joint_n = joint_n, joint_d = joint_d, feat_d = feat_d, 
-                                          filters = filters, class_num = class_num)
+                                          filters = filters, class_num = class_num, pretrain=pretrain)
             self.encoder_q_bone = base_encoder(frame_l = frame_l, joint_n = joint_n, joint_d = joint_d, feat_d = feat_d, 
-                                          filters = filters, class_num = class_num)
+                                          filters = filters, class_num = class_num, pretrain=pretrain)
         else: #pretrain
             self.K = queue_size
             self.m = momentum
             self.T = Temperature
             self.encoder_q = base_encoder(frame_l = frame_l, joint_n = joint_n, joint_d = joint_d, feat_d = feat_d, 
-                                          filters = filters, class_num = last_feture_dim)
+                                          filters = filters, class_num = last_feture_dim, pretrain=pretrain)
             self.encoder_k = base_encoder(frame_l = frame_l, joint_n = joint_n, joint_d = joint_d, feat_d = feat_d, 
-                                          filters = filters, class_num = last_feture_dim)
+                                          filters = filters, class_num = last_feture_dim,  pretrain=pretrain)
             self.encoder_q_motion = base_encoder(frame_l = frame_l, joint_n = joint_n, joint_d = joint_d, feat_d = feat_d, 
-                                          filters = filters, class_num = last_feture_dim)
+                                          filters = filters, class_num = last_feture_dim, pretrain=pretrain)
             self.encoder_k_motion = base_encoder(frame_l = frame_l, joint_n = joint_n, joint_d = joint_d, feat_d = feat_d, 
-                                          filters = filters, class_num = last_feture_dim)
+                                          filters = filters, class_num = last_feture_dim, pretrain=pretrain)
             self.encoder_q_bone = base_encoder(frame_l = frame_l, joint_n = joint_n, joint_d = joint_d, feat_d = feat_d, 
-                                          filters = filters, class_num = last_feture_dim)
+                                          filters = filters, class_num = last_feture_dim, pretrain=pretrain)
             self.encoder_k_bone = base_encoder(frame_l = frame_l, joint_n = joint_n, joint_d = joint_d, feat_d = feat_d, 
-                                          filters = filters, class_num = last_feture_dim)
+                                          filters = filters, class_num = last_feture_dim, pretrain=pretrain)
 
             if mlp:  # hack: brute-force replacement
                 dim_mlp = self.encoder_q.linear0[0].linear.in_features
@@ -84,7 +86,7 @@ class AimCLR_v2_3views(nn.Module):
                 param_k.requires_grad = False
 
             # create the queue
-            self.register_buffer("queue", torch.randn(last_feture_dim, self.K)) # lastfeature dim = 64, gốc là 128
+            self.register_buffer("queue", torch.randn(last_feture_dim, self.K)) 
             self.queue = F.normalize(self.queue, dim=0)
             self.register_buffer("queue_ptr", torch.zeros(1, dtype=torch.long))
 
@@ -155,8 +157,7 @@ class AimCLR_v2_3views(nn.Module):
         :param vote: vote value of three streams
         :return:
         '''
-        C = CConfig()
-        data_generator = Cdata_generator
+
         # batch image đang có dạng [batchsize, N, 48, 3]
         # single-stream nearest neighbors mining
         if mine:
@@ -177,13 +178,13 @@ class AimCLR_v2_3views(nn.Module):
 
         if not self.pretrain:
             if stream == 'joint':
-                return self.encoder_q(*data_generator(im_q,C))
+                return self.encoder_q(*self.data_generator(im_q,self.C))
             elif stream == 'motion':
-                return self.encoder_q_motion(*data_generator(im_q_motion,C))
+                return self.encoder_q_motion(*self.data_generator(im_q_motion,self.C))
             elif stream == 'bone':
-                return self.encoder_q_bone(*data_generator(im_q_bone,C))
+                return self.encoder_q_bone(*self.data_generator(im_q_bone,self.C))
             elif stream == 'all':
-                return (self.encoder_q(*data_generator(im_q,C)) + self.encoder_q_motion(*data_generator(im_q_motion,C)) + self.encoder_q_bone(*data_generator(im_q_bone,C))) / 3.
+                return (self.encoder_q(*self.data_generator(im_q,self.C)) + self.encoder_q_motion(*self.data_generator(im_q_motion,self.C)) + self.encoder_q_bone(*self.data_generator(im_q_bone,self.C))) / 3.
             else:
                 raise ValueError
 
@@ -205,22 +206,22 @@ class AimCLR_v2_3views(nn.Module):
             im_q_extreme_bone[:, :, v1 - 1, :] = im_q_extreme[:, :, v1 - 1, :] - im_q_extreme[:, :, v2 - 1, :]
 
         # compute joint query features and the extremely augmented joint query features
-        q = self.encoder_q(*data_generator(im_q,C))  # NxC # Chỗ này là truyền vào DDNet , nên input cần có shape DDNet cần
-        q_extreme = self.encoder_q(*data_generator(im_q_extreme,C))  # NxC
+        q = self.encoder_q(*self.data_generator(im_q,self.C))  # NxC # Chỗ này là truyền vào DDNet , nên input cần có shape DDNet cần
+        q_extreme = self.encoder_q(*self.data_generator(im_q_extreme,self.C))  # NxC
 
         q = F.normalize(q, dim=1)
         q_extreme = F.normalize(q_extreme, dim=1)
 
         # compute motion query features and the extremely augmented motion query features
-        q_motion = self.encoder_q_motion(*data_generator(im_q_motion,C))  # NxC
-        q_extreme_motion = self.encoder_q_motion(*data_generator(im_q_extreme_motion,C))  # NxC
+        q_motion = self.encoder_q_motion(*self.data_generator(im_q_motion,self.C))  # NxC
+        q_extreme_motion = self.encoder_q_motion(*self.data_generator(im_q_extreme_motion,self.C))  # NxC
 
         q_motion = F.normalize(q_motion, dim=1)
         q_extreme_motion = F.normalize(q_extreme_motion, dim=1)
 
         # compute bone query features and the extremely augmented bone query features
-        q_bone = self.encoder_q_bone(*data_generator(im_q_bone,C))  # NxC
-        q_extreme_bone = self.encoder_q_bone(*data_generator(im_q_extreme_bone,C))  # NxC
+        q_bone = self.encoder_q_bone(*self.data_generator(im_q_bone,self.C))  # NxC
+        q_extreme_bone = self.encoder_q_bone(*self.data_generator(im_q_extreme_bone,self.C))  # NxC
 
         q_bone = F.normalize(q_bone, dim=1)
         q_extreme_bone = F.normalize(q_extreme_bone, dim=1)
@@ -231,13 +232,13 @@ class AimCLR_v2_3views(nn.Module):
             self._momentum_update_key_encoder_motion()
             self._momentum_update_key_encoder_bone()
 
-            k = self.encoder_k(*data_generator(im_k,C))  # keys: NxC
+            k = self.encoder_k(*self.data_generator(im_k,self.C))  # keys: NxC
             k = F.normalize(k, dim=1)
 
-            k_motion = self.encoder_k_motion(*data_generator(im_k_motion,C))
+            k_motion = self.encoder_k_motion(*self.data_generator(im_k_motion,self.C))
             k_motion = F.normalize(k_motion, dim=1)
 
-            k_bone = self.encoder_k_bone(*data_generator(im_k_bone,C))
+            k_bone = self.encoder_k_bone(*self.data_generator(im_k_bone,self.C))
             k_bone = F.normalize(k_bone, dim=1)
 
         # compute logits
@@ -315,8 +316,7 @@ class AimCLR_v2_3views(nn.Module):
         :param topk: top-k similar in memory bank in single-stream nearest neighbors mining
         :return:
         '''
-        C = CConfig()
-        data_generator = Cdata_generator
+
         # im_q_motion
         im_q_motion = torch.zeros_like(im_q)
         im_q_motion[:, :-1, :, :] = im_q[:, 1:, :, :] - im_q[ :, :-1, :, :]
@@ -343,22 +343,22 @@ class AimCLR_v2_3views(nn.Module):
             im_q_extreme_bone[:, :, v1 - 1, :] = im_q_extreme[:, :, v1 - 1, :] - im_q_extreme[:, :, v2 - 1, :]
 
         # compute joint query features and the extremely augmented joint query features
-        q = self.encoder_q(*data_generator(im_q,C))  # NxC
-        q_extreme = self.encoder_q(*data_generator(im_q_extreme,C))  # NxC
+        q = self.encoder_q(*self.data_generator(im_q,self.C))  # NxC
+        q_extreme = self.encoder_q(*self.data_generator(im_q_extreme,self.C))  # NxC
 
         q = F.normalize(q, dim=1)
         q_extreme = F.normalize(q_extreme, dim=1)
 
         # compute motion query features and the extremely augmented motion query features
-        q_motion = self.encoder_q_motion(*data_generator(im_q_motion,C))  # NxC
-        q_extreme_motion = self.encoder_q_motion(*data_generator(im_q_extreme_motion,C))  # NxC
+        q_motion = self.encoder_q_motion(*self.data_generator(im_q_motion,self.C))  # NxC
+        q_extreme_motion = self.encoder_q_motion(*self.data_generator(im_q_extreme_motion,self.C))  # NxC
 
         q_motion = F.normalize(q_motion, dim=1)
         q_extreme_motion = F.normalize(q_extreme_motion, dim=1)
 
         # compute bone query features and the extremely augmented bone query features
-        q_bone = self.encoder_q_bone(*data_generator(im_q_bone,C))  # NxC
-        q_extreme_bone = self.encoder_q_bone(*data_generator(im_q_extreme_bone,C))  # NxC
+        q_bone = self.encoder_q_bone(*self.data_generator(im_q_bone,self.C))  # NxC
+        q_extreme_bone = self.encoder_q_bone(*self.data_generator(im_q_extreme_bone,self.C))  # NxC
 
         q_bone = F.normalize(q_bone, dim=1)
         q_extreme_bone = F.normalize(q_extreme_bone, dim=1)
@@ -369,13 +369,13 @@ class AimCLR_v2_3views(nn.Module):
             self._momentum_update_key_encoder_motion()
             self._momentum_update_key_encoder_bone()
 
-            k = self.encoder_k(*data_generator(im_k,C))  # keys: NxC
+            k = self.encoder_k(*self.data_generator(im_k,self.C))  # keys: NxC
             k = F.normalize(k, dim=1)
 
-            k_motion = self.encoder_k_motion(*data_generator(im_k_motion,C))
+            k_motion = self.encoder_k_motion(*self.data_generator(im_k_motion,self.C))
             k_motion = F.normalize(k_motion, dim=1)
 
-            k_bone = self.encoder_k_bone(*data_generator(im_k_bone,C))
+            k_bone = self.encoder_k_bone(*self.data_generator(im_k_bone,self.C))
             k_bone = F.normalize(k_bone, dim=1)
 
         # compute logits
@@ -481,8 +481,7 @@ class AimCLR_v2_3views(nn.Module):
         :param vote: vote value of three streams
         :return:
         '''
-        C = CConfig()
-        data_generator = Cdata_generator
+
         # im_q_motion
         im_q_motion = torch.zeros_like(im_q)
         im_q_motion[:, :-1, :, :] = im_q[:, 1:, :, :] - im_q[:, :-1, :, :]
@@ -509,22 +508,22 @@ class AimCLR_v2_3views(nn.Module):
             im_q_extreme_bone[:, :, v1 - 1, :] = im_q_extreme[ :, :, v1 - 1, :] - im_q_extreme[ :, :, v2 - 1, :]
 
         # compute joint query features and the extremely augmented joint query features
-        q = self.encoder_q(*data_generator(im_q,C))  # NxC
-        q_extreme = self.encoder_q(*data_generator(im_q_extreme,C))  # NxC
+        q = self.encoder_q(*self.data_generator(im_q,self.C))  # NxC
+        q_extreme = self.encoder_q(*self.data_generator(im_q_extreme,self.C))  # NxC
 
         q = F.normalize(q, dim=1)
         q_extreme = F.normalize(q_extreme, dim=1)
 
         # compute motion query features and the extremely augmented motion query features
-        q_motion = self.encoder_q_motion(*data_generator(im_q_motion,C))  # NxC
-        q_extreme_motion = self.encoder_q_motion(*data_generator(im_q_extreme_motion,C))  # NxC
+        q_motion = self.encoder_q_motion(*self.data_generator(im_q_motion,self.C))  # NxC
+        q_extreme_motion = self.encoder_q_motion(*self.data_generator(im_q_extreme_motion,self.C))  # NxC
 
         q_motion = F.normalize(q_motion, dim=1)
         q_extreme_motion = F.normalize(q_extreme_motion, dim=1)
 
         # compute bone query features and the extremely augmented bone query features
-        q_bone = self.encoder_q_bone(*data_generator(im_q_bone,C))  # NxC
-        q_extreme_bone = self.encoder_q_bone(*data_generator(im_q_extreme_bone,C))  # NxC
+        q_bone = self.encoder_q_bone(*self.data_generator(im_q_bone,self.C))  # NxC
+        q_extreme_bone = self.encoder_q_bone(*self.data_generator(im_q_extreme_bone,self.C))  # NxC
 
         q_bone = F.normalize(q_bone, dim=1)
         q_extreme_bone = F.normalize(q_extreme_bone, dim=1)
@@ -535,13 +534,13 @@ class AimCLR_v2_3views(nn.Module):
             self._momentum_update_key_encoder_motion()
             self._momentum_update_key_encoder_bone()
 
-            k = self.encoder_k(*data_generator(im_k,C))  # keys: NxC
+            k = self.encoder_k(*self.data_generator(im_k,self.C))  # keys: NxC
             k = F.normalize(k, dim=1)
 
-            k_motion = self.encoder_k_motion(*data_generator(im_k_motion,C))
+            k_motion = self.encoder_k_motion(*self.data_generator(im_k_motion,self.C))
             k_motion = F.normalize(k_motion, dim=1)
 
-            k_bone = self.encoder_k_bone(*data_generator(im_k_bone,C))
+            k_bone = self.encoder_k_bone(*self.data_generator(im_k_bone,self.C))
             k_bone = F.normalize(k_bone, dim=1)
 
         # compute logits

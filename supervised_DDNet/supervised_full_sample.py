@@ -14,7 +14,7 @@ from tensorflow.keras.layers import (
     concatenate
 )
 
-from net.utils import *
+from utils import *
 from tensorflow.keras.models import Model
 import os
 import numpy as np

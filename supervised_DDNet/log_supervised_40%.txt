@@ -1,0 +1,1656 @@
+nohup: ignoring input
+2025-11-27 17:20:30.209912: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-11-27 17:20:30.315516: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1764238839.889499 1067326 gpu_device.cc:2020] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 22353 MB memory:  -> device: 2, name: NVIDIA RTX 4500 Ada Generation, pci bus id: 0000:b1:00.0, compute capability: 8.9
+/mnt/nvme0/home/haanh/aimclr_env/lib/python3.12/site-packages/keras/src/layers/activations/leaky_relu.py:41: UserWarning: Argument `alpha` is deprecated. Use `negative_slope` instead.
+  warnings.warn(
+Num GPUs Available: 4
+GPU details: [PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU'), PhysicalDevice(name='/physical_device:GPU:1', device_type='GPU'), PhysicalDevice(name='/physical_device:GPU:2', device_type='GPU'), PhysicalDevice(name='/physical_device:GPU:3', device_type='GPU')]
+Using GPU: PhysicalDevice(name='/physical_device:GPU:2', device_type='GPU')
+Model: "functional_1"
+┏━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━┓
+┃ Layer (type)        ┃ Output Shape      ┃    Param # ┃ Connected to      ┃
+┡━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━┩
+│ M (InputLayer)      │ (None, 60, 1128)  │          0 │ -                 │
+├─────────────────────┼───────────────────┼────────────┼───────────────────┤
+│ P (InputLayer)      │ (None, 60, 48, 3) │          0 │ -                 │
+├─────────────────────┼───────────────────┼────────────┼───────────────────┤
+│ functional          │ (None, 7, 128)    │    153,088 │ M[0][0], P[0][0]  │
+│ (Functional)        │                   │            │                   │
+├─────────────────────┼───────────────────┼────────────┼───────────────────┤
+│ global_max_pooling… │ (None, 128)       │          0 │ functional[0][0]  │
+│ (GlobalMaxPooling1… │                   │            │                   │
+├─────────────────────┼───────────────────┼────────────┼───────────────────┤
+│ dense (Dense)       │ (None, 128)       │     16,384 │ global_max_pooli… │
+├─────────────────────┼───────────────────┼────────────┼───────────────────┤
+│ batch_normalizatio… │ (None, 128)       │        512 │ dense[0][0]       │
+│ (BatchNormalizatio… │                   │            │                   │
+├─────────────────────┼───────────────────┼────────────┼───────────────────┤
+│ leaky_re_lu_15      │ (None, 128)       │          0 │ batch_normalizat… │
+│ (LeakyReLU)         │                   │            │                   │
+├─────────────────────┼───────────────────┼────────────┼───────────────────┤
+│ dropout (Dropout)   │ (None, 128)       │          0 │ leaky_re_lu_15[0… │
+├─────────────────────┼───────────────────┼────────────┼───────────────────┤
+│ dense_1 (Dense)     │ (None, 128)       │     16,384 │ dropout[0][0]     │
+├─────────────────────┼───────────────────┼────────────┼───────────────────┤
+│ batch_normalizatio… │ (None, 128)       │        512 │ dense_1[0][0]     │
+│ (BatchNormalizatio… │                   │            │                   │
+├─────────────────────┼───────────────────┼────────────┼───────────────────┤
+│ leaky_re_lu_16      │ (None, 128)       │          0 │ batch_normalizat… │
+│ (LeakyReLU)         │                   │            │                   │
+├─────────────────────┼───────────────────┼────────────┼───────────────────┤
+│ dropout_1 (Dropout) │ (None, 128)       │          0 │ leaky_re_lu_16[0… │
+├─────────────────────┼───────────────────┼────────────┼───────────────────┤
+│ dense_2 (Dense)     │ (None, 19)        │      2,451 │ dropout_1[0][0]   │
+└─────────────────────┴───────────────────┴────────────┴───────────────────┘
+ Total params: 189,331 (739.57 KB)
+ Trainable params: 187,539 (732.57 KB)
+ Non-trainable params: 1,792 (7.00 KB)
+/mnt/nvme0/home/haanh/aimclr_env/lib/python3.12/site-packages/tensorflow/python/data/ops/structured_function.py:258: UserWarning: Even though the `tf.config.experimental_run_functions_eagerly` option is set, this option does not apply to tf.data functions. To force eager execution of tf.data functions, please use `tf.data.experimental.enable_debug_mode()`.
+  warnings.warn(
+Updating batch_normalization_15: epsilon 0.001 -> 1e-3
+Updating batch_normalization_16: epsilon 0.001 -> 1e-3
+Epoch 1/400
+2025-11-27 17:21:29.228863: I external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:473] Loaded cuDNN version 91002
+
+Epoch 1: loss improved from None to 3.47184, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 13s - 694ms/step - accuracy: 0.0628 - loss: 3.4718 - learning_rate: 0.0100
+Epoch 2/400
+
+Epoch 2: loss improved from 3.47184 to 3.43101, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 430ms/step - accuracy: 0.0509 - loss: 3.4310 - learning_rate: 0.0100
+Epoch 3/400
+
+Epoch 3: loss improved from 3.43101 to 3.31207, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 7s - 393ms/step - accuracy: 0.0798 - loss: 3.3121 - learning_rate: 0.0100
+Epoch 4/400
+
+Epoch 4: loss improved from 3.31207 to 3.30505, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 7s - 369ms/step - accuracy: 0.0849 - loss: 3.3050 - learning_rate: 0.0100
+Epoch 5/400
+
+Epoch 5: loss did not improve from 3.30505
+19/19 - 7s - 372ms/step - accuracy: 0.0798 - loss: 3.3125 - learning_rate: 0.0100
+Epoch 6/400
+
+Epoch 6: loss improved from 3.30505 to 3.14271, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 9s - 450ms/step - accuracy: 0.0832 - loss: 3.1427 - learning_rate: 0.0100
+Epoch 7/400
+
+Epoch 7: loss did not improve from 3.14271
+19/19 - 8s - 445ms/step - accuracy: 0.0730 - loss: 3.1660 - learning_rate: 0.0100
+Epoch 8/400
+
+Epoch 8: loss did not improve from 3.14271
+19/19 - 8s - 434ms/step - accuracy: 0.0917 - loss: 3.1541 - learning_rate: 0.0100
+Epoch 9/400
+
+Epoch 9: loss did not improve from 3.14271
+19/19 - 8s - 414ms/step - accuracy: 0.1053 - loss: 3.1571 - learning_rate: 0.0100
+Epoch 10/400
+
+Epoch 10: loss improved from 3.14271 to 2.99543, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 422ms/step - accuracy: 0.1307 - loss: 2.9954 - learning_rate: 0.0100
+Epoch 11/400
+
+Epoch 11: loss improved from 2.99543 to 2.96891, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 428ms/step - accuracy: 0.1053 - loss: 2.9689 - learning_rate: 0.0100
+Epoch 12/400
+
+Epoch 12: loss improved from 2.96891 to 2.92625, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 427ms/step - accuracy: 0.1188 - loss: 2.9262 - learning_rate: 0.0100
+Epoch 13/400
+
+Epoch 13: loss did not improve from 2.92625
+19/19 - 7s - 385ms/step - accuracy: 0.1138 - loss: 2.9516 - learning_rate: 0.0100
+Epoch 14/400
+
+Epoch 14: loss improved from 2.92625 to 2.86465, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 6s - 290ms/step - accuracy: 0.1426 - loss: 2.8646 - learning_rate: 0.0100
+Epoch 15/400
+
+Epoch 15: loss improved from 2.86465 to 2.79637, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 426ms/step - accuracy: 0.1273 - loss: 2.7964 - learning_rate: 0.0100
+Epoch 16/400
+
+Epoch 16: loss did not improve from 2.79637
+19/19 - 7s - 370ms/step - accuracy: 0.1732 - loss: 2.8379 - learning_rate: 0.0100
+Epoch 17/400
+
+Epoch 17: loss improved from 2.79637 to 2.73606, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 405ms/step - accuracy: 0.1851 - loss: 2.7361 - learning_rate: 0.0100
+Epoch 18/400
+
+Epoch 18: loss did not improve from 2.73606
+19/19 - 8s - 414ms/step - accuracy: 0.1647 - loss: 2.7396 - learning_rate: 0.0100
+Epoch 19/400
+
+Epoch 19: loss improved from 2.73606 to 2.68982, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 407ms/step - accuracy: 0.1443 - loss: 2.6898 - learning_rate: 0.0100
+Epoch 20/400
+
+Epoch 20: loss did not improve from 2.68982
+19/19 - 7s - 392ms/step - accuracy: 0.1545 - loss: 2.7081 - learning_rate: 0.0100
+Epoch 21/400
+
+Epoch 21: loss improved from 2.68982 to 2.62120, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 395ms/step - accuracy: 0.1749 - loss: 2.6212 - learning_rate: 0.0100
+Epoch 22/400
+
+Epoch 22: loss did not improve from 2.62120
+19/19 - 8s - 404ms/step - accuracy: 0.1952 - loss: 2.6438 - learning_rate: 0.0100
+Epoch 23/400
+
+Epoch 23: loss did not improve from 2.62120
+19/19 - 6s - 328ms/step - accuracy: 0.1732 - loss: 2.6933 - learning_rate: 0.0100
+Epoch 24/400
+
+Epoch 24: loss improved from 2.62120 to 2.55863, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 7s - 392ms/step - accuracy: 0.1969 - loss: 2.5586 - learning_rate: 0.0100
+Epoch 25/400
+
+Epoch 25: loss improved from 2.55863 to 2.53036, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 432ms/step - accuracy: 0.2173 - loss: 2.5304 - learning_rate: 0.0100
+Epoch 26/400
+
+Epoch 26: loss improved from 2.53036 to 2.51208, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 440ms/step - accuracy: 0.1986 - loss: 2.5121 - learning_rate: 0.0100
+Epoch 27/400
+
+Epoch 27: loss improved from 2.51208 to 2.46047, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 439ms/step - accuracy: 0.2173 - loss: 2.4605 - learning_rate: 0.0100
+Epoch 28/400
+
+Epoch 28: loss improved from 2.46047 to 2.45859, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 438ms/step - accuracy: 0.1919 - loss: 2.4586 - learning_rate: 0.0100
+Epoch 29/400
+
+Epoch 29: loss improved from 2.45859 to 2.45428, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 420ms/step - accuracy: 0.2190 - loss: 2.4543 - learning_rate: 0.0100
+Epoch 30/400
+
+Epoch 30: loss improved from 2.45428 to 2.41534, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 395ms/step - accuracy: 0.2275 - loss: 2.4153 - learning_rate: 0.0100
+Epoch 31/400
+
+Epoch 31: loss improved from 2.41534 to 2.37699, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 412ms/step - accuracy: 0.2462 - loss: 2.3770 - learning_rate: 0.0100
+Epoch 32/400
+
+Epoch 32: loss improved from 2.37699 to 2.31855, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 424ms/step - accuracy: 0.2275 - loss: 2.3185 - learning_rate: 0.0100
+Epoch 33/400
+
+Epoch 33: loss improved from 2.31855 to 2.27350, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 7s - 391ms/step - accuracy: 0.2547 - loss: 2.2735 - learning_rate: 0.0100
+Epoch 34/400
+
+Epoch 34: loss did not improve from 2.27350
+19/19 - 6s - 340ms/step - accuracy: 0.2666 - loss: 2.2786 - learning_rate: 0.0100
+Epoch 35/400
+
+Epoch 35: loss did not improve from 2.27350
+19/19 - 8s - 415ms/step - accuracy: 0.2445 - loss: 2.3146 - learning_rate: 0.0100
+Epoch 36/400
+
+Epoch 36: loss did not improve from 2.27350
+19/19 - 8s - 424ms/step - accuracy: 0.2632 - loss: 2.2783 - learning_rate: 0.0100
+Epoch 37/400
+
+Epoch 37: loss improved from 2.27350 to 2.18003, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 430ms/step - accuracy: 0.2716 - loss: 2.1800 - learning_rate: 0.0100
+Epoch 38/400
+
+Epoch 38: loss improved from 2.18003 to 2.17408, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 428ms/step - accuracy: 0.2954 - loss: 2.1741 - learning_rate: 0.0100
+Epoch 39/400
+
+Epoch 39: loss improved from 2.17408 to 2.11435, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 6s - 330ms/step - accuracy: 0.2886 - loss: 2.1144 - learning_rate: 0.0100
+Epoch 40/400
+
+Epoch 40: loss did not improve from 2.11435
+19/19 - 7s - 345ms/step - accuracy: 0.2767 - loss: 2.1816 - learning_rate: 0.0100
+Epoch 41/400
+
+Epoch 41: loss improved from 2.11435 to 2.07020, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 445ms/step - accuracy: 0.3294 - loss: 2.0702 - learning_rate: 0.0100
+Epoch 42/400
+
+Epoch 42: loss did not improve from 2.07020
+19/19 - 8s - 428ms/step - accuracy: 0.2954 - loss: 2.0944 - learning_rate: 0.0100
+Epoch 43/400
+
+Epoch 43: loss improved from 2.07020 to 2.06711, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 422ms/step - accuracy: 0.3039 - loss: 2.0671 - learning_rate: 0.0100
+Epoch 44/400
+
+Epoch 44: loss improved from 2.06711 to 1.98927, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 7s - 393ms/step - accuracy: 0.3277 - loss: 1.9893 - learning_rate: 0.0100
+Epoch 45/400
+
+Epoch 45: loss did not improve from 1.98927
+19/19 - 8s - 424ms/step - accuracy: 0.3243 - loss: 2.0037 - learning_rate: 0.0100
+Epoch 46/400
+
+Epoch 46: loss improved from 1.98927 to 1.97492, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 428ms/step - accuracy: 0.3531 - loss: 1.9749 - learning_rate: 0.0100
+Epoch 47/400
+
+Epoch 47: loss improved from 1.97492 to 1.96524, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 423ms/step - accuracy: 0.3226 - loss: 1.9652 - learning_rate: 0.0100
+Epoch 48/400
+
+Epoch 48: loss did not improve from 1.96524
+19/19 - 8s - 408ms/step - accuracy: 0.3447 - loss: 1.9729 - learning_rate: 0.0100
+Epoch 49/400
+
+Epoch 49: loss did not improve from 1.96524
+19/19 - 8s - 415ms/step - accuracy: 0.3497 - loss: 1.9710 - learning_rate: 0.0100
+Epoch 50/400
+
+Epoch 50: loss improved from 1.96524 to 1.95225, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 427ms/step - accuracy: 0.3447 - loss: 1.9522 - learning_rate: 0.0100
+Epoch 51/400
+
+Epoch 51: loss improved from 1.95225 to 1.92107, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 429ms/step - accuracy: 0.3362 - loss: 1.9211 - learning_rate: 0.0100
+Epoch 52/400
+
+Epoch 52: loss improved from 1.92107 to 1.91766, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 436ms/step - accuracy: 0.3582 - loss: 1.9177 - learning_rate: 0.0100
+Epoch 53/400
+
+Epoch 53: loss improved from 1.91766 to 1.89001, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 7s - 375ms/step - accuracy: 0.3548 - loss: 1.8900 - learning_rate: 0.0100
+Epoch 54/400
+
+Epoch 54: loss improved from 1.89001 to 1.83372, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 7s - 347ms/step - accuracy: 0.3447 - loss: 1.8337 - learning_rate: 0.0100
+Epoch 55/400
+
+Epoch 55: loss did not improve from 1.83372
+19/19 - 6s - 310ms/step - accuracy: 0.3633 - loss: 1.8375 - learning_rate: 0.0100
+Epoch 56/400
+
+Epoch 56: loss improved from 1.83372 to 1.82636, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 7s - 392ms/step - accuracy: 0.3582 - loss: 1.8264 - learning_rate: 0.0100
+Epoch 57/400
+
+Epoch 57: loss did not improve from 1.82636
+19/19 - 8s - 417ms/step - accuracy: 0.3633 - loss: 1.8302 - learning_rate: 0.0100
+Epoch 58/400
+
+Epoch 58: loss improved from 1.82636 to 1.79577, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 435ms/step - accuracy: 0.3735 - loss: 1.7958 - learning_rate: 0.0100
+Epoch 59/400
+
+Epoch 59: loss improved from 1.79577 to 1.76705, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 435ms/step - accuracy: 0.3871 - loss: 1.7670 - learning_rate: 0.0100
+Epoch 60/400
+
+Epoch 60: loss did not improve from 1.76705
+19/19 - 8s - 422ms/step - accuracy: 0.3582 - loss: 1.7889 - learning_rate: 0.0100
+Epoch 61/400
+
+Epoch 61: loss improved from 1.76705 to 1.75081, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 419ms/step - accuracy: 0.3871 - loss: 1.7508 - learning_rate: 0.0100
+Epoch 62/400
+
+Epoch 62: loss improved from 1.75081 to 1.69287, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 434ms/step - accuracy: 0.3990 - loss: 1.6929 - learning_rate: 0.0100
+Epoch 63/400
+
+Epoch 63: loss improved from 1.69287 to 1.68584, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 431ms/step - accuracy: 0.4126 - loss: 1.6858 - learning_rate: 0.0100
+Epoch 64/400
+
+Epoch 64: loss did not improve from 1.68584
+19/19 - 8s - 419ms/step - accuracy: 0.4075 - loss: 1.7292 - learning_rate: 0.0100
+Epoch 65/400
+
+Epoch 65: loss improved from 1.68584 to 1.65756, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 7s - 353ms/step - accuracy: 0.4261 - loss: 1.6576 - learning_rate: 0.0100
+Epoch 66/400
+
+Epoch 66: loss did not improve from 1.65756
+19/19 - 7s - 350ms/step - accuracy: 0.3854 - loss: 1.7147 - learning_rate: 0.0100
+Epoch 67/400
+
+Epoch 67: loss improved from 1.65756 to 1.63619, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 6s - 303ms/step - accuracy: 0.4329 - loss: 1.6362 - learning_rate: 0.0100
+Epoch 68/400
+
+Epoch 68: loss did not improve from 1.63619
+19/19 - 8s - 419ms/step - accuracy: 0.4211 - loss: 1.6515 - learning_rate: 0.0100
+Epoch 69/400
+
+Epoch 69: loss did not improve from 1.63619
+19/19 - 8s - 410ms/step - accuracy: 0.4024 - loss: 1.6425 - learning_rate: 0.0100
+Epoch 70/400
+
+Epoch 70: loss improved from 1.63619 to 1.58565, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 421ms/step - accuracy: 0.4160 - loss: 1.5856 - learning_rate: 0.0100
+Epoch 71/400
+
+Epoch 71: loss did not improve from 1.58565
+19/19 - 7s - 361ms/step - accuracy: 0.3769 - loss: 1.6082 - learning_rate: 0.0100
+Epoch 72/400
+
+Epoch 72: loss improved from 1.58565 to 1.55579, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 7s - 372ms/step - accuracy: 0.4448 - loss: 1.5558 - learning_rate: 0.0100
+Epoch 73/400
+
+Epoch 73: loss did not improve from 1.55579
+19/19 - 6s - 293ms/step - accuracy: 0.4312 - loss: 1.6051 - learning_rate: 0.0100
+Epoch 74/400
+
+Epoch 74: loss did not improve from 1.55579
+19/19 - 7s - 380ms/step - accuracy: 0.4278 - loss: 1.6006 - learning_rate: 0.0100
+Epoch 75/400
+
+Epoch 75: loss did not improve from 1.55579
+19/19 - 7s - 391ms/step - accuracy: 0.4329 - loss: 1.5930 - learning_rate: 0.0100
+Epoch 76/400
+
+Epoch 76: loss did not improve from 1.55579
+19/19 - 7s - 394ms/step - accuracy: 0.4329 - loss: 1.6013 - learning_rate: 0.0100
+Epoch 77/400
+
+Epoch 77: loss did not improve from 1.55579
+19/19 - 8s - 398ms/step - accuracy: 0.4295 - loss: 1.6470 - learning_rate: 0.0100
+Epoch 78/400
+
+Epoch 78: loss improved from 1.55579 to 1.53929, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 7s - 395ms/step - accuracy: 0.4465 - loss: 1.5393 - learning_rate: 0.0100
+Epoch 79/400
+
+Epoch 79: loss improved from 1.53929 to 1.48993, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 413ms/step - accuracy: 0.4822 - loss: 1.4899 - learning_rate: 0.0100
+Epoch 80/400
+
+Epoch 80: loss did not improve from 1.48993
+19/19 - 6s - 309ms/step - accuracy: 0.4482 - loss: 1.5515 - learning_rate: 0.0100
+Epoch 81/400
+
+Epoch 81: loss did not improve from 1.48993
+19/19 - 7s - 349ms/step - accuracy: 0.4244 - loss: 1.5219 - learning_rate: 0.0100
+Epoch 82/400
+
+Epoch 82: loss did not improve from 1.48993
+19/19 - 7s - 363ms/step - accuracy: 0.4533 - loss: 1.5419 - learning_rate: 0.0100
+Epoch 83/400
+
+Epoch 83: loss did not improve from 1.48993
+19/19 - 7s - 391ms/step - accuracy: 0.4618 - loss: 1.5057 - learning_rate: 0.0100
+Epoch 84/400
+
+Epoch 84: loss improved from 1.48993 to 1.47182, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 7s - 384ms/step - accuracy: 0.4635 - loss: 1.4718 - learning_rate: 0.0100
+Epoch 85/400
+
+Epoch 85: loss improved from 1.47182 to 1.41518, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 428ms/step - accuracy: 0.4924 - loss: 1.4152 - learning_rate: 0.0100
+Epoch 86/400
+
+Epoch 86: loss did not improve from 1.41518
+19/19 - 8s - 420ms/step - accuracy: 0.4737 - loss: 1.4337 - learning_rate: 0.0100
+Epoch 87/400
+
+Epoch 87: loss did not improve from 1.41518
+19/19 - 8s - 402ms/step - accuracy: 0.4771 - loss: 1.4884 - learning_rate: 0.0100
+Epoch 88/400
+
+Epoch 88: loss did not improve from 1.41518
+19/19 - 8s - 413ms/step - accuracy: 0.4856 - loss: 1.4190 - learning_rate: 0.0100
+Epoch 89/400
+
+Epoch 89: loss did not improve from 1.41518
+19/19 - 7s - 367ms/step - accuracy: 0.4584 - loss: 1.4724 - learning_rate: 0.0100
+Epoch 90/400
+
+Epoch 90: loss did not improve from 1.41518
+19/19 - 6s - 297ms/step - accuracy: 0.4822 - loss: 1.4839 - learning_rate: 0.0100
+Epoch 91/400
+
+Epoch 91: loss improved from 1.41518 to 1.37011, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 7s - 375ms/step - accuracy: 0.4958 - loss: 1.3701 - learning_rate: 0.0100
+Epoch 92/400
+
+Epoch 92: loss did not improve from 1.37011
+19/19 - 8s - 417ms/step - accuracy: 0.4771 - loss: 1.4334 - learning_rate: 0.0100
+Epoch 93/400
+
+Epoch 93: loss did not improve from 1.37011
+19/19 - 8s - 414ms/step - accuracy: 0.4567 - loss: 1.4801 - learning_rate: 0.0100
+Epoch 94/400
+
+Epoch 94: loss did not improve from 1.37011
+19/19 - 7s - 379ms/step - accuracy: 0.4652 - loss: 1.4367 - learning_rate: 0.0100
+Epoch 95/400
+
+Epoch 95: loss did not improve from 1.37011
+19/19 - 8s - 422ms/step - accuracy: 0.4873 - loss: 1.4157 - learning_rate: 0.0100
+Epoch 96/400
+
+Epoch 96: loss improved from 1.37011 to 1.32754, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 399ms/step - accuracy: 0.4992 - loss: 1.3275 - learning_rate: 0.0100
+Epoch 97/400
+
+Epoch 97: loss did not improve from 1.32754
+19/19 - 7s - 360ms/step - accuracy: 0.5025 - loss: 1.3788 - learning_rate: 0.0100
+Epoch 98/400
+
+Epoch 98: loss did not improve from 1.32754
+19/19 - 6s - 307ms/step - accuracy: 0.4890 - loss: 1.3988 - learning_rate: 0.0100
+Epoch 99/400
+
+Epoch 99: loss did not improve from 1.32754
+19/19 - 8s - 408ms/step - accuracy: 0.4686 - loss: 1.4020 - learning_rate: 0.0100
+Epoch 100/400
+
+Epoch 100: loss improved from 1.32754 to 1.30950, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 6s - 342ms/step - accuracy: 0.5059 - loss: 1.3095 - learning_rate: 0.0100
+Epoch 101/400
+
+Epoch 101: loss did not improve from 1.30950
+19/19 - 7s - 369ms/step - accuracy: 0.5076 - loss: 1.3529 - learning_rate: 0.0100
+Epoch 102/400
+
+Epoch 102: loss did not improve from 1.30950
+19/19 - 8s - 414ms/step - accuracy: 0.4720 - loss: 1.4242 - learning_rate: 0.0100
+Epoch 103/400
+
+Epoch 103: loss improved from 1.30950 to 1.28919, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 7s - 388ms/step - accuracy: 0.5297 - loss: 1.2892 - learning_rate: 0.0100
+Epoch 104/400
+
+Epoch 104: loss did not improve from 1.28919
+19/19 - 6s - 311ms/step - accuracy: 0.5025 - loss: 1.3470 - learning_rate: 0.0100
+Epoch 105/400
+
+Epoch 105: loss did not improve from 1.28919
+19/19 - 7s - 346ms/step - accuracy: 0.4941 - loss: 1.3712 - learning_rate: 0.0100
+Epoch 106/400
+
+Epoch 106: loss did not improve from 1.28919
+19/19 - 7s - 371ms/step - accuracy: 0.5059 - loss: 1.3164 - learning_rate: 0.0100
+Epoch 107/400
+
+Epoch 107: loss did not improve from 1.28919
+19/19 - 8s - 406ms/step - accuracy: 0.5127 - loss: 1.2947 - learning_rate: 0.0100
+Epoch 108/400
+
+Epoch 108: loss did not improve from 1.28919
+19/19 - 8s - 403ms/step - accuracy: 0.5161 - loss: 1.2943 - learning_rate: 0.0100
+Epoch 109/400
+
+Epoch 109: loss did not improve from 1.28919
+19/19 - 7s - 394ms/step - accuracy: 0.4941 - loss: 1.2965 - learning_rate: 0.0100
+Epoch 110/400
+
+Epoch 110: loss did not improve from 1.28919
+19/19 - 5s - 284ms/step - accuracy: 0.4839 - loss: 1.3834 - learning_rate: 0.0100
+Epoch 111/400
+
+Epoch 111: loss did not improve from 1.28919
+19/19 - 6s - 340ms/step - accuracy: 0.4992 - loss: 1.3118 - learning_rate: 0.0100
+Epoch 112/400
+
+Epoch 112: loss improved from 1.28919 to 1.26435, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 7s - 376ms/step - accuracy: 0.5263 - loss: 1.2644 - learning_rate: 0.0100
+Epoch 113/400
+
+Epoch 113: loss did not improve from 1.26435
+19/19 - 8s - 409ms/step - accuracy: 0.5076 - loss: 1.2946 - learning_rate: 0.0100
+Epoch 114/400
+
+Epoch 114: loss did not improve from 1.26435
+19/19 - 8s - 415ms/step - accuracy: 0.5178 - loss: 1.2801 - learning_rate: 0.0100
+Epoch 115/400
+
+Epoch 115: loss improved from 1.26435 to 1.24904, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 411ms/step - accuracy: 0.5331 - loss: 1.2490 - learning_rate: 0.0100
+Epoch 116/400
+
+Epoch 116: loss did not improve from 1.24904
+19/19 - 7s - 380ms/step - accuracy: 0.5518 - loss: 1.2847 - learning_rate: 0.0100
+Epoch 117/400
+
+Epoch 117: loss did not improve from 1.24904
+19/19 - 7s - 379ms/step - accuracy: 0.5178 - loss: 1.3129 - learning_rate: 0.0100
+Epoch 118/400
+
+Epoch 118: loss improved from 1.24904 to 1.22595, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 424ms/step - accuracy: 0.5399 - loss: 1.2260 - learning_rate: 0.0100
+Epoch 119/400
+
+Epoch 119: loss did not improve from 1.22595
+19/19 - 8s - 413ms/step - accuracy: 0.5518 - loss: 1.2292 - learning_rate: 0.0100
+Epoch 120/400
+
+Epoch 120: loss did not improve from 1.22595
+19/19 - 8s - 413ms/step - accuracy: 0.5229 - loss: 1.2513 - learning_rate: 0.0100
+Epoch 121/400
+
+Epoch 121: loss did not improve from 1.22595
+19/19 - 8s - 423ms/step - accuracy: 0.5586 - loss: 1.2401 - learning_rate: 0.0100
+Epoch 122/400
+
+Epoch 122: loss did not improve from 1.22595
+19/19 - 8s - 398ms/step - accuracy: 0.5246 - loss: 1.2937 - learning_rate: 0.0100
+Epoch 123/400
+
+Epoch 123: loss improved from 1.22595 to 1.18005, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 7s - 351ms/step - accuracy: 0.5535 - loss: 1.1800 - learning_rate: 0.0100
+Epoch 124/400
+
+Epoch 124: loss improved from 1.18005 to 1.17239, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 415ms/step - accuracy: 0.5535 - loss: 1.1724 - learning_rate: 0.0100
+Epoch 125/400
+
+Epoch 125: loss did not improve from 1.17239
+19/19 - 8s - 404ms/step - accuracy: 0.5603 - loss: 1.1960 - learning_rate: 0.0100
+Epoch 126/400
+
+Epoch 126: loss did not improve from 1.17239
+19/19 - 8s - 417ms/step - accuracy: 0.5263 - loss: 1.2048 - learning_rate: 0.0100
+Epoch 127/400
+
+Epoch 127: loss did not improve from 1.17239
+19/19 - 7s - 356ms/step - accuracy: 0.5297 - loss: 1.2120 - learning_rate: 0.0100
+Epoch 128/400
+
+Epoch 128: loss improved from 1.17239 to 1.17219, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 5s - 284ms/step - accuracy: 0.5671 - loss: 1.1722 - learning_rate: 0.0100
+Epoch 129/400
+
+Epoch 129: loss did not improve from 1.17219
+19/19 - 8s - 412ms/step - accuracy: 0.4907 - loss: 1.2631 - learning_rate: 0.0100
+Epoch 130/400
+
+Epoch 130: loss did not improve from 1.17219
+19/19 - 8s - 401ms/step - accuracy: 0.5433 - loss: 1.2102 - learning_rate: 0.0100
+Epoch 131/400
+
+Epoch 131: loss improved from 1.17219 to 1.15136, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 418ms/step - accuracy: 0.5671 - loss: 1.1514 - learning_rate: 0.0100
+Epoch 132/400
+
+Epoch 132: loss did not improve from 1.15136
+19/19 - 8s - 411ms/step - accuracy: 0.5518 - loss: 1.2188 - learning_rate: 0.0100
+Epoch 133/400
+
+Epoch 133: loss improved from 1.15136 to 1.13749, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 414ms/step - accuracy: 0.5739 - loss: 1.1375 - learning_rate: 0.0100
+Epoch 134/400
+
+Epoch 134: loss did not improve from 1.13749
+19/19 - 8s - 409ms/step - accuracy: 0.5399 - loss: 1.1802 - learning_rate: 0.0100
+Epoch 135/400
+
+Epoch 135: loss did not improve from 1.13749
+19/19 - 8s - 410ms/step - accuracy: 0.5535 - loss: 1.1715 - learning_rate: 0.0100
+Epoch 136/400
+
+Epoch 136: loss did not improve from 1.13749
+19/19 - 8s - 398ms/step - accuracy: 0.5433 - loss: 1.2108 - learning_rate: 0.0100
+Epoch 137/400
+
+Epoch 137: loss did not improve from 1.13749
+19/19 - 7s - 361ms/step - accuracy: 0.5688 - loss: 1.1770 - learning_rate: 0.0100
+Epoch 138/400
+
+Epoch 138: loss improved from 1.13749 to 1.10917, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 7s - 343ms/step - accuracy: 0.5756 - loss: 1.1092 - learning_rate: 0.0100
+Epoch 139/400
+
+Epoch 139: loss did not improve from 1.10917
+19/19 - 8s - 413ms/step - accuracy: 0.5603 - loss: 1.1274 - learning_rate: 0.0100
+Epoch 140/400
+
+Epoch 140: loss did not improve from 1.10917
+19/19 - 8s - 410ms/step - accuracy: 0.5382 - loss: 1.1542 - learning_rate: 0.0100
+Epoch 141/400
+
+Epoch 141: loss did not improve from 1.10917
+19/19 - 8s - 421ms/step - accuracy: 0.5484 - loss: 1.1960 - learning_rate: 0.0100
+Epoch 142/400
+
+Epoch 142: loss did not improve from 1.10917
+19/19 - 8s - 416ms/step - accuracy: 0.5959 - loss: 1.1237 - learning_rate: 0.0100
+Epoch 143/400
+
+Epoch 143: loss improved from 1.10917 to 1.06284, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 424ms/step - accuracy: 0.6044 - loss: 1.0628 - learning_rate: 0.0100
+Epoch 144/400
+
+Epoch 144: loss did not improve from 1.06284
+19/19 - 9s - 465ms/step - accuracy: 0.5450 - loss: 1.1665 - learning_rate: 0.0100
+Epoch 145/400
+
+Epoch 145: loss did not improve from 1.06284
+19/19 - 8s - 402ms/step - accuracy: 0.5569 - loss: 1.1164 - learning_rate: 0.0100
+Epoch 146/400
+
+Epoch 146: loss did not improve from 1.06284
+19/19 - 5s - 280ms/step - accuracy: 0.5552 - loss: 1.1713 - learning_rate: 0.0100
+Epoch 147/400
+
+Epoch 147: loss did not improve from 1.06284
+19/19 - 5s - 278ms/step - accuracy: 0.5857 - loss: 1.0956 - learning_rate: 0.0100
+Epoch 148/400
+
+Epoch 148: loss did not improve from 1.06284
+19/19 - 5s - 277ms/step - accuracy: 0.5823 - loss: 1.0651 - learning_rate: 0.0100
+Epoch 149/400
+
+Epoch 149: loss did not improve from 1.06284
+19/19 - 5s - 280ms/step - accuracy: 0.5705 - loss: 1.1291 - learning_rate: 0.0100
+Epoch 150/400
+
+Epoch 150: loss did not improve from 1.06284
+19/19 - 6s - 319ms/step - accuracy: 0.5229 - loss: 1.1719 - learning_rate: 0.0100
+Epoch 151/400
+
+Epoch 151: loss did not improve from 1.06284
+19/19 - 7s - 376ms/step - accuracy: 0.5654 - loss: 1.0993 - learning_rate: 0.0100
+Epoch 152/400
+
+Epoch 152: loss improved from 1.06284 to 1.05134, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 426ms/step - accuracy: 0.6163 - loss: 1.0513 - learning_rate: 0.0100
+Epoch 153/400
+
+Epoch 153: loss did not improve from 1.05134
+19/19 - 8s - 412ms/step - accuracy: 0.5874 - loss: 1.0851 - learning_rate: 0.0100
+Epoch 154/400
+
+Epoch 154: loss did not improve from 1.05134
+19/19 - 8s - 419ms/step - accuracy: 0.5399 - loss: 1.1486 - learning_rate: 0.0100
+Epoch 155/400
+
+Epoch 155: loss did not improve from 1.05134
+19/19 - 8s - 419ms/step - accuracy: 0.5942 - loss: 1.0642 - learning_rate: 0.0100
+Epoch 156/400
+
+Epoch 156: loss did not improve from 1.05134
+19/19 - 8s - 427ms/step - accuracy: 0.5756 - loss: 1.1034 - learning_rate: 0.0100
+Epoch 157/400
+
+Epoch 157: loss did not improve from 1.05134
+19/19 - 7s - 381ms/step - accuracy: 0.5959 - loss: 1.0739 - learning_rate: 0.0100
+Epoch 158/400
+
+Epoch 158: loss did not improve from 1.05134
+19/19 - 8s - 419ms/step - accuracy: 0.5942 - loss: 1.0695 - learning_rate: 0.0100
+Epoch 159/400
+
+Epoch 159: loss did not improve from 1.05134
+19/19 - 8s - 416ms/step - accuracy: 0.5806 - loss: 1.0622 - learning_rate: 0.0100
+Epoch 160/400
+
+Epoch 160: loss improved from 1.05134 to 1.04605, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 422ms/step - accuracy: 0.5976 - loss: 1.0461 - learning_rate: 0.0100
+Epoch 161/400
+
+Epoch 161: loss improved from 1.04605 to 1.03781, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 7s - 361ms/step - accuracy: 0.6078 - loss: 1.0378 - learning_rate: 0.0100
+Epoch 162/400
+
+Epoch 162: loss did not improve from 1.03781
+19/19 - 8s - 401ms/step - accuracy: 0.5959 - loss: 1.0588 - learning_rate: 0.0100
+Epoch 163/400
+
+Epoch 163: loss improved from 1.03781 to 1.02807, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 7s - 353ms/step - accuracy: 0.6044 - loss: 1.0281 - learning_rate: 0.0100
+Epoch 164/400
+
+Epoch 164: loss improved from 1.02807 to 1.00247, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 420ms/step - accuracy: 0.6214 - loss: 1.0025 - learning_rate: 0.0100
+Epoch 165/400
+
+Epoch 165: loss did not improve from 1.00247
+19/19 - 7s - 382ms/step - accuracy: 0.5772 - loss: 1.0986 - learning_rate: 0.0100
+Epoch 166/400
+
+Epoch 166: loss did not improve from 1.00247
+19/19 - 8s - 409ms/step - accuracy: 0.6146 - loss: 1.0241 - learning_rate: 0.0100
+Epoch 167/400
+
+Epoch 167: loss did not improve from 1.00247
+19/19 - 7s - 369ms/step - accuracy: 0.6197 - loss: 1.0097 - learning_rate: 0.0100
+Epoch 168/400
+
+Epoch 168: loss did not improve from 1.00247
+19/19 - 8s - 409ms/step - accuracy: 0.5789 - loss: 1.0602 - learning_rate: 0.0100
+Epoch 169/400
+
+Epoch 169: loss did not improve from 1.00247
+19/19 - 8s - 425ms/step - accuracy: 0.6299 - loss: 1.0435 - learning_rate: 0.0100
+Epoch 170/400
+
+Epoch 170: loss did not improve from 1.00247
+19/19 - 8s - 403ms/step - accuracy: 0.6129 - loss: 1.0108 - learning_rate: 0.0100
+Epoch 171/400
+
+Epoch 171: loss improved from 1.00247 to 0.99083, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 7s - 360ms/step - accuracy: 0.6316 - loss: 0.9908 - learning_rate: 0.0100
+Epoch 172/400
+
+Epoch 172: loss did not improve from 0.99083
+19/19 - 8s - 409ms/step - accuracy: 0.5908 - loss: 1.0485 - learning_rate: 0.0100
+Epoch 173/400
+
+Epoch 173: loss did not improve from 0.99083
+19/19 - 8s - 409ms/step - accuracy: 0.5789 - loss: 1.0621 - learning_rate: 0.0100
+Epoch 174/400
+
+Epoch 174: loss did not improve from 0.99083
+19/19 - 8s - 414ms/step - accuracy: 0.6282 - loss: 0.9950 - learning_rate: 0.0100
+Epoch 175/400
+
+Epoch 175: loss did not improve from 0.99083
+19/19 - 7s - 359ms/step - accuracy: 0.6027 - loss: 1.0103 - learning_rate: 0.0100
+Epoch 176/400
+
+Epoch 176: loss did not improve from 0.99083
+19/19 - 8s - 416ms/step - accuracy: 0.6078 - loss: 1.0138 - learning_rate: 0.0100
+Epoch 177/400
+
+Epoch 177: loss did not improve from 0.99083
+19/19 - 7s - 361ms/step - accuracy: 0.6146 - loss: 1.0107 - learning_rate: 0.0100
+Epoch 178/400
+
+Epoch 178: loss did not improve from 0.99083
+19/19 - 8s - 403ms/step - accuracy: 0.6061 - loss: 1.0017 - learning_rate: 0.0100
+Epoch 179/400
+
+Epoch 179: loss did not improve from 0.99083
+19/19 - 7s - 343ms/step - accuracy: 0.6180 - loss: 1.0372 - learning_rate: 0.0100
+Epoch 180/400
+
+Epoch 180: loss did not improve from 0.99083
+19/19 - 7s - 355ms/step - accuracy: 0.5874 - loss: 1.0011 - learning_rate: 0.0100
+Epoch 181/400
+
+Epoch 181: loss did not improve from 0.99083
+19/19 - 8s - 438ms/step - accuracy: 0.6078 - loss: 1.0291 - learning_rate: 0.0100
+Epoch 182/400
+
+Epoch 182: loss improved from 0.99083 to 0.98537, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 7s - 370ms/step - accuracy: 0.6129 - loss: 0.9854 - learning_rate: 1.0000e-03
+Epoch 183/400
+
+Epoch 183: loss did not improve from 0.98537
+19/19 - 8s - 417ms/step - accuracy: 0.6350 - loss: 1.0027 - learning_rate: 1.0000e-03
+Epoch 184/400
+
+Epoch 184: loss improved from 0.98537 to 0.97318, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 436ms/step - accuracy: 0.6078 - loss: 0.9732 - learning_rate: 1.0000e-03
+Epoch 185/400
+
+Epoch 185: loss did not improve from 0.97318
+19/19 - 8s - 421ms/step - accuracy: 0.6265 - loss: 0.9995 - learning_rate: 1.0000e-03
+Epoch 186/400
+
+Epoch 186: loss improved from 0.97318 to 0.96341, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 403ms/step - accuracy: 0.6384 - loss: 0.9634 - learning_rate: 1.0000e-03
+Epoch 187/400
+
+Epoch 187: loss improved from 0.96341 to 0.92603, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 442ms/step - accuracy: 0.6197 - loss: 0.9260 - learning_rate: 1.0000e-03
+Epoch 188/400
+
+Epoch 188: loss did not improve from 0.92603
+19/19 - 8s - 413ms/step - accuracy: 0.6350 - loss: 0.9324 - learning_rate: 1.0000e-03
+Epoch 189/400
+
+Epoch 189: loss did not improve from 0.92603
+19/19 - 8s - 414ms/step - accuracy: 0.6078 - loss: 0.9818 - learning_rate: 1.0000e-03
+Epoch 190/400
+
+Epoch 190: loss did not improve from 0.92603
+19/19 - 8s - 408ms/step - accuracy: 0.6469 - loss: 0.9565 - learning_rate: 1.0000e-03
+Epoch 191/400
+
+Epoch 191: loss did not improve from 0.92603
+19/19 - 8s - 402ms/step - accuracy: 0.6146 - loss: 0.9443 - learning_rate: 1.0000e-03
+Epoch 192/400
+
+Epoch 192: loss improved from 0.92603 to 0.91936, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 6s - 315ms/step - accuracy: 0.6452 - loss: 0.9194 - learning_rate: 1.0000e-03
+Epoch 193/400
+
+Epoch 193: loss did not improve from 0.91936
+19/19 - 8s - 400ms/step - accuracy: 0.6146 - loss: 0.9529 - learning_rate: 1.0000e-03
+Epoch 194/400
+
+Epoch 194: loss improved from 0.91936 to 0.88196, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 423ms/step - accuracy: 0.6740 - loss: 0.8820 - learning_rate: 1.0000e-03
+Epoch 195/400
+
+Epoch 195: loss did not improve from 0.88196
+19/19 - 8s - 410ms/step - accuracy: 0.6384 - loss: 0.9219 - learning_rate: 1.0000e-03
+Epoch 196/400
+
+Epoch 196: loss did not improve from 0.88196
+19/19 - 8s - 404ms/step - accuracy: 0.6282 - loss: 0.9571 - learning_rate: 1.0000e-03
+Epoch 197/400
+
+Epoch 197: loss did not improve from 0.88196
+19/19 - 8s - 400ms/step - accuracy: 0.6401 - loss: 0.9351 - learning_rate: 1.0000e-03
+Epoch 198/400
+
+Epoch 198: loss did not improve from 0.88196
+19/19 - 8s - 411ms/step - accuracy: 0.6061 - loss: 0.9573 - learning_rate: 1.0000e-03
+Epoch 199/400
+
+Epoch 199: loss did not improve from 0.88196
+19/19 - 8s - 414ms/step - accuracy: 0.6282 - loss: 0.9144 - learning_rate: 1.0000e-03
+Epoch 200/400
+
+Epoch 200: loss did not improve from 0.88196
+19/19 - 7s - 381ms/step - accuracy: 0.6401 - loss: 0.9531 - learning_rate: 1.0000e-03
+Epoch 201/400
+
+Epoch 201: loss did not improve from 0.88196
+19/19 - 6s - 309ms/step - accuracy: 0.6282 - loss: 0.9463 - learning_rate: 1.0000e-03
+Epoch 202/400
+
+Epoch 202: loss did not improve from 0.88196
+19/19 - 7s - 392ms/step - accuracy: 0.6180 - loss: 0.9352 - learning_rate: 1.0000e-03
+Epoch 203/400
+
+Epoch 203: loss did not improve from 0.88196
+19/19 - 8s - 406ms/step - accuracy: 0.6095 - loss: 0.9705 - learning_rate: 1.0000e-03
+Epoch 204/400
+
+Epoch 204: loss did not improve from 0.88196
+19/19 - 7s - 387ms/step - accuracy: 0.6112 - loss: 0.9546 - learning_rate: 1.0000e-03
+Epoch 205/400
+
+Epoch 205: loss did not improve from 0.88196
+19/19 - 7s - 382ms/step - accuracy: 0.6299 - loss: 0.9321 - learning_rate: 1.0000e-04
+Epoch 206/400
+
+Epoch 206: loss did not improve from 0.88196
+19/19 - 6s - 299ms/step - accuracy: 0.6282 - loss: 0.9636 - learning_rate: 1.0000e-04
+Epoch 207/400
+
+Epoch 207: loss did not improve from 0.88196
+19/19 - 6s - 310ms/step - accuracy: 0.6316 - loss: 0.9799 - learning_rate: 1.0000e-04
+Epoch 208/400
+
+Epoch 208: loss did not improve from 0.88196
+19/19 - 7s - 353ms/step - accuracy: 0.6350 - loss: 0.9590 - learning_rate: 1.0000e-04
+Epoch 209/400
+
+Epoch 209: loss did not improve from 0.88196
+19/19 - 8s - 418ms/step - accuracy: 0.6384 - loss: 0.9464 - learning_rate: 1.0000e-04
+Epoch 210/400
+
+Epoch 210: loss did not improve from 0.88196
+19/19 - 8s - 410ms/step - accuracy: 0.6061 - loss: 0.9657 - learning_rate: 1.0000e-04
+Epoch 211/400
+
+Epoch 211: loss did not improve from 0.88196
+19/19 - 8s - 443ms/step - accuracy: 0.6265 - loss: 0.9202 - learning_rate: 1.0000e-04
+Epoch 212/400
+
+Epoch 212: loss did not improve from 0.88196
+19/19 - 8s - 405ms/step - accuracy: 0.6163 - loss: 0.9574 - learning_rate: 1.0000e-04
+Epoch 213/400
+
+Epoch 213: loss did not improve from 0.88196
+19/19 - 7s - 351ms/step - accuracy: 0.6265 - loss: 0.9660 - learning_rate: 1.0000e-04
+Epoch 214/400
+
+Epoch 214: loss did not improve from 0.88196
+19/19 - 8s - 401ms/step - accuracy: 0.6401 - loss: 0.9137 - learning_rate: 1.0000e-04
+Epoch 215/400
+
+Epoch 215: loss did not improve from 0.88196
+19/19 - 8s - 407ms/step - accuracy: 0.6469 - loss: 0.9411 - learning_rate: 1.0000e-04
+Epoch 216/400
+
+Epoch 216: loss did not improve from 0.88196
+19/19 - 8s - 414ms/step - accuracy: 0.6469 - loss: 0.9414 - learning_rate: 1.0000e-04
+Epoch 217/400
+
+Epoch 217: loss did not improve from 0.88196
+19/19 - 8s - 405ms/step - accuracy: 0.6265 - loss: 0.9781 - learning_rate: 1.0000e-04
+Epoch 218/400
+
+Epoch 218: loss did not improve from 0.88196
+19/19 - 7s - 388ms/step - accuracy: 0.6401 - loss: 0.9463 - learning_rate: 1.0000e-04
+Epoch 219/400
+
+Epoch 219: loss did not improve from 0.88196
+19/19 - 6s - 330ms/step - accuracy: 0.6350 - loss: 0.9119 - learning_rate: 1.0000e-05
+Epoch 220/400
+
+Epoch 220: loss did not improve from 0.88196
+19/19 - 7s - 391ms/step - accuracy: 0.6520 - loss: 0.9527 - learning_rate: 1.0000e-05
+Epoch 221/400
+
+Epoch 221: loss did not improve from 0.88196
+19/19 - 5s - 286ms/step - accuracy: 0.6265 - loss: 0.9639 - learning_rate: 1.0000e-05
+Epoch 222/400
+
+Epoch 222: loss did not improve from 0.88196
+19/19 - 7s - 379ms/step - accuracy: 0.6163 - loss: 0.9570 - learning_rate: 1.0000e-05
+Epoch 223/400
+
+Epoch 223: loss did not improve from 0.88196
+19/19 - 8s - 413ms/step - accuracy: 0.6587 - loss: 0.9118 - learning_rate: 1.0000e-05
+Epoch 224/400
+
+Epoch 224: loss did not improve from 0.88196
+19/19 - 8s - 420ms/step - accuracy: 0.6503 - loss: 0.9282 - learning_rate: 1.0000e-05
+Epoch 225/400
+
+Epoch 225: loss did not improve from 0.88196
+19/19 - 8s - 421ms/step - accuracy: 0.6214 - loss: 0.9732 - learning_rate: 1.0000e-05
+Epoch 226/400
+
+Epoch 226: loss did not improve from 0.88196
+19/19 - 8s - 415ms/step - accuracy: 0.6231 - loss: 0.9525 - learning_rate: 1.0000e-05
+Epoch 227/400
+
+Epoch 227: loss did not improve from 0.88196
+19/19 - 7s - 392ms/step - accuracy: 0.6129 - loss: 0.9617 - learning_rate: 1.0000e-05
+Epoch 228/400
+
+Epoch 228: loss did not improve from 0.88196
+19/19 - 7s - 371ms/step - accuracy: 0.5976 - loss: 0.9342 - learning_rate: 1.0000e-05
+Epoch 229/400
+
+Epoch 229: loss did not improve from 0.88196
+19/19 - 6s - 300ms/step - accuracy: 0.6299 - loss: 0.9654 - learning_rate: 1.0000e-05
+Epoch 230/400
+
+Epoch 230: loss did not improve from 0.88196
+19/19 - 8s - 420ms/step - accuracy: 0.6163 - loss: 1.0052 - learning_rate: 1.0000e-05
+Epoch 231/400
+
+Epoch 231: loss did not improve from 0.88196
+19/19 - 8s - 407ms/step - accuracy: 0.6282 - loss: 0.9769 - learning_rate: 1.0000e-05
+Epoch 232/400
+
+Epoch 232: loss did not improve from 0.88196
+19/19 - 7s - 365ms/step - accuracy: 0.5959 - loss: 0.9649 - learning_rate: 1.0000e-05
+Epoch 233/400
+
+Epoch 233: loss did not improve from 0.88196
+19/19 - 7s - 382ms/step - accuracy: 0.6604 - loss: 0.9186 - learning_rate: 1.0000e-05
+Epoch 234/400
+
+Epoch 234: loss did not improve from 0.88196
+19/19 - 8s - 421ms/step - accuracy: 0.6367 - loss: 0.9570 - learning_rate: 1.0000e-05
+Epoch 235/400
+
+Epoch 235: loss did not improve from 0.88196
+19/19 - 8s - 424ms/step - accuracy: 0.6587 - loss: 0.9112 - learning_rate: 1.0000e-05
+Epoch 236/400
+
+Epoch 236: loss did not improve from 0.88196
+19/19 - 8s - 414ms/step - accuracy: 0.6333 - loss: 0.9280 - learning_rate: 1.0000e-05
+Epoch 237/400
+
+Epoch 237: loss did not improve from 0.88196
+19/19 - 7s - 366ms/step - accuracy: 0.6350 - loss: 0.9497 - learning_rate: 1.0000e-05
+Epoch 238/400
+
+Epoch 238: loss did not improve from 0.88196
+19/19 - 6s - 296ms/step - accuracy: 0.6486 - loss: 0.9114 - learning_rate: 1.0000e-05
+Epoch 239/400
+
+Epoch 239: loss did not improve from 0.88196
+19/19 - 6s - 327ms/step - accuracy: 0.6452 - loss: 0.9141 - learning_rate: 1.0000e-05
+Epoch 240/400
+
+Epoch 240: loss did not improve from 0.88196
+19/19 - 8s - 414ms/step - accuracy: 0.6350 - loss: 0.9510 - learning_rate: 1.0000e-05
+Epoch 241/400
+
+Epoch 241: loss did not improve from 0.88196
+19/19 - 7s - 378ms/step - accuracy: 0.6435 - loss: 0.9383 - learning_rate: 1.0000e-05
+Epoch 242/400
+
+Epoch 242: loss did not improve from 0.88196
+19/19 - 6s - 322ms/step - accuracy: 0.6503 - loss: 0.9012 - learning_rate: 1.0000e-05
+Epoch 243/400
+
+Epoch 243: loss did not improve from 0.88196
+19/19 - 6s - 300ms/step - accuracy: 0.6333 - loss: 0.9108 - learning_rate: 1.0000e-05
+Epoch 244/400
+
+Epoch 244: loss did not improve from 0.88196
+19/19 - 8s - 406ms/step - accuracy: 0.6333 - loss: 0.9123 - learning_rate: 1.0000e-05
+Epoch 245/400
+
+Epoch 245: loss did not improve from 0.88196
+19/19 - 6s - 333ms/step - accuracy: 0.6248 - loss: 0.9601 - learning_rate: 1.0000e-05
+Epoch 246/400
+
+Epoch 246: loss did not improve from 0.88196
+19/19 - 8s - 404ms/step - accuracy: 0.6367 - loss: 0.9265 - learning_rate: 1.0000e-05
+Epoch 247/400
+
+Epoch 247: loss did not improve from 0.88196
+19/19 - 7s - 393ms/step - accuracy: 0.6299 - loss: 0.9739 - learning_rate: 1.0000e-05
+Epoch 248/400
+
+Epoch 248: loss did not improve from 0.88196
+19/19 - 6s - 341ms/step - accuracy: 0.6520 - loss: 0.9328 - learning_rate: 1.0000e-05
+Epoch 249/400
+
+Epoch 249: loss did not improve from 0.88196
+19/19 - 8s - 418ms/step - accuracy: 0.6146 - loss: 0.9723 - learning_rate: 1.0000e-05
+Epoch 250/400
+
+Epoch 250: loss did not improve from 0.88196
+19/19 - 8s - 425ms/step - accuracy: 0.6367 - loss: 0.9197 - learning_rate: 1.0000e-05
+Epoch 251/400
+
+Epoch 251: loss did not improve from 0.88196
+19/19 - 8s - 424ms/step - accuracy: 0.6078 - loss: 0.9270 - learning_rate: 1.0000e-05
+Epoch 252/400
+
+Epoch 252: loss did not improve from 0.88196
+19/19 - 7s - 373ms/step - accuracy: 0.6231 - loss: 0.9470 - learning_rate: 1.0000e-05
+Epoch 253/400
+
+Epoch 253: loss did not improve from 0.88196
+19/19 - 6s - 293ms/step - accuracy: 0.6282 - loss: 0.9069 - learning_rate: 1.0000e-05
+Epoch 254/400
+
+Epoch 254: loss did not improve from 0.88196
+19/19 - 7s - 371ms/step - accuracy: 0.6163 - loss: 0.9190 - learning_rate: 1.0000e-05
+Epoch 255/400
+
+Epoch 255: loss did not improve from 0.88196
+19/19 - 7s - 394ms/step - accuracy: 0.6248 - loss: 0.9566 - learning_rate: 1.0000e-05
+Epoch 256/400
+
+Epoch 256: loss did not improve from 0.88196
+19/19 - 7s - 359ms/step - accuracy: 0.6486 - loss: 0.9606 - learning_rate: 1.0000e-05
+Epoch 257/400
+
+Epoch 257: loss did not improve from 0.88196
+19/19 - 6s - 321ms/step - accuracy: 0.6112 - loss: 0.9880 - learning_rate: 1.0000e-05
+Epoch 258/400
+
+Epoch 258: loss did not improve from 0.88196
+19/19 - 8s - 410ms/step - accuracy: 0.6553 - loss: 0.8914 - learning_rate: 1.0000e-05
+Epoch 259/400
+
+Epoch 259: loss did not improve from 0.88196
+19/19 - 7s - 362ms/step - accuracy: 0.6350 - loss: 0.9261 - learning_rate: 1.0000e-05
+Epoch 260/400
+
+Epoch 260: loss did not improve from 0.88196
+19/19 - 7s - 379ms/step - accuracy: 0.6418 - loss: 0.9054 - learning_rate: 1.0000e-05
+Epoch 261/400
+
+Epoch 261: loss did not improve from 0.88196
+19/19 - 7s - 357ms/step - accuracy: 0.6027 - loss: 1.0031 - learning_rate: 1.0000e-05
+Epoch 262/400
+
+Epoch 262: loss did not improve from 0.88196
+19/19 - 7s - 364ms/step - accuracy: 0.6316 - loss: 0.9348 - learning_rate: 1.0000e-05
+Epoch 263/400
+
+Epoch 263: loss did not improve from 0.88196
+19/19 - 7s - 359ms/step - accuracy: 0.6503 - loss: 0.9186 - learning_rate: 1.0000e-05
+Epoch 264/400
+
+Epoch 264: loss improved from 0.88196 to 0.87592, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 418ms/step - accuracy: 0.6774 - loss: 0.8759 - learning_rate: 1.0000e-05
+Epoch 265/400
+
+Epoch 265: loss did not improve from 0.87592
+19/19 - 6s - 335ms/step - accuracy: 0.6553 - loss: 0.9376 - learning_rate: 1.0000e-05
+Epoch 266/400
+
+Epoch 266: loss did not improve from 0.87592
+19/19 - 7s - 361ms/step - accuracy: 0.6520 - loss: 0.9435 - learning_rate: 1.0000e-05
+Epoch 267/400
+
+Epoch 267: loss did not improve from 0.87592
+19/19 - 6s - 313ms/step - accuracy: 0.6248 - loss: 0.9632 - learning_rate: 1.0000e-05
+Epoch 268/400
+
+Epoch 268: loss did not improve from 0.87592
+19/19 - 8s - 422ms/step - accuracy: 0.6299 - loss: 0.9612 - learning_rate: 1.0000e-05
+Epoch 269/400
+
+Epoch 269: loss did not improve from 0.87592
+19/19 - 8s - 416ms/step - accuracy: 0.6010 - loss: 0.9624 - learning_rate: 1.0000e-05
+Epoch 270/400
+
+Epoch 270: loss did not improve from 0.87592
+19/19 - 8s - 421ms/step - accuracy: 0.6418 - loss: 0.9288 - learning_rate: 1.0000e-05
+Epoch 271/400
+
+Epoch 271: loss did not improve from 0.87592
+19/19 - 8s - 412ms/step - accuracy: 0.6401 - loss: 0.9068 - learning_rate: 1.0000e-05
+Epoch 272/400
+
+Epoch 272: loss did not improve from 0.87592
+19/19 - 8s - 402ms/step - accuracy: 0.6299 - loss: 0.9418 - learning_rate: 1.0000e-05
+Epoch 273/400
+
+Epoch 273: loss did not improve from 0.87592
+19/19 - 8s - 411ms/step - accuracy: 0.6570 - loss: 0.9410 - learning_rate: 1.0000e-05
+Epoch 274/400
+
+Epoch 274: loss did not improve from 0.87592
+19/19 - 7s - 361ms/step - accuracy: 0.6248 - loss: 0.9153 - learning_rate: 1.0000e-05
+Epoch 275/400
+
+Epoch 275: loss did not improve from 0.87592
+19/19 - 7s - 384ms/step - accuracy: 0.6418 - loss: 0.8811 - learning_rate: 1.0000e-05
+Epoch 276/400
+
+Epoch 276: loss did not improve from 0.87592
+19/19 - 7s - 381ms/step - accuracy: 0.6537 - loss: 0.9194 - learning_rate: 1.0000e-05
+Epoch 277/400
+
+Epoch 277: loss did not improve from 0.87592
+19/19 - 6s - 329ms/step - accuracy: 0.6197 - loss: 0.9412 - learning_rate: 1.0000e-05
+Epoch 278/400
+
+Epoch 278: loss did not improve from 0.87592
+19/19 - 8s - 410ms/step - accuracy: 0.6316 - loss: 0.9278 - learning_rate: 1.0000e-05
+Epoch 279/400
+
+Epoch 279: loss did not improve from 0.87592
+19/19 - 7s - 374ms/step - accuracy: 0.6333 - loss: 0.9420 - learning_rate: 1.0000e-05
+Epoch 280/400
+
+Epoch 280: loss did not improve from 0.87592
+19/19 - 8s - 412ms/step - accuracy: 0.6231 - loss: 0.9346 - learning_rate: 1.0000e-05
+Epoch 281/400
+
+Epoch 281: loss did not improve from 0.87592
+19/19 - 7s - 391ms/step - accuracy: 0.5789 - loss: 0.9542 - learning_rate: 1.0000e-05
+Epoch 282/400
+
+Epoch 282: loss did not improve from 0.87592
+19/19 - 7s - 358ms/step - accuracy: 0.6078 - loss: 0.9517 - learning_rate: 1.0000e-05
+Epoch 283/400
+
+Epoch 283: loss did not improve from 0.87592
+19/19 - 7s - 388ms/step - accuracy: 0.6486 - loss: 0.9312 - learning_rate: 1.0000e-05
+Epoch 284/400
+
+Epoch 284: loss did not improve from 0.87592
+19/19 - 7s - 345ms/step - accuracy: 0.6537 - loss: 0.9592 - learning_rate: 1.0000e-05
+Epoch 285/400
+
+Epoch 285: loss did not improve from 0.87592
+19/19 - 7s - 386ms/step - accuracy: 0.6282 - loss: 0.9147 - learning_rate: 1.0000e-05
+Epoch 286/400
+
+Epoch 286: loss did not improve from 0.87592
+19/19 - 6s - 327ms/step - accuracy: 0.6299 - loss: 0.9303 - learning_rate: 1.0000e-05
+Epoch 287/400
+
+Epoch 287: loss did not improve from 0.87592
+19/19 - 7s - 365ms/step - accuracy: 0.6299 - loss: 0.9412 - learning_rate: 1.0000e-05
+Epoch 288/400
+
+Epoch 288: loss did not improve from 0.87592
+19/19 - 8s - 426ms/step - accuracy: 0.6486 - loss: 0.9124 - learning_rate: 1.0000e-05
+Epoch 289/400
+
+Epoch 289: loss did not improve from 0.87592
+19/19 - 8s - 412ms/step - accuracy: 0.6384 - loss: 0.9566 - learning_rate: 1.0000e-05
+Epoch 290/400
+
+Epoch 290: loss did not improve from 0.87592
+19/19 - 8s - 423ms/step - accuracy: 0.6061 - loss: 0.9870 - learning_rate: 1.0000e-05
+Epoch 291/400
+
+Epoch 291: loss did not improve from 0.87592
+19/19 - 6s - 322ms/step - accuracy: 0.6401 - loss: 0.9127 - learning_rate: 1.0000e-05
+Epoch 292/400
+
+Epoch 292: loss did not improve from 0.87592
+19/19 - 7s - 380ms/step - accuracy: 0.5874 - loss: 0.9549 - learning_rate: 1.0000e-05
+Epoch 293/400
+
+Epoch 293: loss did not improve from 0.87592
+19/19 - 6s - 331ms/step - accuracy: 0.6350 - loss: 0.9184 - learning_rate: 1.0000e-05
+Epoch 294/400
+
+Epoch 294: loss did not improve from 0.87592
+19/19 - 8s - 413ms/step - accuracy: 0.6435 - loss: 0.9126 - learning_rate: 1.0000e-05
+Epoch 295/400
+
+Epoch 295: loss did not improve from 0.87592
+19/19 - 6s - 306ms/step - accuracy: 0.6418 - loss: 0.9442 - learning_rate: 1.0000e-05
+Epoch 296/400
+
+Epoch 296: loss did not improve from 0.87592
+19/19 - 8s - 401ms/step - accuracy: 0.6265 - loss: 0.9797 - learning_rate: 1.0000e-05
+Epoch 297/400
+
+Epoch 297: loss did not improve from 0.87592
+19/19 - 8s - 422ms/step - accuracy: 0.6231 - loss: 0.9647 - learning_rate: 1.0000e-05
+Epoch 298/400
+
+Epoch 298: loss did not improve from 0.87592
+19/19 - 8s - 424ms/step - accuracy: 0.6537 - loss: 0.9000 - learning_rate: 1.0000e-05
+Epoch 299/400
+
+Epoch 299: loss did not improve from 0.87592
+19/19 - 7s - 394ms/step - accuracy: 0.6163 - loss: 0.9782 - learning_rate: 1.0000e-05
+Epoch 300/400
+
+Epoch 300: loss did not improve from 0.87592
+19/19 - 8s - 418ms/step - accuracy: 0.6061 - loss: 0.9040 - learning_rate: 1.0000e-05
+Epoch 301/400
+
+Epoch 301: loss did not improve from 0.87592
+19/19 - 8s - 419ms/step - accuracy: 0.6333 - loss: 0.9289 - learning_rate: 1.0000e-05
+Epoch 302/400
+
+Epoch 302: loss did not improve from 0.87592
+19/19 - 6s - 340ms/step - accuracy: 0.6044 - loss: 0.9973 - learning_rate: 1.0000e-05
+Epoch 303/400
+
+Epoch 303: loss did not improve from 0.87592
+19/19 - 8s - 416ms/step - accuracy: 0.6486 - loss: 0.9325 - learning_rate: 1.0000e-05
+Epoch 304/400
+
+Epoch 304: loss did not improve from 0.87592
+19/19 - 7s - 394ms/step - accuracy: 0.6095 - loss: 0.9525 - learning_rate: 1.0000e-05
+Epoch 305/400
+
+Epoch 305: loss did not improve from 0.87592
+19/19 - 5s - 281ms/step - accuracy: 0.6367 - loss: 0.9153 - learning_rate: 1.0000e-05
+Epoch 306/400
+
+Epoch 306: loss did not improve from 0.87592
+19/19 - 5s - 284ms/step - accuracy: 0.6231 - loss: 0.9104 - learning_rate: 1.0000e-05
+Epoch 307/400
+
+Epoch 307: loss did not improve from 0.87592
+19/19 - 8s - 405ms/step - accuracy: 0.6299 - loss: 0.9455 - learning_rate: 1.0000e-05
+Epoch 308/400
+
+Epoch 308: loss did not improve from 0.87592
+19/19 - 8s - 412ms/step - accuracy: 0.6689 - loss: 0.9060 - learning_rate: 1.0000e-05
+Epoch 309/400
+
+Epoch 309: loss did not improve from 0.87592
+19/19 - 5s - 277ms/step - accuracy: 0.6486 - loss: 0.9357 - learning_rate: 1.0000e-05
+Epoch 310/400
+
+Epoch 310: loss did not improve from 0.87592
+19/19 - 8s - 408ms/step - accuracy: 0.6027 - loss: 0.9540 - learning_rate: 1.0000e-05
+Epoch 311/400
+
+Epoch 311: loss did not improve from 0.87592
+19/19 - 8s - 421ms/step - accuracy: 0.6231 - loss: 0.9574 - learning_rate: 1.0000e-05
+Epoch 312/400
+
+Epoch 312: loss did not improve from 0.87592
+19/19 - 8s - 421ms/step - accuracy: 0.6384 - loss: 0.9436 - learning_rate: 1.0000e-05
+Epoch 313/400
+
+Epoch 313: loss did not improve from 0.87592
+19/19 - 8s - 417ms/step - accuracy: 0.6146 - loss: 0.9641 - learning_rate: 1.0000e-05
+Epoch 314/400
+
+Epoch 314: loss did not improve from 0.87592
+19/19 - 8s - 414ms/step - accuracy: 0.6452 - loss: 0.9526 - learning_rate: 1.0000e-05
+Epoch 315/400
+
+Epoch 315: loss did not improve from 0.87592
+19/19 - 8s - 433ms/step - accuracy: 0.6503 - loss: 0.9074 - learning_rate: 1.0000e-05
+Epoch 316/400
+
+Epoch 316: loss did not improve from 0.87592
+19/19 - 7s - 370ms/step - accuracy: 0.6248 - loss: 0.9531 - learning_rate: 1.0000e-05
+Epoch 317/400
+
+Epoch 317: loss did not improve from 0.87592
+19/19 - 6s - 330ms/step - accuracy: 0.6299 - loss: 0.9494 - learning_rate: 1.0000e-05
+Epoch 318/400
+
+Epoch 318: loss did not improve from 0.87592
+19/19 - 8s - 419ms/step - accuracy: 0.6452 - loss: 0.9164 - learning_rate: 1.0000e-05
+Epoch 319/400
+
+Epoch 319: loss did not improve from 0.87592
+19/19 - 7s - 390ms/step - accuracy: 0.6553 - loss: 0.9069 - learning_rate: 1.0000e-05
+Epoch 320/400
+
+Epoch 320: loss did not improve from 0.87592
+19/19 - 7s - 377ms/step - accuracy: 0.6333 - loss: 0.9515 - learning_rate: 1.0000e-05
+Epoch 321/400
+
+Epoch 321: loss did not improve from 0.87592
+19/19 - 9s - 454ms/step - accuracy: 0.6435 - loss: 0.8982 - learning_rate: 1.0000e-05
+Epoch 322/400
+
+Epoch 322: loss did not improve from 0.87592
+19/19 - 8s - 411ms/step - accuracy: 0.6384 - loss: 0.9293 - learning_rate: 1.0000e-05
+Epoch 323/400
+
+Epoch 323: loss did not improve from 0.87592
+19/19 - 7s - 359ms/step - accuracy: 0.6570 - loss: 0.8940 - learning_rate: 1.0000e-05
+Epoch 324/400
+
+Epoch 324: loss did not improve from 0.87592
+19/19 - 7s - 361ms/step - accuracy: 0.6214 - loss: 0.9768 - learning_rate: 1.0000e-05
+Epoch 325/400
+
+Epoch 325: loss did not improve from 0.87592
+19/19 - 7s - 371ms/step - accuracy: 0.6299 - loss: 0.9087 - learning_rate: 1.0000e-05
+Epoch 326/400
+
+Epoch 326: loss did not improve from 0.87592
+19/19 - 8s - 407ms/step - accuracy: 0.6384 - loss: 0.9199 - learning_rate: 1.0000e-05
+Epoch 327/400
+
+Epoch 327: loss did not improve from 0.87592
+19/19 - 8s - 417ms/step - accuracy: 0.6282 - loss: 0.9424 - learning_rate: 1.0000e-05
+Epoch 328/400
+
+Epoch 328: loss did not improve from 0.87592
+19/19 - 6s - 328ms/step - accuracy: 0.6248 - loss: 0.9298 - learning_rate: 1.0000e-05
+Epoch 329/400
+
+Epoch 329: loss did not improve from 0.87592
+19/19 - 7s - 359ms/step - accuracy: 0.6672 - loss: 0.9267 - learning_rate: 1.0000e-05
+Epoch 330/400
+
+Epoch 330: loss did not improve from 0.87592
+19/19 - 8s - 420ms/step - accuracy: 0.6248 - loss: 0.9192 - learning_rate: 1.0000e-05
+Epoch 331/400
+
+Epoch 331: loss did not improve from 0.87592
+19/19 - 8s - 420ms/step - accuracy: 0.6163 - loss: 0.9750 - learning_rate: 1.0000e-05
+Epoch 332/400
+
+Epoch 332: loss improved from 0.87592 to 0.86919, saving model to DD_Net_cobo_v1_40%_best.keras
+19/19 - 8s - 433ms/step - accuracy: 0.6638 - loss: 0.8692 - learning_rate: 1.0000e-05
+Epoch 333/400
+
+Epoch 333: loss did not improve from 0.86919
+19/19 - 7s - 362ms/step - accuracy: 0.6078 - loss: 0.9663 - learning_rate: 1.0000e-05
+Epoch 334/400
+
+Epoch 334: loss did not improve from 0.86919
+19/19 - 8s - 416ms/step - accuracy: 0.6231 - loss: 0.9521 - learning_rate: 1.0000e-05
+Epoch 335/400
+
+Epoch 335: loss did not improve from 0.86919
+19/19 - 5s - 288ms/step - accuracy: 0.6469 - loss: 0.9455 - learning_rate: 1.0000e-05
+Epoch 336/400
+
+Epoch 336: loss did not improve from 0.86919
+19/19 - 6s - 316ms/step - accuracy: 0.6418 - loss: 0.8867 - learning_rate: 1.0000e-05
+Epoch 337/400
+
+Epoch 337: loss did not improve from 0.86919
+19/19 - 7s - 381ms/step - accuracy: 0.6180 - loss: 0.9600 - learning_rate: 1.0000e-05
+Epoch 338/400
+
+Epoch 338: loss did not improve from 0.86919
+19/19 - 6s - 318ms/step - accuracy: 0.6570 - loss: 0.9503 - learning_rate: 1.0000e-05
+Epoch 339/400
+
+Epoch 339: loss did not improve from 0.86919
+19/19 - 8s - 400ms/step - accuracy: 0.6621 - loss: 0.8835 - learning_rate: 1.0000e-05
+Epoch 340/400
+
+Epoch 340: loss did not improve from 0.86919
+19/19 - 8s - 405ms/step - accuracy: 0.6469 - loss: 0.9138 - learning_rate: 1.0000e-05
+Epoch 341/400
+
+Epoch 341: loss did not improve from 0.86919
+19/19 - 7s - 387ms/step - accuracy: 0.6740 - loss: 0.9239 - learning_rate: 1.0000e-05
+Epoch 342/400
+
+Epoch 342: loss did not improve from 0.86919
+19/19 - 7s - 394ms/step - accuracy: 0.6299 - loss: 0.9314 - learning_rate: 1.0000e-05
+Epoch 343/400
+
+Epoch 343: loss did not improve from 0.86919
+19/19 - 8s - 415ms/step - accuracy: 0.6384 - loss: 0.9630 - learning_rate: 1.0000e-05
+Epoch 344/400
+
+Epoch 344: loss did not improve from 0.86919
+19/19 - 8s - 416ms/step - accuracy: 0.6452 - loss: 0.9151 - learning_rate: 1.0000e-05
+Epoch 345/400
+
+Epoch 345: loss did not improve from 0.86919
+19/19 - 8s - 409ms/step - accuracy: 0.6265 - loss: 0.9502 - learning_rate: 1.0000e-05
+Epoch 346/400
+
+Epoch 346: loss did not improve from 0.86919
+19/19 - 8s - 406ms/step - accuracy: 0.6537 - loss: 0.9151 - learning_rate: 1.0000e-05
+Epoch 347/400
+
+Epoch 347: loss did not improve from 0.86919
+19/19 - 8s - 410ms/step - accuracy: 0.6486 - loss: 0.9426 - learning_rate: 1.0000e-05
+Epoch 348/400
+
+Epoch 348: loss did not improve from 0.86919
+19/19 - 7s - 385ms/step - accuracy: 0.6452 - loss: 0.9724 - learning_rate: 1.0000e-05
+Epoch 349/400
+
+Epoch 349: loss did not improve from 0.86919
+19/19 - 7s - 355ms/step - accuracy: 0.6553 - loss: 0.9561 - learning_rate: 1.0000e-05
+Epoch 350/400
+
+Epoch 350: loss did not improve from 0.86919
+19/19 - 6s - 326ms/step - accuracy: 0.6418 - loss: 0.9205 - learning_rate: 1.0000e-05
+Epoch 351/400
+
+Epoch 351: loss did not improve from 0.86919
+19/19 - 8s - 396ms/step - accuracy: 0.6604 - loss: 0.9002 - learning_rate: 1.0000e-05
+Epoch 352/400
+
+Epoch 352: loss did not improve from 0.86919
+19/19 - 8s - 414ms/step - accuracy: 0.6418 - loss: 0.9219 - learning_rate: 1.0000e-05
+Epoch 353/400
+
+Epoch 353: loss did not improve from 0.86919
+19/19 - 8s - 419ms/step - accuracy: 0.6384 - loss: 0.9056 - learning_rate: 1.0000e-05
+Epoch 354/400
+
+Epoch 354: loss did not improve from 0.86919
+19/19 - 8s - 423ms/step - accuracy: 0.6197 - loss: 0.9347 - learning_rate: 1.0000e-05
+Epoch 355/400
+
+Epoch 355: loss did not improve from 0.86919
+19/19 - 8s - 413ms/step - accuracy: 0.6214 - loss: 0.9633 - learning_rate: 1.0000e-05
+Epoch 356/400
+
+Epoch 356: loss did not improve from 0.86919
+19/19 - 7s - 385ms/step - accuracy: 0.6231 - loss: 0.9189 - learning_rate: 1.0000e-05
+Epoch 357/400
+
+Epoch 357: loss did not improve from 0.86919
+19/19 - 6s - 321ms/step - accuracy: 0.6350 - loss: 0.9367 - learning_rate: 1.0000e-05
+Epoch 358/400
+
+Epoch 358: loss did not improve from 0.86919
+19/19 - 8s - 407ms/step - accuracy: 0.6180 - loss: 0.9685 - learning_rate: 1.0000e-05
+Epoch 359/400
+
+Epoch 359: loss did not improve from 0.86919
+19/19 - 8s - 401ms/step - accuracy: 0.6044 - loss: 0.9668 - learning_rate: 1.0000e-05
+Epoch 360/400
+
+Epoch 360: loss did not improve from 0.86919
+19/19 - 7s - 368ms/step - accuracy: 0.6282 - loss: 0.9078 - learning_rate: 1.0000e-05
+Epoch 361/400
+
+Epoch 361: loss did not improve from 0.86919
+19/19 - 7s - 383ms/step - accuracy: 0.6350 - loss: 0.9361 - learning_rate: 1.0000e-05
+Epoch 362/400
+
+Epoch 362: loss did not improve from 0.86919
+19/19 - 6s - 328ms/step - accuracy: 0.6299 - loss: 0.9143 - learning_rate: 1.0000e-05
+Epoch 363/400
+
+Epoch 363: loss did not improve from 0.86919
+19/19 - 8s - 396ms/step - accuracy: 0.6282 - loss: 0.9512 - learning_rate: 1.0000e-05
+Epoch 364/400
+
+Epoch 364: loss did not improve from 0.86919
+19/19 - 7s - 369ms/step - accuracy: 0.6180 - loss: 0.9369 - learning_rate: 1.0000e-05
+Epoch 365/400
+
+Epoch 365: loss did not improve from 0.86919
+19/19 - 9s - 451ms/step - accuracy: 0.6520 - loss: 0.8890 - learning_rate: 1.0000e-05
+Epoch 366/400
+
+Epoch 366: loss did not improve from 0.86919
+19/19 - 5s - 283ms/step - accuracy: 0.6452 - loss: 0.9187 - learning_rate: 1.0000e-05
+Epoch 367/400
+
+Epoch 367: loss did not improve from 0.86919
+19/19 - 8s - 421ms/step - accuracy: 0.6401 - loss: 0.9596 - learning_rate: 1.0000e-05
+Epoch 368/400
+
+Epoch 368: loss did not improve from 0.86919
+19/19 - 8s - 414ms/step - accuracy: 0.6299 - loss: 0.9122 - learning_rate: 1.0000e-05
+Epoch 369/400
+
+Epoch 369: loss did not improve from 0.86919
+19/19 - 7s - 344ms/step - accuracy: 0.6316 - loss: 0.9718 - learning_rate: 1.0000e-05
+Epoch 370/400
+
+Epoch 370: loss did not improve from 0.86919
+19/19 - 8s - 419ms/step - accuracy: 0.6248 - loss: 0.9647 - learning_rate: 1.0000e-05
+Epoch 371/400
+
+Epoch 371: loss did not improve from 0.86919
+19/19 - 8s - 420ms/step - accuracy: 0.6197 - loss: 0.9156 - learning_rate: 1.0000e-05
+Epoch 372/400
+
+Epoch 372: loss did not improve from 0.86919
+19/19 - 7s - 373ms/step - accuracy: 0.6078 - loss: 0.9456 - learning_rate: 1.0000e-05
+Epoch 373/400
+
+Epoch 373: loss did not improve from 0.86919
+19/19 - 7s - 350ms/step - accuracy: 0.5993 - loss: 0.9942 - learning_rate: 1.0000e-05
+Epoch 374/400
+
+Epoch 374: loss did not improve from 0.86919
+19/19 - 8s - 431ms/step - accuracy: 0.6163 - loss: 0.9810 - learning_rate: 1.0000e-05
+Epoch 375/400
+
+Epoch 375: loss did not improve from 0.86919
+19/19 - 7s - 370ms/step - accuracy: 0.6655 - loss: 0.8893 - learning_rate: 1.0000e-05
+Epoch 376/400
+
+Epoch 376: loss did not improve from 0.86919
+19/19 - 8s - 400ms/step - accuracy: 0.6486 - loss: 0.9558 - learning_rate: 1.0000e-05
+Epoch 377/400
+
+Epoch 377: loss did not improve from 0.86919
+19/19 - 7s - 345ms/step - accuracy: 0.6316 - loss: 0.9438 - learning_rate: 1.0000e-05
+Epoch 378/400
+
+Epoch 378: loss did not improve from 0.86919
+19/19 - 7s - 388ms/step - accuracy: 0.6282 - loss: 0.9144 - learning_rate: 1.0000e-05
+Epoch 379/400
+
+Epoch 379: loss did not improve from 0.86919
+19/19 - 7s - 377ms/step - accuracy: 0.6486 - loss: 0.8952 - learning_rate: 1.0000e-05
+Epoch 380/400
+
+Epoch 380: loss did not improve from 0.86919
+19/19 - 7s - 393ms/step - accuracy: 0.6469 - loss: 0.9116 - learning_rate: 1.0000e-05
+Epoch 381/400
+
+Epoch 381: loss did not improve from 0.86919
+19/19 - 7s - 394ms/step - accuracy: 0.6367 - loss: 0.9372 - learning_rate: 1.0000e-05
+Epoch 382/400
+
+Epoch 382: loss did not improve from 0.86919
+19/19 - 8s - 401ms/step - accuracy: 0.6435 - loss: 0.9625 - learning_rate: 1.0000e-05
+Epoch 383/400
+
+Epoch 383: loss did not improve from 0.86919
+19/19 - 8s - 419ms/step - accuracy: 0.6469 - loss: 0.9401 - learning_rate: 1.0000e-05
+Epoch 384/400
+
+Epoch 384: loss did not improve from 0.86919
+19/19 - 8s - 404ms/step - accuracy: 0.6638 - loss: 0.9162 - learning_rate: 1.0000e-05
+Epoch 385/400
+
+Epoch 385: loss did not improve from 0.86919
+19/19 - 8s - 421ms/step - accuracy: 0.6469 - loss: 0.9094 - learning_rate: 1.0000e-05
+Epoch 386/400
+
+Epoch 386: loss did not improve from 0.86919
+19/19 - 8s - 405ms/step - accuracy: 0.6282 - loss: 0.9830 - learning_rate: 1.0000e-05
+Epoch 387/400
+
+Epoch 387: loss did not improve from 0.86919
+19/19 - 7s - 372ms/step - accuracy: 0.6486 - loss: 0.9042 - learning_rate: 1.0000e-05
+Epoch 388/400
+
+Epoch 388: loss did not improve from 0.86919
+19/19 - 7s - 367ms/step - accuracy: 0.6384 - loss: 0.9715 - learning_rate: 1.0000e-05
+Epoch 389/400
+
+Epoch 389: loss did not improve from 0.86919
+19/19 - 6s - 326ms/step - accuracy: 0.6435 - loss: 0.9637 - learning_rate: 1.0000e-05
+Epoch 390/400
+
+Epoch 390: loss did not improve from 0.86919
+19/19 - 6s - 325ms/step - accuracy: 0.6265 - loss: 0.9478 - learning_rate: 1.0000e-05
+Epoch 391/400
+
+Epoch 391: loss did not improve from 0.86919
+19/19 - 8s - 412ms/step - accuracy: 0.6163 - loss: 0.9342 - learning_rate: 1.0000e-05
+Epoch 392/400
+
+Epoch 392: loss did not improve from 0.86919
+19/19 - 8s - 420ms/step - accuracy: 0.6231 - loss: 0.9814 - learning_rate: 1.0000e-05
+Epoch 393/400
+
+Epoch 393: loss did not improve from 0.86919
+19/19 - 8s - 419ms/step - accuracy: 0.6214 - loss: 0.9451 - learning_rate: 1.0000e-05
+Epoch 394/400
+
+Epoch 394: loss did not improve from 0.86919
+19/19 - 6s - 295ms/step - accuracy: 0.6197 - loss: 0.9623 - learning_rate: 1.0000e-05
+Epoch 395/400
+
+Epoch 395: loss did not improve from 0.86919
+19/19 - 8s - 399ms/step - accuracy: 0.6689 - loss: 0.9097 - learning_rate: 1.0000e-05
+Epoch 396/400
+
+Epoch 396: loss did not improve from 0.86919
+19/19 - 6s - 290ms/step - accuracy: 0.6333 - loss: 0.9220 - learning_rate: 1.0000e-05
+Epoch 397/400
+
+Epoch 397: loss did not improve from 0.86919
+19/19 - 7s - 350ms/step - accuracy: 0.6367 - loss: 0.9286 - learning_rate: 1.0000e-05
+Epoch 398/400
+
+Epoch 398: loss did not improve from 0.86919
+19/19 - 8s - 424ms/step - accuracy: 0.6333 - loss: 0.9549 - learning_rate: 1.0000e-05
+Epoch 399/400
+
+Epoch 399: loss did not improve from 0.86919
+19/19 - 8s - 416ms/step - accuracy: 0.6553 - loss: 0.9161 - learning_rate: 1.0000e-05
+Epoch 400/400
+
+Epoch 400: loss did not improve from 0.86919
+19/19 - 7s - 367ms/step - accuracy: 0.6520 - loss: 0.9041 - learning_rate: 1.0000e-05
+--- Training completed in 2952.3364968299866 seconds ---

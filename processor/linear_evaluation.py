@@ -16,6 +16,7 @@ from torchlight import DictAction
 from torchlight import import_class
 
 from .processor import Processor
+import time
 
 def weights_init(m):
     classname = m.__class__.__name__
@@ -32,15 +33,15 @@ class LE_Processor(Processor):
         Processor for Linear Evaluation.
     """
     trainable_layers = ['linear1.0.linear.weight',
-                        'linear1.0.linear.bias',
-                        'linear1.0.bn.weight',
-                        'linear1.0.bn.bias',
-                        'linear2.0.linear.weight',
-                        'linear2.0.linear.bias',
-                        'linear2.0.bn.weight',
-                        'linear2.0.bn.bias',
-                        'linear3.weight',
-                        'linear3.bias']
+                    'linear1.0.linear.bias',
+                    'linear1.0.bn.weight',
+                    'linear1.0.bn.bias',
+                    'linear2.0.linear.weight',
+                    'linear2.0.linear.bias',
+                    'linear2.0.bn.weight',
+                    'linear2.0.bn.bias',
+                    'linear3.weight',
+                    'linear3.bias']
     def load_model(self):
         self.model = self.io.load_model(self.arg.model,
                                         **(self.arg.model_args))
@@ -165,6 +166,8 @@ class LE_Processor(Processor):
         loss_value = []
         result_frag = []
         label_frag = []
+        total_infer_time = 0
+        total_sample = 0
 
         for data, label in loader:
             # get data
@@ -175,8 +178,13 @@ class LE_Processor(Processor):
                 raise ValueError
 
             # inference
+            batch_size = label.shape[0]
             with torch.no_grad():
+                start_time = time.time()
                 output = self.model(None, data, stream=self.arg.stream)
+                infer_time = time.time() - start_time
+            total_infer_time += infer_time
+            total_sample += batch_size
             result_frag.append(output.data.cpu().numpy())
 
             # get loss
@@ -188,6 +196,9 @@ class LE_Processor(Processor):
         self.label = np.concatenate(label_frag)
 
         self.eval_info['eval_mean_loss']= np.mean(loss_value)
+        avg_infer_time = total_infer_time / float(total_sample)
+        self.eval_info['avg_infer_time_per_seq'] = avg_infer_time
+        self.io.print_log('\tAvg inference time per sequence: {:.6f} s'.format(avg_infer_time))
         self.show_eval_info()
 
         # show top-k accuracy 
