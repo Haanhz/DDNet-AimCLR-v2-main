@@ -45,9 +45,9 @@ $ python main.py linear_evaluation --config config/three-stream/finetune/finetun
 
 ## Semi-supervised
 
-Example for semi-supervised of **CoboCLR**. You can change `semi.yaml` files in `config/three-stream/finetune` folder.
+Example for semi-supervised of **CoboCLR**. You can change `subsetpercent.yaml` files in `config/three-stream/finetune` folder.
 ```bash
-$ python main.py linear_evaluation --config config/three-stream/finetune/finetune_aimclr_v2_3views_cobot_xsub_semi.yaml
+$ python main.py linear_evaluation --config config/three-stream/finetune/finetune_aimclr_v2_3views_cobot_xsub_subsetpercent.yaml
 ```
 
 

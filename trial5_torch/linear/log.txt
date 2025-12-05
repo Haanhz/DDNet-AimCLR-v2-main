@@ -1,0 +1,2293 @@
+[12.04.25|17:42:00] Load weights from config/three-stream/pretext/epoch400_model.pt.
+[12.04.25|17:42:00] Filter [encoder_q.linear0] remove weights [encoder_q.linear0.0.weight].
+[12.04.25|17:42:00] Filter [encoder_q.linear0] remove weights [encoder_q.linear0.0.bias].
+[12.04.25|17:42:00] Filter [encoder_q.linear0] remove weights [encoder_q.linear0.2.0.linear.weight].
+[12.04.25|17:42:00] Filter [encoder_q.linear0] remove weights [encoder_q.linear0.2.0.linear.bias].
+[12.04.25|17:42:00] Filter [encoder_q.linear0] remove weights [encoder_q.linear0.2.0.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_q.linear0] remove weights [encoder_q.linear0.2.0.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_q.linear0] remove weights [encoder_q.linear0.2.0.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_q.linear0] remove weights [encoder_q.linear0.2.0.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_q.linear0] remove weights [encoder_q.linear0.2.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_q_motion.linear0] remove weights [encoder_q_motion.linear0.0.weight].
+[12.04.25|17:42:00] Filter [encoder_q_motion.linear0] remove weights [encoder_q_motion.linear0.0.bias].
+[12.04.25|17:42:00] Filter [encoder_q_motion.linear0] remove weights [encoder_q_motion.linear0.2.0.weight].
+[12.04.25|17:42:00] Filter [encoder_q_motion.linear0] remove weights [encoder_q_motion.linear0.2.0.bias].
+[12.04.25|17:42:00] Filter [encoder_q_motion.linear0] remove weights [encoder_q_motion.linear0.2.2.0.linear.weight].
+[12.04.25|17:42:00] Filter [encoder_q_motion.linear0] remove weights [encoder_q_motion.linear0.2.2.0.linear.bias].
+[12.04.25|17:42:00] Filter [encoder_q_motion.linear0] remove weights [encoder_q_motion.linear0.2.2.0.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_q_motion.linear0] remove weights [encoder_q_motion.linear0.2.2.0.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_q_motion.linear0] remove weights [encoder_q_motion.linear0.2.2.0.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_q_motion.linear0] remove weights [encoder_q_motion.linear0.2.2.0.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_q_motion.linear0] remove weights [encoder_q_motion.linear0.2.2.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_q_bone.linear0] remove weights [encoder_q_bone.linear0.0.weight].
+[12.04.25|17:42:00] Filter [encoder_q_bone.linear0] remove weights [encoder_q_bone.linear0.0.bias].
+[12.04.25|17:42:00] Filter [encoder_q_bone.linear0] remove weights [encoder_q_bone.linear0.2.0.weight].
+[12.04.25|17:42:00] Filter [encoder_q_bone.linear0] remove weights [encoder_q_bone.linear0.2.0.bias].
+[12.04.25|17:42:00] Filter [encoder_q_bone.linear0] remove weights [encoder_q_bone.linear0.2.2.0.linear.weight].
+[12.04.25|17:42:00] Filter [encoder_q_bone.linear0] remove weights [encoder_q_bone.linear0.2.2.0.linear.bias].
+[12.04.25|17:42:00] Filter [encoder_q_bone.linear0] remove weights [encoder_q_bone.linear0.2.2.0.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_q_bone.linear0] remove weights [encoder_q_bone.linear0.2.2.0.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_q_bone.linear0] remove weights [encoder_q_bone.linear0.2.2.0.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_q_bone.linear0] remove weights [encoder_q_bone.linear0.2.2.0.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_q_bone.linear0] remove weights [encoder_q_bone.linear0.2.2.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.jcd_conv1.0.conv1.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.jcd_conv1.0.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.jcd_conv1.0.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.jcd_conv1.0.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.jcd_conv1.0.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.jcd_conv1.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.jcd_conv2.0.conv1.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.jcd_conv2.0.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.jcd_conv2.0.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.jcd_conv2.0.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.jcd_conv2.0.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.jcd_conv2.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.jcd_conv3.conv1.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.jcd_conv3.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.jcd_conv3.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.jcd_conv3.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.jcd_conv3.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.jcd_conv3.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.slow_conv1.0.conv1.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.slow_conv1.0.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.slow_conv1.0.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.slow_conv1.0.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.slow_conv1.0.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.slow_conv1.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.slow_conv2.0.conv1.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.slow_conv2.0.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.slow_conv2.0.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.slow_conv2.0.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.slow_conv2.0.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.slow_conv2.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.slow_conv3.conv1.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.slow_conv3.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.slow_conv3.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.slow_conv3.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.slow_conv3.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.slow_conv3.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.fast_conv1.0.conv1.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.fast_conv1.0.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.fast_conv1.0.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.fast_conv1.0.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.fast_conv1.0.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.fast_conv1.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.fast_conv2.0.conv1.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.fast_conv2.0.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.fast_conv2.0.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.fast_conv2.0.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.fast_conv2.0.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.fast_conv2.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.fast_conv3.0.conv1.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.fast_conv3.0.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.fast_conv3.0.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.fast_conv3.0.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.fast_conv3.0.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.fast_conv3.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.block1.c1D1.conv1.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.block1.c1D1.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.block1.c1D1.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.block1.c1D1.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.block1.c1D1.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.block1.c1D1.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.block1.c1D2.conv1.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.block1.c1D2.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.block1.c1D2.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.block1.c1D2.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.block1.c1D2.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.block1.c1D2.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.block2.c1D1.conv1.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.block2.c1D1.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.block2.c1D1.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.block2.c1D1.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.block2.c1D1.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.block2.c1D1.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.block2.c1D2.conv1.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.block2.c1D2.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.block2.c1D2.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.block2.c1D2.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.block2.c1D2.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.block2.c1D2.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.block3.0.c1D1.conv1.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.block3.0.c1D1.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.block3.0.c1D1.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.block3.0.c1D1.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.block3.0.c1D1.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.block3.0.c1D1.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.block3.0.c1D2.conv1.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.block3.0.c1D2.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.block3.0.c1D2.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.block3.0.c1D2.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.block3.0.c1D2.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.block3.0.c1D2.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.linear0.0.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.linear0.0.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.linear0.2.0.linear.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.linear0.2.0.linear.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.linear0.2.0.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.linear0.2.0.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.linear0.2.0.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.linear0.2.0.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k.linear0.2.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.jcd_conv1.0.conv1.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.jcd_conv1.0.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.jcd_conv1.0.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.jcd_conv1.0.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.jcd_conv1.0.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.jcd_conv1.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.jcd_conv2.0.conv1.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.jcd_conv2.0.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.jcd_conv2.0.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.jcd_conv2.0.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.jcd_conv2.0.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.jcd_conv2.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.jcd_conv3.conv1.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.jcd_conv3.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.jcd_conv3.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.jcd_conv3.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.jcd_conv3.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.jcd_conv3.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.slow_conv1.0.conv1.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.slow_conv1.0.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.slow_conv1.0.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.slow_conv1.0.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.slow_conv1.0.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.slow_conv1.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.slow_conv2.0.conv1.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.slow_conv2.0.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.slow_conv2.0.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.slow_conv2.0.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.slow_conv2.0.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.slow_conv2.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.slow_conv3.conv1.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.slow_conv3.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.slow_conv3.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.slow_conv3.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.slow_conv3.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.slow_conv3.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.fast_conv1.0.conv1.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.fast_conv1.0.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.fast_conv1.0.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.fast_conv1.0.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.fast_conv1.0.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.fast_conv1.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.fast_conv2.0.conv1.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.fast_conv2.0.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.fast_conv2.0.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.fast_conv2.0.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.fast_conv2.0.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.fast_conv2.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.fast_conv3.0.conv1.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.fast_conv3.0.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.fast_conv3.0.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.fast_conv3.0.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.fast_conv3.0.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.fast_conv3.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.block1.c1D1.conv1.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.block1.c1D1.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.block1.c1D1.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.block1.c1D1.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.block1.c1D1.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.block1.c1D1.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.block1.c1D2.conv1.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.block1.c1D2.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.block1.c1D2.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.block1.c1D2.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.block1.c1D2.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.block1.c1D2.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.block2.c1D1.conv1.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.block2.c1D1.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.block2.c1D1.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.block2.c1D1.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.block2.c1D1.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.block2.c1D1.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.block2.c1D2.conv1.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.block2.c1D2.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.block2.c1D2.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.block2.c1D2.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.block2.c1D2.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.block2.c1D2.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.block3.0.c1D1.conv1.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.block3.0.c1D1.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.block3.0.c1D1.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.block3.0.c1D1.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.block3.0.c1D1.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.block3.0.c1D1.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.block3.0.c1D2.conv1.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.block3.0.c1D2.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.block3.0.c1D2.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.block3.0.c1D2.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.block3.0.c1D2.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.block3.0.c1D2.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.linear0.0.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.linear0.0.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.linear0.2.0.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.linear0.2.0.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.linear0.2.2.0.linear.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.linear0.2.2.0.linear.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.linear0.2.2.0.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.linear0.2.2.0.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.linear0.2.2.0.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.linear0.2.2.0.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_motion.linear0.2.2.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.jcd_conv1.0.conv1.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.jcd_conv1.0.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.jcd_conv1.0.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.jcd_conv1.0.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.jcd_conv1.0.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.jcd_conv1.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.jcd_conv2.0.conv1.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.jcd_conv2.0.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.jcd_conv2.0.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.jcd_conv2.0.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.jcd_conv2.0.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.jcd_conv2.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.jcd_conv3.conv1.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.jcd_conv3.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.jcd_conv3.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.jcd_conv3.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.jcd_conv3.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.jcd_conv3.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.slow_conv1.0.conv1.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.slow_conv1.0.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.slow_conv1.0.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.slow_conv1.0.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.slow_conv1.0.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.slow_conv1.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.slow_conv2.0.conv1.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.slow_conv2.0.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.slow_conv2.0.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.slow_conv2.0.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.slow_conv2.0.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.slow_conv2.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.slow_conv3.conv1.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.slow_conv3.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.slow_conv3.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.slow_conv3.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.slow_conv3.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.slow_conv3.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.fast_conv1.0.conv1.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.fast_conv1.0.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.fast_conv1.0.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.fast_conv1.0.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.fast_conv1.0.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.fast_conv1.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.fast_conv2.0.conv1.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.fast_conv2.0.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.fast_conv2.0.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.fast_conv2.0.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.fast_conv2.0.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.fast_conv2.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.fast_conv3.0.conv1.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.fast_conv3.0.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.fast_conv3.0.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.fast_conv3.0.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.fast_conv3.0.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.fast_conv3.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.block1.c1D1.conv1.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.block1.c1D1.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.block1.c1D1.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.block1.c1D1.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.block1.c1D1.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.block1.c1D1.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.block1.c1D2.conv1.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.block1.c1D2.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.block1.c1D2.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.block1.c1D2.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.block1.c1D2.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.block1.c1D2.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.block2.c1D1.conv1.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.block2.c1D1.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.block2.c1D1.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.block2.c1D1.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.block2.c1D1.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.block2.c1D1.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.block2.c1D2.conv1.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.block2.c1D2.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.block2.c1D2.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.block2.c1D2.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.block2.c1D2.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.block2.c1D2.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.block3.0.c1D1.conv1.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.block3.0.c1D1.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.block3.0.c1D1.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.block3.0.c1D1.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.block3.0.c1D1.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.block3.0.c1D1.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.block3.0.c1D2.conv1.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.block3.0.c1D2.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.block3.0.c1D2.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.block3.0.c1D2.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.block3.0.c1D2.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.block3.0.c1D2.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.linear0.0.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.linear0.0.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.linear0.2.0.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.linear0.2.0.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.linear0.2.2.0.linear.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.linear0.2.2.0.linear.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.linear0.2.2.0.bn.weight].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.linear0.2.2.0.bn.bias].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.linear0.2.2.0.bn.running_mean].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.linear0.2.2.0.bn.running_var].
+[12.04.25|17:42:00] Filter [encoder_k] remove weights [encoder_k_bone.linear0.2.2.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Filter [queue] remove weights [queue].
+[12.04.25|17:42:00] Filter [queue] remove weights [queue_ptr].
+[12.04.25|17:42:00] Filter [queue] remove weights [queue_motion].
+[12.04.25|17:42:00] Filter [queue] remove weights [queue_ptr_motion].
+[12.04.25|17:42:00] Filter [queue] remove weights [queue_bone].
+[12.04.25|17:42:00] Filter [queue] remove weights [queue_ptr_bone].
+[12.04.25|17:42:00] Load weights [encoder_q.jcd_conv1.0.conv1.weight].
+[12.04.25|17:42:00] Load weights [encoder_q.jcd_conv1.0.bn.weight].
+[12.04.25|17:42:00] Load weights [encoder_q.jcd_conv1.0.bn.bias].
+[12.04.25|17:42:00] Load weights [encoder_q.jcd_conv1.0.bn.running_mean].
+[12.04.25|17:42:00] Load weights [encoder_q.jcd_conv1.0.bn.running_var].
+[12.04.25|17:42:00] Load weights [encoder_q.jcd_conv1.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Load weights [encoder_q.jcd_conv2.0.conv1.weight].
+[12.04.25|17:42:00] Load weights [encoder_q.jcd_conv2.0.bn.weight].
+[12.04.25|17:42:00] Load weights [encoder_q.jcd_conv2.0.bn.bias].
+[12.04.25|17:42:00] Load weights [encoder_q.jcd_conv2.0.bn.running_mean].
+[12.04.25|17:42:00] Load weights [encoder_q.jcd_conv2.0.bn.running_var].
+[12.04.25|17:42:00] Load weights [encoder_q.jcd_conv2.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Load weights [encoder_q.jcd_conv3.conv1.weight].
+[12.04.25|17:42:00] Load weights [encoder_q.jcd_conv3.bn.weight].
+[12.04.25|17:42:00] Load weights [encoder_q.jcd_conv3.bn.bias].
+[12.04.25|17:42:00] Load weights [encoder_q.jcd_conv3.bn.running_mean].
+[12.04.25|17:42:00] Load weights [encoder_q.jcd_conv3.bn.running_var].
+[12.04.25|17:42:00] Load weights [encoder_q.jcd_conv3.bn.num_batches_tracked].
+[12.04.25|17:42:00] Load weights [encoder_q.slow_conv1.0.conv1.weight].
+[12.04.25|17:42:00] Load weights [encoder_q.slow_conv1.0.bn.weight].
+[12.04.25|17:42:00] Load weights [encoder_q.slow_conv1.0.bn.bias].
+[12.04.25|17:42:00] Load weights [encoder_q.slow_conv1.0.bn.running_mean].
+[12.04.25|17:42:00] Load weights [encoder_q.slow_conv1.0.bn.running_var].
+[12.04.25|17:42:00] Load weights [encoder_q.slow_conv1.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Load weights [encoder_q.slow_conv2.0.conv1.weight].
+[12.04.25|17:42:00] Load weights [encoder_q.slow_conv2.0.bn.weight].
+[12.04.25|17:42:00] Load weights [encoder_q.slow_conv2.0.bn.bias].
+[12.04.25|17:42:00] Load weights [encoder_q.slow_conv2.0.bn.running_mean].
+[12.04.25|17:42:00] Load weights [encoder_q.slow_conv2.0.bn.running_var].
+[12.04.25|17:42:00] Load weights [encoder_q.slow_conv2.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Load weights [encoder_q.slow_conv3.conv1.weight].
+[12.04.25|17:42:00] Load weights [encoder_q.slow_conv3.bn.weight].
+[12.04.25|17:42:00] Load weights [encoder_q.slow_conv3.bn.bias].
+[12.04.25|17:42:00] Load weights [encoder_q.slow_conv3.bn.running_mean].
+[12.04.25|17:42:00] Load weights [encoder_q.slow_conv3.bn.running_var].
+[12.04.25|17:42:00] Load weights [encoder_q.slow_conv3.bn.num_batches_tracked].
+[12.04.25|17:42:00] Load weights [encoder_q.fast_conv1.0.conv1.weight].
+[12.04.25|17:42:00] Load weights [encoder_q.fast_conv1.0.bn.weight].
+[12.04.25|17:42:00] Load weights [encoder_q.fast_conv1.0.bn.bias].
+[12.04.25|17:42:00] Load weights [encoder_q.fast_conv1.0.bn.running_mean].
+[12.04.25|17:42:00] Load weights [encoder_q.fast_conv1.0.bn.running_var].
+[12.04.25|17:42:00] Load weights [encoder_q.fast_conv1.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Load weights [encoder_q.fast_conv2.0.conv1.weight].
+[12.04.25|17:42:00] Load weights [encoder_q.fast_conv2.0.bn.weight].
+[12.04.25|17:42:00] Load weights [encoder_q.fast_conv2.0.bn.bias].
+[12.04.25|17:42:00] Load weights [encoder_q.fast_conv2.0.bn.running_mean].
+[12.04.25|17:42:00] Load weights [encoder_q.fast_conv2.0.bn.running_var].
+[12.04.25|17:42:00] Load weights [encoder_q.fast_conv2.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Load weights [encoder_q.fast_conv3.0.conv1.weight].
+[12.04.25|17:42:00] Load weights [encoder_q.fast_conv3.0.bn.weight].
+[12.04.25|17:42:00] Load weights [encoder_q.fast_conv3.0.bn.bias].
+[12.04.25|17:42:00] Load weights [encoder_q.fast_conv3.0.bn.running_mean].
+[12.04.25|17:42:00] Load weights [encoder_q.fast_conv3.0.bn.running_var].
+[12.04.25|17:42:00] Load weights [encoder_q.fast_conv3.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Load weights [encoder_q.block1.c1D1.conv1.weight].
+[12.04.25|17:42:00] Load weights [encoder_q.block1.c1D1.bn.weight].
+[12.04.25|17:42:00] Load weights [encoder_q.block1.c1D1.bn.bias].
+[12.04.25|17:42:00] Load weights [encoder_q.block1.c1D1.bn.running_mean].
+[12.04.25|17:42:00] Load weights [encoder_q.block1.c1D1.bn.running_var].
+[12.04.25|17:42:00] Load weights [encoder_q.block1.c1D1.bn.num_batches_tracked].
+[12.04.25|17:42:00] Load weights [encoder_q.block1.c1D2.conv1.weight].
+[12.04.25|17:42:00] Load weights [encoder_q.block1.c1D2.bn.weight].
+[12.04.25|17:42:00] Load weights [encoder_q.block1.c1D2.bn.bias].
+[12.04.25|17:42:00] Load weights [encoder_q.block1.c1D2.bn.running_mean].
+[12.04.25|17:42:00] Load weights [encoder_q.block1.c1D2.bn.running_var].
+[12.04.25|17:42:00] Load weights [encoder_q.block1.c1D2.bn.num_batches_tracked].
+[12.04.25|17:42:00] Load weights [encoder_q.block2.c1D1.conv1.weight].
+[12.04.25|17:42:00] Load weights [encoder_q.block2.c1D1.bn.weight].
+[12.04.25|17:42:00] Load weights [encoder_q.block2.c1D1.bn.bias].
+[12.04.25|17:42:00] Load weights [encoder_q.block2.c1D1.bn.running_mean].
+[12.04.25|17:42:00] Load weights [encoder_q.block2.c1D1.bn.running_var].
+[12.04.25|17:42:00] Load weights [encoder_q.block2.c1D1.bn.num_batches_tracked].
+[12.04.25|17:42:00] Load weights [encoder_q.block2.c1D2.conv1.weight].
+[12.04.25|17:42:00] Load weights [encoder_q.block2.c1D2.bn.weight].
+[12.04.25|17:42:00] Load weights [encoder_q.block2.c1D2.bn.bias].
+[12.04.25|17:42:00] Load weights [encoder_q.block2.c1D2.bn.running_mean].
+[12.04.25|17:42:00] Load weights [encoder_q.block2.c1D2.bn.running_var].
+[12.04.25|17:42:00] Load weights [encoder_q.block2.c1D2.bn.num_batches_tracked].
+[12.04.25|17:42:00] Load weights [encoder_q.block3.0.c1D1.conv1.weight].
+[12.04.25|17:42:00] Load weights [encoder_q.block3.0.c1D1.bn.weight].
+[12.04.25|17:42:00] Load weights [encoder_q.block3.0.c1D1.bn.bias].
+[12.04.25|17:42:00] Load weights [encoder_q.block3.0.c1D1.bn.running_mean].
+[12.04.25|17:42:00] Load weights [encoder_q.block3.0.c1D1.bn.running_var].
+[12.04.25|17:42:00] Load weights [encoder_q.block3.0.c1D1.bn.num_batches_tracked].
+[12.04.25|17:42:00] Load weights [encoder_q.block3.0.c1D2.conv1.weight].
+[12.04.25|17:42:00] Load weights [encoder_q.block3.0.c1D2.bn.weight].
+[12.04.25|17:42:00] Load weights [encoder_q.block3.0.c1D2.bn.bias].
+[12.04.25|17:42:00] Load weights [encoder_q.block3.0.c1D2.bn.running_mean].
+[12.04.25|17:42:00] Load weights [encoder_q.block3.0.c1D2.bn.running_var].
+[12.04.25|17:42:00] Load weights [encoder_q.block3.0.c1D2.bn.num_batches_tracked].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.jcd_conv1.0.conv1.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.jcd_conv1.0.bn.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.jcd_conv1.0.bn.bias].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.jcd_conv1.0.bn.running_mean].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.jcd_conv1.0.bn.running_var].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.jcd_conv1.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.jcd_conv2.0.conv1.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.jcd_conv2.0.bn.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.jcd_conv2.0.bn.bias].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.jcd_conv2.0.bn.running_mean].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.jcd_conv2.0.bn.running_var].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.jcd_conv2.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.jcd_conv3.conv1.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.jcd_conv3.bn.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.jcd_conv3.bn.bias].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.jcd_conv3.bn.running_mean].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.jcd_conv3.bn.running_var].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.jcd_conv3.bn.num_batches_tracked].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.slow_conv1.0.conv1.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.slow_conv1.0.bn.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.slow_conv1.0.bn.bias].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.slow_conv1.0.bn.running_mean].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.slow_conv1.0.bn.running_var].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.slow_conv1.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.slow_conv2.0.conv1.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.slow_conv2.0.bn.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.slow_conv2.0.bn.bias].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.slow_conv2.0.bn.running_mean].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.slow_conv2.0.bn.running_var].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.slow_conv2.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.slow_conv3.conv1.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.slow_conv3.bn.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.slow_conv3.bn.bias].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.slow_conv3.bn.running_mean].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.slow_conv3.bn.running_var].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.slow_conv3.bn.num_batches_tracked].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.fast_conv1.0.conv1.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.fast_conv1.0.bn.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.fast_conv1.0.bn.bias].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.fast_conv1.0.bn.running_mean].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.fast_conv1.0.bn.running_var].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.fast_conv1.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.fast_conv2.0.conv1.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.fast_conv2.0.bn.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.fast_conv2.0.bn.bias].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.fast_conv2.0.bn.running_mean].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.fast_conv2.0.bn.running_var].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.fast_conv2.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.fast_conv3.0.conv1.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.fast_conv3.0.bn.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.fast_conv3.0.bn.bias].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.fast_conv3.0.bn.running_mean].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.fast_conv3.0.bn.running_var].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.fast_conv3.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.block1.c1D1.conv1.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.block1.c1D1.bn.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.block1.c1D1.bn.bias].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.block1.c1D1.bn.running_mean].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.block1.c1D1.bn.running_var].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.block1.c1D1.bn.num_batches_tracked].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.block1.c1D2.conv1.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.block1.c1D2.bn.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.block1.c1D2.bn.bias].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.block1.c1D2.bn.running_mean].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.block1.c1D2.bn.running_var].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.block1.c1D2.bn.num_batches_tracked].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.block2.c1D1.conv1.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.block2.c1D1.bn.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.block2.c1D1.bn.bias].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.block2.c1D1.bn.running_mean].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.block2.c1D1.bn.running_var].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.block2.c1D1.bn.num_batches_tracked].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.block2.c1D2.conv1.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.block2.c1D2.bn.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.block2.c1D2.bn.bias].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.block2.c1D2.bn.running_mean].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.block2.c1D2.bn.running_var].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.block2.c1D2.bn.num_batches_tracked].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.block3.0.c1D1.conv1.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.block3.0.c1D1.bn.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.block3.0.c1D1.bn.bias].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.block3.0.c1D1.bn.running_mean].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.block3.0.c1D1.bn.running_var].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.block3.0.c1D1.bn.num_batches_tracked].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.block3.0.c1D2.conv1.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.block3.0.c1D2.bn.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.block3.0.c1D2.bn.bias].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.block3.0.c1D2.bn.running_mean].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.block3.0.c1D2.bn.running_var].
+[12.04.25|17:42:00] Load weights [encoder_q_motion.block3.0.c1D2.bn.num_batches_tracked].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.jcd_conv1.0.conv1.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.jcd_conv1.0.bn.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.jcd_conv1.0.bn.bias].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.jcd_conv1.0.bn.running_mean].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.jcd_conv1.0.bn.running_var].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.jcd_conv1.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.jcd_conv2.0.conv1.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.jcd_conv2.0.bn.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.jcd_conv2.0.bn.bias].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.jcd_conv2.0.bn.running_mean].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.jcd_conv2.0.bn.running_var].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.jcd_conv2.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.jcd_conv3.conv1.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.jcd_conv3.bn.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.jcd_conv3.bn.bias].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.jcd_conv3.bn.running_mean].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.jcd_conv3.bn.running_var].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.jcd_conv3.bn.num_batches_tracked].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.slow_conv1.0.conv1.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.slow_conv1.0.bn.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.slow_conv1.0.bn.bias].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.slow_conv1.0.bn.running_mean].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.slow_conv1.0.bn.running_var].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.slow_conv1.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.slow_conv2.0.conv1.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.slow_conv2.0.bn.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.slow_conv2.0.bn.bias].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.slow_conv2.0.bn.running_mean].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.slow_conv2.0.bn.running_var].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.slow_conv2.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.slow_conv3.conv1.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.slow_conv3.bn.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.slow_conv3.bn.bias].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.slow_conv3.bn.running_mean].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.slow_conv3.bn.running_var].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.slow_conv3.bn.num_batches_tracked].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.fast_conv1.0.conv1.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.fast_conv1.0.bn.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.fast_conv1.0.bn.bias].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.fast_conv1.0.bn.running_mean].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.fast_conv1.0.bn.running_var].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.fast_conv1.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.fast_conv2.0.conv1.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.fast_conv2.0.bn.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.fast_conv2.0.bn.bias].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.fast_conv2.0.bn.running_mean].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.fast_conv2.0.bn.running_var].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.fast_conv2.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.fast_conv3.0.conv1.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.fast_conv3.0.bn.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.fast_conv3.0.bn.bias].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.fast_conv3.0.bn.running_mean].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.fast_conv3.0.bn.running_var].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.fast_conv3.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.block1.c1D1.conv1.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.block1.c1D1.bn.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.block1.c1D1.bn.bias].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.block1.c1D1.bn.running_mean].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.block1.c1D1.bn.running_var].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.block1.c1D1.bn.num_batches_tracked].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.block1.c1D2.conv1.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.block1.c1D2.bn.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.block1.c1D2.bn.bias].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.block1.c1D2.bn.running_mean].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.block1.c1D2.bn.running_var].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.block1.c1D2.bn.num_batches_tracked].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.block2.c1D1.conv1.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.block2.c1D1.bn.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.block2.c1D1.bn.bias].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.block2.c1D1.bn.running_mean].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.block2.c1D1.bn.running_var].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.block2.c1D1.bn.num_batches_tracked].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.block2.c1D2.conv1.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.block2.c1D2.bn.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.block2.c1D2.bn.bias].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.block2.c1D2.bn.running_mean].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.block2.c1D2.bn.running_var].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.block2.c1D2.bn.num_batches_tracked].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.block3.0.c1D1.conv1.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.block3.0.c1D1.bn.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.block3.0.c1D1.bn.bias].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.block3.0.c1D1.bn.running_mean].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.block3.0.c1D1.bn.running_var].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.block3.0.c1D1.bn.num_batches_tracked].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.block3.0.c1D2.conv1.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.block3.0.c1D2.bn.weight].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.block3.0.c1D2.bn.bias].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.block3.0.c1D2.bn.running_mean].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.block3.0.c1D2.bn.running_var].
+[12.04.25|17:42:00] Load weights [encoder_q_bone.block3.0.c1D2.bn.num_batches_tracked].
+[12.04.25|17:42:00] Can not find weights [encoder_q.linear3.weight].
+[12.04.25|17:42:00] Can not find weights [encoder_q_motion.linear1.0.bn.running_var].
+[12.04.25|17:42:00] Can not find weights [encoder_q_motion.linear1.0.linear.bias].
+[12.04.25|17:42:00] Can not find weights [encoder_q.linear2.0.bn.weight].
+[12.04.25|17:42:00] Can not find weights [encoder_q.linear2.0.bn.bias].
+[12.04.25|17:42:00] Can not find weights [encoder_q_motion.linear2.0.bn.running_mean].
+[12.04.25|17:42:00] Can not find weights [encoder_q_motion.linear3.weight].
+[12.04.25|17:42:00] Can not find weights [encoder_q_bone.linear2.0.bn.weight].
+[12.04.25|17:42:00] Can not find weights [encoder_q_motion.linear1.0.linear.weight].
+[12.04.25|17:42:00] Can not find weights [encoder_q.linear2.0.bn.running_var].
+[12.04.25|17:42:00] Can not find weights [encoder_q.linear1.0.linear.weight].
+[12.04.25|17:42:00] Can not find weights [encoder_q_bone.linear1.0.bn.bias].
+[12.04.25|17:42:00] Can not find weights [encoder_q_motion.linear1.0.bn.bias].
+[12.04.25|17:42:00] Can not find weights [encoder_q_bone.linear1.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Can not find weights [encoder_q_bone.linear1.0.bn.weight].
+[12.04.25|17:42:00] Can not find weights [encoder_q_motion.linear1.0.bn.weight].
+[12.04.25|17:42:00] Can not find weights [encoder_q.linear1.0.bn.weight].
+[12.04.25|17:42:00] Can not find weights [encoder_q_motion.linear2.0.bn.weight].
+[12.04.25|17:42:00] Can not find weights [encoder_q_bone.linear1.0.linear.weight].
+[12.04.25|17:42:00] Can not find weights [encoder_q_motion.linear2.0.bn.bias].
+[12.04.25|17:42:00] Can not find weights [encoder_q.linear3.bias].
+[12.04.25|17:42:00] Can not find weights [encoder_q_bone.linear2.0.linear.weight].
+[12.04.25|17:42:00] Can not find weights [encoder_q_bone.linear2.0.bn.running_var].
+[12.04.25|17:42:00] Can not find weights [encoder_q_bone.linear3.bias].
+[12.04.25|17:42:00] Can not find weights [encoder_q.linear1.0.bn.running_mean].
+[12.04.25|17:42:00] Can not find weights [encoder_q_bone.linear1.0.bn.running_mean].
+[12.04.25|17:42:00] Can not find weights [encoder_q_bone.linear2.0.bn.bias].
+[12.04.25|17:42:00] Can not find weights [encoder_q_bone.linear1.0.bn.running_var].
+[12.04.25|17:42:00] Can not find weights [encoder_q_motion.linear1.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Can not find weights [encoder_q.linear1.0.bn.running_var].
+[12.04.25|17:42:00] Can not find weights [encoder_q_motion.linear1.0.bn.running_mean].
+[12.04.25|17:42:00] Can not find weights [encoder_q.linear2.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Can not find weights [encoder_q.linear2.0.linear.weight].
+[12.04.25|17:42:00] Can not find weights [encoder_q_motion.linear2.0.linear.bias].
+[12.04.25|17:42:00] Can not find weights [encoder_q_bone.linear2.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Can not find weights [encoder_q.linear1.0.linear.bias].
+[12.04.25|17:42:00] Can not find weights [encoder_q_motion.linear2.0.linear.weight].
+[12.04.25|17:42:00] Can not find weights [encoder_q_motion.linear2.0.bn.running_var].
+[12.04.25|17:42:00] Can not find weights [encoder_q_bone.linear2.0.bn.running_mean].
+[12.04.25|17:42:00] Can not find weights [encoder_q_bone.linear1.0.linear.bias].
+[12.04.25|17:42:00] Can not find weights [encoder_q_motion.linear2.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Can not find weights [encoder_q.linear1.0.bn.bias].
+[12.04.25|17:42:00] Can not find weights [encoder_q_bone.linear3.weight].
+[12.04.25|17:42:00] Can not find weights [encoder_q_bone.linear2.0.linear.bias].
+[12.04.25|17:42:00] Can not find weights [encoder_q.linear2.0.bn.running_mean].
+[12.04.25|17:42:00] Can not find weights [encoder_q.linear2.0.linear.bias].
+[12.04.25|17:42:00] Can not find weights [encoder_q.linear1.0.bn.num_batches_tracked].
+[12.04.25|17:42:00] Can not find weights [encoder_q_motion.linear3.bias].
+[12.04.25|17:42:01] Parameters:
+{'work_dir': 'config/three-stream/linear', 'config': 'config/three-stream/linear/linear_eval_aimclr_v2_3views_cobot_xsub.yaml', 'phase': 'train', 'save_result': True, 'start_epoch': 0, 'num_epoch': 400, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': -1, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'train_feeder': 'feeder.cobot_feeder.Feeder_single', 'test_feeder': 'feeder.cobot_feeder.Feeder_single', 'num_worker': 4, 'train_feeder_args': {'data_path': 'data_cobot_clr_zoom/xsub/train_position.npy', 'label_path': 'data_cobot_clr_zoom/xsub/train_label.pkl', 'shear_amplitude': -1, 'temperal_padding_ratio': -1, 'mmap': True, 'zero_z': True}, 'test_feeder_args': {'data_path': 'data_cobot_clr_zoom/xsub/val_position.npy', 'label_path': 'data_cobot_clr_zoom/xsub/val_label.pkl', 'shear_amplitude': -1, 'temperal_padding_ratio': -1, 'mmap': True, 'zero_z': True}, 'batch_size': 64, 'test_batch_size': 64, 'debug': False, 'model': 'net.aimclr_v2_3views_2.AimCLR_v2_3views', 'model_args': {'base_encoder': 'net.ddnet.DDNet_Original', 'pretrain': False, 'frame_l': 60, 'joint_n': 48, 'joint_d': 3, 'filters': 16, 'feat_d': 1128, 'class_num': 19, 'last_feture_dim': 512}, 'weights': 'config/three-stream/pretext/epoch400_model.pt', 'ignore_weights': ['encoder_q.linear3', 'encoder_q_motion.linear3', 'encoder_q_bone.linear3', 'encoder_q.linear0', 'encoder_q_motion.linear0', 'encoder_q_bone.linear0', 'encoder_k', 'encoder_k_motion', 'encoder_k_bone', 'queue', 'queue_motion', 'queue_bone'], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [80], 'optimizer': 'SGD', 'nesterov': False, 'weight_decay': 0.0, 'stream': 'all', 'mining_epoch': 1000000.0, 'topk': 1, 'unfreeze_backbone': False, 'grad_clip': 0.0}
+
+[12.04.25|17:42:01] ---------- Networks initialized -------------
+[12.04.25|17:42:01] [Network] Total number of parameters : 0.563 M
+[12.04.25|17:42:01] -----------------------------------------------
+[12.04.25|17:42:01] Training epoch: 1
+[12.04.25|17:42:02] 	Iter 0 Done. | loss: 2.9447 | lr: 0.100000
+[12.04.25|17:42:04] 	train_mean_loss: 2.944725005523018
+[12.04.25|17:42:04] Training epoch: 2
+[12.04.25|17:42:07] 	train_mean_loss: 2.939713426258253
+[12.04.25|17:42:07] Training epoch: 3
+[12.04.25|17:42:10] 	train_mean_loss: 2.8952885296033775
+[12.04.25|17:42:10] Training epoch: 4
+[12.04.25|17:42:12] 	train_mean_loss: 2.6850471081941025
+[12.04.25|17:42:12] Training epoch: 5
+[12.04.25|17:42:13] 	Iter 100 Done. | loss: 2.4523 | lr: 0.100000
+[12.04.25|17:42:15] 	train_mean_loss: 2.3890113726906153
+[12.04.25|17:42:15] Eval epoch: 5
+[12.04.25|17:42:17] 	Avg inference time per sequence: 0.001207 s
+[12.04.25|17:42:17] 	eval_mean_loss: 2.259454851565154
+[12.04.25|17:42:17] 	avg_infer_time_per_seq: 0.0012069845101671786
+[12.04.25|17:42:17] 	Top1: 22.59%
+[12.04.25|17:42:17] 	Top5: 71.18%
+[12.04.25|17:42:17] 	Best Top1: 22.59%
+[12.04.25|17:42:17] current 22.59%, best 22.59%
+[12.04.25|17:42:17] The model has been saved as config/three-stream/linear/epoch005_acc22.59_model.pt.
+[12.04.25|17:42:17] The model has been saved as config/three-stream/linear/best_model.pt.
+[12.04.25|17:42:17] Training epoch: 6
+[12.04.25|17:42:19] 	train_mean_loss: 2.1670359321262525
+[12.04.25|17:42:19] Training epoch: 7
+[12.04.25|17:42:22] 	train_mean_loss: 1.9612881204356318
+[12.04.25|17:42:22] Training epoch: 8
+[12.04.25|17:42:24] 	train_mean_loss: 1.8594565184220024
+[12.04.25|17:42:24] Training epoch: 9
+[12.04.25|17:42:26] 	Iter 200 Done. | loss: 1.5864 | lr: 0.100000
+[12.04.25|17:42:27] 	train_mean_loss: 1.7699192814205005
+[12.04.25|17:42:27] Training epoch: 10
+[12.04.25|17:42:29] 	train_mean_loss: 1.7159103414286738
+[12.04.25|17:42:29] Eval epoch: 10
+[12.04.25|17:42:31] 	Avg inference time per sequence: 0.001160 s
+[12.04.25|17:42:31] 	eval_mean_loss: 1.6676371201224949
+[12.04.25|17:42:31] 	avg_infer_time_per_seq: 0.0011598495976880836
+[12.04.25|17:42:31] 	Top1: 37.99%
+[12.04.25|17:42:31] 	Top5: 90.42%
+[12.04.25|17:42:31] 	Best Top1: 37.99%
+[12.04.25|17:42:32] current 37.99%, best 37.99%
+[12.04.25|17:42:32] The model has been saved as config/three-stream/linear/epoch010_acc37.99_model.pt.
+[12.04.25|17:42:32] The model has been saved as config/three-stream/linear/best_model.pt.
+[12.04.25|17:42:32] Training epoch: 11
+[12.04.25|17:42:34] 	train_mean_loss: 1.6244962215423584
+[12.04.25|17:42:34] Training epoch: 12
+[12.04.25|17:42:37] 	train_mean_loss: 1.5628446081410283
+[12.04.25|17:42:37] Training epoch: 13
+[12.04.25|17:42:39] 	train_mean_loss: 1.4713096981463225
+[12.04.25|17:42:39] Training epoch: 14
+[12.04.25|17:42:40] 	Iter 300 Done. | loss: 1.4449 | lr: 0.100000
+[12.04.25|17:42:42] 	train_mean_loss: 1.4635146804477857
+[12.04.25|17:42:42] Training epoch: 15
+[12.04.25|17:42:44] 	train_mean_loss: 1.4360909617465476
+[12.04.25|17:42:44] Eval epoch: 15
+[12.04.25|17:42:46] 	Avg inference time per sequence: 0.001217 s
+[12.04.25|17:42:46] 	eval_mean_loss: 1.525280237197876
+[12.04.25|17:42:46] 	avg_infer_time_per_seq: 0.0012167285028832323
+[12.04.25|17:42:46] 	Top1: 42.98%
+[12.04.25|17:42:46] 	Top5: 93.57%
+[12.04.25|17:42:46] 	Best Top1: 42.98%
+[12.04.25|17:42:46] current 42.98%, best 42.98%
+[12.04.25|17:42:47] The model has been saved as config/three-stream/linear/epoch015_acc42.98_model.pt.
+[12.04.25|17:42:47] The model has been saved as config/three-stream/linear/best_model.pt.
+[12.04.25|17:42:47] Training epoch: 16
+[12.04.25|17:42:49] 	train_mean_loss: 1.4325004453244417
+[12.04.25|17:42:49] Training epoch: 17
+[12.04.25|17:42:52] 	train_mean_loss: 1.4274452302766882
+[12.04.25|17:42:52] Training epoch: 18
+[12.04.25|17:42:53] 	Iter 400 Done. | loss: 1.4904 | lr: 0.100000
+[12.04.25|17:42:54] 	train_mean_loss: 1.3968910548997961
+[12.04.25|17:42:54] Training epoch: 19
+[12.04.25|17:42:57] 	train_mean_loss: 1.318554453227831
+[12.04.25|17:42:57] Training epoch: 20
+[12.04.25|17:42:59] 	train_mean_loss: 1.242293207541756
+[12.04.25|17:42:59] Eval epoch: 20
+[12.04.25|17:43:01] 	Avg inference time per sequence: 0.001188 s
+[12.04.25|17:43:01] 	eval_mean_loss: 1.3669460985971533
+[12.04.25|17:43:01] 	avg_infer_time_per_seq: 0.001187770518434121
+[12.04.25|17:43:01] 	Top1: 48.12%
+[12.04.25|17:43:01] 	Top5: 94.52%
+[12.04.25|17:43:01] 	Best Top1: 48.12%
+[12.04.25|17:43:01] current 48.12%, best 48.12%
+[12.04.25|17:43:01] The model has been saved as config/three-stream/linear/epoch020_acc48.12_model.pt.
+[12.04.25|17:43:02] The model has been saved as config/three-stream/linear/best_model.pt.
+[12.04.25|17:43:02] Training epoch: 21
+[12.04.25|17:43:04] 	train_mean_loss: 1.2313869103141453
+[12.04.25|17:43:04] Training epoch: 22
+[12.04.25|17:43:06] 	Iter 500 Done. | loss: 1.2685 | lr: 0.100000
+[12.04.25|17:43:06] 	train_mean_loss: 1.2036893523257712
+[12.04.25|17:43:06] Training epoch: 23
+[12.04.25|17:43:09] 	train_mean_loss: 1.2036172695781873
+[12.04.25|17:43:09] Training epoch: 24
+[12.04.25|17:43:11] 	train_mean_loss: 1.1696475044540737
+[12.04.25|17:43:11] Training epoch: 25
+[12.04.25|17:43:14] 	train_mean_loss: 1.1617880437685095
+[12.04.25|17:43:14] Eval epoch: 25
+[12.04.25|17:43:16] 	Avg inference time per sequence: 0.001248 s
+[12.04.25|17:43:16] 	eval_mean_loss: 1.3427273060964502
+[12.04.25|17:43:16] 	avg_infer_time_per_seq: 0.0012484553087092197
+[12.04.25|17:43:16] 	Top1: 50.17%
+[12.04.25|17:43:16] 	Top5: 94.18%
+[12.04.25|17:43:16] 	Best Top1: 50.17%
+[12.04.25|17:43:16] current 50.17%, best 50.17%
+[12.04.25|17:43:16] The model has been saved as config/three-stream/linear/epoch025_acc50.17_model.pt.
+[12.04.25|17:43:16] The model has been saved as config/three-stream/linear/best_model.pt.
+[12.04.25|17:43:16] Training epoch: 26
+[12.04.25|17:43:19] 	train_mean_loss: 1.1608368262000706
+[12.04.25|17:43:19] Training epoch: 27
+[12.04.25|17:43:20] 	Iter 600 Done. | loss: 1.0435 | lr: 0.100000
+[12.04.25|17:43:21] 	train_mean_loss: 1.0986108132030652
+[12.04.25|17:43:21] Training epoch: 28
+[12.04.25|17:43:24] 	train_mean_loss: 1.080041659914929
+[12.04.25|17:43:24] Training epoch: 29
+[12.04.25|17:43:27] 	train_mean_loss: 1.0444159740987031
+[12.04.25|17:43:27] Training epoch: 30
+[12.04.25|17:43:30] 	train_mean_loss: 1.051785611588022
+[12.04.25|17:43:30] Eval epoch: 30
+[12.04.25|17:43:32] 	Avg inference time per sequence: 0.001240 s
+[12.04.25|17:43:32] 	eval_mean_loss: 1.4073245797468268
+[12.04.25|17:43:32] 	avg_infer_time_per_seq: 0.0012401212657012
+[12.04.25|17:43:32] 	Top1: 49.08%
+[12.04.25|17:43:32] 	Top5: 94.11%
+[12.04.25|17:43:32] 	Best Top1: 50.17%
+[12.04.25|17:43:32] current 49.08%, best 50.17%
+[12.04.25|17:43:32] The model has been saved as config/three-stream/linear/epoch030_acc49.08_model.pt.
+[12.04.25|17:43:32] Training epoch: 31
+[12.04.25|17:43:33] 	Iter 700 Done. | loss: 1.0820 | lr: 0.100000
+[12.04.25|17:43:34] 	train_mean_loss: 1.096265354882116
+[12.04.25|17:43:34] Training epoch: 32
+[12.04.25|17:43:37] 	train_mean_loss: 1.0213213562965393
+[12.04.25|17:43:37] Training epoch: 33
+[12.04.25|17:43:39] 	train_mean_loss: 1.0002251189687978
+[12.04.25|17:43:39] Training epoch: 34
+[12.04.25|17:43:42] 	train_mean_loss: 0.9613611672235571
+[12.04.25|17:43:42] Training epoch: 35
+[12.04.25|17:43:44] 	Iter 800 Done. | loss: 0.9796 | lr: 0.100000
+[12.04.25|17:43:44] 	train_mean_loss: 0.9748557313628818
+[12.04.25|17:43:44] Eval epoch: 35
+[12.04.25|17:43:47] 	Avg inference time per sequence: 0.001366 s
+[12.04.25|17:43:47] 	eval_mean_loss: 1.2845980965572854
+[12.04.25|17:43:47] 	avg_infer_time_per_seq: 0.001366205528776259
+[12.04.25|17:43:47] 	Top1: 53.87%
+[12.04.25|17:43:47] 	Top5: 95.14%
+[12.04.25|17:43:47] 	Best Top1: 53.87%
+[12.04.25|17:43:47] current 53.87%, best 53.87%
+[12.04.25|17:43:47] The model has been saved as config/three-stream/linear/epoch035_acc53.87_model.pt.
+[12.04.25|17:43:47] The model has been saved as config/three-stream/linear/best_model.pt.
+[12.04.25|17:43:47] Training epoch: 36
+[12.04.25|17:43:49] 	train_mean_loss: 0.9835083329159281
+[12.04.25|17:43:50] Training epoch: 37
+[12.04.25|17:43:52] 	train_mean_loss: 0.9319037069445071
+[12.04.25|17:43:52] Training epoch: 38
+[12.04.25|17:43:55] 	train_mean_loss: 0.9188743052275284
+[12.04.25|17:43:55] Training epoch: 39
+[12.04.25|17:43:57] 	train_mean_loss: 0.9811550974845886
+[12.04.25|17:43:57] Training epoch: 40
+[12.04.25|17:43:58] 	Iter 900 Done. | loss: 0.7334 | lr: 0.100000
+[12.04.25|17:44:00] 	train_mean_loss: 0.8902814958406531
+[12.04.25|17:44:00] Eval epoch: 40
+[12.04.25|17:44:02] 	Avg inference time per sequence: 0.001262 s
+[12.04.25|17:44:02] 	eval_mean_loss: 1.246492713689804
+[12.04.25|17:44:02] 	avg_infer_time_per_seq: 0.0012618792048877923
+[12.04.25|17:44:02] 	Top1: 56.88%
+[12.04.25|17:44:02] 	Top5: 95.41%
+[12.04.25|17:44:02] 	Best Top1: 56.88%
+[12.04.25|17:44:02] current 56.88%, best 56.88%
+[12.04.25|17:44:02] The model has been saved as config/three-stream/linear/epoch040_acc56.88_model.pt.
+[12.04.25|17:44:02] The model has been saved as config/three-stream/linear/best_model.pt.
+[12.04.25|17:44:02] Training epoch: 41
+[12.04.25|17:44:05] 	train_mean_loss: 0.8917006798412489
+[12.04.25|17:44:05] Training epoch: 42
+[12.04.25|17:44:07] 	train_mean_loss: 0.8903912875963294
+[12.04.25|17:44:07] Training epoch: 43
+[12.04.25|17:44:10] 	train_mean_loss: 0.8707598888355753
+[12.04.25|17:44:10] Training epoch: 44
+[12.04.25|17:44:11] 	Iter 1000 Done. | loss: 0.7907 | lr: 0.100000
+[12.04.25|17:44:13] 	train_mean_loss: 0.8873575122460075
+[12.04.25|17:44:13] Training epoch: 45
+[12.04.25|17:44:15] 	train_mean_loss: 0.8729002708974092
+[12.04.25|17:44:15] Eval epoch: 45
+[12.04.25|17:44:18] 	Avg inference time per sequence: 0.001334 s
+[12.04.25|17:44:18] 	eval_mean_loss: 1.3704498176989348
+[12.04.25|17:44:18] 	avg_infer_time_per_seq: 0.0013340973511368833
+[12.04.25|17:44:18] 	Top1: 54.35%
+[12.04.25|17:44:18] 	Top5: 94.39%
+[12.04.25|17:44:18] 	Best Top1: 56.88%
+[12.04.25|17:44:18] current 54.35%, best 56.88%
+[12.04.25|17:44:18] The model has been saved as config/three-stream/linear/epoch045_acc54.35_model.pt.
+[12.04.25|17:44:18] Training epoch: 46
+[12.04.25|17:44:20] 	train_mean_loss: 0.8358139810354813
+[12.04.25|17:44:20] Training epoch: 47
+[12.04.25|17:44:23] 	train_mean_loss: 0.8338387841763704
+[12.04.25|17:44:23] Training epoch: 48
+[12.04.25|17:44:25] 	Iter 1100 Done. | loss: 0.8190 | lr: 0.100000
+[12.04.25|17:44:26] 	train_mean_loss: 0.8164196377215178
+[12.04.25|17:44:26] Training epoch: 49
+[12.04.25|17:44:28] 	train_mean_loss: 0.7963655228200166
+[12.04.25|17:44:28] Training epoch: 50
+[12.04.25|17:44:31] 	train_mean_loss: 0.8191638848055964
+[12.04.25|17:44:31] Eval epoch: 50
+[12.04.25|17:44:34] 	Avg inference time per sequence: 0.001338 s
+[12.04.25|17:44:34] 	eval_mean_loss: 1.3374591106953828
+[12.04.25|17:44:34] 	avg_infer_time_per_seq: 0.0013381357800054843
+[12.04.25|17:44:34] 	Top1: 58.18%
+[12.04.25|17:44:34] 	Top5: 94.66%
+[12.04.25|17:44:34] 	Best Top1: 58.18%
+[12.04.25|17:44:34] current 58.18%, best 58.18%
+[12.04.25|17:44:34] The model has been saved as config/three-stream/linear/epoch050_acc58.18_model.pt.
+[12.04.25|17:44:34] The model has been saved as config/three-stream/linear/best_model.pt.
+[12.04.25|17:44:34] Training epoch: 51
+[12.04.25|17:44:36] 	train_mean_loss: 0.8405689545299696
+[12.04.25|17:44:36] Training epoch: 52
+[12.04.25|17:44:39] 	train_mean_loss: 0.8059071820715199
+[12.04.25|17:44:39] Training epoch: 53
+[12.04.25|17:44:40] 	Iter 1200 Done. | loss: 0.6473 | lr: 0.100000
+[12.04.25|17:44:42] 	train_mean_loss: 0.8055806704189467
+[12.04.25|17:44:42] Training epoch: 54
+[12.04.25|17:44:45] 	train_mean_loss: 0.7897279366202976
+[12.04.25|17:44:45] Training epoch: 55
+[12.04.25|17:44:47] 	train_mean_loss: 0.7823598747668059
+[12.04.25|17:44:47] Eval epoch: 55
+[12.04.25|17:44:50] 	Avg inference time per sequence: 0.001357 s
+[12.04.25|17:44:50] 	eval_mean_loss: 1.4465693105822024
+[12.04.25|17:44:50] 	avg_infer_time_per_seq: 0.0013571204917223628
+[12.04.25|17:44:50] 	Top1: 54.14%
+[12.04.25|17:44:50] 	Top5: 94.59%
+[12.04.25|17:44:50] 	Best Top1: 58.18%
+[12.04.25|17:44:50] current 54.14%, best 58.18%
+[12.04.25|17:44:50] The model has been saved as config/three-stream/linear/epoch055_acc54.14_model.pt.
+[12.04.25|17:44:50] Training epoch: 56
+[12.04.25|17:44:53] 	train_mean_loss: 0.7514940914900406
+[12.04.25|17:44:53] Training epoch: 57
+[12.04.25|17:44:54] 	Iter 1300 Done. | loss: 0.5195 | lr: 0.100000
+[12.04.25|17:44:55] 	train_mean_loss: 0.7803044526473336
+[12.04.25|17:44:55] Training epoch: 58
+[12.04.25|17:44:57] 	train_mean_loss: 0.7800616829291634
+[12.04.25|17:44:57] Training epoch: 59
+[12.04.25|17:45:00] 	train_mean_loss: 0.8211545633233112
+[12.04.25|17:45:00] Training epoch: 60
+[12.04.25|17:45:03] 	train_mean_loss: 0.7894289156664973
+[12.04.25|17:45:03] Eval epoch: 60
+[12.04.25|17:45:05] 	Avg inference time per sequence: 0.001260 s
+[12.04.25|17:45:05] 	eval_mean_loss: 1.3933474836142168
+[12.04.25|17:45:05] 	avg_infer_time_per_seq: 0.0012595446284383556
+[12.04.25|17:45:05] 	Top1: 58.25%
+[12.04.25|17:45:05] 	Top5: 93.84%
+[12.04.25|17:45:05] 	Best Top1: 58.25%
+[12.04.25|17:45:05] current 58.25%, best 58.25%
+[12.04.25|17:45:05] The model has been saved as config/three-stream/linear/epoch060_acc58.25_model.pt.
+[12.04.25|17:45:05] The model has been saved as config/three-stream/linear/best_model.pt.
+[12.04.25|17:45:05] Training epoch: 61
+[12.04.25|17:45:08] 	Iter 1400 Done. | loss: 0.8645 | lr: 0.100000
+[12.04.25|17:45:08] 	train_mean_loss: 0.7484152679858
+[12.04.25|17:45:08] Training epoch: 62
+[12.04.25|17:45:11] 	train_mean_loss: 0.7389575968617978
+[12.04.25|17:45:11] Training epoch: 63
+[12.04.25|17:45:13] 	train_mean_loss: 0.7604500107143236
+[12.04.25|17:45:13] Training epoch: 64
+[12.04.25|17:45:16] 	train_mean_loss: 0.74634933601255
+[12.04.25|17:45:16] Training epoch: 65
+[12.04.25|17:45:18] 	train_mean_loss: 0.6800989819609601
+[12.04.25|17:45:18] Eval epoch: 65
+[12.04.25|17:45:21] 	Avg inference time per sequence: 0.001246 s
+[12.04.25|17:45:21] 	eval_mean_loss: 1.4938956291779228
+[12.04.25|17:45:21] 	avg_infer_time_per_seq: 0.0012455432077208093
+[12.04.25|17:45:21] 	Top1: 56.47%
+[12.04.25|17:45:21] 	Top5: 95.00%
+[12.04.25|17:45:21] 	Best Top1: 58.25%
+[12.04.25|17:45:21] current 56.47%, best 58.25%
+[12.04.25|17:45:21] The model has been saved as config/three-stream/linear/epoch065_acc56.47_model.pt.
+[12.04.25|17:45:21] Training epoch: 66
+[12.04.25|17:45:22] 	Iter 1500 Done. | loss: 0.6446 | lr: 0.100000
+[12.04.25|17:45:23] 	train_mean_loss: 0.6969087719917297
+[12.04.25|17:45:23] Training epoch: 67
+[12.04.25|17:45:26] 	train_mean_loss: 0.6687555183535037
+[12.04.25|17:45:26] Training epoch: 68
+[12.04.25|17:45:28] 	train_mean_loss: 0.6771356463432312
+[12.04.25|17:45:28] Training epoch: 69
+[12.04.25|17:45:31] 	train_mean_loss: 0.6070184318915658
+[12.04.25|17:45:31] Training epoch: 70
+[12.04.25|17:45:33] 	Iter 1600 Done. | loss: 0.6427 | lr: 0.100000
+[12.04.25|17:45:34] 	train_mean_loss: 0.6345511325027632
+[12.04.25|17:45:34] Eval epoch: 70
+[12.04.25|17:45:36] 	Avg inference time per sequence: 0.001083 s
+[12.04.25|17:45:36] 	eval_mean_loss: 1.5460648692172507
+[12.04.25|17:45:36] 	avg_infer_time_per_seq: 0.0010830471566243992
+[12.04.25|17:45:36] 	Top1: 56.95%
+[12.04.25|17:45:36] 	Top5: 94.80%
+[12.04.25|17:45:36] 	Best Top1: 58.25%
+[12.04.25|17:45:36] current 56.95%, best 58.25%
+[12.04.25|17:45:36] The model has been saved as config/three-stream/linear/epoch070_acc56.95_model.pt.
+[12.04.25|17:45:36] Training epoch: 71
+[12.04.25|17:45:38] 	train_mean_loss: 0.6901505265546881
+[12.04.25|17:45:38] Training epoch: 72
+[12.04.25|17:45:41] 	train_mean_loss: 0.6720986988233484
+[12.04.25|17:45:41] Training epoch: 73
+[12.04.25|17:45:43] 	train_mean_loss: 0.7368894711784695
+[12.04.25|17:45:43] Training epoch: 74
+[12.04.25|17:45:45] 	Iter 1700 Done. | loss: 0.7272 | lr: 0.100000
+[12.04.25|17:45:46] 	train_mean_loss: 0.7706800258677938
+[12.04.25|17:45:46] Training epoch: 75
+[12.04.25|17:45:48] 	train_mean_loss: 0.7065052390098572
+[12.04.25|17:45:48] Eval epoch: 75
+[12.04.25|17:45:50] 	Avg inference time per sequence: 0.001109 s
+[12.04.25|17:45:50] 	eval_mean_loss: 1.5902683061102163
+[12.04.25|17:45:50] 	avg_infer_time_per_seq: 0.001109173981642413
+[12.04.25|17:45:50] 	Top1: 56.74%
+[12.04.25|17:45:50] 	Top5: 95.55%
+[12.04.25|17:45:50] 	Best Top1: 58.25%
+[12.04.25|17:45:50] current 56.74%, best 58.25%
+[12.04.25|17:45:50] The model has been saved as config/three-stream/linear/epoch075_acc56.74_model.pt.
+[12.04.25|17:45:50] Training epoch: 76
+[12.04.25|17:45:52] 	train_mean_loss: 0.6698818556640459
+[12.04.25|17:45:52] Training epoch: 77
+[12.04.25|17:45:54] 	train_mean_loss: 0.6372934476188992
+[12.04.25|17:45:54] Training epoch: 78
+[12.04.25|17:45:56] 	train_mean_loss: 0.6084262702776038
+[12.04.25|17:45:56] Training epoch: 79
+[12.04.25|17:45:57] 	Iter 1800 Done. | loss: 0.6383 | lr: 0.100000
+[12.04.25|17:45:58] 	train_mean_loss: 0.6075576025506725
+[12.04.25|17:45:58] Training epoch: 80
+[12.04.25|17:46:00] 	train_mean_loss: 0.5924343103947847
+[12.04.25|17:46:00] Eval epoch: 80
+[12.04.25|17:46:02] 	Avg inference time per sequence: 0.000974 s
+[12.04.25|17:46:02] 	eval_mean_loss: 1.5913196542988652
+[12.04.25|17:46:02] 	avg_infer_time_per_seq: 0.0009744637311116871
+[12.04.25|17:46:02] 	Top1: 57.22%
+[12.04.25|17:46:02] 	Top5: 94.93%
+[12.04.25|17:46:02] 	Best Top1: 58.25%
+[12.04.25|17:46:02] current 57.22%, best 58.25%
+[12.04.25|17:46:02] The model has been saved as config/three-stream/linear/epoch080_acc57.22_model.pt.
+[12.04.25|17:46:02] Training epoch: 81
+[12.04.25|17:46:04] 	train_mean_loss: 0.5211357681647591
+[12.04.25|17:46:04] Training epoch: 82
+[12.04.25|17:46:06] 	train_mean_loss: 0.47072659627251
+[12.04.25|17:46:06] Training epoch: 83
+[12.04.25|17:46:07] 	Iter 1900 Done. | loss: 0.4065 | lr: 0.010000
+[12.04.25|17:46:08] 	train_mean_loss: 0.45830610394477844
+[12.04.25|17:46:08] Training epoch: 84
+[12.04.25|17:46:10] 	train_mean_loss: 0.45544553450916125
+[12.04.25|17:46:10] Training epoch: 85
+[12.04.25|17:46:12] 	train_mean_loss: 0.44902810065642645
+[12.04.25|17:46:12] Eval epoch: 85
+[12.04.25|17:46:14] 	Avg inference time per sequence: 0.000983 s
+[12.04.25|17:46:14] 	eval_mean_loss: 1.4927301925161611
+[12.04.25|17:46:14] 	avg_infer_time_per_seq: 0.0009828860591650824
+[12.04.25|17:46:14] 	Top1: 60.64%
+[12.04.25|17:46:14] 	Top5: 95.41%
+[12.04.25|17:46:14] 	Best Top1: 60.64%
+[12.04.25|17:46:14] current 60.64%, best 60.64%
+[12.04.25|17:46:14] The model has been saved as config/three-stream/linear/epoch085_acc60.64_model.pt.
+[12.04.25|17:46:14] The model has been saved as config/three-stream/linear/best_model.pt.
+[12.04.25|17:46:14] Training epoch: 86
+[12.04.25|17:46:16] 	train_mean_loss: 0.4534226461597111
+[12.04.25|17:46:16] Training epoch: 87
+[12.04.25|17:46:18] 	Iter 2000 Done. | loss: 0.5275 | lr: 0.010000
+[12.04.25|17:46:18] 	train_mean_loss: 0.4483269193898077
+[12.04.25|17:46:18] Training epoch: 88
+[12.04.25|17:46:20] 	train_mean_loss: 0.4421502688656683
+[12.04.25|17:46:20] Training epoch: 89
+[12.04.25|17:46:23] 	train_mean_loss: 0.44402289131413336
+[12.04.25|17:46:23] Training epoch: 90
+[12.04.25|17:46:25] 	train_mean_loss: 0.4417943449124046
+[12.04.25|17:46:25] Eval epoch: 90
+[12.04.25|17:46:27] 	Avg inference time per sequence: 0.001118 s
+[12.04.25|17:46:27] 	eval_mean_loss: 1.5272228510483452
+[12.04.25|17:46:27] 	avg_infer_time_per_seq: 0.0011179429223323668
+[12.04.25|17:46:27] 	Top1: 61.05%
+[12.04.25|17:46:27] 	Top5: 95.69%
+[12.04.25|17:46:27] 	Best Top1: 61.05%
+[12.04.25|17:46:27] current 61.05%, best 61.05%
+[12.04.25|17:46:27] The model has been saved as config/three-stream/linear/epoch090_acc61.05_model.pt.
+[12.04.25|17:46:27] The model has been saved as config/three-stream/linear/best_model.pt.
+[12.04.25|17:46:27] Training epoch: 91
+[12.04.25|17:46:29] 	train_mean_loss: 0.4377292770406474
+[12.04.25|17:46:29] Training epoch: 92
+[12.04.25|17:46:30] 	Iter 2100 Done. | loss: 0.3517 | lr: 0.010000
+[12.04.25|17:46:31] 	train_mean_loss: 0.4371691592361616
+[12.04.25|17:46:31] Training epoch: 93
+[12.04.25|17:46:33] 	train_mean_loss: 0.4368505024391672
+[12.04.25|17:46:33] Training epoch: 94
+[12.04.25|17:46:35] 	train_mean_loss: 0.43356253530668176
+[12.04.25|17:46:35] Training epoch: 95
+[12.04.25|17:46:37] 	train_mean_loss: 0.43442883310110675
+[12.04.25|17:46:37] Eval epoch: 95
+[12.04.25|17:46:39] 	Avg inference time per sequence: 0.000970 s
+[12.04.25|17:46:39] 	eval_mean_loss: 1.5629001233888709
+[12.04.25|17:46:39] 	avg_infer_time_per_seq: 0.0009699138690966763
+[12.04.25|17:46:39] 	Top1: 60.85%
+[12.04.25|17:46:39] 	Top5: 95.41%
+[12.04.25|17:46:39] 	Best Top1: 61.05%
+[12.04.25|17:46:39] current 60.85%, best 61.05%
+[12.04.25|17:46:39] The model has been saved as config/three-stream/linear/epoch095_acc60.85_model.pt.
+[12.04.25|17:46:39] Training epoch: 96
+[12.04.25|17:46:40] 	Iter 2200 Done. | loss: 0.2569 | lr: 0.010000
+[12.04.25|17:46:41] 	train_mean_loss: 0.4292521735896235
+[12.04.25|17:46:41] Training epoch: 97
+[12.04.25|17:46:43] 	train_mean_loss: 0.43163177111874457
+[12.04.25|17:46:43] Training epoch: 98
+[12.04.25|17:46:45] 	train_mean_loss: 0.4374292985252712
+[12.04.25|17:46:45] Training epoch: 99
+[12.04.25|17:46:47] 	train_mean_loss: 0.42914958881295245
+[12.04.25|17:46:47] Training epoch: 100
+[12.04.25|17:46:49] 	train_mean_loss: 0.42857474995696027
+[12.04.25|17:46:49] Eval epoch: 100
+[12.04.25|17:46:51] 	Avg inference time per sequence: 0.000975 s
+[12.04.25|17:46:51] 	eval_mean_loss: 1.6110567009967307
+[12.04.25|17:46:51] 	avg_infer_time_per_seq: 0.0009752346341696445
+[12.04.25|17:46:51] 	Top1: 60.37%
+[12.04.25|17:46:51] 	Top5: 95.28%
+[12.04.25|17:46:51] 	Best Top1: 61.05%
+[12.04.25|17:46:51] current 60.37%, best 61.05%
+[12.04.25|17:46:51] The model has been saved as config/three-stream/linear/epoch100_acc60.37_model.pt.
+[12.04.25|17:46:51] Training epoch: 101
+[12.04.25|17:46:51] 	Iter 2300 Done. | loss: 0.4196 | lr: 0.010000
+[12.04.25|17:46:53] 	train_mean_loss: 0.4273046488347261
+[12.04.25|17:46:53] Training epoch: 102
+[12.04.25|17:46:55] 	train_mean_loss: 0.42282141809878143
+[12.04.25|17:46:55] Training epoch: 103
+[12.04.25|17:46:57] 	train_mean_loss: 0.41891155813051306
+[12.04.25|17:46:57] Training epoch: 104
+[12.04.25|17:46:59] 	train_mean_loss: 0.4178892114888067
+[12.04.25|17:46:59] Training epoch: 105
+[12.04.25|17:47:00] 	Iter 2400 Done. | loss: 0.4832 | lr: 0.010000
+[12.04.25|17:47:02] 	train_mean_loss: 0.4193267355794492
+[12.04.25|17:47:02] Eval epoch: 105
+[12.04.25|17:47:04] 	Avg inference time per sequence: 0.001137 s
+[12.04.25|17:47:04] 	eval_mean_loss: 1.6311909504558728
+[12.04.25|17:47:04] 	avg_infer_time_per_seq: 0.001136692968808487
+[12.04.25|17:47:04] 	Top1: 61.40%
+[12.04.25|17:47:04] 	Top5: 95.48%
+[12.04.25|17:47:04] 	Best Top1: 61.40%
+[12.04.25|17:47:04] current 61.40%, best 61.40%
+[12.04.25|17:47:04] The model has been saved as config/three-stream/linear/epoch105_acc61.40_model.pt.
+[12.04.25|17:47:04] The model has been saved as config/three-stream/linear/best_model.pt.
+[12.04.25|17:47:04] Training epoch: 106
+[12.04.25|17:47:06] 	train_mean_loss: 0.42011769180712494
+[12.04.25|17:47:06] Training epoch: 107
+[12.04.25|17:47:08] 	train_mean_loss: 0.4149899625259897
+[12.04.25|17:47:08] Training epoch: 108
+[12.04.25|17:47:10] 	train_mean_loss: 0.41637006661166315
+[12.04.25|17:47:10] Training epoch: 109
+[12.04.25|17:47:12] 	Iter 2500 Done. | loss: 0.4515 | lr: 0.010000
+[12.04.25|17:47:13] 	train_mean_loss: 0.41694158445233886
+[12.04.25|17:47:13] Training epoch: 110
+[12.04.25|17:47:15] 	train_mean_loss: 0.415078174808751
+[12.04.25|17:47:15] Eval epoch: 110
+[12.04.25|17:47:17] 	Avg inference time per sequence: 0.001088 s
+[12.04.25|17:47:17] 	eval_mean_loss: 1.6440800117409748
+[12.04.25|17:47:17] 	avg_infer_time_per_seq: 0.0010883343048409026
+[12.04.25|17:47:17] 	Top1: 60.92%
+[12.04.25|17:47:17] 	Top5: 95.48%
+[12.04.25|17:47:17] 	Best Top1: 61.40%
+[12.04.25|17:47:17] current 60.92%, best 61.40%
+[12.04.25|17:47:17] The model has been saved as config/three-stream/linear/epoch110_acc60.92_model.pt.
+[12.04.25|17:47:17] Training epoch: 111
+[12.04.25|17:47:19] 	train_mean_loss: 0.4097953581291696
+[12.04.25|17:47:19] Training epoch: 112
+[12.04.25|17:47:21] 	train_mean_loss: 0.41072820321373316
+[12.04.25|17:47:21] Training epoch: 113
+[12.04.25|17:47:23] 	train_mean_loss: 0.4132962058419767
+[12.04.25|17:47:23] Training epoch: 114
+[12.04.25|17:47:24] 	Iter 2600 Done. | loss: 0.4696 | lr: 0.010000
+[12.04.25|17:47:25] 	train_mean_loss: 0.415832633557527
+[12.04.25|17:47:25] Training epoch: 115
+[12.04.25|17:47:27] 	train_mean_loss: 0.4077725682569587
+[12.04.25|17:47:27] Eval epoch: 115
+[12.04.25|17:47:29] 	Avg inference time per sequence: 0.000997 s
+[12.04.25|17:47:29] 	eval_mean_loss: 1.6874750541604084
+[12.04.25|17:47:29] 	avg_infer_time_per_seq: 0.000997283212294895
+[12.04.25|17:47:29] 	Top1: 60.57%
+[12.04.25|17:47:29] 	Top5: 95.35%
+[12.04.25|17:47:29] 	Best Top1: 61.40%
+[12.04.25|17:47:29] current 60.57%, best 61.40%
+[12.04.25|17:47:29] The model has been saved as config/three-stream/linear/epoch115_acc60.57_model.pt.
+[12.04.25|17:47:29] Training epoch: 116
+[12.04.25|17:47:32] 	train_mean_loss: 0.40697565804357116
+[12.04.25|17:47:32] Training epoch: 117
+[12.04.25|17:47:34] 	train_mean_loss: 0.4081279130085655
+[12.04.25|17:47:34] Training epoch: 118
+[12.04.25|17:47:35] 	Iter 2700 Done. | loss: 0.5130 | lr: 0.010000
+[12.04.25|17:47:36] 	train_mean_loss: 0.4089951074641684
+[12.04.25|17:47:36] Training epoch: 119
+[12.04.25|17:47:38] 	train_mean_loss: 0.4100596593773883
+[12.04.25|17:47:38] Training epoch: 120
+[12.04.25|17:47:40] 	train_mean_loss: 0.4023707353550455
+[12.04.25|17:47:40] Eval epoch: 120
+[12.04.25|17:47:42] 	Avg inference time per sequence: 0.001024 s
+[12.04.25|17:47:42] 	eval_mean_loss: 1.6772148997887322
+[12.04.25|17:47:42] 	avg_infer_time_per_seq: 0.0010243997763151342
+[12.04.25|17:47:42] 	Top1: 61.33%
+[12.04.25|17:47:42] 	Top5: 95.14%
+[12.04.25|17:47:42] 	Best Top1: 61.40%
+[12.04.25|17:47:42] current 61.33%, best 61.40%
+[12.04.25|17:47:42] The model has been saved as config/three-stream/linear/epoch120_acc61.33_model.pt.
+[12.04.25|17:47:42] Training epoch: 121
+[12.04.25|17:47:44] 	train_mean_loss: 0.4000655075778132
+[12.04.25|17:47:44] Training epoch: 122
+[12.04.25|17:47:46] 	Iter 2800 Done. | loss: 0.5397 | lr: 0.010000
+[12.04.25|17:47:47] 	train_mean_loss: 0.3994480760201164
+[12.04.25|17:47:47] Training epoch: 123
+[12.04.25|17:47:49] 	train_mean_loss: 0.4018593106580817
+[12.04.25|17:47:49] Training epoch: 124
+[12.04.25|17:47:51] 	train_mean_loss: 0.39959050650181976
+[12.04.25|17:47:51] Training epoch: 125
+[12.04.25|17:47:54] 	train_mean_loss: 0.4054876630720885
+[12.04.25|17:47:54] Eval epoch: 125
+[12.04.25|17:47:56] 	Avg inference time per sequence: 0.001143 s
+[12.04.25|17:47:56] 	eval_mean_loss: 1.7225502392520076
+[12.04.25|17:47:56] 	avg_infer_time_per_seq: 0.0011426756269388375
+[12.04.25|17:47:56] 	Top1: 60.99%
+[12.04.25|17:47:56] 	Top5: 95.55%
+[12.04.25|17:47:56] 	Best Top1: 61.40%
+[12.04.25|17:47:56] current 60.99%, best 61.40%
+[12.04.25|17:47:56] The model has been saved as config/three-stream/linear/epoch125_acc60.99_model.pt.
+[12.04.25|17:47:56] Training epoch: 126
+[12.04.25|17:47:58] 	train_mean_loss: 0.3963363300199094
+[12.04.25|17:47:58] Training epoch: 127
+[12.04.25|17:47:59] 	Iter 2900 Done. | loss: 0.3573 | lr: 0.010000
+[12.04.25|17:48:01] 	train_mean_loss: 0.3976557125215945
+[12.04.25|17:48:01] Training epoch: 128
+[12.04.25|17:48:03] 	train_mean_loss: 0.398215317207834
+[12.04.25|17:48:03] Training epoch: 129
+[12.04.25|17:48:06] 	train_mean_loss: 0.3993994787983272
+[12.04.25|17:48:06] Training epoch: 130
+[12.04.25|17:48:08] 	train_mean_loss: 0.4008781896985095
+[12.04.25|17:48:08] Eval epoch: 130
+[12.04.25|17:48:10] 	Avg inference time per sequence: 0.001162 s
+[12.04.25|17:48:10] 	eval_mean_loss: 1.7356016428574272
+[12.04.25|17:48:10] 	avg_infer_time_per_seq: 0.0011618241800338254
+[12.04.25|17:48:10] 	Top1: 60.71%
+[12.04.25|17:48:10] 	Top5: 95.48%
+[12.04.25|17:48:10] 	Best Top1: 61.40%
+[12.04.25|17:48:10] current 60.71%, best 61.40%
+[12.04.25|17:48:10] The model has been saved as config/three-stream/linear/epoch130_acc60.71_model.pt.
+[12.04.25|17:48:10] Training epoch: 131
+[12.04.25|17:48:12] 	Iter 3000 Done. | loss: 0.4220 | lr: 0.010000
+[12.04.25|17:48:13] 	train_mean_loss: 0.3911963584630386
+[12.04.25|17:48:13] Training epoch: 132
+[12.04.25|17:48:15] 	train_mean_loss: 0.39542576929797296
+[12.04.25|17:48:15] Training epoch: 133
+[12.04.25|17:48:18] 	train_mean_loss: 0.39521178084871045
+[12.04.25|17:48:18] Training epoch: 134
+[12.04.25|17:48:20] 	train_mean_loss: 0.39496455179608386
+[12.04.25|17:48:20] Training epoch: 135
+[12.04.25|17:48:22] 	Iter 3100 Done. | loss: 0.4862 | lr: 0.010000
+[12.04.25|17:48:23] 	train_mean_loss: 0.38859518325847126
+[12.04.25|17:48:23] Eval epoch: 135
+[12.04.25|17:48:25] 	Avg inference time per sequence: 0.001140 s
+[12.04.25|17:48:25] 	eval_mean_loss: 1.780792588772981
+[12.04.25|17:48:25] 	avg_infer_time_per_seq: 0.0011401411444254723
+[12.04.25|17:48:25] 	Top1: 60.85%
+[12.04.25|17:48:25] 	Top5: 95.21%
+[12.04.25|17:48:25] 	Best Top1: 61.40%
+[12.04.25|17:48:25] current 60.85%, best 61.40%
+[12.04.25|17:48:25] The model has been saved as config/three-stream/linear/epoch135_acc60.85_model.pt.
+[12.04.25|17:48:25] Training epoch: 136
+[12.04.25|17:48:28] 	train_mean_loss: 0.3883286986661994
+[12.04.25|17:48:28] Training epoch: 137
+[12.04.25|17:48:30] 	train_mean_loss: 0.39181314214416174
+[12.04.25|17:48:30] Training epoch: 138
+[12.04.25|17:48:32] 	train_mean_loss: 0.3931899964809418
+[12.04.25|17:48:32] Training epoch: 139
+[12.04.25|17:48:35] 	train_mean_loss: 0.38947260509366577
+[12.04.25|17:48:35] Training epoch: 140
+[12.04.25|17:48:35] 	Iter 3200 Done. | loss: 0.2992 | lr: 0.010000
+[12.04.25|17:48:37] 	train_mean_loss: 0.38467718596043793
+[12.04.25|17:48:37] Eval epoch: 140
+[12.04.25|17:48:39] 	Avg inference time per sequence: 0.001113 s
+[12.04.25|17:48:39] 	eval_mean_loss: 1.8294813632965088
+[12.04.25|17:48:39] 	avg_infer_time_per_seq: 0.0011129145912729167
+[12.04.25|17:48:39] 	Top1: 60.51%
+[12.04.25|17:48:39] 	Top5: 95.21%
+[12.04.25|17:48:39] 	Best Top1: 61.40%
+[12.04.25|17:48:39] current 60.51%, best 61.40%
+[12.04.25|17:48:39] The model has been saved as config/three-stream/linear/epoch140_acc60.51_model.pt.
+[12.04.25|17:48:39] Training epoch: 141
+[12.04.25|17:48:41] 	train_mean_loss: 0.39086468193842017
+[12.04.25|17:48:41] Training epoch: 142
+[12.04.25|17:48:44] 	train_mean_loss: 0.38259192394173663
+[12.04.25|17:48:44] Training epoch: 143
+[12.04.25|17:48:46] 	train_mean_loss: 0.3807214511477429
+[12.04.25|17:48:46] Training epoch: 144
+[12.04.25|17:48:47] 	Iter 3300 Done. | loss: 0.4567 | lr: 0.010000
+[12.04.25|17:48:48] 	train_mean_loss: 0.37906196195146313
+[12.04.25|17:48:48] Training epoch: 145
+[12.04.25|17:48:51] 	train_mean_loss: 0.38031615640806116
+[12.04.25|17:48:51] Eval epoch: 145
+[12.04.25|17:48:53] 	Avg inference time per sequence: 0.001138 s
+[12.04.25|17:48:53] 	eval_mean_loss: 1.8016744696575662
+[12.04.25|17:48:53] 	avg_infer_time_per_seq: 0.0011384785787280824
+[12.04.25|17:48:53] 	Top1: 61.12%
+[12.04.25|17:48:53] 	Top5: 95.14%
+[12.04.25|17:48:53] 	Best Top1: 61.40%
+[12.04.25|17:48:53] current 61.12%, best 61.40%
+[12.04.25|17:48:53] The model has been saved as config/three-stream/linear/epoch145_acc61.12_model.pt.
+[12.04.25|17:48:53] Training epoch: 146
+[12.04.25|17:48:55] 	train_mean_loss: 0.38359758776167163
+[12.04.25|17:48:55] Training epoch: 147
+[12.04.25|17:48:58] 	train_mean_loss: 0.37701868686987006
+[12.04.25|17:48:58] Training epoch: 148
+[12.04.25|17:49:00] 	Iter 3400 Done. | loss: 0.4689 | lr: 0.010000
+[12.04.25|17:49:00] 	train_mean_loss: 0.3802976789681808
+[12.04.25|17:49:00] Training epoch: 149
+[12.04.25|17:49:02] 	train_mean_loss: 0.3815705270870872
+[12.04.25|17:49:02] Training epoch: 150
+[12.04.25|17:49:04] 	train_mean_loss: 0.37807252614394476
+[12.04.25|17:49:04] Eval epoch: 150
+[12.04.25|17:49:06] 	Avg inference time per sequence: 0.000742 s
+[12.04.25|17:49:06] 	eval_mean_loss: 1.8167132605677065
+[12.04.25|17:49:06] 	avg_infer_time_per_seq: 0.0007417216682825735
+[12.04.25|17:49:06] 	Top1: 60.99%
+[12.04.25|17:49:06] 	Top5: 95.21%
+[12.04.25|17:49:06] 	Best Top1: 61.40%
+[12.04.25|17:49:06] current 60.99%, best 61.40%
+[12.04.25|17:49:06] The model has been saved as config/three-stream/linear/epoch150_acc60.99_model.pt.
+[12.04.25|17:49:06] Training epoch: 151
+[12.04.25|17:49:08] 	train_mean_loss: 0.37429785080578015
+[12.04.25|17:49:08] Training epoch: 152
+[12.04.25|17:49:10] 	train_mean_loss: 0.37708210880341736
+[12.04.25|17:49:10] Training epoch: 153
+[12.04.25|17:49:11] 	Iter 3500 Done. | loss: 0.4127 | lr: 0.010000
+[12.04.25|17:49:12] 	train_mean_loss: 0.3804159151471179
+[12.04.25|17:49:12] Training epoch: 154
+[12.04.25|17:49:14] 	train_mean_loss: 0.3813662457725276
+[12.04.25|17:49:14] Training epoch: 155
+[12.04.25|17:49:15] 	train_mean_loss: 0.37618025489475415
+[12.04.25|17:49:15] Eval epoch: 155
+[12.04.25|17:49:17] 	Avg inference time per sequence: 0.000711 s
+[12.04.25|17:49:17] 	eval_mean_loss: 1.8589873521224312
+[12.04.25|17:49:17] 	avg_infer_time_per_seq: 0.0007107060384783004
+[12.04.25|17:49:17] 	Top1: 60.44%
+[12.04.25|17:49:17] 	Top5: 95.07%
+[12.04.25|17:49:17] 	Best Top1: 61.40%
+[12.04.25|17:49:17] current 60.44%, best 61.40%
+[12.04.25|17:49:17] The model has been saved as config/three-stream/linear/epoch155_acc60.44_model.pt.
+[12.04.25|17:49:17] Training epoch: 156
+[12.04.25|17:49:19] 	train_mean_loss: 0.3781980619482372
+[12.04.25|17:49:19] Training epoch: 157
+[12.04.25|17:49:20] 	Iter 3600 Done. | loss: 0.3820 | lr: 0.010000
+[12.04.25|17:49:21] 	train_mean_loss: 0.381312168162802
+[12.04.25|17:49:21] Training epoch: 158
+[12.04.25|17:49:23] 	train_mean_loss: 0.3746442043262979
+[12.04.25|17:49:23] Training epoch: 159
+[12.04.25|17:49:25] 	train_mean_loss: 0.37434750924939697
+[12.04.25|17:49:25] Training epoch: 160
+[12.04.25|17:49:26] 	train_mean_loss: 0.3730361668959908
+[12.04.25|17:49:26] Eval epoch: 160
+[12.04.25|17:49:28] 	Avg inference time per sequence: 0.000994 s
+[12.04.25|17:49:28] 	eval_mean_loss: 1.8720494249592656
+[12.04.25|17:49:28] 	avg_infer_time_per_seq: 0.0009942658546442532
+[12.04.25|17:49:28] 	Top1: 60.92%
+[12.04.25|17:49:28] 	Top5: 95.28%
+[12.04.25|17:49:28] 	Best Top1: 61.40%
+[12.04.25|17:49:28] current 60.92%, best 61.40%
+[12.04.25|17:49:28] The model has been saved as config/three-stream/linear/epoch160_acc60.92_model.pt.
+[12.04.25|17:49:28] Training epoch: 161
+[12.04.25|17:49:30] 	Iter 3700 Done. | loss: 0.3355 | lr: 0.010000
+[12.04.25|17:49:30] 	train_mean_loss: 0.36827364563941956
+[12.04.25|17:49:30] Training epoch: 162
+[12.04.25|17:49:33] 	train_mean_loss: 0.36665357584538666
+[12.04.25|17:49:33] Training epoch: 163
+[12.04.25|17:49:35] 	train_mean_loss: 0.3671739405911902
+[12.04.25|17:49:35] Training epoch: 164
+[12.04.25|17:49:37] 	train_mean_loss: 0.3671600721452547
+[12.04.25|17:49:37] Training epoch: 165
+[12.04.25|17:49:39] 	train_mean_loss: 0.36818120920139813
+[12.04.25|17:49:39] Eval epoch: 165
+[12.04.25|17:49:41] 	Avg inference time per sequence: 0.000998 s
+[12.04.25|17:49:41] 	eval_mean_loss: 1.8808331204497295
+[12.04.25|17:49:41] 	avg_infer_time_per_seq: 0.0009977486262494452
+[12.04.25|17:49:41] 	Top1: 60.92%
+[12.04.25|17:49:41] 	Top5: 95.21%
+[12.04.25|17:49:41] 	Best Top1: 61.40%
+[12.04.25|17:49:41] current 60.92%, best 61.40%
+[12.04.25|17:49:41] The model has been saved as config/three-stream/linear/epoch165_acc60.92_model.pt.
+[12.04.25|17:49:41] Training epoch: 166
+[12.04.25|17:49:42] 	Iter 3800 Done. | loss: 0.4091 | lr: 0.010000
+[12.04.25|17:49:43] 	train_mean_loss: 0.37063397272773413
+[12.04.25|17:49:43] Training epoch: 167
+[12.04.25|17:49:45] 	train_mean_loss: 0.36963456869125366
+[12.04.25|17:49:45] Training epoch: 168
+[12.04.25|17:49:48] 	train_mean_loss: 0.37061073080353113
+[12.04.25|17:49:48] Training epoch: 169
+[12.04.25|17:49:50] 	train_mean_loss: 0.36494480138239654
+[12.04.25|17:49:50] Training epoch: 170
+[12.04.25|17:49:52] 	Iter 3900 Done. | loss: 0.3775 | lr: 0.010000
+[12.04.25|17:49:53] 	train_mean_loss: 0.3622044039809186
+[12.04.25|17:49:53] Eval epoch: 170
+[12.04.25|17:49:55] 	Avg inference time per sequence: 0.001171 s
+[12.04.25|17:49:55] 	eval_mean_loss: 1.8937412655871848
+[12.04.25|17:49:55] 	avg_infer_time_per_seq: 0.0011712504444997005
+[12.04.25|17:49:55] 	Top1: 61.74%
+[12.04.25|17:49:55] 	Top5: 95.14%
+[12.04.25|17:49:55] 	Best Top1: 61.74%
+[12.04.25|17:49:55] current 61.74%, best 61.74%
+[12.04.25|17:49:55] The model has been saved as config/three-stream/linear/epoch170_acc61.74_model.pt.
+[12.04.25|17:49:55] The model has been saved as config/three-stream/linear/best_model.pt.
+[12.04.25|17:49:55] Training epoch: 171
+[12.04.25|17:49:58] 	train_mean_loss: 0.36683713417986163
+[12.04.25|17:49:58] Training epoch: 172
+[12.04.25|17:50:00] 	train_mean_loss: 0.3597079256306524
+[12.04.25|17:50:00] Training epoch: 173
+[12.04.25|17:50:03] 	train_mean_loss: 0.3618730047474737
+[12.04.25|17:50:03] Training epoch: 174
+[12.04.25|17:50:05] 	Iter 4000 Done. | loss: 0.3260 | lr: 0.010000
+[12.04.25|17:50:05] 	train_mean_loss: 0.35771851176800934
+[12.04.25|17:50:05] Training epoch: 175
+[12.04.25|17:50:08] 	train_mean_loss: 0.36316461407619977
+[12.04.25|17:50:08] Eval epoch: 175
+[12.04.25|17:50:10] 	Avg inference time per sequence: 0.001166 s
+[12.04.25|17:50:10] 	eval_mean_loss: 1.9224219425864841
+[12.04.25|17:50:10] 	avg_infer_time_per_seq: 0.0011655784975087128
+[12.04.25|17:50:10] 	Top1: 60.64%
+[12.04.25|17:50:10] 	Top5: 95.28%
+[12.04.25|17:50:10] 	Best Top1: 61.74%
+[12.04.25|17:50:10] current 60.64%, best 61.74%
+[12.04.25|17:50:10] The model has been saved as config/three-stream/linear/epoch175_acc60.64_model.pt.
+[12.04.25|17:50:10] Training epoch: 176
+[12.04.25|17:50:12] 	train_mean_loss: 0.36183126789072284
+[12.04.25|17:50:12] Training epoch: 177
+[12.04.25|17:50:15] 	train_mean_loss: 0.3638810340477073
+[12.04.25|17:50:15] Training epoch: 178
+[12.04.25|17:50:17] 	train_mean_loss: 0.3587401263091875
+[12.04.25|17:50:17] Training epoch: 179
+[12.04.25|17:50:18] 	Iter 4100 Done. | loss: 0.2524 | lr: 0.010000
+[12.04.25|17:50:20] 	train_mean_loss: 0.3547175643236741
+[12.04.25|17:50:20] Training epoch: 180
+[12.04.25|17:50:22] 	train_mean_loss: 0.3532344543415567
+[12.04.25|17:50:22] Eval epoch: 180
+[12.04.25|17:50:25] 	Avg inference time per sequence: 0.001178 s
+[12.04.25|17:50:25] 	eval_mean_loss: 1.9365508452705715
+[12.04.25|17:50:25] 	avg_infer_time_per_seq: 0.00117755491059582
+[12.04.25|17:50:25] 	Top1: 61.40%
+[12.04.25|17:50:25] 	Top5: 95.07%
+[12.04.25|17:50:25] 	Best Top1: 61.74%
+[12.04.25|17:50:25] current 61.40%, best 61.74%
+[12.04.25|17:50:25] The model has been saved as config/three-stream/linear/epoch180_acc61.40_model.pt.
+[12.04.25|17:50:25] Training epoch: 181
+[12.04.25|17:50:27] 	train_mean_loss: 0.3536698870036913
+[12.04.25|17:50:27] Training epoch: 182
+[12.04.25|17:50:29] 	train_mean_loss: 0.35473040782887005
+[12.04.25|17:50:29] Training epoch: 183
+[12.04.25|17:50:31] 	Iter 4200 Done. | loss: 0.3034 | lr: 0.010000
+[12.04.25|17:50:32] 	train_mean_loss: 0.35278864399246546
+[12.04.25|17:50:32] Training epoch: 184
+[12.04.25|17:50:34] 	train_mean_loss: 0.3532039756360261
+[12.04.25|17:50:34] Training epoch: 185
+[12.04.25|17:50:36] 	train_mean_loss: 0.35595267622367194
+[12.04.25|17:50:36] Eval epoch: 185
+[12.04.25|17:50:38] 	Avg inference time per sequence: 0.000726 s
+[12.04.25|17:50:38] 	eval_mean_loss: 1.9846191095269246
+[12.04.25|17:50:38] 	avg_infer_time_per_seq: 0.0007257221660574849
+[12.04.25|17:50:38] 	Top1: 61.74%
+[12.04.25|17:50:38] 	Top5: 95.07%
+[12.04.25|17:50:38] 	Best Top1: 61.74%
+[12.04.25|17:50:38] current 61.74%, best 61.74%
+[12.04.25|17:50:38] The model has been saved as config/three-stream/linear/epoch185_acc61.74_model.pt.
+[12.04.25|17:50:38] The model has been saved as config/three-stream/linear/best_model.pt.
+[12.04.25|17:50:38] Training epoch: 186
+[12.04.25|17:50:40] 	train_mean_loss: 0.3567974833042725
+[12.04.25|17:50:40] Training epoch: 187
+[12.04.25|17:50:43] 	Iter 4300 Done. | loss: 0.2223 | lr: 0.010000
+[12.04.25|17:50:43] 	train_mean_loss: 0.35632343266321265
+[12.04.25|17:50:43] Training epoch: 188
+[12.04.25|17:50:45] 	train_mean_loss: 0.3506927023763242
+[12.04.25|17:50:45] Training epoch: 189
+[12.04.25|17:50:48] 	train_mean_loss: 0.3483327400425206
+[12.04.25|17:50:48] Training epoch: 190
+[12.04.25|17:50:50] 	train_mean_loss: 0.34516319373379584
+[12.04.25|17:50:50] Eval epoch: 190
+[12.04.25|17:50:52] 	Avg inference time per sequence: 0.001168 s
+[12.04.25|17:50:52] 	eval_mean_loss: 1.9897952753564585
+[12.04.25|17:50:52] 	avg_infer_time_per_seq: 0.0011683489507718252
+[12.04.25|17:50:52] 	Top1: 60.78%
+[12.04.25|17:50:52] 	Top5: 95.00%
+[12.04.25|17:50:52] 	Best Top1: 61.74%
+[12.04.25|17:50:52] current 60.78%, best 61.74%
+[12.04.25|17:50:52] The model has been saved as config/three-stream/linear/epoch190_acc60.78_model.pt.
+[12.04.25|17:50:52] Training epoch: 191
+[12.04.25|17:50:55] 	train_mean_loss: 0.3508720248937607
+[12.04.25|17:50:55] Training epoch: 192
+[12.04.25|17:50:56] 	Iter 4400 Done. | loss: 0.3189 | lr: 0.010000
+[12.04.25|17:50:57] 	train_mean_loss: 0.3481877757155377
+[12.04.25|17:50:57] Training epoch: 193
+[12.04.25|17:51:00] 	train_mean_loss: 0.3490727096796036
+[12.04.25|17:51:00] Training epoch: 194
+[12.04.25|17:51:02] 	train_mean_loss: 0.3503614767738011
+[12.04.25|17:51:02] Training epoch: 195
+[12.04.25|17:51:05] 	train_mean_loss: 0.34465387074843695
+[12.04.25|17:51:05] Eval epoch: 195
+[12.04.25|17:51:07] 	Avg inference time per sequence: 0.001174 s
+[12.04.25|17:51:07] 	eval_mean_loss: 2.005245592283166
+[12.04.25|17:51:07] 	avg_infer_time_per_seq: 0.0011743440112375707
+[12.04.25|17:51:07] 	Top1: 60.99%
+[12.04.25|17:51:07] 	Top5: 95.28%
+[12.04.25|17:51:07] 	Best Top1: 61.74%
+[12.04.25|17:51:07] current 60.99%, best 61.74%
+[12.04.25|17:51:07] The model has been saved as config/three-stream/linear/epoch195_acc60.99_model.pt.
+[12.04.25|17:51:07] Training epoch: 196
+[12.04.25|17:51:09] 	Iter 4500 Done. | loss: 0.4615 | lr: 0.010000
+[12.04.25|17:51:09] 	train_mean_loss: 0.35681664101455524
+[12.04.25|17:51:09] Training epoch: 197
+[12.04.25|17:51:12] 	train_mean_loss: 0.3436874630658523
+[12.04.25|17:51:12] Training epoch: 198
+[12.04.25|17:51:14] 	train_mean_loss: 0.34746697545051575
+[12.04.25|17:51:14] Training epoch: 199
+[12.04.25|17:51:17] 	train_mean_loss: 0.34280738882396533
+[12.04.25|17:51:17] Training epoch: 200
+[12.04.25|17:51:19] 	train_mean_loss: 0.34479755292768066
+[12.04.25|17:51:19] Eval epoch: 200
+[12.04.25|17:51:21] 	Avg inference time per sequence: 0.001146 s
+[12.04.25|17:51:21] 	eval_mean_loss: 2.032589280087015
+[12.04.25|17:51:21] 	avg_infer_time_per_seq: 0.0011456223239154541
+[12.04.25|17:51:21] 	Top1: 60.99%
+[12.04.25|17:51:21] 	Top5: 95.07%
+[12.04.25|17:51:21] 	Best Top1: 61.74%
+[12.04.25|17:51:21] current 60.99%, best 61.74%
+[12.04.25|17:51:21] The model has been saved as config/three-stream/linear/epoch200_acc60.99_model.pt.
+[12.04.25|17:51:21] Training epoch: 201
+[12.04.25|17:51:22] 	Iter 4600 Done. | loss: 0.3273 | lr: 0.010000
+[12.04.25|17:51:24] 	train_mean_loss: 0.33818288341812464
+[12.04.25|17:51:24] Training epoch: 202
+[12.04.25|17:51:26] 	train_mean_loss: 0.33953538213087164
+[12.04.25|17:51:26] Training epoch: 203
+[12.04.25|17:51:29] 	train_mean_loss: 0.34088331979254016
+[12.04.25|17:51:29] Training epoch: 204
+[12.04.25|17:51:31] 	train_mean_loss: 0.33979591532893805
+[12.04.25|17:51:31] Training epoch: 205
+[12.04.25|17:51:32] 	Iter 4700 Done. | loss: 0.2719 | lr: 0.010000
+[12.04.25|17:51:33] 	train_mean_loss: 0.33334430857844977
+[12.04.25|17:51:33] Eval epoch: 205
+[12.04.25|17:51:36] 	Avg inference time per sequence: 0.001170 s
+[12.04.25|17:51:36] 	eval_mean_loss: 2.0786241759424624
+[12.04.25|17:51:36] 	avg_infer_time_per_seq: 0.0011697510674259256
+[12.04.25|17:51:36] 	Top1: 59.89%
+[12.04.25|17:51:36] 	Top5: 95.00%
+[12.04.25|17:51:36] 	Best Top1: 61.74%
+[12.04.25|17:51:36] current 59.89%, best 61.74%
+[12.04.25|17:51:36] The model has been saved as config/three-stream/linear/epoch205_acc59.89_model.pt.
+[12.04.25|17:51:36] Training epoch: 206
+[12.04.25|17:51:38] 	train_mean_loss: 0.33504922947157983
+[12.04.25|17:51:38] Training epoch: 207
+[12.04.25|17:51:41] 	train_mean_loss: 0.33543215951193933
+[12.04.25|17:51:41] Training epoch: 208
+[12.04.25|17:51:43] 	train_mean_loss: 0.34276507859644684
+[12.04.25|17:51:43] Training epoch: 209
+[12.04.25|17:51:45] 	Iter 4800 Done. | loss: 0.4559 | lr: 0.010000
+[12.04.25|17:51:46] 	train_mean_loss: 0.34795854273049726
+[12.04.25|17:51:46] Training epoch: 210
+[12.04.25|17:51:48] 	train_mean_loss: 0.33712090422277863
+[12.04.25|17:51:48] Eval epoch: 210
+[12.04.25|17:51:50] 	Avg inference time per sequence: 0.001140 s
+[12.04.25|17:51:50] 	eval_mean_loss: 2.075645711110986
+[12.04.25|17:51:50] 	avg_infer_time_per_seq: 0.0011400712996945653
+[12.04.25|17:51:50] 	Top1: 60.99%
+[12.04.25|17:51:50] 	Top5: 95.21%
+[12.04.25|17:51:50] 	Best Top1: 61.74%
+[12.04.25|17:51:50] current 60.99%, best 61.74%
+[12.04.25|17:51:50] The model has been saved as config/three-stream/linear/epoch210_acc60.99_model.pt.
+[12.04.25|17:51:50] Training epoch: 211
+[12.04.25|17:51:53] 	train_mean_loss: 0.33547654100086377
+[12.04.25|17:51:53] Training epoch: 212
+[12.04.25|17:51:55] 	train_mean_loss: 0.3348293466412503
+[12.04.25|17:51:55] Training epoch: 213
+[12.04.25|17:51:58] 	train_mean_loss: 0.33146578397439874
+[12.04.25|17:51:58] Training epoch: 214
+[12.04.25|17:51:58] 	Iter 4900 Done. | loss: 0.3615 | lr: 0.010000
+[12.04.25|17:52:00] 	train_mean_loss: 0.33096832101759704
+[12.04.25|17:52:00] Training epoch: 215
+[12.04.25|17:52:03] 	train_mean_loss: 0.33332135949445807
+[12.04.25|17:52:03] Eval epoch: 215
+[12.04.25|17:52:05] 	Avg inference time per sequence: 0.001153 s
+[12.04.25|17:52:05] 	eval_mean_loss: 2.0752790388853652
+[12.04.25|17:52:05] 	avg_infer_time_per_seq: 0.0011525111684727392
+[12.04.25|17:52:05] 	Top1: 60.92%
+[12.04.25|17:52:05] 	Top5: 94.87%
+[12.04.25|17:52:05] 	Best Top1: 61.74%
+[12.04.25|17:52:05] current 60.92%, best 61.74%
+[12.04.25|17:52:05] The model has been saved as config/three-stream/linear/epoch215_acc60.92_model.pt.
+[12.04.25|17:52:05] Training epoch: 216
+[12.04.25|17:52:07] 	train_mean_loss: 0.32992401589518006
+[12.04.25|17:52:07] Training epoch: 217
+[12.04.25|17:52:10] 	train_mean_loss: 0.3335805017015208
+[12.04.25|17:52:10] Training epoch: 218
+[12.04.25|17:52:11] 	Iter 5000 Done. | loss: 0.3845 | lr: 0.010000
+[12.04.25|17:52:12] 	train_mean_loss: 0.3366457690363345
+[12.04.25|17:52:12] Training epoch: 219
+[12.04.25|17:52:15] 	train_mean_loss: 0.3328952633816263
+[12.04.25|17:52:15] Training epoch: 220
+[12.04.25|17:52:17] 	train_mean_loss: 0.3322769319233687
+[12.04.25|17:52:17] Eval epoch: 220
+[12.04.25|17:52:20] 	Avg inference time per sequence: 0.001157 s
+[12.04.25|17:52:20] 	eval_mean_loss: 2.084093575892241
+[12.04.25|17:52:20] 	avg_infer_time_per_seq: 0.0011566613815485165
+[12.04.25|17:52:20] 	Top1: 62.01%
+[12.04.25|17:52:20] 	Top5: 95.14%
+[12.04.25|17:52:20] 	Best Top1: 62.01%
+[12.04.25|17:52:20] current 62.01%, best 62.01%
+[12.04.25|17:52:20] The model has been saved as config/three-stream/linear/epoch220_acc62.01_model.pt.
+[12.04.25|17:52:20] The model has been saved as config/three-stream/linear/best_model.pt.
+[12.04.25|17:52:20] Training epoch: 221
+[12.04.25|17:52:22] 	train_mean_loss: 0.3262133617763934
+[12.04.25|17:52:22] Training epoch: 222
+[12.04.25|17:52:24] 	Iter 5100 Done. | loss: 0.3070 | lr: 0.010000
+[12.04.25|17:52:25] 	train_mean_loss: 0.32389222733352496
+[12.04.25|17:52:25] Training epoch: 223
+[12.04.25|17:52:27] 	train_mean_loss: 0.3255780760360801
+[12.04.25|17:52:27] Training epoch: 224
+[12.04.25|17:52:30] 	train_mean_loss: 0.3294896982286287
+[12.04.25|17:52:30] Training epoch: 225
+[12.04.25|17:52:32] 	train_mean_loss: 0.3263105141079944
+[12.04.25|17:52:32] Eval epoch: 225
+[12.04.25|17:52:34] 	Avg inference time per sequence: 0.001238 s
+[12.04.25|17:52:34] 	eval_mean_loss: 2.1157349918199624
+[12.04.25|17:52:34] 	avg_infer_time_per_seq: 0.0012377188027843395
+[12.04.25|17:52:34] 	Top1: 61.05%
+[12.04.25|17:52:34] 	Top5: 95.21%
+[12.04.25|17:52:34] 	Best Top1: 62.01%
+[12.04.25|17:52:34] current 61.05%, best 62.01%
+[12.04.25|17:52:34] The model has been saved as config/three-stream/linear/epoch225_acc61.05_model.pt.
+[12.04.25|17:52:34] Training epoch: 226
+[12.04.25|17:52:37] 	train_mean_loss: 0.326814780416696
+[12.04.25|17:52:37] Training epoch: 227
+[12.04.25|17:52:38] 	Iter 5200 Done. | loss: 0.3238 | lr: 0.010000
+[12.04.25|17:52:39] 	train_mean_loss: 0.32566630581150885
+[12.04.25|17:52:39] Training epoch: 228
+[12.04.25|17:52:42] 	train_mean_loss: 0.3271836042404175
+[12.04.25|17:52:42] Training epoch: 229
+[12.04.25|17:52:44] 	train_mean_loss: 0.32470281681288843
+[12.04.25|17:52:44] Training epoch: 230
+[12.04.25|17:52:47] 	train_mean_loss: 0.3203325433575589
+[12.04.25|17:52:47] Eval epoch: 230
+[12.04.25|17:52:49] 	Avg inference time per sequence: 0.001179 s
+[12.04.25|17:52:49] 	eval_mean_loss: 2.1411533770353897
+[12.04.25|17:52:49] 	avg_infer_time_per_seq: 0.0011791016123704433
+[12.04.25|17:52:49] 	Top1: 61.74%
+[12.04.25|17:52:49] 	Top5: 94.93%
+[12.04.25|17:52:49] 	Best Top1: 62.01%
+[12.04.25|17:52:49] current 61.74%, best 62.01%
+[12.04.25|17:52:49] The model has been saved as config/three-stream/linear/epoch230_acc61.74_model.pt.
+[12.04.25|17:52:49] Training epoch: 231
+[12.04.25|17:52:51] 	Iter 5300 Done. | loss: 0.4164 | lr: 0.010000
+[12.04.25|17:52:52] 	train_mean_loss: 0.3249882628088412
+[12.04.25|17:52:52] Training epoch: 232
+[12.04.25|17:52:54] 	train_mean_loss: 0.3191872044749882
+[12.04.25|17:52:54] Training epoch: 233
+[12.04.25|17:52:57] 	train_mean_loss: 0.3222537857034932
+[12.04.25|17:52:57] Training epoch: 234
+[12.04.25|17:52:59] 	train_mean_loss: 0.3301635345687037
+[12.04.25|17:52:59] Training epoch: 235
+[12.04.25|17:53:01] 	Iter 5400 Done. | loss: 0.3843 | lr: 0.010000
+[12.04.25|17:53:02] 	train_mean_loss: 0.3281011322270269
+[12.04.25|17:53:02] Eval epoch: 235
+[12.04.25|17:53:04] 	Avg inference time per sequence: 0.001141 s
+[12.04.25|17:53:04] 	eval_mean_loss: 2.1501989001813144
+[12.04.25|17:53:04] 	avg_infer_time_per_seq: 0.0011414755378007725
+[12.04.25|17:53:04] 	Top1: 61.40%
+[12.04.25|17:53:04] 	Top5: 95.14%
+[12.04.25|17:53:04] 	Best Top1: 62.01%
+[12.04.25|17:53:04] current 61.40%, best 62.01%
+[12.04.25|17:53:04] The model has been saved as config/three-stream/linear/epoch235_acc61.40_model.pt.
+[12.04.25|17:53:04] Training epoch: 236
+[12.04.25|17:53:07] 	train_mean_loss: 0.31952960983566614
+[12.04.25|17:53:07] Training epoch: 237
+[12.04.25|17:53:09] 	train_mean_loss: 0.3154864797125692
+[12.04.25|17:53:09] Training epoch: 238
+[12.04.25|17:53:12] 	train_mean_loss: 0.3178199406551278
+[12.04.25|17:53:12] Training epoch: 239
+[12.04.25|17:53:14] 	train_mean_loss: 0.3211824524661769
+[12.04.25|17:53:14] Training epoch: 240
+[12.04.25|17:53:15] 	Iter 5500 Done. | loss: 0.2182 | lr: 0.010000
+[12.04.25|17:53:17] 	train_mean_loss: 0.3157346378202024
+[12.04.25|17:53:17] Eval epoch: 240
+[12.04.25|17:53:19] 	Avg inference time per sequence: 0.001169 s
+[12.04.25|17:53:19] 	eval_mean_loss: 2.216865860897562
+[12.04.25|17:53:19] 	avg_infer_time_per_seq: 0.0011686539503093618
+[12.04.25|17:53:19] 	Top1: 60.10%
+[12.04.25|17:53:19] 	Top5: 94.87%
+[12.04.25|17:53:19] 	Best Top1: 62.01%
+[12.04.25|17:53:19] current 60.10%, best 62.01%
+[12.04.25|17:53:19] The model has been saved as config/three-stream/linear/epoch240_acc60.10_model.pt.
+[12.04.25|17:53:19] Training epoch: 241
+[12.04.25|17:53:22] 	train_mean_loss: 0.32129255196322565
+[12.04.25|17:53:22] Training epoch: 242
+[12.04.25|17:53:24] 	train_mean_loss: 0.3211968074674192
+[12.04.25|17:53:24] Training epoch: 243
+[12.04.25|17:53:27] 	train_mean_loss: 0.32230486688406573
+[12.04.25|17:53:27] Training epoch: 244
+[12.04.25|17:53:28] 	Iter 5600 Done. | loss: 0.3720 | lr: 0.010000
+[12.04.25|17:53:29] 	train_mean_loss: 0.31322369368179986
+[12.04.25|17:53:29] Training epoch: 245
+[12.04.25|17:53:32] 	train_mean_loss: 0.31843428767245746
+[12.04.25|17:53:32] Eval epoch: 245
+[12.04.25|17:53:34] 	Avg inference time per sequence: 0.001135 s
+[12.04.25|17:53:34] 	eval_mean_loss: 2.2062831650609556
+[12.04.25|17:53:34] 	avg_infer_time_per_seq: 0.001134800959906294
+[12.04.25|17:53:34] 	Top1: 61.26%
+[12.04.25|17:53:34] 	Top5: 94.80%
+[12.04.25|17:53:34] 	Best Top1: 62.01%
+[12.04.25|17:53:34] current 61.26%, best 62.01%
+[12.04.25|17:53:34] The model has been saved as config/three-stream/linear/epoch245_acc61.26_model.pt.
+[12.04.25|17:53:34] Training epoch: 246
+[12.04.25|17:53:36] 	train_mean_loss: 0.3210541923408923
+[12.04.25|17:53:36] Training epoch: 247
+[12.04.25|17:53:39] 	train_mean_loss: 0.3110639303922653
+[12.04.25|17:53:39] Training epoch: 248
+[12.04.25|17:53:41] 	Iter 5700 Done. | loss: 0.3455 | lr: 0.010000
+[12.04.25|17:53:41] 	train_mean_loss: 0.3185945321684298
+[12.04.25|17:53:41] Training epoch: 249
+[12.04.25|17:53:44] 	train_mean_loss: 0.31736474775749707
+[12.04.25|17:53:44] Training epoch: 250
+[12.04.25|17:53:46] 	train_mean_loss: 0.31428276002407074
+[12.04.25|17:53:46] Eval epoch: 250
+[12.04.25|17:53:48] 	Avg inference time per sequence: 0.001071 s
+[12.04.25|17:53:48] 	eval_mean_loss: 2.224888931150022
+[12.04.25|17:53:48] 	avg_infer_time_per_seq: 0.0010705868892682733
+[12.04.25|17:53:48] 	Top1: 60.44%
+[12.04.25|17:53:48] 	Top5: 94.87%
+[12.04.25|17:53:48] 	Best Top1: 62.01%
+[12.04.25|17:53:48] current 60.44%, best 62.01%
+[12.04.25|17:53:48] The model has been saved as config/three-stream/linear/epoch250_acc60.44_model.pt.
+[12.04.25|17:53:48] Training epoch: 251
+[12.04.25|17:53:51] 	train_mean_loss: 0.3096156658037849
+[12.04.25|17:53:51] Training epoch: 252
+[12.04.25|17:53:53] 	train_mean_loss: 0.31583046394845715
+[12.04.25|17:53:53] Training epoch: 253
+[12.04.25|17:53:53] 	Iter 5800 Done. | loss: 0.2688 | lr: 0.010000
+[12.04.25|17:53:55] 	train_mean_loss: 0.3119647787964862
+[12.04.25|17:53:55] Training epoch: 254
+[12.04.25|17:53:57] 	train_mean_loss: 0.3060094299523727
+[12.04.25|17:53:57] Training epoch: 255
+[12.04.25|17:53:59] 	train_mean_loss: 0.3058183763338172
+[12.04.25|17:53:59] Eval epoch: 255
+[12.04.25|17:54:01] 	Avg inference time per sequence: 0.001060 s
+[12.04.25|17:54:01] 	eval_mean_loss: 2.243586436561916
+[12.04.25|17:54:01] 	avg_infer_time_per_seq: 0.0010599228390922781
+[12.04.25|17:54:01] 	Top1: 61.05%
+[12.04.25|17:54:01] 	Top5: 94.93%
+[12.04.25|17:54:01] 	Best Top1: 62.01%
+[12.04.25|17:54:01] current 61.05%, best 62.01%
+[12.04.25|17:54:01] The model has been saved as config/three-stream/linear/epoch255_acc61.05_model.pt.
+[12.04.25|17:54:01] Training epoch: 256
+[12.04.25|17:54:04] 	train_mean_loss: 0.30780858319738635
+[12.04.25|17:54:04] Training epoch: 257
+[12.04.25|17:54:05] 	Iter 5900 Done. | loss: 0.4145 | lr: 0.010000
+[12.04.25|17:54:06] 	train_mean_loss: 0.30776839541352313
+[12.04.25|17:54:06] Training epoch: 258
+[12.04.25|17:54:08] 	train_mean_loss: 0.305851557980413
+[12.04.25|17:54:08] Training epoch: 259
+[12.04.25|17:54:10] 	train_mean_loss: 0.3049821594487066
+[12.04.25|17:54:10] Training epoch: 260
+[12.04.25|17:54:12] 	train_mean_loss: 0.30269784124001214
+[12.04.25|17:54:12] Eval epoch: 260
+[12.04.25|17:54:14] 	Avg inference time per sequence: 0.000973 s
+[12.04.25|17:54:14] 	eval_mean_loss: 2.2602402282797773
+[12.04.25|17:54:14] 	avg_infer_time_per_seq: 0.0009726458098446156
+[12.04.25|17:54:14] 	Top1: 60.51%
+[12.04.25|17:54:14] 	Top5: 94.93%
+[12.04.25|17:54:14] 	Best Top1: 62.01%
+[12.04.25|17:54:14] current 60.51%, best 62.01%
+[12.04.25|17:54:14] The model has been saved as config/three-stream/linear/epoch260_acc60.51_model.pt.
+[12.04.25|17:54:14] Training epoch: 261
+[12.04.25|17:54:16] 	Iter 6000 Done. | loss: 0.3291 | lr: 0.010000
+[12.04.25|17:54:16] 	train_mean_loss: 0.30045596348202747
+[12.04.25|17:54:16] Training epoch: 262
+[12.04.25|17:54:18] 	train_mean_loss: 0.3100018857613854
+[12.04.25|17:54:18] Training epoch: 263
+[12.04.25|17:54:20] 	train_mean_loss: 0.3016380188257798
+[12.04.25|17:54:20] Training epoch: 264
+[12.04.25|17:54:22] 	train_mean_loss: 0.30185849381529767
+[12.04.25|17:54:22] Training epoch: 265
+[12.04.25|17:54:24] 	train_mean_loss: 0.30513518595177197
+[12.04.25|17:54:24] Eval epoch: 265
+[12.04.25|17:54:26] 	Avg inference time per sequence: 0.000998 s
+[12.04.25|17:54:26] 	eval_mean_loss: 2.2683912930281265
+[12.04.25|17:54:26] 	avg_infer_time_per_seq: 0.000998223505144165
+[12.04.25|17:54:26] 	Top1: 61.12%
+[12.04.25|17:54:26] 	Top5: 95.00%
+[12.04.25|17:54:26] 	Best Top1: 62.01%
+[12.04.25|17:54:26] current 61.12%, best 62.01%
+[12.04.25|17:54:26] The model has been saved as config/three-stream/linear/epoch265_acc61.12_model.pt.
+[12.04.25|17:54:26] Training epoch: 266
+[12.04.25|17:54:27] 	Iter 6100 Done. | loss: 0.2273 | lr: 0.010000
+[12.04.25|17:54:28] 	train_mean_loss: 0.3107144132904384
+[12.04.25|17:54:28] Training epoch: 267
+[12.04.25|17:54:30] 	train_mean_loss: 0.3077279990134032
+[12.04.25|17:54:30] Training epoch: 268
+[12.04.25|17:54:32] 	train_mean_loss: 0.306295874974002
+[12.04.25|17:54:32] Training epoch: 269
+[12.04.25|17:54:35] 	train_mean_loss: 0.30487846097220545
+[12.04.25|17:54:35] Training epoch: 270
+[12.04.25|17:54:36] 	Iter 6200 Done. | loss: 0.3849 | lr: 0.010000
+[12.04.25|17:54:37] 	train_mean_loss: 0.3033024182786112
+[12.04.25|17:54:37] Eval epoch: 270
+[12.04.25|17:54:39] 	Avg inference time per sequence: 0.001121 s
+[12.04.25|17:54:39] 	eval_mean_loss: 2.3169930810513706
+[12.04.25|17:54:39] 	avg_infer_time_per_seq: 0.001120944450686518
+[12.04.25|17:54:39] 	Top1: 60.44%
+[12.04.25|17:54:39] 	Top5: 94.80%
+[12.04.25|17:54:39] 	Best Top1: 62.01%
+[12.04.25|17:54:39] current 60.44%, best 62.01%
+[12.04.25|17:54:39] The model has been saved as config/three-stream/linear/epoch270_acc60.44_model.pt.
+[12.04.25|17:54:39] Training epoch: 271
+[12.04.25|17:54:41] 	train_mean_loss: 0.299847068346065
+[12.04.25|17:54:41] Training epoch: 272
+[12.04.25|17:54:43] 	train_mean_loss: 0.2954151675752971
+[12.04.25|17:54:43] Training epoch: 273
+[12.04.25|17:54:46] 	train_mean_loss: 0.2974609285593033
+[12.04.25|17:54:46] Training epoch: 274
+[12.04.25|17:54:48] 	Iter 6300 Done. | loss: 0.3564 | lr: 0.010000
+[12.04.25|17:54:48] 	train_mean_loss: 0.2912576587303825
+[12.04.25|17:54:48] Training epoch: 275
+[12.04.25|17:54:50] 	train_mean_loss: 0.2976267253575118
+[12.04.25|17:54:50] Eval epoch: 275
+[12.04.25|17:54:52] 	Avg inference time per sequence: 0.001131 s
+[12.04.25|17:54:52] 	eval_mean_loss: 2.342733092930006
+[12.04.25|17:54:52] 	avg_infer_time_per_seq: 0.0011306719613515866
+[12.04.25|17:54:52] 	Top1: 60.92%
+[12.04.25|17:54:52] 	Top5: 95.21%
+[12.04.25|17:54:52] 	Best Top1: 62.01%
+[12.04.25|17:54:52] current 60.92%, best 62.01%
+[12.04.25|17:54:52] The model has been saved as config/three-stream/linear/epoch275_acc60.92_model.pt.
+[12.04.25|17:54:52] Training epoch: 276
+[12.04.25|17:54:54] 	train_mean_loss: 0.2932683158179988
+[12.04.25|17:54:54] Training epoch: 277
+[12.04.25|17:54:56] 	train_mean_loss: 0.2951186545517134
+[12.04.25|17:54:56] Training epoch: 278
+[12.04.25|17:54:58] 	train_mean_loss: 0.29858680263809534
+[12.04.25|17:54:58] Training epoch: 279
+[12.04.25|17:54:59] 	Iter 6400 Done. | loss: 0.2527 | lr: 0.010000
+[12.04.25|17:55:00] 	train_mean_loss: 0.2948588061591853
+[12.04.25|17:55:00] Training epoch: 280
+[12.04.25|17:55:02] 	train_mean_loss: 0.2903853505849838
+[12.04.25|17:55:02] Eval epoch: 280
+[12.04.25|17:55:04] 	Avg inference time per sequence: 0.000985 s
+[12.04.25|17:55:04] 	eval_mean_loss: 2.3191275285637896
+[12.04.25|17:55:04] 	avg_infer_time_per_seq: 0.0009848957270649017
+[12.04.25|17:55:04] 	Top1: 60.99%
+[12.04.25|17:55:04] 	Top5: 95.07%
+[12.04.25|17:55:04] 	Best Top1: 62.01%
+[12.04.25|17:55:04] current 60.99%, best 62.01%
+[12.04.25|17:55:04] The model has been saved as config/three-stream/linear/epoch280_acc60.99_model.pt.
+[12.04.25|17:55:04] Training epoch: 281
+[12.04.25|17:55:06] 	train_mean_loss: 0.29323656468287757
+[12.04.25|17:55:06] Training epoch: 282
+[12.04.25|17:55:08] 	train_mean_loss: 0.2931457356266353
+[12.04.25|17:55:08] Training epoch: 283
+[12.04.25|17:55:10] 	Iter 6500 Done. | loss: 0.2666 | lr: 0.010000
+[12.04.25|17:55:11] 	train_mean_loss: 0.2833763931108558
+[12.04.25|17:55:11] Training epoch: 284
+[12.04.25|17:55:13] 	train_mean_loss: 0.2901807401491248
+[12.04.25|17:55:13] Training epoch: 285
+[12.04.25|17:55:15] 	train_mean_loss: 0.2961391612239506
+[12.04.25|17:55:15] Eval epoch: 285
+[12.04.25|17:55:17] 	Avg inference time per sequence: 0.001144 s
+[12.04.25|17:55:17] 	eval_mean_loss: 2.3679967341215713
+[12.04.25|17:55:17] 	avg_infer_time_per_seq: 0.00114367923697407
+[12.04.25|17:55:17] 	Top1: 61.67%
+[12.04.25|17:55:17] 	Top5: 94.66%
+[12.04.25|17:55:17] 	Best Top1: 62.01%
+[12.04.25|17:55:17] current 61.67%, best 62.01%
+[12.04.25|17:55:17] The model has been saved as config/three-stream/linear/epoch285_acc61.67_model.pt.
+[12.04.25|17:55:17] Training epoch: 286
+[12.04.25|17:55:20] 	train_mean_loss: 0.3052342475756355
+[12.04.25|17:55:20] Training epoch: 287
+[12.04.25|17:55:22] 	Iter 6600 Done. | loss: 0.3791 | lr: 0.010000
+[12.04.25|17:55:22] 	train_mean_loss: 0.3033327790706054
+[12.04.25|17:55:22] Training epoch: 288
+[12.04.25|17:55:24] 	train_mean_loss: 0.2934380847474803
+[12.04.25|17:55:24] Training epoch: 289
+[12.04.25|17:55:26] 	train_mean_loss: 0.2926465648671855
+[12.04.25|17:55:26] Training epoch: 290
+[12.04.25|17:55:29] 	train_mean_loss: 0.2840071061383123
+[12.04.25|17:55:29] Eval epoch: 290
+[12.04.25|17:55:31] 	Avg inference time per sequence: 0.001069 s
+[12.04.25|17:55:31] 	eval_mean_loss: 2.342468297999838
+[12.04.25|17:55:31] 	avg_infer_time_per_seq: 0.0010686284625962693
+[12.04.25|17:55:31] 	Top1: 60.99%
+[12.04.25|17:55:31] 	Top5: 94.93%
+[12.04.25|17:55:31] 	Best Top1: 62.01%
+[12.04.25|17:55:31] current 60.99%, best 62.01%
+[12.04.25|17:55:31] The model has been saved as config/three-stream/linear/epoch290_acc60.99_model.pt.
+[12.04.25|17:55:31] Training epoch: 291
+[12.04.25|17:55:33] 	train_mean_loss: 0.28495431205500726
+[12.04.25|17:55:33] Training epoch: 292
+[12.04.25|17:55:34] 	Iter 6700 Done. | loss: 0.2488 | lr: 0.010000
+[12.04.25|17:55:36] 	train_mean_loss: 0.2907489492841389
+[12.04.25|17:55:36] Training epoch: 293
+[12.04.25|17:55:38] 	train_mean_loss: 0.2908390319865683
+[12.04.25|17:55:38] Training epoch: 294
+[12.04.25|17:55:40] 	train_mean_loss: 0.28370738677356555
+[12.04.25|17:55:40] Training epoch: 295
+[12.04.25|17:55:42] 	train_mean_loss: 0.2977647198283154
+[12.04.25|17:55:42] Eval epoch: 295
+[12.04.25|17:55:44] 	Avg inference time per sequence: 0.001066 s
+[12.04.25|17:55:44] 	eval_mean_loss: 2.4127286050630654
+[12.04.25|17:55:44] 	avg_infer_time_per_seq: 0.0010664330860427763
+[12.04.25|17:55:44] 	Top1: 60.03%
+[12.04.25|17:55:44] 	Top5: 95.07%
+[12.04.25|17:55:44] 	Best Top1: 62.01%
+[12.04.25|17:55:44] current 60.03%, best 62.01%
+[12.04.25|17:55:44] The model has been saved as config/three-stream/linear/epoch295_acc60.03_model.pt.
+[12.04.25|17:55:44] Training epoch: 296
+[12.04.25|17:55:46] 	Iter 6800 Done. | loss: 0.2917 | lr: 0.010000
+[12.04.25|17:55:47] 	train_mean_loss: 0.2923470165418542
+[12.04.25|17:55:47] Training epoch: 297
+[12.04.25|17:55:49] 	train_mean_loss: 0.2826637457246366
+[12.04.25|17:55:49] Training epoch: 298
+[12.04.25|17:55:51] 	train_mean_loss: 0.2736958459667537
+[12.04.25|17:55:51] Training epoch: 299
+[12.04.25|17:55:53] 	train_mean_loss: 0.281610457793526
+[12.04.25|17:55:53] Training epoch: 300
+[12.04.25|17:55:55] 	train_mean_loss: 0.28580746249012323
+[12.04.25|17:55:55] Eval epoch: 300
+[12.04.25|17:55:57] 	Avg inference time per sequence: 0.001023 s
+[12.04.25|17:55:57] 	eval_mean_loss: 2.4340580390847246
+[12.04.25|17:55:57] 	avg_infer_time_per_seq: 0.0010228372452440204
+[12.04.25|17:55:57] 	Top1: 60.64%
+[12.04.25|17:55:57] 	Top5: 94.80%
+[12.04.25|17:55:57] 	Best Top1: 62.01%
+[12.04.25|17:55:57] current 60.64%, best 62.01%
+[12.04.25|17:55:57] The model has been saved as config/three-stream/linear/epoch300_acc60.64_model.pt.
+[12.04.25|17:55:57] Training epoch: 301
+[12.04.25|17:55:58] 	Iter 6900 Done. | loss: 0.1890 | lr: 0.010000
+[12.04.25|17:56:00] 	train_mean_loss: 0.2918252789455911
+[12.04.25|17:56:00] Training epoch: 302
+[12.04.25|17:56:02] 	train_mean_loss: 0.2981062045563822
+[12.04.25|17:56:02] Training epoch: 303
+[12.04.25|17:56:05] 	train_mean_loss: 0.28346842851327814
+[12.04.25|17:56:05] Training epoch: 304
+[12.04.25|17:56:08] 	train_mean_loss: 0.2867887285740479
+[12.04.25|17:56:08] Training epoch: 305
+[12.04.25|17:56:09] 	Iter 7000 Done. | loss: 0.2440 | lr: 0.010000
+[12.04.25|17:56:10] 	train_mean_loss: 0.27965743062288867
+[12.04.25|17:56:10] Eval epoch: 305
+[12.04.25|17:56:13] 	Avg inference time per sequence: 0.001199 s
+[12.04.25|17:56:13] 	eval_mean_loss: 2.4362485201462456
+[12.04.25|17:56:13] 	avg_infer_time_per_seq: 0.0011987656783274312
+[12.04.25|17:56:13] 	Top1: 61.33%
+[12.04.25|17:56:13] 	Top5: 94.59%
+[12.04.25|17:56:13] 	Best Top1: 62.01%
+[12.04.25|17:56:13] current 61.33%, best 62.01%
+[12.04.25|17:56:13] The model has been saved as config/three-stream/linear/epoch305_acc61.33_model.pt.
+[12.04.25|17:56:13] Training epoch: 306
+[12.04.25|17:56:15] 	train_mean_loss: 0.2810918287090633
+[12.04.25|17:56:15] Training epoch: 307
+[12.04.25|17:56:18] 	train_mean_loss: 0.27389217718787817
+[12.04.25|17:56:18] Training epoch: 308
+[12.04.25|17:56:20] 	train_mean_loss: 0.277124527355899
+[12.04.25|17:56:20] Training epoch: 309
+[12.04.25|17:56:22] 	Iter 7100 Done. | loss: 0.4289 | lr: 0.010000
+[12.04.25|17:56:23] 	train_mean_loss: 0.27757738012334576
+[12.04.25|17:56:23] Training epoch: 310
+[12.04.25|17:56:25] 	train_mean_loss: 0.2897185760995616
+[12.04.25|17:56:25] Eval epoch: 310
+[12.04.25|17:56:27] 	Avg inference time per sequence: 0.001193 s
+[12.04.25|17:56:27] 	eval_mean_loss: 2.477292802022851
+[12.04.25|17:56:27] 	avg_infer_time_per_seq: 0.0011928159842990508
+[12.04.25|17:56:27] 	Top1: 60.51%
+[12.04.25|17:56:27] 	Top5: 95.14%
+[12.04.25|17:56:27] 	Best Top1: 62.01%
+[12.04.25|17:56:27] current 60.51%, best 62.01%
+[12.04.25|17:56:27] The model has been saved as config/three-stream/linear/epoch310_acc60.51_model.pt.
+[12.04.25|17:56:27] Training epoch: 311
+[12.04.25|17:56:30] 	train_mean_loss: 0.2919486281664475
+[12.04.25|17:56:30] Training epoch: 312
+[12.04.25|17:56:33] 	train_mean_loss: 0.27694690033145575
+[12.04.25|17:56:33] Training epoch: 313
+[12.04.25|17:56:35] 	train_mean_loss: 0.29399543676687323
+[12.04.25|17:56:35] Training epoch: 314
+[12.04.25|17:56:36] 	Iter 7200 Done. | loss: 0.1538 | lr: 0.010000
+[12.04.25|17:56:38] 	train_mean_loss: 0.2823912371759829
+[12.04.25|17:56:38] Training epoch: 315
+[12.04.25|17:56:40] 	train_mean_loss: 0.28084665342517523
+[12.04.25|17:56:40] Eval epoch: 315
+[12.04.25|17:56:42] 	Avg inference time per sequence: 0.001171 s
+[12.04.25|17:56:42] 	eval_mean_loss: 2.4601500086162402
+[12.04.25|17:56:42] 	avg_infer_time_per_seq: 0.001171405800069382
+[12.04.25|17:56:42] 	Top1: 61.19%
+[12.04.25|17:56:42] 	Top5: 94.66%
+[12.04.25|17:56:42] 	Best Top1: 62.01%
+[12.04.25|17:56:42] current 61.19%, best 62.01%
+[12.04.25|17:56:42] The model has been saved as config/three-stream/linear/epoch315_acc61.19_model.pt.
+[12.04.25|17:56:42] Training epoch: 316
+[12.04.25|17:56:45] 	train_mean_loss: 0.2835290438455084
+[12.04.25|17:56:45] Training epoch: 317
+[12.04.25|17:56:47] 	train_mean_loss: 0.27526265188403753
+[12.04.25|17:56:47] Training epoch: 318
+[12.04.25|17:56:49] 	Iter 7300 Done. | loss: 0.2281 | lr: 0.010000
+[12.04.25|17:56:50] 	train_mean_loss: 0.2834895739088888
+[12.04.25|17:56:50] Training epoch: 319
+[12.04.25|17:56:53] 	train_mean_loss: 0.2694028609472772
+[12.04.25|17:56:53] Training epoch: 320
+[12.04.25|17:56:55] 	train_mean_loss: 0.2749414502278618
+[12.04.25|17:56:55] Eval epoch: 320
+[12.04.25|17:56:57] 	Avg inference time per sequence: 0.001236 s
+[12.04.25|17:56:57] 	eval_mean_loss: 2.482904138772384
+[12.04.25|17:56:57] 	avg_infer_time_per_seq: 0.0012363793505617072
+[12.04.25|17:56:57] 	Top1: 60.85%
+[12.04.25|17:56:57] 	Top5: 94.93%
+[12.04.25|17:56:57] 	Best Top1: 62.01%
+[12.04.25|17:56:57] current 60.85%, best 62.01%
+[12.04.25|17:56:57] The model has been saved as config/three-stream/linear/epoch320_acc60.85_model.pt.
+[12.04.25|17:56:57] Training epoch: 321
+[12.04.25|17:57:00] 	train_mean_loss: 0.27430933713912964
+[12.04.25|17:57:00] Training epoch: 322
+[12.04.25|17:57:02] 	Iter 7400 Done. | loss: 0.2335 | lr: 0.010000
+[12.04.25|17:57:03] 	train_mean_loss: 0.26490375788315484
+[12.04.25|17:57:03] Training epoch: 323
+[12.04.25|17:57:05] 	train_mean_loss: 0.2635626935440561
+[12.04.25|17:57:05] Training epoch: 324
+[12.04.25|17:57:08] 	train_mean_loss: 0.26787606011266296
+[12.04.25|17:57:08] Training epoch: 325
+[12.04.25|17:57:10] 	train_mean_loss: 0.27194076355384744
+[12.04.25|17:57:10] Eval epoch: 325
+[12.04.25|17:57:12] 	Avg inference time per sequence: 0.001172 s
+[12.04.25|17:57:12] 	eval_mean_loss: 2.505853886189668
+[12.04.25|17:57:12] 	avg_infer_time_per_seq: 0.0011716089699057828
+[12.04.25|17:57:12] 	Top1: 61.81%
+[12.04.25|17:57:12] 	Top5: 94.87%
+[12.04.25|17:57:12] 	Best Top1: 62.01%
+[12.04.25|17:57:12] current 61.81%, best 62.01%
+[12.04.25|17:57:12] The model has been saved as config/three-stream/linear/epoch325_acc61.81_model.pt.
+[12.04.25|17:57:12] Training epoch: 326
+[12.04.25|17:57:15] 	train_mean_loss: 0.2606509029865265
+[12.04.25|17:57:15] Training epoch: 327
+[12.04.25|17:57:15] 	Iter 7500 Done. | loss: 0.2249 | lr: 0.010000
+[12.04.25|17:57:17] 	train_mean_loss: 0.26658101768597314
+[12.04.25|17:57:17] Training epoch: 328
+[12.04.25|17:57:20] 	train_mean_loss: 0.26777706068495044
+[12.04.25|17:57:20] Training epoch: 329
+[12.04.25|17:57:22] 	train_mean_loss: 0.2642017039267913
+[12.04.25|17:57:22] Training epoch: 330
+[12.04.25|17:57:25] 	train_mean_loss: 0.26569472642048547
+[12.04.25|17:57:25] Eval epoch: 330
+[12.04.25|17:57:27] 	Avg inference time per sequence: 0.001189 s
+[12.04.25|17:57:27] 	eval_mean_loss: 2.525867094164309
+[12.04.25|17:57:27] 	avg_infer_time_per_seq: 0.0011891155190699562
+[12.04.25|17:57:27] 	Top1: 61.88%
+[12.04.25|17:57:27] 	Top5: 95.00%
+[12.04.25|17:57:27] 	Best Top1: 62.01%
+[12.04.25|17:57:27] current 61.88%, best 62.01%
+[12.04.25|17:57:27] The model has been saved as config/three-stream/linear/epoch330_acc61.88_model.pt.
+[12.04.25|17:57:27] Training epoch: 331
+[12.04.25|17:57:28] 	Iter 7600 Done. | loss: 0.2700 | lr: 0.010000
+[12.04.25|17:57:29] 	train_mean_loss: 0.26857695825721906
+[12.04.25|17:57:29] Training epoch: 332
+[12.04.25|17:57:32] 	train_mean_loss: 0.2652222812175751
+[12.04.25|17:57:32] Training epoch: 333
+[12.04.25|17:57:34] 	train_mean_loss: 0.26427348865115124
+[12.04.25|17:57:34] Training epoch: 334
+[12.04.25|17:57:37] 	train_mean_loss: 0.25966043316799664
+[12.04.25|17:57:37] Training epoch: 335
+[12.04.25|17:57:39] 	Iter 7700 Done. | loss: 0.2029 | lr: 0.010000
+[12.04.25|17:57:40] 	train_mean_loss: 0.2736990782229797
+[12.04.25|17:57:40] Eval epoch: 335
+[12.04.25|17:57:42] 	Avg inference time per sequence: 0.001212 s
+[12.04.25|17:57:42] 	eval_mean_loss: 2.5552238433257393
+[12.04.25|17:57:42] 	avg_infer_time_per_seq: 0.0012120769743557095
+[12.04.25|17:57:42] 	Top1: 61.05%
+[12.04.25|17:57:42] 	Top5: 94.87%
+[12.04.25|17:57:42] 	Best Top1: 62.01%
+[12.04.25|17:57:42] current 61.05%, best 62.01%
+[12.04.25|17:57:42] The model has been saved as config/three-stream/linear/epoch335_acc61.05_model.pt.
+[12.04.25|17:57:42] Training epoch: 336
+[12.04.25|17:57:44] 	train_mean_loss: 0.2682759120412495
+[12.04.25|17:57:44] Training epoch: 337
+[12.04.25|17:57:47] 	train_mean_loss: 0.25971049588659534
+[12.04.25|17:57:47] Training epoch: 338
+[12.04.25|17:57:49] 	train_mean_loss: 0.258990620141444
+[12.04.25|17:57:49] Training epoch: 339
+[12.04.25|17:57:52] 	train_mean_loss: 0.25604036515173706
+[12.04.25|17:57:52] Training epoch: 340
+[12.04.25|17:57:53] 	Iter 7800 Done. | loss: 0.3809 | lr: 0.010000
+[12.04.25|17:57:55] 	train_mean_loss: 0.2744791559551073
+[12.04.25|17:57:55] Eval epoch: 340
+[12.04.25|17:57:58] 	Avg inference time per sequence: 0.001523 s
+[12.04.25|17:57:58] 	eval_mean_loss: 2.578203025071517
+[12.04.25|17:57:58] 	avg_infer_time_per_seq: 0.0015225477368761464
+[12.04.25|17:57:58] 	Top1: 61.60%
+[12.04.25|17:57:58] 	Top5: 94.73%
+[12.04.25|17:57:58] 	Best Top1: 62.01%
+[12.04.25|17:57:58] current 61.60%, best 62.01%
+[12.04.25|17:57:58] The model has been saved as config/three-stream/linear/epoch340_acc61.60_model.pt.
+[12.04.25|17:57:58] Training epoch: 341
+[12.04.25|17:58:01] 	train_mean_loss: 0.2729483745668245
+[12.04.25|17:58:01] Training epoch: 342
+[12.04.25|17:58:03] 	train_mean_loss: 0.26119209696417267
+[12.04.25|17:58:03] Training epoch: 343
+[12.04.25|17:58:06] 	train_mean_loss: 0.26057693556598993
+[12.04.25|17:58:06] Training epoch: 344
+[12.04.25|17:58:07] 	Iter 7900 Done. | loss: 0.3896 | lr: 0.010000
+[12.04.25|17:58:08] 	train_mean_loss: 0.2681544209304063
+[12.04.25|17:58:08] Training epoch: 345
+[12.04.25|17:58:10] 	train_mean_loss: 0.2533349835354349
+[12.04.25|17:58:10] Eval epoch: 345
+[12.04.25|17:58:12] 	Avg inference time per sequence: 0.001174 s
+[12.04.25|17:58:12] 	eval_mean_loss: 2.5877726389014204
+[12.04.25|17:58:12] 	avg_infer_time_per_seq: 0.0011736643306202142
+[12.04.25|17:58:12] 	Top1: 61.40%
+[12.04.25|17:58:12] 	Top5: 95.07%
+[12.04.25|17:58:12] 	Best Top1: 62.01%
+[12.04.25|17:58:12] current 61.40%, best 62.01%
+[12.04.25|17:58:12] The model has been saved as config/three-stream/linear/epoch345_acc61.40_model.pt.
+[12.04.25|17:58:12] Training epoch: 346
+[12.04.25|17:58:15] 	train_mean_loss: 0.26288264018038043
+[12.04.25|17:58:15] Training epoch: 347
+[12.04.25|17:58:17] 	train_mean_loss: 0.2577726594779802
+[12.04.25|17:58:17] Training epoch: 348
+[12.04.25|17:58:19] 	Iter 8000 Done. | loss: 0.1762 | lr: 0.010000
+[12.04.25|17:58:20] 	train_mean_loss: 0.26200274863968726
+[12.04.25|17:58:20] Training epoch: 349
+[12.04.25|17:58:22] 	train_mean_loss: 0.26526303135830426
+[12.04.25|17:58:22] Training epoch: 350
+[12.04.25|17:58:25] 	train_mean_loss: 0.25691953204248263
+[12.04.25|17:58:25] Eval epoch: 350
+[12.04.25|17:58:27] 	Avg inference time per sequence: 0.001144 s
+[12.04.25|17:58:27] 	eval_mean_loss: 2.598184103551118
+[12.04.25|17:58:27] 	avg_infer_time_per_seq: 0.0011441567268867675
+[12.04.25|17:58:27] 	Top1: 61.53%
+[12.04.25|17:58:27] 	Top5: 94.73%
+[12.04.25|17:58:27] 	Best Top1: 62.01%
+[12.04.25|17:58:27] current 61.53%, best 62.01%
+[12.04.25|17:58:27] The model has been saved as config/three-stream/linear/epoch350_acc61.53_model.pt.
+[12.04.25|17:58:27] Training epoch: 351
+[12.04.25|17:58:30] 	train_mean_loss: 0.25821232342201733
+[12.04.25|17:58:30] Training epoch: 352
+[12.04.25|17:58:32] 	train_mean_loss: 0.2506934132265008
+[12.04.25|17:58:32] Training epoch: 353
+[12.04.25|17:58:33] 	Iter 8100 Done. | loss: 0.4914 | lr: 0.010000
+[12.04.25|17:58:35] 	train_mean_loss: 0.2503626715877782
+[12.04.25|17:58:35] Training epoch: 354
+[12.04.25|17:58:37] 	train_mean_loss: 0.24936643372411313
+[12.04.25|17:58:37] Training epoch: 355
+[12.04.25|17:58:40] 	train_mean_loss: 0.26018753518228943
+[12.04.25|17:58:40] Eval epoch: 355
+[12.04.25|17:58:42] 	Avg inference time per sequence: 0.001172 s
+[12.04.25|17:58:42] 	eval_mean_loss: 2.5964938143025273
+[12.04.25|17:58:42] 	avg_infer_time_per_seq: 0.0011724681580091159
+[12.04.25|17:58:42] 	Top1: 62.15%
+[12.04.25|17:58:42] 	Top5: 94.87%
+[12.04.25|17:58:42] 	Best Top1: 62.15%
+[12.04.25|17:58:42] current 62.15%, best 62.15%
+[12.04.25|17:58:42] The model has been saved as config/three-stream/linear/epoch355_acc62.15_model.pt.
+[12.04.25|17:58:42] The model has been saved as config/three-stream/linear/best_model.pt.
+[12.04.25|17:58:42] Training epoch: 356
+[12.04.25|17:58:44] 	train_mean_loss: 0.25753049098927044
+[12.04.25|17:58:44] Training epoch: 357
+[12.04.25|17:58:46] 	Iter 8200 Done. | loss: 0.3374 | lr: 0.010000
+[12.04.25|17:58:47] 	train_mean_loss: 0.24748772317948547
+[12.04.25|17:58:47] Training epoch: 358
+[12.04.25|17:58:49] 	train_mean_loss: 0.25617820089278015
+[12.04.25|17:58:49] Training epoch: 359
+[12.04.25|17:58:52] 	train_mean_loss: 0.262946847340335
+[12.04.25|17:58:52] Training epoch: 360
+[12.04.25|17:58:54] 	train_mean_loss: 0.26550604338231293
+[12.04.25|17:58:54] Eval epoch: 360
+[12.04.25|17:58:57] 	Avg inference time per sequence: 0.001175 s
+[12.04.25|17:58:57] 	eval_mean_loss: 2.6447227364001065
+[12.04.25|17:58:57] 	avg_infer_time_per_seq: 0.0011747498613445013
+[12.04.25|17:58:57] 	Top1: 62.22%
+[12.04.25|17:58:57] 	Top5: 94.66%
+[12.04.25|17:58:57] 	Best Top1: 62.22%
+[12.04.25|17:58:57] current 62.22%, best 62.22%
+[12.04.25|17:58:57] The model has been saved as config/three-stream/linear/epoch360_acc62.22_model.pt.
+[12.04.25|17:58:57] The model has been saved as config/three-stream/linear/best_model.pt.
+[12.04.25|17:58:57] Training epoch: 361
+[12.04.25|17:58:59] 	Iter 8300 Done. | loss: 0.1792 | lr: 0.010000
+[12.04.25|17:58:59] 	train_mean_loss: 0.26220185860343603
+[12.04.25|17:58:59] Training epoch: 362
+[12.04.25|17:59:02] 	train_mean_loss: 0.24602766658948816
+[12.04.25|17:59:02] Training epoch: 363
+[12.04.25|17:59:04] 	train_mean_loss: 0.25026764623496844
+[12.04.25|17:59:04] Training epoch: 364
+[12.04.25|17:59:07] 	train_mean_loss: 0.25258768511855084
+[12.04.25|17:59:07] Training epoch: 365
+[12.04.25|17:59:09] 	train_mean_loss: 0.24149632777856744
+[12.04.25|17:59:09] Eval epoch: 365
+[12.04.25|17:59:11] 	Avg inference time per sequence: 0.001146 s
+[12.04.25|17:59:11] 	eval_mean_loss: 2.6418461125829946
+[12.04.25|17:59:11] 	avg_infer_time_per_seq: 0.0011458689019257365
+[12.04.25|17:59:11] 	Top1: 61.53%
+[12.04.25|17:59:11] 	Top5: 94.59%
+[12.04.25|17:59:11] 	Best Top1: 62.22%
+[12.04.25|17:59:11] current 61.53%, best 62.22%
+[12.04.25|17:59:11] The model has been saved as config/three-stream/linear/epoch365_acc61.53_model.pt.
+[12.04.25|17:59:11] Training epoch: 366
+[12.04.25|17:59:12] 	Iter 8400 Done. | loss: 0.2802 | lr: 0.010000
+[12.04.25|17:59:14] 	train_mean_loss: 0.25050036479597504
+[12.04.25|17:59:14] Training epoch: 367
+[12.04.25|17:59:16] 	train_mean_loss: 0.24712712609249612
+[12.04.25|17:59:16] Training epoch: 368
+[12.04.25|17:59:19] 	train_mean_loss: 0.24323278406391974
+[12.04.25|17:59:19] Training epoch: 369
+[12.04.25|17:59:21] 	train_mean_loss: 0.2420189238112906
+[12.04.25|17:59:21] Training epoch: 370
+[12.04.25|17:59:23] 	Iter 8500 Done. | loss: 0.2243 | lr: 0.010000
+[12.04.25|17:59:24] 	train_mean_loss: 0.24535029413907425
+[12.04.25|17:59:24] Eval epoch: 370
+[12.04.25|17:59:26] 	Avg inference time per sequence: 0.001198 s
+[12.04.25|17:59:26] 	eval_mean_loss: 2.684563237687816
+[12.04.25|17:59:26] 	avg_infer_time_per_seq: 0.001197706420971546
+[12.04.25|17:59:26] 	Top1: 61.40%
+[12.04.25|17:59:26] 	Top5: 94.93%
+[12.04.25|17:59:26] 	Best Top1: 62.22%
+[12.04.25|17:59:26] current 61.40%, best 62.22%
+[12.04.25|17:59:26] The model has been saved as config/three-stream/linear/epoch370_acc61.40_model.pt.
+[12.04.25|17:59:26] Training epoch: 371
+[12.04.25|17:59:28] 	train_mean_loss: 0.24792668320562528
+[12.04.25|17:59:28] Training epoch: 372
+[12.04.25|17:59:31] 	train_mean_loss: 0.24306784732186276
+[12.04.25|17:59:31] Training epoch: 373
+[12.04.25|17:59:33] 	train_mean_loss: 0.24646257576735123
+[12.04.25|17:59:33] Training epoch: 374
+[12.04.25|17:59:36] 	Iter 8600 Done. | loss: 0.2207 | lr: 0.010000
+[12.04.25|17:59:36] 	train_mean_loss: 0.24534314060988632
+[12.04.25|17:59:36] Training epoch: 375
+[12.04.25|17:59:38] 	train_mean_loss: 0.23827183052249576
+[12.04.25|17:59:38] Eval epoch: 375
+[12.04.25|17:59:40] 	Avg inference time per sequence: 0.001157 s
+[12.04.25|17:59:40] 	eval_mean_loss: 2.668808667556099
+[12.04.25|17:59:40] 	avg_infer_time_per_seq: 0.0011567545622526009
+[12.04.25|17:59:40] 	Top1: 62.08%
+[12.04.25|17:59:40] 	Top5: 94.46%
+[12.04.25|17:59:40] 	Best Top1: 62.22%
+[12.04.25|17:59:40] current 62.08%, best 62.22%
+[12.04.25|17:59:40] The model has been saved as config/three-stream/linear/epoch375_acc62.08_model.pt.
+[12.04.25|17:59:40] Training epoch: 376
+[12.04.25|17:59:43] 	train_mean_loss: 0.2372393650205239
+[12.04.25|17:59:43] Training epoch: 377
+[12.04.25|17:59:45] 	train_mean_loss: 0.23975786307583685
+[12.04.25|17:59:45] Training epoch: 378
+[12.04.25|17:59:48] 	train_mean_loss: 0.23835709820622983
+[12.04.25|17:59:48] Training epoch: 379
+[12.04.25|17:59:49] 	Iter 8700 Done. | loss: 0.2626 | lr: 0.010000
+[12.04.25|17:59:50] 	train_mean_loss: 0.247304140549639
+[12.04.25|17:59:50] Training epoch: 380
+[12.04.25|17:59:53] 	train_mean_loss: 0.25129414187825244
+[12.04.25|17:59:53] Eval epoch: 380
+[12.04.25|17:59:55] 	Avg inference time per sequence: 0.001138 s
+[12.04.25|17:59:55] 	eval_mean_loss: 2.7449979419293613
+[12.04.25|17:59:55] 	avg_infer_time_per_seq: 0.0011375110333786689
+[12.04.25|17:59:55] 	Top1: 61.40%
+[12.04.25|17:59:55] 	Top5: 94.59%
+[12.04.25|17:59:55] 	Best Top1: 62.22%
+[12.04.25|17:59:55] current 61.40%, best 62.22%
+[12.04.25|17:59:55] The model has been saved as config/three-stream/linear/epoch380_acc61.40_model.pt.
+[12.04.25|17:59:55] Training epoch: 381
+[12.04.25|17:59:57] 	train_mean_loss: 0.23667439753594605
+[12.04.25|17:59:57] Training epoch: 382
+[12.04.25|18:00:00] 	train_mean_loss: 0.24002702858137048
+[12.04.25|18:00:00] Training epoch: 383
+[12.04.25|18:00:02] 	Iter 8800 Done. | loss: 0.2211 | lr: 0.010000
+[12.04.25|18:00:02] 	train_mean_loss: 0.24505516595166663
+[12.04.25|18:00:02] Training epoch: 384
+[12.04.25|18:00:05] 	train_mean_loss: 0.23576450153537418
+[12.04.25|18:00:05] Training epoch: 385
+[12.04.25|18:00:07] 	train_mean_loss: 0.24350422653167145
+[12.04.25|18:00:07] Eval epoch: 385
+[12.04.25|18:00:10] 	Avg inference time per sequence: 0.001472 s
+[12.04.25|18:00:10] 	eval_mean_loss: 2.710661286893098
+[12.04.25|18:00:10] 	avg_infer_time_per_seq: 0.001471536768208947
+[12.04.25|18:00:10] 	Top1: 62.42%
+[12.04.25|18:00:10] 	Top5: 94.59%
+[12.04.25|18:00:10] 	Best Top1: 62.42%
+[12.04.25|18:00:10] current 62.42%, best 62.42%
+[12.04.25|18:00:10] The model has been saved as config/three-stream/linear/epoch385_acc62.42_model.pt.
+[12.04.25|18:00:10] The model has been saved as config/three-stream/linear/best_model.pt.
+[12.04.25|18:00:10] Training epoch: 386
+[12.04.25|18:00:13] 	train_mean_loss: 0.23301729041597116
+[12.04.25|18:00:13] Training epoch: 387
+[12.04.25|18:00:15] 	Iter 8900 Done. | loss: 0.1711 | lr: 0.010000
+[12.04.25|18:00:15] 	train_mean_loss: 0.24080705577912537
+[12.04.25|18:00:15] Training epoch: 388
+[12.04.25|18:00:18] 	train_mean_loss: 0.22794490728689276
+[12.04.25|18:00:18] Training epoch: 389
+[12.04.25|18:00:20] 	train_mean_loss: 0.24003214227116626
+[12.04.25|18:00:20] Training epoch: 390
+[12.04.25|18:00:23] 	train_mean_loss: 0.23727824182614035
+[12.04.25|18:00:23] Eval epoch: 390
+[12.04.25|18:00:25] 	Avg inference time per sequence: 0.001140 s
+[12.04.25|18:00:25] 	eval_mean_loss: 2.8350897405458535
+[12.04.25|18:00:25] 	avg_infer_time_per_seq: 0.001139745412013206
+[12.04.25|18:00:25] 	Top1: 59.89%
+[12.04.25|18:00:25] 	Top5: 94.93%
+[12.04.25|18:00:25] 	Best Top1: 62.42%
+[12.04.25|18:00:25] current 59.89%, best 62.42%
+[12.04.25|18:00:25] The model has been saved as config/three-stream/linear/epoch390_acc59.89_model.pt.
+[12.04.25|18:00:25] Training epoch: 391
+[12.04.25|18:00:28] 	train_mean_loss: 0.2357318155143572
+[12.04.25|18:00:28] Training epoch: 392
+[12.04.25|18:00:29] 	Iter 9000 Done. | loss: 0.2630 | lr: 0.010000
+[12.04.25|18:00:30] 	train_mean_loss: 0.2298747236314027
+[12.04.25|18:00:30] Training epoch: 393
+[12.04.25|18:00:33] 	train_mean_loss: 0.23638095544732135
+[12.04.25|18:00:33] Training epoch: 394
+[12.04.25|18:00:35] 	train_mean_loss: 0.2283639097991197
+[12.04.25|18:00:35] Training epoch: 395
+[12.04.25|18:00:38] 	train_mean_loss: 0.2318063436642937
+[12.04.25|18:00:38] Eval epoch: 395
+[12.04.25|18:00:40] 	Avg inference time per sequence: 0.001175 s
+[12.04.25|18:00:40] 	eval_mean_loss: 2.8106250089147817
+[12.04.25|18:00:40] 	avg_infer_time_per_seq: 0.0011745409799062741
+[12.04.25|18:00:40] 	Top1: 61.88%
+[12.04.25|18:00:40] 	Top5: 94.80%
+[12.04.25|18:00:40] 	Best Top1: 62.42%
+[12.04.25|18:00:40] current 61.88%, best 62.42%
+[12.04.25|18:00:40] The model has been saved as config/three-stream/linear/epoch395_acc61.88_model.pt.
+[12.04.25|18:00:40] Training epoch: 396
+[12.04.25|18:00:42] 	Iter 9100 Done. | loss: 0.2849 | lr: 0.010000
+[12.04.25|18:00:42] 	train_mean_loss: 0.22420151920422263
+[12.04.25|18:00:42] Training epoch: 397
+[12.04.25|18:00:45] 	train_mean_loss: 0.23778657874335413
+[12.04.25|18:00:45] Training epoch: 398
+[12.04.25|18:00:47] 	train_mean_loss: 0.23033900558948517
+[12.04.25|18:00:47] Training epoch: 399
+[12.04.25|18:00:50] 	train_mean_loss: 0.2317674872667893
+[12.04.25|18:00:50] Training epoch: 400
+[12.04.25|18:00:52] 	train_mean_loss: 0.23881537467241287
+[12.04.25|18:00:52] Eval epoch: 400
+[12.04.25|18:00:55] 	Avg inference time per sequence: 0.001255 s
+[12.04.25|18:00:55] 	eval_mean_loss: 2.794271743815878
+[12.04.25|18:00:55] 	avg_infer_time_per_seq: 0.0012548209705391948
+[12.04.25|18:00:55] 	Top1: 62.01%
+[12.04.25|18:00:55] 	Top5: 94.80%
+[12.04.25|18:00:55] 	Best Top1: 62.42%
+[12.04.25|18:00:55] current 62.01%, best 62.42%
+[12.04.25|18:00:55] The model has been saved as config/three-stream/linear/epoch400_acc62.01_model.pt.

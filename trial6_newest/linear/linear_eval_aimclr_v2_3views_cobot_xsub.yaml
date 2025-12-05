@@ -1,0 +1,53 @@
+work_dir: config/three-stream/linear
+
+weights: config/three-stream/pretext/epoch400_model.pt
+ignore_weights: [encoder_q.linear3, encoder_q_motion.linear3, encoder_q_bone.linear3, encoder_q.linear0, encoder_q_motion.linear0, encoder_q_bone.linear0, encoder_k, encoder_k_motion, encoder_k_bone, queue, queue_motion, queue_bone]
+
+# feeder
+train_feeder: feeder.cobot_feeder.Feeder_single
+train_feeder_args:
+  data_path: data_cobot_clr_zoom/xsub/train_position.npy
+  label_path: data_cobot_clr_zoom/xsub/train_label.pkl
+  shear_amplitude: -1
+  temperal_padding_ratio: -1
+  mmap: True
+  zero_z: True
+test_feeder: feeder.cobot_feeder.Feeder_single
+test_feeder_args:
+  data_path: data_cobot_clr_zoom/xsub/val_position.npy
+  label_path: data_cobot_clr_zoom/xsub/val_label.pkl
+  shear_amplitude: -1
+  temperal_padding_ratio: -1
+  mmap: True
+  zero_z: True
+
+# model
+model: net.aimclr_v2_3views_2.AimCLR_v2_3views
+model_args:
+  base_encoder: net.ddnet.DDNet_Original
+  pretrain: False
+  frame_l: 60
+  joint_n: 48
+  joint_d: 3
+  filters: 16
+  feat_d: 1128
+  class_num: 19
+  last_feture_dim: 512
+
+# optim
+nesterov: False
+weight_decay: 0.0
+base_lr: 0.1
+optimizer: SGD
+step: [80]
+
+# training
+device: [0]
+batch_size: 64
+test_batch_size: 64
+num_epoch: 400
+stream: 'all'
+
+# log
+save_interval: -1
+eval_interval: 5

@@ -146,23 +146,21 @@ class DDNet_Original(nn.Module):
 
         self.block3 = nn.Sequential(
             block(frame_l//8, 4 * filters, 8 * filters, 3), spatialDropout1D(0.1))
-            
-        if self.pretrain:
 
-          self.linear0 = nn.Sequential(
+
+        self.linear0 = nn.Sequential(
               d1D(8 * filters, class_num)
-          )
+        )
         
-        else:
-          self.linear1 = nn.Sequential(
-              d1D(8 * filters, 128),
-              nn.Dropout(0.5)
-          )
-          self.linear2 = nn.Sequential(
-              d1D(128, 128),
-              nn.Dropout(0.5)
-          )
-          self.linear3 = nn.Linear(128, class_num)
+        self.linear1 = nn.Sequential(
+            d1D(8 * filters, 128),
+            nn.Dropout(0.5)
+        )
+        self.linear2 = nn.Sequential(
+            d1D(128, 128),
+            nn.Dropout(0.5)
+        )
+        self.linear3 = nn.Linear(128, class_num)
 
     def forward(self, M, P=None):
         x = self.jcd_conv1(M)
@@ -204,7 +202,7 @@ class DDNet_Original(nn.Module):
         x = torch.max(x, dim=1).values
 
         if self.pretrain:
-          features = self.linear0(x) # 1024
+          features = self.linear0(x)
         
         else:
           x = self.linear1(x)
