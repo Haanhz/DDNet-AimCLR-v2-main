@@ -55,25 +55,39 @@ class AimCLR_v2_3views(nn.Module):
                                           filters = filters, class_num = last_feture_dim, pretrain=pretrain)
 
             if mlp:  # hack: brute-force replacement
-                dim_mlp = self.encoder_q.linear0[0].linear.in_features
-                self.encoder_q.linear0 = nn.Sequential(nn.Linear(dim_mlp, dim_mlp),
+                original_q = self.encoder_q.linear0
+                original_k = self.encoder_k.linear0
+                dim_mlp = self.encoder_q.linear0.weight.shape[0] 
+                self.encoder_q.linear0 = nn.Sequential(original_q,
+                                                  nn.BatchNorm1d(dim_mlp),
                                                   nn.ReLU(),
-                                                  self.encoder_q.linear0)
-                self.encoder_k.linear0 = nn.Sequential(nn.Linear(dim_mlp, dim_mlp),
+                                                  nn.Linear(dim_mlp, 128),
+                                                  nn.BatchNorm1d(128))
+                self.encoder_k.linear0 = nn.Sequential(original_k,
+                                                  nn.BatchNorm1d(dim_mlp),
                                                   nn.ReLU(),
-                                                  self.encoder_k.linear0)
-                self.encoder_q_motion.linear0 = nn.Sequential(nn.Linear(dim_mlp, dim_mlp),
-                                                         nn.ReLU(),
-                                                         self.encoder_q.linear0)
-                self.encoder_k_motion.linear0 = nn.Sequential(nn.Linear(dim_mlp, dim_mlp),
-                                                         nn.ReLU(),
-                                                         self.encoder_k.linear0)
-                self.encoder_q_bone.linear0 = nn.Sequential(nn.Linear(dim_mlp, dim_mlp),
-                                                       nn.ReLU(),
-                                                       self.encoder_q.linear0)
-                self.encoder_k_bone.linear0 = nn.Sequential(nn.Linear(dim_mlp, dim_mlp),
-                                                       nn.ReLU(),
-                                                       self.encoder_k.linear0)
+                                                  nn.Linear(dim_mlp, 128),
+                                                  nn.BatchNorm1d(128))
+                self.encoder_q_motion.linear0 = nn.Sequential(original_q,
+                                                  nn.BatchNorm1d(dim_mlp),
+                                                  nn.ReLU(),
+                                                  nn.Linear(dim_mlp, 128),
+                                                  nn.BatchNorm1d(128))
+                self.encoder_k_motion.linear0 = nn.Sequential(original_k,
+                                                  nn.BatchNorm1d(dim_mlp),
+                                                  nn.ReLU(),
+                                                  nn.Linear(dim_mlp, 128),
+                                                  nn.BatchNorm1d(128))
+                self.encoder_q_bone.linear0 = nn.Sequential(original_q,
+                                                  nn.BatchNorm1d(dim_mlp),
+                                                  nn.ReLU(),
+                                                  nn.Linear(dim_mlp, 128),
+                                                  nn.BatchNorm1d(128))
+                self.encoder_k_bone.linear0 = nn.Sequential(original_k,
+                                                  nn.BatchNorm1d(dim_mlp),
+                                                  nn.ReLU(),
+                                                  nn.Linear(dim_mlp, 128),
+                                                  nn.BatchNorm1d(128))
 
             for param_q, param_k in zip(self.encoder_q.parameters(), self.encoder_k.parameters()):
                 param_k.data.copy_(param_q.data)  # initialize
@@ -86,15 +100,15 @@ class AimCLR_v2_3views(nn.Module):
                 param_k.requires_grad = False
 
             # create the queue
-            self.register_buffer("queue", torch.randn(last_feture_dim, self.K)) 
+            self.register_buffer("queue", torch.randn(128, self.K)) 
             self.queue = F.normalize(self.queue, dim=0)
             self.register_buffer("queue_ptr", torch.zeros(1, dtype=torch.long))
 
-            self.register_buffer("queue_motion", torch.randn(last_feture_dim, self.K))
+            self.register_buffer("queue_motion", torch.randn(128, self.K))
             self.queue_motion = F.normalize(self.queue_motion, dim=0)
             self.register_buffer("queue_ptr_motion", torch.zeros(1, dtype=torch.long))
 
-            self.register_buffer("queue_bone", torch.randn(last_feture_dim, self.K))
+            self.register_buffer("queue_bone", torch.randn(128, self.K))
             self.queue_bone = F.normalize(self.queue_bone, dim=0)
             self.register_buffer("queue_ptr_bone", torch.zeros(1, dtype=torch.long))
 

@@ -3,8 +3,8 @@ work_dir: config\three-stream\pretext
 # feeder
 train_feeder: feeder.cobot_feeder.Feeder_triple
 train_feeder_args:
-  data_path: data_cobot_clr_zoom/xsub/train_position.npy
-  label_path: data_cobot_clr_zoom/xsub/train_label.pkl
+  data_path: data_cobot_clr_new/xsub/train_position.npy
+  label_path: data_cobot_clr_new/xsub/train_label.pkl
   shear_amplitude: 0.2
   temperal_padding_ratio: 6
   mmap: True

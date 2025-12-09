@@ -1,0 +1,75 @@
+# command line: main.py linear_evaluation --config config/three-stream/finetune/finetune_aimclr_v2_3views_cobot_xsub.yaml --work_dir config/three-stream/finetune/100%
+
+base_lr: 0.01
+batch_size: 32
+config: config/three-stream/finetune/finetune_aimclr_v2_3views_cobot_xsub.yaml
+debug: false
+device:
+- 0
+eval_interval: 5
+grad_clip: 1.0
+ignore_weights:
+- encoder_q.linear3
+- encoder_q_motion.linear3
+- encoder_q_bone.linear3
+- encoder_q.linear0
+- encoder_q_motion.linear0
+- encoder_q_bone.linear0
+- encoder_k
+- encoder_k_motion
+- encoder_k_bone
+- queue
+- queue_motion
+- queue_bone
+log_interval: 100
+mining_epoch: 1000000.0
+model: net.aimclr_v2_3views_2.AimCLR_v2_3views
+model_args:
+    base_encoder: net.ddnet.DDNet_Original
+    class_num: 19
+    filters: 16
+    frame_l: 60
+    joint_d: 3
+    joint_n: 48
+    last_feture_dim: 512
+    pretrain: false
+nesterov: false
+num_epoch: 400
+num_worker: 0
+optimizer: SGD
+pavi_log: false
+phase: train
+print_log: true
+save_interval: -1
+save_log: true
+save_result: true
+show_topk:
+- 1
+- 5
+start_epoch: 0
+step:
+- 80
+stream: all
+test_batch_size: 32
+test_feeder: feeder.cobot_feeder.Feeder_single
+test_feeder_args:
+    data_path: data_cobot_clr_new/xsub/val_position.npy
+    label_path: data_cobot_clr_new/xsub/val_label.pkl
+    mmap: true
+    shear_amplitude: -1
+    temperal_padding_ratio: -1
+    zero_z: true
+topk: 1
+train_feeder: feeder.cobot_feeder.Feeder_single
+train_feeder_args:
+    data_path: data_cobot_clr_new/xsub/train_position.npy
+    label_path: data_cobot_clr_new/xsub/train_label.pkl
+    mmap: true
+    shear_amplitude: -1
+    temperal_padding_ratio: -1
+    zero_z: true
+unfreeze_backbone: true
+use_gpu: true
+weight_decay: 0.0001
+weights: config/three-stream/pretext/NEW_DATA/epoch400_model.pt
+work_dir: config/three-stream/finetune/100%

@@ -6,8 +6,8 @@ ignore_weights: [encoder_q.linear3, encoder_q_motion.linear3, encoder_q_bone.lin
 # feeder
 train_feeder: feeder.cobot_feeder.Feeder_semi
 train_feeder_args:
-  data_path: data_cobot_clr_zoom/xsub/train_position.npy
-  label_path: data_cobot_clr_zoom/xsub/train_label.pkl
+  data_path: data_cobot_clr_new/xsub/train_position.npy
+  label_path: data_cobot_clr_new/xsub/train_label.pkl
   shear_amplitude: -1
   temperal_padding_ratio: -1
   mmap: True
@@ -15,8 +15,8 @@ train_feeder_args:
   label_percent: 0.4
 test_feeder: feeder.cobot_feeder.Feeder_single
 test_feeder_args:
-  data_path:  data_cobot_clr_zoom/xsub/val_position.npy
-  label_path:  data_cobot_clr_zoom/xsub/val_label.pkl
+  data_path:  data_cobot_clr_new/xsub/val_position.npy
+  label_path:  data_cobot_clr_new/xsub/val_label.pkl
   shear_amplitude: -1
   temperal_padding_ratio: -1
   mmap: True

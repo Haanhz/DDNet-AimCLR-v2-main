@@ -54,7 +54,7 @@ def center_crop_indices(length: int, target: int) -> np.ndarray:
     return np.arange(start_index, start_index + target, dtype=np.int64)
 
 
-def zoom(p, target_l=64, joints_num=25, joints_dim=3):
+def zoom(p, target_l=60, joints_num=48, joints_dim=3):
     p_copy = copy.deepcopy(p)
     l = p_copy.shape[0]
     p_new = np.empty([target_l, joints_num, joints_dim])

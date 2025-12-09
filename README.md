@@ -5,8 +5,15 @@ This code is derived from https://github.com/Levigty/AimCLR-v2, which is the imp
 
 ## Data Preparation
 - From CoboGesture dataset, acquire Annotation_v4 (.csv files) and pose_new_v2 (.npy files) -> distribute the continuous data into action segment with corresponding label with `cobot_per_action.py`.
-- Perform quality assessment with `clean_low_quality_actions.py`.
-- Perform missing joint recovery with `cleaning.py`.
+- Perform quality assessment with `clean_low_quality.py`. (modify original folder and create backup folder)
+```bash
+$ python clean_low_quality.py --actions_root action_segment --backup_dir output/backup_haanh --treat_zero_as_missing --execute
+```
+- Perform missing joint recovery with `fill_missing.py`.
+```bash
+$ python fill_missing.py --actions_root action_segment --output_dir cleaned_haanh --max_gap 20
+```
+-> 2615 samples
 - Prepare data for training and testing with `cleaned_to_cobot.py`
 
 ## Installation

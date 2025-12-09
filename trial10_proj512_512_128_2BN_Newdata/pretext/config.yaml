@@ -1,0 +1,61 @@
+# command line: main.py pretrain_aimclr_v2_3views --config config/three-stream/pretext/pretext_aimclr_v2_3views_cobot_xsub.yaml --work_dir config/three-stream/pretext/NEW_DATA
+
+base_lr: 0.01
+batch_size: 64
+config: config/three-stream/pretext/pretext_aimclr_v2_3views_cobot_xsub.yaml
+cross_epoch: 80
+debug: false
+device:
+- 0
+eval_interval: -1
+ignore_weights: []
+log_interval: 100
+mine_epoch: 40
+model: net.aimclr_v2_3views_2.AimCLR_v2_3views
+model_args:
+    Temperature: 0.3
+    base_encoder: net.ddnet.DDNet_Original
+    class_num: 19
+    feat_d: 1128
+    filters: 16
+    frame_l: 60
+    joint_d: 3
+    joint_n: 48
+    last_feture_dim: 512
+    mlp: true
+    momentum: 0.999
+    pretrain: true
+    queue_size: 2048
+nesterov: false
+num_epoch: 400
+num_worker: 4
+optimizer: SGD
+pavi_log: false
+phase: train
+print_log: true
+save_interval: 100
+save_log: true
+save_result: true
+start_epoch: 0
+step:
+- 120
+stream: all
+test_batch_size: 64
+test_feeder: feeder.feeder
+test_feeder_args: {}
+topk1: 2
+topk2: 10
+train_feeder: feeder.cobot_feeder.Feeder_triple
+train_feeder_args:
+    aug_method: '1234'
+    data_path: data_cobot_clr_new/xsub/train_position.npy
+    label_path: data_cobot_clr_new/xsub/train_label.pkl
+    mmap: true
+    shear_amplitude: 0.2
+    temperal_padding_ratio: 6
+    zero_z: true
+use_gpu: true
+vote: 2
+weight_decay: 0.0001
+weights: null
+work_dir: config/three-stream/pretext/NEW_DATA
