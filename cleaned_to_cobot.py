@@ -36,6 +36,11 @@ def parse_args() -> argparse.Namespace:
                        default='cross_subject', help='Strategy for train/val split: random (80/20) or cross_subject (odd/even subjects)')
     return parser.parse_args()
 
+def to_ntu_format(segment_xyz: np.ndarray) -> np.ndarray:
+    """Convert (L, 48, 3) to (3, L, 48, 1) format"""
+    data = np.transpose(segment_xyz, (2, 0, 1)).astype(np.float32, copy=False)
+    data = data[..., np.newaxis]
+    return data
 
 def uniform_sample_indices(length: int, target: int) -> np.ndarray:
     """Uniform sampling for temporal resampling"""
@@ -208,7 +213,8 @@ def write_ntu_data(samples: List[Dict], output_path: Path, max_frame: int, resam
     output_path.parent.mkdir(parents=True, exist_ok=True)
     
     # Prepare data array
-    data = np.empty((len(samples), max_frame, 48, 3), dtype=np.float32)
+    #data = np.empty((len(samples), max_frame, 48, 3), dtype=np.float32) #cobot
+    data = np.empty((len(samples), 3, max_frame, 48, 1), dtype=np.float32)
     names = []
     labels = []
     
@@ -217,6 +223,7 @@ def write_ntu_data(samples: List[Dict], output_path: Path, max_frame: int, resam
         
         # Resample to fixed length
         if resample_policy in ["uniform-sample", "center-crop", "pad"]:
+            all_data = to_ntu_format(all_data)
             fitted_data = fit_to_length(all_data, max_frame, resample_policy)
         elif resample_policy == "zoom":
             fitted_data = zoom(all_data, max_frame, 48, 3)

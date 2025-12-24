@@ -1,0 +1,7 @@
+COBOT Dataset Analysis (t-SNE + Correlation)
+==================================================
+
+- Total samples: 1330
+- Number of classes: 19
+- Feature dimension: 128
+- NMI Score: 0.4819

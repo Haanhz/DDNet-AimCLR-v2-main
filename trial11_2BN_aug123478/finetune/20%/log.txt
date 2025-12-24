@@ -1,0 +1,1572 @@
+[12.18.25|00:21:23] 	train_mean_loss: 2.943997723715646
+[12.18.25|00:21:23] Training epoch: 4
+[12.18.25|00:21:28] 	train_mean_loss: 2.9434541974748885
+[12.18.25|00:21:28] Training epoch: 5
+[12.18.25|00:21:33] 	train_mean_loss: 2.9430741242000034
+[12.18.25|00:21:33] Eval epoch: 5
+[12.18.25|00:21:51] 	Avg inference time per sequence: 0.011819 s
+[12.18.25|00:21:51] 	eval_mean_loss: 2.9427132436207364
+[12.18.25|00:21:51] 	avg_infer_time_per_seq: 0.011818515268483556
+[12.18.25|00:21:51] 	Top1: 8.05%
+[12.18.25|00:21:51] 	Top5: 35.86%
+[12.18.25|00:21:51] 	Best Top1: 8.05%
+[12.18.25|00:21:51] current 8.05%, best 8.05%
+[12.18.25|00:21:53] The model has been saved as config/three-stream/finetune/20%/epoch005_acc8.05_model.pt.
+[12.18.25|00:21:53] The model has been saved as config/three-stream/finetune/20%/best_model.pt.
+[12.18.25|00:21:53] Training epoch: 6
+[12.18.25|00:21:57] 	train_mean_loss: 2.942347390311105
+[12.18.25|00:21:57] Training epoch: 7
+[12.18.25|00:22:02] 	train_mean_loss: 2.941929919379098
+[12.18.25|00:22:02] Training epoch: 8
+[12.18.25|00:22:06] 	train_mean_loss: 2.9412410940442766
+[12.18.25|00:22:06] Training epoch: 9
+[12.18.25|00:22:09] 	train_mean_loss: 2.9402125562940324
+[12.18.25|00:22:09] Training epoch: 10
+[12.18.25|00:22:13] 	train_mean_loss: 2.939990554537092
+[12.18.25|00:22:13] Eval epoch: 10
+[12.18.25|00:22:26] 	Avg inference time per sequence: 0.009161 s
+[12.18.25|00:22:26] 	eval_mean_loss: 2.939818331173488
+[12.18.25|00:22:26] 	avg_infer_time_per_seq: 0.009161476085060521
+[12.18.25|00:22:26] 	Top1: 7.44%
+[12.18.25|00:22:26] 	Top5: 49.25%
+[12.18.25|00:22:26] 	Best Top1: 8.05%
+[12.18.25|00:22:26] current 7.44%, best 8.05%
+[12.18.25|00:22:26] The model has been saved as config/three-stream/finetune/20%/epoch010_acc7.44_model.pt.
+[12.18.25|00:22:26] Training epoch: 11
+[12.18.25|00:22:30] 	train_mean_loss: 2.938826935631888
+[12.18.25|00:22:30] Training epoch: 12
+[12.18.25|00:22:34] 	train_mean_loss: 2.938363688332694
+[12.18.25|00:22:34] Training epoch: 13
+[12.18.25|00:22:38] 	train_mean_loss: 2.937460286276681
+[12.18.25|00:22:38] Training epoch: 14
+[12.18.25|00:22:41] 	train_mean_loss: 2.936149971825736
+[12.18.25|00:22:41] Training epoch: 15
+[12.18.25|00:22:43] 	Iter 100 Done. | loss: 2.9354 | lr: 0.010000
+[12.18.25|00:22:45] 	train_mean_loss: 2.934387445449829
+[12.18.25|00:22:45] Eval epoch: 15
+[12.18.25|00:23:00] 	Avg inference time per sequence: 0.010396 s
+[12.18.25|00:23:00] 	eval_mean_loss: 2.934215704600016
+[12.18.25|00:23:00] 	avg_infer_time_per_seq: 0.010395742538280057
+[12.18.25|00:23:00] 	Top1: 10.90%
+[12.18.25|00:23:00] 	Top5: 49.17%
+[12.18.25|00:23:00] 	Best Top1: 10.90%
+[12.18.25|00:23:00] current 10.90%, best 10.90%
+[12.18.25|00:23:00] The model has been saved as config/three-stream/finetune/20%/epoch015_acc10.90_model.pt.
+[12.18.25|00:23:01] The model has been saved as config/three-stream/finetune/20%/best_model.pt.
+[12.18.25|00:23:01] Training epoch: 16
+[12.18.25|00:23:04] 	train_mean_loss: 2.9318797247750417
+[12.18.25|00:23:04] Training epoch: 17
+[12.18.25|00:23:07] 	train_mean_loss: 2.929250342505319
+[12.18.25|00:23:07] Training epoch: 18
+[12.18.25|00:23:10] 	train_mean_loss: 2.9258811133248463
+[12.18.25|00:23:10] Training epoch: 19
+[12.18.25|00:23:14] 	train_mean_loss: 2.9226183210100447
+[12.18.25|00:23:14] Training epoch: 20
+[12.18.25|00:23:18] 	train_mean_loss: 2.9108354364122664
+[12.18.25|00:23:18] Eval epoch: 20
+[12.18.25|00:23:32] 	Avg inference time per sequence: 0.009731 s
+[12.18.25|00:23:32] 	eval_mean_loss: 2.9048718270801364
+[12.18.25|00:23:32] 	avg_infer_time_per_seq: 0.009730950154756245
+[12.18.25|00:23:32] 	Top1: 10.15%
+[12.18.25|00:23:32] 	Top5: 43.16%
+[12.18.25|00:23:32] 	Best Top1: 10.90%
+[12.18.25|00:23:32] current 10.15%, best 10.90%
+[12.18.25|00:23:32] The model has been saved as config/three-stream/finetune/20%/epoch020_acc10.15_model.pt.
+[12.18.25|00:23:32] Training epoch: 21
+[12.18.25|00:23:35] 	train_mean_loss: 2.896597283227103
+[12.18.25|00:23:35] Training epoch: 22
+[12.18.25|00:23:39] 	train_mean_loss: 2.8565095833369663
+[12.18.25|00:23:39] Training epoch: 23
+[12.18.25|00:23:42] 	train_mean_loss: 2.7999889169420515
+[12.18.25|00:23:42] Training epoch: 24
+[12.18.25|00:23:45] 	train_mean_loss: 2.7507729870932445
+[12.18.25|00:23:45] Training epoch: 25
+[12.18.25|00:23:49] 	train_mean_loss: 2.704038619995117
+[12.18.25|00:23:49] Eval epoch: 25
+[12.18.25|00:24:02] 	Avg inference time per sequence: 0.009031 s
+[12.18.25|00:24:02] 	eval_mean_loss: 2.6938140108471824
+[12.18.25|00:24:02] 	avg_infer_time_per_seq: 0.00903140656033853
+[12.18.25|00:24:02] 	Top1: 12.48%
+[12.18.25|00:24:02] 	Top5: 56.69%
+[12.18.25|00:24:02] 	Best Top1: 12.48%
+[12.18.25|00:24:02] current 12.48%, best 12.48%
+[12.18.25|00:24:02] The model has been saved as config/three-stream/finetune/20%/epoch025_acc12.48_model.pt.
+[12.18.25|00:24:02] The model has been saved as config/three-stream/finetune/20%/best_model.pt.
+[12.18.25|00:24:02] Training epoch: 26
+[12.18.25|00:24:06] 	train_mean_loss: 2.64738781111581
+[12.18.25|00:24:06] Training epoch: 27
+[12.18.25|00:24:10] 	train_mean_loss: 2.6472129140581404
+[12.18.25|00:24:10] Training epoch: 28
+[12.18.25|00:24:14] 	train_mean_loss: 2.5630636555807933
+[12.18.25|00:24:14] Training epoch: 29
+[12.18.25|00:24:17] 	Iter 200 Done. | loss: 2.5684 | lr: 0.010000
+[12.18.25|00:24:18] 	train_mean_loss: 2.489499023982457
+[12.18.25|00:24:18] Training epoch: 30
+[12.18.25|00:24:21] 	train_mean_loss: 2.3673116139003207
+[12.18.25|00:24:21] Eval epoch: 30
+[12.18.25|00:24:35] 	Avg inference time per sequence: 0.008266 s
+[12.18.25|00:24:35] 	eval_mean_loss: 2.3060772191910517
+[12.18.25|00:24:35] 	avg_infer_time_per_seq: 0.008266297498143706
+[12.18.25|00:24:35] 	Top1: 22.26%
+[12.18.25|00:24:35] 	Top5: 76.32%
+[12.18.25|00:24:35] 	Best Top1: 22.26%
+[12.18.25|00:24:35] current 22.26%, best 22.26%
+[12.18.25|00:24:35] The model has been saved as config/three-stream/finetune/20%/epoch030_acc22.26_model.pt.
+[12.18.25|00:24:36] The model has been saved as config/three-stream/finetune/20%/best_model.pt.
+[12.18.25|00:24:36] Training epoch: 31
+[12.18.25|00:24:39] 	train_mean_loss: 2.2056658267974854
+[12.18.25|00:24:39] Training epoch: 32
+[12.18.25|00:24:43] 	train_mean_loss: 2.0407513039452687
+[12.18.25|00:24:43] Training epoch: 33
+[12.18.25|00:24:46] 	train_mean_loss: 1.9418825592313493
+[12.18.25|00:24:46] Training epoch: 34
+[12.18.25|00:24:50] 	train_mean_loss: 1.8337122883115495
+[12.18.25|00:24:50] Training epoch: 35
+[12.18.25|00:24:53] 	train_mean_loss: 1.7830877985273088
+[12.18.25|00:24:53] Eval epoch: 35
+[12.18.25|00:25:07] 	Avg inference time per sequence: 0.009174 s
+[12.18.25|00:25:07] 	eval_mean_loss: 1.8819652313277835
+[12.18.25|00:25:07] 	avg_infer_time_per_seq: 0.009174244385912902
+[12.18.25|00:25:08] 	Top1: 25.79%
+[12.18.25|00:25:08] 	Top5: 86.09%
+[12.18.25|00:25:08] 	Best Top1: 25.79%
+[12.18.25|00:25:08] current 25.79%, best 25.79%
+[12.18.25|00:25:08] The model has been saved as config/three-stream/finetune/20%/epoch035_acc25.79_model.pt.
+[12.18.25|00:25:08] The model has been saved as config/three-stream/finetune/20%/best_model.pt.
+[12.18.25|00:25:08] Training epoch: 36
+[12.18.25|00:25:11] 	train_mean_loss: 1.7248279196875436
+[12.18.25|00:25:11] Training epoch: 37
+[12.18.25|00:25:14] 	train_mean_loss: 1.6899628468922205
+[12.18.25|00:25:14] Training epoch: 38
+[12.18.25|00:25:17] 	train_mean_loss: 1.592566932950701
+[12.18.25|00:25:17] Training epoch: 39
+[12.18.25|00:25:21] 	train_mean_loss: 1.551754253251212
+[12.18.25|00:25:21] Training epoch: 40
+[12.18.25|00:25:25] 	train_mean_loss: 1.5055901152747018
+[12.18.25|00:25:25] Eval epoch: 40
+[12.18.25|00:25:40] 	Avg inference time per sequence: 0.009797 s
+[12.18.25|00:25:40] 	eval_mean_loss: 1.6625365586507888
+[12.18.25|00:25:40] 	avg_infer_time_per_seq: 0.009797222811476628
+[12.18.25|00:25:40] 	Top1: 30.60%
+[12.18.25|00:25:40] 	Top5: 94.74%
+[12.18.25|00:25:40] 	Best Top1: 30.60%
+[12.18.25|00:25:40] current 30.60%, best 30.60%
+[12.18.25|00:25:40] The model has been saved as config/three-stream/finetune/20%/epoch040_acc30.60_model.pt.
+[12.18.25|00:25:40] The model has been saved as config/three-stream/finetune/20%/best_model.pt.
+[12.18.25|00:25:40] Training epoch: 41
+[12.18.25|00:25:43] 	train_mean_loss: 1.5226635592324393
+[12.18.25|00:25:43] Training epoch: 42
+[12.18.25|00:25:46] 	train_mean_loss: 1.4813155617032732
+[12.18.25|00:25:46] Training epoch: 43
+[12.18.25|00:25:50] 	Iter 300 Done. | loss: 1.4597 | lr: 0.010000
+[12.18.25|00:25:50] 	train_mean_loss: 1.4473475217819214
+[12.18.25|00:25:50] Training epoch: 44
+[12.18.25|00:25:53] 	train_mean_loss: 1.3699761288506644
+[12.18.25|00:25:53] Training epoch: 45
+[12.18.25|00:25:56] 	train_mean_loss: 1.3886335917881556
+[12.18.25|00:25:56] Eval epoch: 45
+[12.18.25|00:26:10] 	Avg inference time per sequence: 0.009218 s
+[12.18.25|00:26:10] 	eval_mean_loss: 1.6021613492852165
+[12.18.25|00:26:10] 	avg_infer_time_per_seq: 0.009218039189962517
+[12.18.25|00:26:10] 	Top1: 33.98%
+[12.18.25|00:26:10] 	Top5: 95.11%
+[12.18.25|00:26:10] 	Best Top1: 33.98%
+[12.18.25|00:26:10] current 33.98%, best 33.98%
+[12.18.25|00:26:10] The model has been saved as config/three-stream/finetune/20%/epoch045_acc33.98_model.pt.
+[12.18.25|00:26:10] The model has been saved as config/three-stream/finetune/20%/best_model.pt.
+[12.18.25|00:26:10] Training epoch: 46
+[12.18.25|00:26:14] 	train_mean_loss: 1.4047233036586217
+[12.18.25|00:26:14] Training epoch: 47
+[12.18.25|00:26:17] 	train_mean_loss: 1.3527753864015852
+[12.18.25|00:26:17] Training epoch: 48
+[12.18.25|00:26:20] 	train_mean_loss: 1.363074745450701
+[12.18.25|00:26:20] Training epoch: 49
+[12.18.25|00:26:24] 	train_mean_loss: 1.3734132902962821
+[12.18.25|00:26:24] Training epoch: 50
+[12.18.25|00:26:27] 	train_mean_loss: 1.324393732207162
+[12.18.25|00:26:27] Eval epoch: 50
+[12.18.25|00:26:42] 	Avg inference time per sequence: 0.010266 s
+[12.18.25|00:26:42] 	eval_mean_loss: 1.6219824935708727
+[12.18.25|00:26:42] 	avg_infer_time_per_seq: 0.010265947284555077
+[12.18.25|00:26:42] 	Top1: 36.32%
+[12.18.25|00:26:42] 	Top5: 94.96%
+[12.18.25|00:26:42] 	Best Top1: 36.32%
+[12.18.25|00:26:42] current 36.32%, best 36.32%
+[12.18.25|00:26:42] The model has been saved as config/three-stream/finetune/20%/epoch050_acc36.32_model.pt.
+[12.18.25|00:26:42] The model has been saved as config/three-stream/finetune/20%/best_model.pt.
+[12.18.25|00:26:43] Training epoch: 51
+[12.18.25|00:26:46] 	train_mean_loss: 1.2464006628308977
+[12.18.25|00:26:46] Training epoch: 52
+[12.18.25|00:26:50] 	train_mean_loss: 1.2904131242207117
+[12.18.25|00:26:50] Training epoch: 53
+[12.18.25|00:26:53] 	train_mean_loss: 1.3128143378666468
+[12.18.25|00:26:53] Training epoch: 54
+[12.18.25|00:26:57] 	train_mean_loss: 1.3429544142314367
+[12.18.25|00:26:57] Training epoch: 55
+[12.18.25|00:27:00] 	train_mean_loss: 1.2455181053706579
+[12.18.25|00:27:00] Eval epoch: 55
+[12.18.25|00:27:13] 	Avg inference time per sequence: 0.008861 s
+[12.18.25|00:27:13] 	eval_mean_loss: 1.5528188695510228
+[12.18.25|00:27:13] 	avg_infer_time_per_seq: 0.008860877044218823
+[12.18.25|00:27:13] 	Top1: 37.22%
+[12.18.25|00:27:13] 	Top5: 96.09%
+[12.18.25|00:27:14] 	Best Top1: 37.22%
+[12.18.25|00:27:14] current 37.22%, best 37.22%
+[12.18.25|00:27:14] The model has been saved as config/three-stream/finetune/20%/epoch055_acc37.22_model.pt.
+[12.18.25|00:27:14] The model has been saved as config/three-stream/finetune/20%/best_model.pt.
+[12.18.25|00:27:14] Training epoch: 56
+[12.18.25|00:27:17] 	train_mean_loss: 1.3027747699192591
+[12.18.25|00:27:17] Training epoch: 57
+[12.18.25|00:27:20] 	train_mean_loss: 1.227149316242763
+[12.18.25|00:27:20] Training epoch: 58
+[12.18.25|00:27:21] 	Iter 400 Done. | loss: 1.2756 | lr: 0.010000
+[12.18.25|00:27:23] 	train_mean_loss: 1.2746091059276037
+[12.18.25|00:27:23] Training epoch: 59
+[12.18.25|00:27:27] 	train_mean_loss: 1.1811450549534388
+[12.18.25|00:27:27] Training epoch: 60
+[12.18.25|00:27:30] 	train_mean_loss: 1.1234518459865026
+[12.18.25|00:27:30] Eval epoch: 60
+[12.18.25|00:27:44] 	Avg inference time per sequence: 0.009587 s
+[12.18.25|00:27:44] 	eval_mean_loss: 1.5462503330338568
+[12.18.25|00:27:44] 	avg_infer_time_per_seq: 0.009587027435015915
+[12.18.25|00:27:44] 	Top1: 40.30%
+[12.18.25|00:27:44] 	Top5: 95.79%
+[12.18.25|00:27:44] 	Best Top1: 40.30%
+[12.18.25|00:27:44] current 40.30%, best 40.30%
+[12.18.25|00:27:45] The model has been saved as config/three-stream/finetune/20%/epoch060_acc40.30_model.pt.
+[12.18.25|00:27:45] The model has been saved as config/three-stream/finetune/20%/best_model.pt.
+[12.18.25|00:27:45] Training epoch: 61
+[12.18.25|00:27:48] 	train_mean_loss: 1.0845334104129247
+[12.18.25|00:27:48] Training epoch: 62
+[12.18.25|00:27:52] 	train_mean_loss: 1.1752931135041373
+[12.18.25|00:27:52] Training epoch: 63
+[12.18.25|00:27:56] 	train_mean_loss: 1.0574554290090288
+[12.18.25|00:27:56] Training epoch: 64
+[12.18.25|00:27:59] 	train_mean_loss: 1.2116212504250663
+[12.18.25|00:27:59] Training epoch: 65
+[12.18.25|00:28:03] 	train_mean_loss: 1.0400145224162511
+[12.18.25|00:28:03] Eval epoch: 65
+[12.18.25|00:28:18] 	Avg inference time per sequence: 0.010389 s
+[12.18.25|00:28:18] 	eval_mean_loss: 1.4382921883038111
+[12.18.25|00:28:18] 	avg_infer_time_per_seq: 0.010388990093890885
+[12.18.25|00:28:18] 	Top1: 45.86%
+[12.18.25|00:28:18] 	Top5: 96.77%
+[12.18.25|00:28:18] 	Best Top1: 45.86%
+[12.18.25|00:28:18] current 45.86%, best 45.86%
+[12.18.25|00:28:19] The model has been saved as config/three-stream/finetune/20%/epoch065_acc45.86_model.pt.
+[12.18.25|00:28:19] The model has been saved as config/three-stream/finetune/20%/best_model.pt.
+[12.18.25|00:28:19] Training epoch: 66
+[12.18.25|00:28:22] 	train_mean_loss: 0.9206587331635612
+[12.18.25|00:28:22] Training epoch: 67
+[12.18.25|00:28:25] 	train_mean_loss: 1.0064575587000166
+[12.18.25|00:28:25] Training epoch: 68
+[12.18.25|00:28:28] 	train_mean_loss: 0.9672234398978097
+[12.18.25|00:28:28] Training epoch: 69
+[12.18.25|00:28:32] 	train_mean_loss: 1.0117407441139221
+[12.18.25|00:28:32] Training epoch: 70
+[12.18.25|00:28:35] 	train_mean_loss: 0.9920724034309387
+[12.18.25|00:28:35] Eval epoch: 70
+[12.18.25|00:28:48] 	Avg inference time per sequence: 0.009094 s
+[12.18.25|00:28:48] 	eval_mean_loss: 1.5302406492687406
+[12.18.25|00:28:48] 	avg_infer_time_per_seq: 0.009093850178826125
+[12.18.25|00:28:48] 	Top1: 43.61%
+[12.18.25|00:28:48] 	Top5: 95.86%
+[12.18.25|00:28:48] 	Best Top1: 45.86%
+[12.18.25|00:28:49] current 43.61%, best 45.86%
+[12.18.25|00:28:49] The model has been saved as config/three-stream/finetune/20%/epoch070_acc43.61_model.pt.
+[12.18.25|00:28:49] Training epoch: 71
+[12.18.25|00:28:52] 	train_mean_loss: 0.8805321795599801
+[12.18.25|00:28:52] Training epoch: 72
+[12.18.25|00:28:54] 	Iter 500 Done. | loss: 0.8190 | lr: 0.010000
+[12.18.25|00:28:55] 	train_mean_loss: 0.8361899767603193
+[12.18.25|00:28:55] Training epoch: 73
+[12.18.25|00:28:58] 	train_mean_loss: 0.9775311606270927
+[12.18.25|00:28:58] Training epoch: 74
+[12.18.25|00:29:02] 	train_mean_loss: 0.9433091708592006
+[12.18.25|00:29:02] Training epoch: 75
+[12.18.25|00:29:05] 	train_mean_loss: 0.8798636538641793
+[12.18.25|00:29:05] Eval epoch: 75
+[12.18.25|00:29:19] 	Avg inference time per sequence: 0.009788 s
+[12.18.25|00:29:19] 	eval_mean_loss: 1.4264458503041948
+[12.18.25|00:29:19] 	avg_infer_time_per_seq: 0.009788249489060022
+[12.18.25|00:29:19] 	Top1: 48.87%
+[12.18.25|00:29:19] 	Top5: 96.54%
+[12.18.25|00:29:19] 	Best Top1: 48.87%
+[12.18.25|00:29:19] current 48.87%, best 48.87%
+[12.18.25|00:29:19] The model has been saved as config/three-stream/finetune/20%/epoch075_acc48.87_model.pt.
+[12.18.25|00:29:19] The model has been saved as config/three-stream/finetune/20%/best_model.pt.
+[12.18.25|00:29:19] Training epoch: 76
+[12.18.25|00:29:23] 	train_mean_loss: 0.9052608949797494
+[12.18.25|00:29:23] Training epoch: 77
+[12.18.25|00:29:27] 	train_mean_loss: 0.8667921253613063
+[12.18.25|00:29:27] Training epoch: 78
+[12.18.25|00:29:31] 	train_mean_loss: 0.8242704612868172
+[12.18.25|00:29:31] Training epoch: 79
+[12.18.25|00:29:35] 	train_mean_loss: 0.7846859182630267
+[12.18.25|00:29:35] Training epoch: 80
+[12.18.25|00:29:38] 	train_mean_loss: 0.8162412898881095
+[12.18.25|00:29:38] Eval epoch: 80
+[12.18.25|00:29:52] 	Avg inference time per sequence: 0.009507 s
+[12.18.25|00:29:52] 	eval_mean_loss: 1.6068979434314228
+[12.18.25|00:29:52] 	avg_infer_time_per_seq: 0.009506877741419282
+[12.18.25|00:29:52] 	Top1: 48.27%
+[12.18.25|00:29:52] 	Top5: 96.24%
+[12.18.25|00:29:52] 	Best Top1: 48.87%
+[12.18.25|00:29:52] current 48.27%, best 48.87%
+[12.18.25|00:29:52] The model has been saved as config/three-stream/finetune/20%/epoch080_acc48.27_model.pt.
+[12.18.25|00:29:52] Training epoch: 81
+[12.18.25|00:29:55] 	train_mean_loss: 0.8302505186625889
+[12.18.25|00:29:55] Training epoch: 82
+[12.18.25|00:29:58] 	train_mean_loss: 0.7323571784155709
+[12.18.25|00:29:58] Training epoch: 83
+[12.18.25|00:30:01] 	train_mean_loss: 0.6506009953362601
+[12.18.25|00:30:01] Training epoch: 84
+[12.18.25|00:30:05] 	train_mean_loss: 0.6351393801825387
+[12.18.25|00:30:05] Training epoch: 85
+[12.18.25|00:30:08] 	train_mean_loss: 0.6336857804230281
+[12.18.25|00:30:08] Eval epoch: 85
+[12.18.25|00:30:21] 	Avg inference time per sequence: 0.009360 s
+[12.18.25|00:30:21] 	eval_mean_loss: 1.3832978102422895
+[12.18.25|00:30:21] 	avg_infer_time_per_seq: 0.00936035858957391
+[12.18.25|00:30:21] 	Top1: 52.33%
+[12.18.25|00:30:21] 	Top5: 96.92%
+[12.18.25|00:30:21] 	Best Top1: 52.33%
+[12.18.25|00:30:21] current 52.33%, best 52.33%
+[12.18.25|00:30:21] The model has been saved as config/three-stream/finetune/20%/epoch085_acc52.33_model.pt.
+[12.18.25|00:30:21] The model has been saved as config/three-stream/finetune/20%/best_model.pt.
+[12.18.25|00:30:21] Training epoch: 86
+[12.18.25|00:30:24] 	Iter 600 Done. | loss: 0.8244 | lr: 0.001000
+[12.18.25|00:30:25] 	train_mean_loss: 0.6320918117250715
+[12.18.25|00:30:25] Training epoch: 87
+[12.18.25|00:30:29] 	train_mean_loss: 0.6164070112364632
+[12.18.25|00:30:29] Training epoch: 88
+[12.18.25|00:30:32] 	train_mean_loss: 0.638951518705913
+[12.18.25|00:30:32] Training epoch: 89
+[12.18.25|00:30:35] 	train_mean_loss: 0.6007645981652396
+[12.18.25|00:30:35] Training epoch: 90
+[12.18.25|00:30:39] 	train_mean_loss: 0.6062117346695491
+[12.18.25|00:30:39] Eval epoch: 90
+[12.18.25|00:30:55] 	Avg inference time per sequence: 0.010636 s
+[12.18.25|00:30:55] 	eval_mean_loss: 1.42164356084097
+[12.18.25|00:30:55] 	avg_infer_time_per_seq: 0.01063626834324428
+[12.18.25|00:30:55] 	Top1: 52.41%
+[12.18.25|00:30:55] 	Top5: 96.99%
+[12.18.25|00:30:55] 	Best Top1: 52.41%
+[12.18.25|00:30:55] current 52.41%, best 52.41%
+[12.18.25|00:30:55] The model has been saved as config/three-stream/finetune/20%/epoch090_acc52.41_model.pt.
+[12.18.25|00:30:55] The model has been saved as config/three-stream/finetune/20%/best_model.pt.
+[12.18.25|00:30:55] Training epoch: 91
+[12.18.25|00:30:58] 	train_mean_loss: 0.6045318501336234
+[12.18.25|00:30:59] Training epoch: 92
+[12.18.25|00:31:02] 	train_mean_loss: 0.6139923504420689
+[12.18.25|00:31:02] Training epoch: 93
+[12.18.25|00:31:06] 	train_mean_loss: 0.6041403497968402
+[12.18.25|00:31:06] Training epoch: 94
+[12.18.25|00:31:09] 	train_mean_loss: 0.5819682649203709
+[12.18.25|00:31:10] Training epoch: 95
+[12.18.25|00:31:13] 	train_mean_loss: 0.5829718027796064
+[12.18.25|00:31:13] Eval epoch: 95
+[12.18.25|00:31:27] 	Avg inference time per sequence: 0.009452 s
+[12.18.25|00:31:27] 	eval_mean_loss: 1.434150095496859
+[12.18.25|00:31:27] 	avg_infer_time_per_seq: 0.00945202694799667
+[12.18.25|00:31:27] 	Top1: 52.86%
+[12.18.25|00:31:27] 	Top5: 96.99%
+[12.18.25|00:31:27] 	Best Top1: 52.86%
+[12.18.25|00:31:27] current 52.86%, best 52.86%
+[12.18.25|00:31:27] The model has been saved as config/three-stream/finetune/20%/epoch095_acc52.86_model.pt.
+[12.18.25|00:31:27] The model has been saved as config/three-stream/finetune/20%/best_model.pt.
+[12.18.25|00:31:27] Training epoch: 96
+[12.18.25|00:31:30] 	train_mean_loss: 0.5824146270751953
+[12.18.25|00:31:30] Training epoch: 97
+[12.18.25|00:31:33] 	train_mean_loss: 0.5676287199769702
+[12.18.25|00:31:33] Training epoch: 98
+[12.18.25|00:31:37] 	train_mean_loss: 0.5971568311963763
+[12.18.25|00:31:37] Training epoch: 99
+[12.18.25|00:31:40] 	train_mean_loss: 0.5991954037121364
+[12.18.25|00:31:40] Training epoch: 100
+[12.18.25|00:31:43] 	train_mean_loss: 0.5787952968052456
+[12.18.25|00:31:43] Eval epoch: 100
+[12.18.25|00:31:58] 	Avg inference time per sequence: 0.009687 s
+[12.18.25|00:31:58] 	eval_mean_loss: 1.4618995413184166
+[12.18.25|00:31:58] 	avg_infer_time_per_seq: 0.009687197656559765
+[12.18.25|00:31:58] 	Top1: 51.80%
+[12.18.25|00:31:58] 	Top5: 96.99%
+[12.18.25|00:31:58] 	Best Top1: 52.86%
+[12.18.25|00:31:58] current 51.80%, best 52.86%
+[12.18.25|00:31:58] The model has been saved as config/three-stream/finetune/20%/epoch100_acc51.80_model.pt.
+[12.18.25|00:31:58] Training epoch: 101
+[12.18.25|00:31:58] 	Iter 700 Done. | loss: 0.8077 | lr: 0.001000
+[12.18.25|00:32:01] 	train_mean_loss: 0.5711913704872131
+[12.18.25|00:32:01] Training epoch: 102
+[12.18.25|00:32:05] 	train_mean_loss: 0.5636111072131565
+[12.18.25|00:32:05] Training epoch: 103
+[12.18.25|00:32:08] 	train_mean_loss: 0.5612409029688153
+[12.18.25|00:32:08] Training epoch: 104
+[12.18.25|00:32:12] 	train_mean_loss: 0.583526245185307
+[12.18.25|00:32:12] Training epoch: 105
+[12.18.25|00:32:16] 	train_mean_loss: 0.565011237348829
+[12.18.25|00:32:16] Eval epoch: 105
+[12.18.25|00:32:30] 	Avg inference time per sequence: 0.009442 s
+[12.18.25|00:32:30] 	eval_mean_loss: 1.468349209853581
+[12.18.25|00:32:30] 	avg_infer_time_per_seq: 0.009442173986506642
+[12.18.25|00:32:30] 	Top1: 51.80%
+[12.18.25|00:32:30] 	Top5: 96.99%
+[12.18.25|00:32:30] 	Best Top1: 52.86%
+[12.18.25|00:32:30] current 51.80%, best 52.86%
+[12.18.25|00:32:30] The model has been saved as config/three-stream/finetune/20%/epoch105_acc51.80_model.pt.
+[12.18.25|00:32:30] Training epoch: 106
+[12.18.25|00:32:34] 	train_mean_loss: 0.5545390588896615
+[12.18.25|00:32:34] Training epoch: 107
+[12.18.25|00:32:38] 	train_mean_loss: 0.5581966936588287
+[12.18.25|00:32:38] Training epoch: 108
+[12.18.25|00:32:42] 	train_mean_loss: 0.5790864314351764
+[12.18.25|00:32:42] Training epoch: 109
+[12.18.25|00:32:45] 	train_mean_loss: 0.5576184988021851
+[12.18.25|00:32:45] Training epoch: 110
+[12.18.25|00:32:48] 	train_mean_loss: 0.5426910775048392
+[12.18.25|00:32:48] Eval epoch: 110
+[12.18.25|00:33:02] 	Avg inference time per sequence: 0.009252 s
+[12.18.25|00:33:02] 	eval_mean_loss: 1.4792575105315162
+[12.18.25|00:33:02] 	avg_infer_time_per_seq: 0.009252293844868366
+[12.18.25|00:33:02] 	Top1: 53.46%
+[12.18.25|00:33:02] 	Top5: 96.92%
+[12.18.25|00:33:02] 	Best Top1: 53.46%
+[12.18.25|00:33:02] current 53.46%, best 53.46%
+[12.18.25|00:33:02] The model has been saved as config/three-stream/finetune/20%/epoch110_acc53.46_model.pt.
+[12.18.25|00:33:02] The model has been saved as config/three-stream/finetune/20%/best_model.pt.
+[12.18.25|00:33:02] Training epoch: 111
+[12.18.25|00:33:06] 	train_mean_loss: 0.553305161850793
+[12.18.25|00:33:06] Training epoch: 112
+[12.18.25|00:33:10] 	train_mean_loss: 0.5581721918923515
+[12.18.25|00:33:10] Training epoch: 113
+[12.18.25|00:33:13] 	train_mean_loss: 0.5617328201021466
+[12.18.25|00:33:13] Training epoch: 114
+[12.18.25|00:33:17] 	train_mean_loss: 0.525968462228775
+[12.18.25|00:33:17] Training epoch: 115
+[12.18.25|00:33:18] 	Iter 800 Done. | loss: 0.4948 | lr: 0.001000
+[12.18.25|00:33:21] 	train_mean_loss: 0.5235725258077893
+[12.18.25|00:33:21] Eval epoch: 115
+[12.18.25|00:33:34] 	Avg inference time per sequence: 0.008962 s
+[12.18.25|00:33:34] 	eval_mean_loss: 1.5046871127117247
+[12.18.25|00:33:34] 	avg_infer_time_per_seq: 0.008961559776076697
+[12.18.25|00:33:34] 	Top1: 53.46%
+[12.18.25|00:33:34] 	Top5: 96.92%
+[12.18.25|00:33:34] 	Best Top1: 53.46%
+[12.18.25|00:33:34] current 53.46%, best 53.46%
+[12.18.25|00:33:34] The model has been saved as config/three-stream/finetune/20%/epoch115_acc53.46_model.pt.
+[12.18.25|00:33:34] The model has been saved as config/three-stream/finetune/20%/best_model.pt.
+[12.18.25|00:33:34] Training epoch: 116
+[12.18.25|00:33:37] 	train_mean_loss: 0.5268799236842564
+[12.18.25|00:33:37] Training epoch: 117
+[12.18.25|00:33:41] 	train_mean_loss: 0.5363848762852805
+[12.18.25|00:33:41] Training epoch: 118
+[12.18.25|00:33:44] 	train_mean_loss: 0.5485757461615971
+[12.18.25|00:33:44] Training epoch: 119
+[12.18.25|00:33:47] 	train_mean_loss: 0.5356032167162214
+[12.18.25|00:33:47] Training epoch: 120
+[12.18.25|00:33:51] 	train_mean_loss: 0.537896990776062
+[12.18.25|00:33:51] Eval epoch: 120
+[12.18.25|00:34:11] 	Avg inference time per sequence: 0.012759 s
+[12.18.25|00:34:11] 	eval_mean_loss: 1.5107004046440125
+[12.18.25|00:34:11] 	avg_infer_time_per_seq: 0.012759256900701307
+[12.18.25|00:34:11] 	Top1: 53.46%
+[12.18.25|00:34:11] 	Top5: 96.92%
+[12.18.25|00:34:11] 	Best Top1: 53.46%
+[12.18.25|00:34:11] current 53.46%, best 53.46%
+[12.18.25|00:34:11] The model has been saved as config/three-stream/finetune/20%/epoch120_acc53.46_model.pt.
+[12.18.25|00:34:11] The model has been saved as config/three-stream/finetune/20%/best_model.pt.
+[12.18.25|00:34:12] Training epoch: 121
+[12.18.25|00:34:17] 	train_mean_loss: 0.5289819155420575
+[12.18.25|00:34:17] Training epoch: 122
+[12.18.25|00:34:21] 	train_mean_loss: 0.5455461314746312
+[12.18.25|00:34:21] Training epoch: 123
+[12.18.25|00:34:25] 	train_mean_loss: 0.5553863091128213
+[12.18.25|00:34:25] Training epoch: 124
+[12.18.25|00:34:29] 	train_mean_loss: 0.5153894424438477
+[12.18.25|00:34:29] Training epoch: 125
+[12.18.25|00:34:34] 	train_mean_loss: 0.5403778042112078
+[12.18.25|00:34:34] Eval epoch: 125
+[12.18.25|00:34:52] 	Avg inference time per sequence: 0.011926 s
+[12.18.25|00:34:52] 	eval_mean_loss: 1.5324081217958814
+[12.18.25|00:34:52] 	avg_infer_time_per_seq: 0.01192649307107567
+[12.18.25|00:34:52] 	Top1: 53.76%
+[12.18.25|00:34:52] 	Top5: 96.92%
+[12.18.25|00:34:52] 	Best Top1: 53.76%
+[12.18.25|00:34:52] current 53.76%, best 53.76%
+[12.18.25|00:34:53] The model has been saved as config/three-stream/finetune/20%/epoch125_acc53.76_model.pt.
+[12.18.25|00:34:53] The model has been saved as config/three-stream/finetune/20%/best_model.pt.
+[12.18.25|00:34:53] Training epoch: 126
+[12.18.25|00:34:56] 	train_mean_loss: 0.545473541532244
+[12.18.25|00:34:56] Training epoch: 127
+[12.18.25|00:34:59] 	train_mean_loss: 0.5045704288142068
+[12.18.25|00:34:59] Training epoch: 128
+[12.18.25|00:35:03] 	train_mean_loss: 0.5077231483800071
+[12.18.25|00:35:03] Training epoch: 129
+[12.18.25|00:35:05] 	Iter 900 Done. | loss: 0.5032 | lr: 0.001000
+[12.18.25|00:35:06] 	train_mean_loss: 0.5406662012849536
+[12.18.25|00:35:06] Training epoch: 130
+[12.18.25|00:35:10] 	train_mean_loss: 0.5101946932928902
+[12.18.25|00:35:10] Eval epoch: 130
+[12.18.25|00:35:24] 	Avg inference time per sequence: 0.009136 s
+[12.18.25|00:35:24] 	eval_mean_loss: 1.5462225022770109
+[12.18.25|00:35:24] 	avg_infer_time_per_seq: 0.009136365589342619
+[12.18.25|00:35:24] 	Top1: 52.93%
+[12.18.25|00:35:24] 	Top5: 96.92%
+[12.18.25|00:35:24] 	Best Top1: 53.76%
+[12.18.25|00:35:24] current 52.93%, best 53.76%
+[12.18.25|00:35:24] The model has been saved as config/three-stream/finetune/20%/epoch130_acc52.93_model.pt.
+[12.18.25|00:35:24] Training epoch: 131
+[12.18.25|00:35:27] 	train_mean_loss: 0.4898265855652945
+[12.18.25|00:35:27] Training epoch: 132
+[12.18.25|00:35:31] 	train_mean_loss: 0.515228876045772
+[12.18.25|00:35:31] Training epoch: 133
+[12.18.25|00:35:34] 	train_mean_loss: 0.5057214200496674
+[12.18.25|00:35:34] Training epoch: 134
+[12.18.25|00:35:38] 	train_mean_loss: 0.4990793892315456
+[12.18.25|00:35:38] Training epoch: 135
+[12.18.25|00:35:42] 	train_mean_loss: 0.4941584553037371
+[12.18.25|00:35:42] Eval epoch: 135
+[12.18.25|00:35:57] 	Avg inference time per sequence: 0.010610 s
+[12.18.25|00:35:57] 	eval_mean_loss: 1.5855112359637307
+[12.18.25|00:35:57] 	avg_infer_time_per_seq: 0.01060969560666192
+[12.18.25|00:35:57] 	Top1: 53.76%
+[12.18.25|00:35:57] 	Top5: 96.62%
+[12.18.25|00:35:57] 	Best Top1: 53.76%
+[12.18.25|00:35:57] current 53.76%, best 53.76%
+[12.18.25|00:35:57] The model has been saved as config/three-stream/finetune/20%/epoch135_acc53.76_model.pt.
+[12.18.25|00:35:57] The model has been saved as config/three-stream/finetune/20%/best_model.pt.
+[12.18.25|00:35:57] Training epoch: 136
+[12.18.25|00:36:01] 	train_mean_loss: 0.4968901830060141
+[12.18.25|00:36:01] Training epoch: 137
+[12.18.25|00:36:04] 	train_mean_loss: 0.5071538261004856
+[12.18.25|00:36:04] Training epoch: 138
+[12.18.25|00:36:07] 	train_mean_loss: 0.5182865474905286
+[12.18.25|00:36:07] Training epoch: 139
+[12.18.25|00:36:11] 	train_mean_loss: 0.49178058760506765
+[12.18.25|00:36:11] Training epoch: 140
+[12.18.25|00:36:14] 	train_mean_loss: 0.497244302715574
+[12.18.25|00:36:14] Eval epoch: 140
+[12.18.25|00:36:28] 	Avg inference time per sequence: 0.009136 s
+[12.18.25|00:36:28] 	eval_mean_loss: 1.5868988924083256
+[12.18.25|00:36:28] 	avg_infer_time_per_seq: 0.00913626179659277
+[12.18.25|00:36:28] 	Top1: 53.98%
+[12.18.25|00:36:28] 	Top5: 96.77%
+[12.18.25|00:36:28] 	Best Top1: 53.98%
+[12.18.25|00:36:28] current 53.98%, best 53.98%
+[12.18.25|00:36:28] The model has been saved as config/three-stream/finetune/20%/epoch140_acc53.98_model.pt.
+[12.18.25|00:36:28] The model has been saved as config/three-stream/finetune/20%/best_model.pt.
+[12.18.25|00:36:28] Training epoch: 141
+[12.18.25|00:36:32] 	train_mean_loss: 0.484805839402335
+[12.18.25|00:36:32] Training epoch: 142
+[12.18.25|00:36:35] 	train_mean_loss: 0.48906892112323214
+[12.18.25|00:36:35] Training epoch: 143
+[12.18.25|00:36:38] 	Iter 1000 Done. | loss: 0.6955 | lr: 0.001000
+[12.18.25|00:36:38] 	train_mean_loss: 0.4863124404634748
+[12.18.25|00:36:38] Training epoch: 144
+[12.18.25|00:36:42] 	train_mean_loss: 0.49368590116500854
+[12.18.25|00:36:42] Training epoch: 145
+[12.18.25|00:36:44] 	train_mean_loss: 0.48933141572134836
+[12.18.25|00:36:44] Eval epoch: 145
+[12.18.25|00:36:59] 	Avg inference time per sequence: 0.009948 s
+[12.18.25|00:36:59] 	eval_mean_loss: 1.5975177082277479
+[12.18.25|00:36:59] 	avg_infer_time_per_seq: 0.009948482011493884
+[12.18.25|00:36:59] 	Top1: 53.76%
+[12.18.25|00:36:59] 	Top5: 96.84%
+[12.18.25|00:36:59] 	Best Top1: 53.98%
+[12.18.25|00:36:59] current 53.76%, best 53.98%
+[12.18.25|00:36:59] The model has been saved as config/three-stream/finetune/20%/epoch145_acc53.76_model.pt.
+[12.18.25|00:36:59] Training epoch: 146
+[12.18.25|00:37:03] 	train_mean_loss: 0.4820058175495693
+[12.18.25|00:37:03] Training epoch: 147
+[12.18.25|00:37:07] 	train_mean_loss: 0.475452184677124
+[12.18.25|00:37:07] Training epoch: 148
+[12.18.25|00:37:10] 	train_mean_loss: 0.49616238474845886
+[12.18.25|00:37:10] Training epoch: 149
+[12.18.25|00:37:14] 	train_mean_loss: 0.47996807524136137
+[12.18.25|00:37:14] Training epoch: 150
+[12.18.25|00:37:18] 	train_mean_loss: 0.4908799869673593
+[12.18.25|00:37:18] Eval epoch: 150
+[12.18.25|00:37:31] 	Avg inference time per sequence: 0.008789 s
+[12.18.25|00:37:31] 	eval_mean_loss: 1.6233782569567363
+[12.18.25|00:37:31] 	avg_infer_time_per_seq: 0.008788843800250749
+[12.18.25|00:37:31] 	Top1: 52.48%
+[12.18.25|00:37:31] 	Top5: 97.07%
+[12.18.25|00:37:31] 	Best Top1: 53.98%
+[12.18.25|00:37:31] current 52.48%, best 53.98%
+[12.18.25|00:37:31] The model has been saved as config/three-stream/finetune/20%/epoch150_acc52.48_model.pt.
+[12.18.25|00:37:31] Training epoch: 151
+[12.18.25|00:37:34] 	train_mean_loss: 0.46071539180619375
+[12.18.25|00:37:34] Training epoch: 152
+[12.18.25|00:37:38] 	train_mean_loss: 0.481129173721586
+[12.18.25|00:37:38] Training epoch: 153
+[12.18.25|00:37:41] 	train_mean_loss: 0.49156387788908823
+[12.18.25|00:37:41] Training epoch: 154
+[12.18.25|00:37:44] 	train_mean_loss: 0.47665696910449434
+[12.18.25|00:37:44] Training epoch: 155
+[12.18.25|00:37:47] 	train_mean_loss: 0.48855025853429523
+[12.18.25|00:37:47] Eval epoch: 155
+[12.18.25|00:38:01] 	Avg inference time per sequence: 0.009469 s
+[12.18.25|00:38:01] 	eval_mean_loss: 1.6291788270076115
+[12.18.25|00:38:01] 	avg_infer_time_per_seq: 0.009468856610749898
+[12.18.25|00:38:01] 	Top1: 53.31%
+[12.18.25|00:38:01] 	Top5: 96.69%
+[12.18.25|00:38:01] 	Best Top1: 53.98%
+[12.18.25|00:38:01] current 53.31%, best 53.98%
+[12.18.25|00:38:01] The model has been saved as config/three-stream/finetune/20%/epoch155_acc53.31_model.pt.
+[12.18.25|00:38:01] Training epoch: 156
+[12.18.25|00:38:04] 	train_mean_loss: 0.4729037880897522
+[12.18.25|00:38:04] Training epoch: 157
+[12.18.25|00:38:07] 	train_mean_loss: 0.46812071970530916
+[12.18.25|00:38:07] Training epoch: 158
+[12.18.25|00:38:08] 	Iter 1100 Done. | loss: 0.4147 | lr: 0.001000
+[12.18.25|00:38:11] 	train_mean_loss: 0.4558387313570295
+[12.18.25|00:38:11] Training epoch: 159
+[12.18.25|00:38:14] 	train_mean_loss: 0.47091779112815857
+[12.18.25|00:38:14] Training epoch: 160
+[12.18.25|00:38:17] 	train_mean_loss: 0.44758287497929167
+[12.18.25|00:38:17] Eval epoch: 160
+[12.18.25|00:38:32] 	Avg inference time per sequence: 0.009887 s
+[12.18.25|00:38:32] 	eval_mean_loss: 1.639379240217663
+[12.18.25|00:38:32] 	avg_infer_time_per_seq: 0.009886881104089263
+[12.18.25|00:38:32] 	Top1: 53.38%
+[12.18.25|00:38:32] 	Top5: 96.92%
+[12.18.25|00:38:32] 	Best Top1: 53.98%
+[12.18.25|00:38:32] current 53.38%, best 53.98%
+[12.18.25|00:38:32] The model has been saved as config/three-stream/finetune/20%/epoch160_acc53.38_model.pt.
+[12.18.25|00:38:32] Training epoch: 161
+[12.18.25|00:38:36] 	train_mean_loss: 0.4521393520491464
+[12.18.25|00:38:36] Training epoch: 162
+[12.18.25|00:38:40] 	train_mean_loss: 0.46419609444481985
+[12.18.25|00:38:40] Training epoch: 163
+[12.18.25|00:38:43] 	train_mean_loss: 0.43126136490276884
+[12.18.25|00:38:43] Training epoch: 164
+[12.18.25|00:38:47] 	train_mean_loss: 0.45157264385904583
+[12.18.25|00:38:47] Training epoch: 165
+[12.18.25|00:38:50] 	train_mean_loss: 0.4614161423274449
+[12.18.25|00:38:50] Eval epoch: 165
+[12.18.25|00:39:06] 	Avg inference time per sequence: 0.010515 s
+[12.18.25|00:39:06] 	eval_mean_loss: 1.6515324357010068
+[12.18.25|00:39:06] 	avg_infer_time_per_seq: 0.010514794077192033
+[12.18.25|00:39:06] 	Top1: 53.98%
+[12.18.25|00:39:06] 	Top5: 97.14%
+[12.18.25|00:39:06] 	Best Top1: 53.98%
+[12.18.25|00:39:06] current 53.98%, best 53.98%
+[12.18.25|00:39:06] The model has been saved as config/three-stream/finetune/20%/epoch165_acc53.98_model.pt.
+[12.18.25|00:39:06] The model has been saved as config/three-stream/finetune/20%/best_model.pt.
+[12.18.25|00:39:06] Training epoch: 166
+[12.18.25|00:39:10] 	train_mean_loss: 0.4599848857947758
+[12.18.25|00:39:10] Training epoch: 167
+[12.18.25|00:39:13] 	train_mean_loss: 0.4692144138472421
+[12.18.25|00:39:13] Training epoch: 168
+[12.18.25|00:39:16] 	train_mean_loss: 0.4361957609653473
+[12.18.25|00:39:16] Training epoch: 169
+[12.18.25|00:39:20] 	train_mean_loss: 0.44520882197788786
+[12.18.25|00:39:20] Training epoch: 170
+[12.18.25|00:39:23] 	train_mean_loss: 0.44632761819022043
+[12.18.25|00:39:23] Eval epoch: 170
+[12.18.25|00:39:38] 	Avg inference time per sequence: 0.010043 s
+[12.18.25|00:39:38] 	eval_mean_loss: 1.682796951560747
+[12.18.25|00:39:38] 	avg_infer_time_per_seq: 0.010042912081668251
+[12.18.25|00:39:38] 	Top1: 54.06%
+[12.18.25|00:39:38] 	Top5: 96.99%
+[12.18.25|00:39:38] 	Best Top1: 54.06%
+[12.18.25|00:39:38] current 54.06%, best 54.06%
+[12.18.25|00:39:38] The model has been saved as config/three-stream/finetune/20%/epoch170_acc54.06_model.pt.
+[12.18.25|00:39:38] The model has been saved as config/three-stream/finetune/20%/best_model.pt.
+[12.18.25|00:39:38] Training epoch: 171
+[12.18.25|00:39:42] 	train_mean_loss: 0.452701781477247
+[12.18.25|00:39:42] Training epoch: 172
+[12.18.25|00:39:45] 	Iter 1200 Done. | loss: 0.4735 | lr: 0.001000
+[12.18.25|00:39:46] 	train_mean_loss: 0.43498148236955914
+[12.18.25|00:39:46] Training epoch: 173
+[12.18.25|00:39:50] 	train_mean_loss: 0.42608923997197834
+[12.18.25|00:39:50] Training epoch: 174
+[12.18.25|00:39:53] 	train_mean_loss: 0.44766245995249065
+[12.18.25|00:39:53] Training epoch: 175
+[12.18.25|00:39:56] 	train_mean_loss: 0.4424945456641061
+[12.18.25|00:39:56] Eval epoch: 175
+[12.18.25|00:40:10] 	Avg inference time per sequence: 0.009196 s
+[12.18.25|00:40:10] 	eval_mean_loss: 1.6732730028175173
+[12.18.25|00:40:10] 	avg_infer_time_per_seq: 0.009196396877891139
+[12.18.25|00:40:10] 	Top1: 54.44%
+[12.18.25|00:40:10] 	Top5: 96.92%
+[12.18.25|00:40:10] 	Best Top1: 54.44%
+[12.18.25|00:40:10] current 54.44%, best 54.44%
+[12.18.25|00:40:10] The model has been saved as config/three-stream/finetune/20%/epoch175_acc54.44_model.pt.
+[12.18.25|00:40:10] The model has been saved as config/three-stream/finetune/20%/best_model.pt.
+[12.18.25|00:40:10] Training epoch: 176
+[12.18.25|00:40:14] 	train_mean_loss: 0.4428146949836186
+[12.18.25|00:40:14] Training epoch: 177
+[12.18.25|00:40:18] 	train_mean_loss: 0.4275489108903067
+[12.18.25|00:40:18] Training epoch: 178
+[12.18.25|00:40:22] 	train_mean_loss: 0.43628990224429537
+[12.18.25|00:40:22] Training epoch: 179
+[12.18.25|00:40:25] 	train_mean_loss: 0.42738869360515047
+[12.18.25|00:40:25] Training epoch: 180
+[12.18.25|00:40:29] 	train_mean_loss: 0.41672426036425997
+[12.18.25|00:40:29] Eval epoch: 180
+[12.18.25|00:40:42] 	Avg inference time per sequence: 0.009491 s
+[12.18.25|00:40:42] 	eval_mean_loss: 1.6989333182573318
+[12.18.25|00:40:42] 	avg_infer_time_per_seq: 0.009490997450692313
+[12.18.25|00:40:42] 	Top1: 55.34%
+[12.18.25|00:40:42] 	Top5: 96.99%
+[12.18.25|00:40:42] 	Best Top1: 55.34%
+[12.18.25|00:40:43] current 55.34%, best 55.34%
+[12.18.25|00:40:43] The model has been saved as config/three-stream/finetune/20%/epoch180_acc55.34_model.pt.
+[12.18.25|00:40:43] The model has been saved as config/three-stream/finetune/20%/best_model.pt.
+[12.18.25|00:40:43] Training epoch: 181
+[12.18.25|00:40:47] 	train_mean_loss: 0.4273561090230942
+[12.18.25|00:40:47] Training epoch: 182
+[12.18.25|00:40:50] 	train_mean_loss: 0.42257796440805706
+[12.18.25|00:40:50] Training epoch: 183
+[12.18.25|00:40:54] 	train_mean_loss: 0.4277200826576778
+[12.18.25|00:40:54] Training epoch: 184
+[12.18.25|00:40:58] 	train_mean_loss: 0.4376707375049591
+[12.18.25|00:40:58] Training epoch: 185
+[12.18.25|00:41:02] 	train_mean_loss: 0.41411188670567106
+[12.18.25|00:41:02] Eval epoch: 185
+[12.18.25|00:41:16] 	Avg inference time per sequence: 0.009856 s
+[12.18.25|00:41:16] 	eval_mean_loss: 1.7284960108143943
+[12.18.25|00:41:16] 	avg_infer_time_per_seq: 0.009856362091867547
+[12.18.25|00:41:17] 	Top1: 55.49%
+[12.18.25|00:41:17] 	Top5: 96.77%
+[12.18.25|00:41:17] 	Best Top1: 55.49%
+[12.18.25|00:41:17] current 55.49%, best 55.49%
+[12.18.25|00:41:17] The model has been saved as config/three-stream/finetune/20%/epoch185_acc55.49_model.pt.
+[12.18.25|00:41:17] The model has been saved as config/three-stream/finetune/20%/best_model.pt.
+[12.18.25|00:41:17] Training epoch: 186
+[12.18.25|00:41:20] 	Iter 1300 Done. | loss: 0.3596 | lr: 0.001000
+[12.18.25|00:41:20] 	train_mean_loss: 0.4127381443977356
+[12.18.25|00:41:20] Training epoch: 187
+[12.18.25|00:41:24] 	train_mean_loss: 0.4206453263759613
+[12.18.25|00:41:24] Training epoch: 188
+[12.18.25|00:41:27] 	train_mean_loss: 0.4087551747049604
+[12.18.25|00:41:27] Training epoch: 189
+[12.18.25|00:41:30] 	train_mean_loss: 0.4229107030800411
+[12.18.25|00:41:30] Training epoch: 190
+[12.18.25|00:41:33] 	train_mean_loss: 0.39244350365230013
+[12.18.25|00:41:33] Eval epoch: 190
+[12.18.25|00:41:48] 	Avg inference time per sequence: 0.009642 s
+[12.18.25|00:41:48] 	eval_mean_loss: 1.7709173872357322
+[12.18.25|00:41:48] 	avg_infer_time_per_seq: 0.009642225279843897
+[12.18.25|00:41:48] 	Top1: 54.06%
+[12.18.25|00:41:48] 	Top5: 96.77%
+[12.18.25|00:41:48] 	Best Top1: 55.49%
+[12.18.25|00:41:48] current 54.06%, best 55.49%
+[12.18.25|00:41:48] The model has been saved as config/three-stream/finetune/20%/epoch190_acc54.06_model.pt.
+[12.18.25|00:41:48] Training epoch: 191
+[12.18.25|00:41:51] 	train_mean_loss: 0.44158720544406344
+[12.18.25|00:41:51] Training epoch: 192
+[12.18.25|00:41:56] 	train_mean_loss: 0.4060197259698595
+[12.18.25|00:41:56] Training epoch: 193
+[12.18.25|00:41:59] 	train_mean_loss: 0.4022708662918636
+[12.18.25|00:41:59] Training epoch: 194
+[12.18.25|00:42:03] 	train_mean_loss: 0.40564097251210895
+[12.18.25|00:42:03] Training epoch: 195
+[12.18.25|00:42:06] 	train_mean_loss: 0.4045377714293344
+[12.18.25|00:42:06] Eval epoch: 195
+[12.18.25|00:42:23] 	Avg inference time per sequence: 0.011012 s
+[12.18.25|00:42:23] 	eval_mean_loss: 1.7714598916825794
+[12.18.25|00:42:23] 	avg_infer_time_per_seq: 0.011012326326585354
+[12.18.25|00:42:23] 	Top1: 54.74%
+[12.18.25|00:42:23] 	Top5: 96.54%
+[12.18.25|00:42:23] 	Best Top1: 55.49%
+[12.18.25|00:42:23] current 54.74%, best 55.49%
+[12.18.25|00:42:23] The model has been saved as config/three-stream/finetune/20%/epoch195_acc54.74_model.pt.
+[12.18.25|00:42:23] Training epoch: 196
+[12.18.25|00:42:26] 	train_mean_loss: 0.42907283561570303
+[12.18.25|00:42:26] Training epoch: 197
+[12.18.25|00:42:30] 	train_mean_loss: 0.4520091414451599
+[12.18.25|00:42:30] Training epoch: 198
+[12.18.25|00:42:33] 	train_mean_loss: 0.3992353677749634
+[12.18.25|00:42:33] Training epoch: 199
+[12.18.25|00:42:36] 	train_mean_loss: 0.4004288911819458
+[12.18.25|00:42:36] Training epoch: 200
+[12.18.25|00:42:39] 	train_mean_loss: 0.4024798401764461
+[12.18.25|00:42:39] Eval epoch: 200
+[12.18.25|00:42:54] 	Avg inference time per sequence: 0.009970 s
+[12.18.25|00:42:54] 	eval_mean_loss: 1.7756765399660384
+[12.18.25|00:42:54] 	avg_infer_time_per_seq: 0.009969541004725866
+[12.18.25|00:42:54] 	Top1: 54.51%
+[12.18.25|00:42:54] 	Top5: 96.69%
+[12.18.25|00:42:54] 	Best Top1: 55.49%
+[12.18.25|00:42:54] current 54.51%, best 55.49%
+[12.18.25|00:42:54] The model has been saved as config/three-stream/finetune/20%/epoch200_acc54.51_model.pt.
+[12.18.25|00:42:54] Training epoch: 201
+[12.18.25|00:42:54] 	Iter 1400 Done. | loss: 0.1856 | lr: 0.001000
+[12.18.25|00:42:57] 	train_mean_loss: 0.3819218022482736
+[12.18.25|00:42:57] Training epoch: 202
+[12.18.25|00:43:00] 	train_mean_loss: 0.38629419037273954
+[12.18.25|00:43:00] Training epoch: 203
+[12.18.25|00:43:03] 	train_mean_loss: 0.38153029552527834
+[12.18.25|00:43:03] Training epoch: 204
+[12.18.25|00:43:06] 	train_mean_loss: 0.40485901491982595
+[12.18.25|00:43:06] Training epoch: 205
+[12.18.25|00:43:09] 	train_mean_loss: 0.39603428542613983
+[12.18.25|00:43:09] Eval epoch: 205
+[12.18.25|00:43:26] 	Avg inference time per sequence: 0.010997 s
+[12.18.25|00:43:26] 	eval_mean_loss: 1.803639524039768
+[12.18.25|00:43:26] 	avg_infer_time_per_seq: 0.010996719589807037
+[12.18.25|00:43:26] 	Top1: 54.59%
+[12.18.25|00:43:26] 	Top5: 96.99%
+[12.18.25|00:43:26] 	Best Top1: 55.49%
+[12.18.25|00:43:26] current 54.59%, best 55.49%
+[12.18.25|00:43:26] The model has been saved as config/three-stream/finetune/20%/epoch205_acc54.59_model.pt.
+[12.18.25|00:43:26] Training epoch: 206
+[12.18.25|00:43:30] 	train_mean_loss: 0.41141732249941143
+[12.18.25|00:43:30] Training epoch: 207
+[12.18.25|00:43:34] 	train_mean_loss: 0.4069051061357771
+[12.18.25|00:43:34] Training epoch: 208
+[12.18.25|00:43:37] 	train_mean_loss: 0.37240813033921377
+[12.18.25|00:43:37] Training epoch: 209
+[12.18.25|00:43:41] 	train_mean_loss: 0.386100241116115
+[12.18.25|00:43:41] Training epoch: 210
+[12.18.25|00:43:44] 	train_mean_loss: 0.35707694717815947
+[12.18.25|00:43:44] Eval epoch: 210
+[12.18.25|00:43:58] 	Avg inference time per sequence: 0.009429 s
+[12.18.25|00:43:58] 	eval_mean_loss: 1.7911320059072404
+[12.18.25|00:43:58] 	avg_infer_time_per_seq: 0.009429276079163516
+[12.18.25|00:43:58] 	Top1: 54.89%
+[12.18.25|00:43:58] 	Top5: 96.92%
+[12.18.25|00:43:58] 	Best Top1: 55.49%
+[12.18.25|00:43:58] current 54.89%, best 55.49%
+[12.18.25|00:43:58] The model has been saved as config/three-stream/finetune/20%/epoch210_acc54.89_model.pt.
+[12.18.25|00:43:58] Training epoch: 211
+[12.18.25|00:44:02] 	train_mean_loss: 0.3664101575102125
+[12.18.25|00:44:02] Training epoch: 212
+[12.18.25|00:44:05] 	train_mean_loss: 0.37950798869132996
+[12.18.25|00:44:05] Training epoch: 213
+[12.18.25|00:44:09] 	train_mean_loss: 0.3896854264395578
+[12.18.25|00:44:09] Training epoch: 214
+[12.18.25|00:44:12] 	train_mean_loss: 0.3802045966897692
+[12.18.25|00:44:12] Training epoch: 215
+[12.18.25|00:44:14] 	Iter 1500 Done. | loss: 0.4737 | lr: 0.001000
+[12.18.25|00:44:15] 	train_mean_loss: 0.38802519866398405
+[12.18.25|00:44:16] Eval epoch: 215
+[12.18.25|00:44:30] 	Avg inference time per sequence: 0.009952 s
+[12.18.25|00:44:30] 	eval_mean_loss: 1.8482767464149565
+[12.18.25|00:44:30] 	avg_infer_time_per_seq: 0.009951733825798321
+[12.18.25|00:44:30] 	Top1: 54.74%
+[12.18.25|00:44:30] 	Top5: 96.77%
+[12.18.25|00:44:30] 	Best Top1: 55.49%
+[12.18.25|00:44:30] current 54.74%, best 55.49%
+[12.18.25|00:44:31] The model has been saved as config/three-stream/finetune/20%/epoch215_acc54.74_model.pt.
+[12.18.25|00:44:31] Training epoch: 216
+[12.18.25|00:44:35] 	train_mean_loss: 0.3706434794834682
+[12.18.25|00:44:35] Training epoch: 217
+[12.18.25|00:44:38] 	train_mean_loss: 0.39468166657856535
+[12.18.25|00:44:38] Training epoch: 218
+[12.18.25|00:44:42] 	train_mean_loss: 0.3753145549978529
+[12.18.25|00:44:42] Training epoch: 219
+[12.18.25|00:44:45] 	train_mean_loss: 0.3819483092853001
+[12.18.25|00:44:45] Training epoch: 220
+[12.18.25|00:44:49] 	train_mean_loss: 0.38146855575697763
+[12.18.25|00:44:49] Eval epoch: 220
+[12.18.25|00:45:03] 	Avg inference time per sequence: 0.009812 s
+[12.18.25|00:45:03] 	eval_mean_loss: 1.8459289208764122
+[12.18.25|00:45:03] 	avg_infer_time_per_seq: 0.009811873185007196
+[12.18.25|00:45:03] 	Top1: 55.34%
+[12.18.25|00:45:03] 	Top5: 96.77%
+[12.18.25|00:45:04] 	Best Top1: 55.49%
+[12.18.25|00:45:04] current 55.34%, best 55.49%
+[12.18.25|00:45:04] The model has been saved as config/three-stream/finetune/20%/epoch220_acc55.34_model.pt.
+[12.18.25|00:45:04] Training epoch: 221
+[12.18.25|00:45:07] 	train_mean_loss: 0.37308904102870394
+[12.18.25|00:45:07] Training epoch: 222
+[12.18.25|00:45:10] 	train_mean_loss: 0.3792069447892053
+[12.18.25|00:45:10] Training epoch: 223
+[12.18.25|00:45:13] 	train_mean_loss: 0.3858094641140529
+[12.18.25|00:45:13] Training epoch: 224
+[12.18.25|00:45:17] 	train_mean_loss: 0.3815447347504752
+[12.18.25|00:45:17] Training epoch: 225
+[12.18.25|00:45:20] 	train_mean_loss: 0.3825852062020983
+[12.18.25|00:45:20] Eval epoch: 225
+[12.18.25|00:45:34] 	Avg inference time per sequence: 0.009422 s
+[12.18.25|00:45:34] 	eval_mean_loss: 1.8679185318095344
+[12.18.25|00:45:34] 	avg_infer_time_per_seq: 0.00942246555385733
+[12.18.25|00:45:34] 	Top1: 54.81%
+[12.18.25|00:45:34] 	Top5: 96.69%
+[12.18.25|00:45:34] 	Best Top1: 55.49%
+[12.18.25|00:45:34] current 54.81%, best 55.49%
+[12.18.25|00:45:34] The model has been saved as config/three-stream/finetune/20%/epoch225_acc54.81_model.pt.
+[12.18.25|00:45:34] Training epoch: 226
+[12.18.25|00:45:37] 	train_mean_loss: 0.3604940410171236
+[12.18.25|00:45:37] Training epoch: 227
+[12.18.25|00:45:41] 	train_mean_loss: 0.3415700984852655
+[12.18.25|00:45:41] Training epoch: 228
+[12.18.25|00:45:44] 	train_mean_loss: 0.36727397995335714
+[12.18.25|00:45:44] Training epoch: 229
+[12.18.25|00:45:47] 	Iter 1600 Done. | loss: 0.3735 | lr: 0.001000
+[12.18.25|00:45:48] 	train_mean_loss: 0.3516466575009482
+[12.18.25|00:45:48] Training epoch: 230
+[12.18.25|00:45:51] 	train_mean_loss: 0.3768619086061205
+[12.18.25|00:45:51] Eval epoch: 230
+[12.18.25|00:46:06] 	Avg inference time per sequence: 0.009458 s
+[12.18.25|00:46:06] 	eval_mean_loss: 1.8701015937896002
+[12.18.25|00:46:06] 	avg_infer_time_per_seq: 0.009458011971380478
+[12.18.25|00:46:06] 	Top1: 54.81%
+[12.18.25|00:46:06] 	Top5: 96.92%
+[12.18.25|00:46:06] 	Best Top1: 55.49%
+[12.18.25|00:46:06] current 54.81%, best 55.49%
+[12.18.25|00:46:06] The model has been saved as config/three-stream/finetune/20%/epoch230_acc54.81_model.pt.
+[12.18.25|00:46:06] Training epoch: 231
+[12.18.25|00:46:09] 	train_mean_loss: 0.3445398211479187
+[12.18.25|00:46:09] Training epoch: 232
+[12.18.25|00:46:13] 	train_mean_loss: 0.3526526391506195
+[12.18.25|00:46:13] Training epoch: 233
+[12.18.25|00:46:16] 	train_mean_loss: 0.3644666714327676
+[12.18.25|00:46:16] Training epoch: 234
+[12.18.25|00:46:19] 	train_mean_loss: 0.36237387146268574
+[12.18.25|00:46:19] Training epoch: 235
+[12.18.25|00:46:23] 	train_mean_loss: 0.36020645073481966
+[12.18.25|00:46:23] Eval epoch: 235
+[12.18.25|00:46:37] 	Avg inference time per sequence: 0.009825 s
+[12.18.25|00:46:37] 	eval_mean_loss: 1.8688327173391979
+[12.18.25|00:46:37] 	avg_infer_time_per_seq: 0.009824522993618384
+[12.18.25|00:46:37] 	Top1: 55.26%
+[12.18.25|00:46:37] 	Top5: 96.84%
+[12.18.25|00:46:37] 	Best Top1: 55.49%
+[12.18.25|00:46:37] current 55.26%, best 55.49%
+[12.18.25|00:46:37] The model has been saved as config/three-stream/finetune/20%/epoch235_acc55.26_model.pt.
+[12.18.25|00:46:37] Training epoch: 236
+[12.18.25|00:46:41] 	train_mean_loss: 0.34184410316603525
+[12.18.25|00:46:41] Training epoch: 237
+[12.18.25|00:46:44] 	train_mean_loss: 0.3473991964544569
+[12.18.25|00:46:44] Training epoch: 238
+[12.18.25|00:46:47] 	train_mean_loss: 0.3673749566078186
+[12.18.25|00:46:47] Training epoch: 239
+[12.18.25|00:46:51] 	train_mean_loss: 0.349835251058851
+[12.18.25|00:46:51] Training epoch: 240
+[12.18.25|00:46:54] 	train_mean_loss: 0.33978915427412304
+[12.18.25|00:46:54] Eval epoch: 240
+[12.18.25|00:47:09] 	Avg inference time per sequence: 0.010168 s
+[12.18.25|00:47:09] 	eval_mean_loss: 1.9135402391354244
+[12.18.25|00:47:09] 	avg_infer_time_per_seq: 0.010168374749950897
+[12.18.25|00:47:09] 	Top1: 55.41%
+[12.18.25|00:47:09] 	Top5: 96.54%
+[12.18.25|00:47:09] 	Best Top1: 55.49%
+[12.18.25|00:47:09] current 55.41%, best 55.49%
+[12.18.25|00:47:09] The model has been saved as config/three-stream/finetune/20%/epoch240_acc55.41_model.pt.
+[12.18.25|00:47:09] Training epoch: 241
+[12.18.25|00:47:13] 	train_mean_loss: 0.3423850876944406
+[12.18.25|00:47:13] Training epoch: 242
+[12.18.25|00:47:16] 	train_mean_loss: 0.3390656454222543
+[12.18.25|00:47:16] Training epoch: 243
+[12.18.25|00:47:20] 	Iter 1700 Done. | loss: 0.2942 | lr: 0.001000
+[12.18.25|00:47:20] 	train_mean_loss: 0.35901629073279245
+[12.18.25|00:47:20] Training epoch: 244
+[12.18.25|00:47:23] 	train_mean_loss: 0.33737111517361235
+[12.18.25|00:47:23] Training epoch: 245
+[12.18.25|00:47:26] 	train_mean_loss: 0.3637138307094574
+[12.18.25|00:47:26] Eval epoch: 245
+[12.18.25|00:47:42] 	Avg inference time per sequence: 0.010354 s
+[12.18.25|00:47:42] 	eval_mean_loss: 1.8995442241430283
+[12.18.25|00:47:42] 	avg_infer_time_per_seq: 0.010353982179684746
+[12.18.25|00:47:42] 	Top1: 55.64%
+[12.18.25|00:47:42] 	Top5: 96.84%
+[12.18.25|00:47:42] 	Best Top1: 55.64%
+[12.18.25|00:47:42] current 55.64%, best 55.64%
+[12.18.25|00:47:42] The model has been saved as config/three-stream/finetune/20%/epoch245_acc55.64_model.pt.
+[12.18.25|00:47:42] The model has been saved as config/three-stream/finetune/20%/best_model.pt.
+[12.18.25|00:47:42] Training epoch: 246
+[12.18.25|00:47:45] 	train_mean_loss: 0.35049051897866385
+[12.18.25|00:47:45] Training epoch: 247
+[12.18.25|00:47:49] 	train_mean_loss: 0.32208895683288574
+[12.18.25|00:47:49] Training epoch: 248
+[12.18.25|00:47:53] 	train_mean_loss: 0.3394759957279478
+[12.18.25|00:47:53] Training epoch: 249
+[12.18.25|00:47:56] 	train_mean_loss: 0.3606351337262562
+[12.18.25|00:47:57] Training epoch: 250
+[12.18.25|00:48:01] 	train_mean_loss: 0.3410084566899708
+[12.18.25|00:48:01] Eval epoch: 250
+[12.18.25|00:48:16] 	Avg inference time per sequence: 0.010700 s
+[12.18.25|00:48:16] 	eval_mean_loss: 1.9439230142604738
+[12.18.25|00:48:16] 	avg_infer_time_per_seq: 0.010699741284650071
+[12.18.25|00:48:16] 	Top1: 55.04%
+[12.18.25|00:48:16] 	Top5: 96.69%
+[12.18.25|00:48:16] 	Best Top1: 55.64%
+[12.18.25|00:48:16] current 55.04%, best 55.64%
+[12.18.25|00:48:16] The model has been saved as config/three-stream/finetune/20%/epoch250_acc55.04_model.pt.
+[12.18.25|00:48:16] Training epoch: 251
+[12.18.25|00:48:20] 	train_mean_loss: 0.35255454054900576
+[12.18.25|00:48:20] Training epoch: 252
+[12.18.25|00:48:24] 	train_mean_loss: 0.33029212270464214
+[12.18.25|00:48:24] Training epoch: 253
+[12.18.25|00:48:28] 	train_mean_loss: 0.3513388420854296
+[12.18.25|00:48:28] Training epoch: 254
+[12.18.25|00:48:32] 	train_mean_loss: 0.3203780949115753
+[12.18.25|00:48:32] Training epoch: 255
+[12.18.25|00:48:35] 	train_mean_loss: 0.33623852900096346
+[12.18.25|00:48:35] Eval epoch: 255
+[12.18.25|00:48:49] 	Avg inference time per sequence: 0.009265 s
+[12.18.25|00:48:49] 	eval_mean_loss: 1.9611655789471807
+[12.18.25|00:48:49] 	avg_infer_time_per_seq: 0.009265146578164926
+[12.18.25|00:48:49] 	Top1: 55.86%
+[12.18.25|00:48:49] 	Top5: 96.62%
+[12.18.25|00:48:49] 	Best Top1: 55.86%
+[12.18.25|00:48:49] current 55.86%, best 55.86%
+[12.18.25|00:48:49] The model has been saved as config/three-stream/finetune/20%/epoch255_acc55.86_model.pt.
+[12.18.25|00:48:49] The model has been saved as config/three-stream/finetune/20%/best_model.pt.
+[12.18.25|00:48:49] Training epoch: 256
+[12.18.25|00:48:53] 	train_mean_loss: 0.3456830786807196
+[12.18.25|00:48:53] Training epoch: 257
+[12.18.25|00:48:56] 	train_mean_loss: 0.3451009477887835
+[12.18.25|00:48:56] Training epoch: 258
+[12.18.25|00:48:57] 	Iter 1800 Done. | loss: 0.3652 | lr: 0.001000
+[12.18.25|00:48:59] 	train_mean_loss: 0.3272270517689841
+[12.18.25|00:48:59] Training epoch: 259
+[12.18.25|00:49:03] 	train_mean_loss: 0.31832820177078247
+[12.18.25|00:49:03] Training epoch: 260
+[12.18.25|00:49:07] 	train_mean_loss: 0.3447783866098949
+[12.18.25|00:49:07] Eval epoch: 260
+[12.18.25|00:49:21] 	Avg inference time per sequence: 0.009494 s
+[12.18.25|00:49:21] 	eval_mean_loss: 1.961526020651772
+[12.18.25|00:49:21] 	avg_infer_time_per_seq: 0.009493912610792576
+[12.18.25|00:49:21] 	Top1: 56.39%
+[12.18.25|00:49:21] 	Top5: 96.84%
+[12.18.25|00:49:21] 	Best Top1: 56.39%
+[12.18.25|00:49:21] current 56.39%, best 56.39%
+[12.18.25|00:49:21] The model has been saved as config/three-stream/finetune/20%/epoch260_acc56.39_model.pt.
+[12.18.25|00:49:21] The model has been saved as config/three-stream/finetune/20%/best_model.pt.
+[12.18.25|00:49:21] Training epoch: 261
+[12.18.25|00:49:25] 	train_mean_loss: 0.31319305300712585
+[12.18.25|00:49:25] Training epoch: 262
+[12.18.25|00:49:29] 	train_mean_loss: 0.32839358917304445
+[12.18.25|00:49:29] Training epoch: 263
+[12.18.25|00:49:33] 	train_mean_loss: 0.3432633578777313
+[12.18.25|00:49:33] Training epoch: 264
+[12.18.25|00:49:37] 	train_mean_loss: 0.3250086030789784
+[12.18.25|00:49:37] Training epoch: 265
+[12.18.25|00:49:40] 	train_mean_loss: 0.3189996949263981
+[12.18.25|00:49:41] Eval epoch: 265
+[12.18.25|00:49:55] 	Avg inference time per sequence: 0.009533 s
+[12.18.25|00:49:55] 	eval_mean_loss: 1.986348236600558
+[12.18.25|00:49:55] 	avg_infer_time_per_seq: 0.009533031901022546
+[12.18.25|00:49:55] 	Top1: 55.56%
+[12.18.25|00:49:55] 	Top5: 96.77%
+[12.18.25|00:49:55] 	Best Top1: 56.39%
+[12.18.25|00:49:55] current 55.56%, best 56.39%
+[12.18.25|00:49:55] The model has been saved as config/three-stream/finetune/20%/epoch265_acc55.56_model.pt.
+[12.18.25|00:49:55] Training epoch: 266
+[12.18.25|00:49:58] 	train_mean_loss: 0.3232426089899881
+[12.18.25|00:49:58] Training epoch: 267
+[12.18.25|00:50:02] 	train_mean_loss: 0.3473548889160156
+[12.18.25|00:50:02] Training epoch: 268
+[12.18.25|00:50:05] 	train_mean_loss: 0.33614614393029896
+[12.18.25|00:50:05] Training epoch: 269
+[12.18.25|00:50:08] 	train_mean_loss: 0.3100536933967045
+[12.18.25|00:50:08] Training epoch: 270
+[12.18.25|00:50:12] 	train_mean_loss: 0.311748023544039
+[12.18.25|00:50:12] Eval epoch: 270
+[12.18.25|00:50:25] 	Avg inference time per sequence: 0.008708 s
+[12.18.25|00:50:25] 	eval_mean_loss: 1.9901643636680784
+[12.18.25|00:50:25] 	avg_infer_time_per_seq: 0.008708097522420095
+[12.18.25|00:50:25] 	Top1: 55.94%
+[12.18.25|00:50:25] 	Top5: 96.77%
+[12.18.25|00:50:25] 	Best Top1: 56.39%
+[12.18.25|00:50:25] current 55.94%, best 56.39%
+[12.18.25|00:50:25] The model has been saved as config/three-stream/finetune/20%/epoch270_acc55.94_model.pt.
+[12.18.25|00:50:25] Training epoch: 271
+[12.18.25|00:50:28] 	train_mean_loss: 0.35438051181180136
+[12.18.25|00:50:28] Training epoch: 272
+[12.18.25|00:50:30] 	Iter 1900 Done. | loss: 0.2200 | lr: 0.001000
+[12.18.25|00:50:32] 	train_mean_loss: 0.33291013538837433
+[12.18.25|00:50:32] Training epoch: 273
+[12.18.25|00:50:36] 	train_mean_loss: 0.3223914546625955
+[12.18.25|00:50:36] Training epoch: 274
+[12.18.25|00:50:39] 	train_mean_loss: 0.3122785176549639
+[12.18.25|00:50:39] Training epoch: 275
+[12.18.25|00:50:43] 	train_mean_loss: 0.31681886528219494
+[12.18.25|00:50:43] Eval epoch: 275
+[12.18.25|00:50:58] 	Avg inference time per sequence: 0.009900 s
+[12.18.25|00:50:58] 	eval_mean_loss: 2.018824250925155
+[12.18.25|00:50:58] 	avg_infer_time_per_seq: 0.009899908080136865
+[12.18.25|00:50:58] 	Top1: 55.56%
+[12.18.25|00:50:58] 	Top5: 96.84%
+[12.18.25|00:50:58] 	Best Top1: 56.39%
+[12.18.25|00:50:58] current 55.56%, best 56.39%
+[12.18.25|00:50:58] The model has been saved as config/three-stream/finetune/20%/epoch275_acc55.56_model.pt.
+[12.18.25|00:50:58] Training epoch: 276
+[12.18.25|00:51:01] 	train_mean_loss: 0.33451834321022034
+[12.18.25|00:51:01] Training epoch: 277
+[12.18.25|00:51:05] 	train_mean_loss: 0.329120078257152
+[12.18.25|00:51:05] Training epoch: 278
+[12.18.25|00:51:08] 	train_mean_loss: 0.317969764981951
+[12.18.25|00:51:08] Training epoch: 279
+[12.18.25|00:51:12] 	train_mean_loss: 0.2953836555991854
+[12.18.25|00:51:12] Training epoch: 280
+[12.18.25|00:51:15] 	train_mean_loss: 0.32041565222399576
+[12.18.25|00:51:15] Eval epoch: 280
+[12.18.25|00:51:29] 	Avg inference time per sequence: 0.009147 s
+[12.18.25|00:51:29] 	eval_mean_loss: 2.0545343650238856
+[12.18.25|00:51:29] 	avg_infer_time_per_seq: 0.00914746442235502
+[12.18.25|00:51:29] 	Top1: 54.89%
+[12.18.25|00:51:29] 	Top5: 96.84%
+[12.18.25|00:51:29] 	Best Top1: 56.39%
+[12.18.25|00:51:29] current 54.89%, best 56.39%
+[12.18.25|00:51:29] The model has been saved as config/three-stream/finetune/20%/epoch280_acc54.89_model.pt.
+[12.18.25|00:51:29] Training epoch: 281
+[12.18.25|00:51:32] 	train_mean_loss: 0.29327831523759024
+[12.18.25|00:51:32] Training epoch: 282
+[12.18.25|00:51:35] 	train_mean_loss: 0.31973629870585035
+[12.18.25|00:51:35] Training epoch: 283
+[12.18.25|00:51:39] 	train_mean_loss: 0.317276445882661
+[12.18.25|00:51:39] Training epoch: 284
+[12.18.25|00:51:42] 	train_mean_loss: 0.31066558616501944
+[12.18.25|00:51:42] Training epoch: 285
+[12.18.25|00:51:46] 	train_mean_loss: 0.30600184415067944
+[12.18.25|00:51:46] Eval epoch: 285
+[12.18.25|00:52:01] 	Avg inference time per sequence: 0.009929 s
+[12.18.25|00:52:01] 	eval_mean_loss: 2.053615641735849
+[12.18.25|00:52:01] 	avg_infer_time_per_seq: 0.009929091589791434
+[12.18.25|00:52:01] 	Top1: 55.19%
+[12.18.25|00:52:01] 	Top5: 96.69%
+[12.18.25|00:52:01] 	Best Top1: 56.39%
+[12.18.25|00:52:01] current 55.19%, best 56.39%
+[12.18.25|00:52:01] The model has been saved as config/three-stream/finetune/20%/epoch285_acc55.19_model.pt.
+[12.18.25|00:52:01] Training epoch: 286
+[12.18.25|00:52:04] 	Iter 2000 Done. | loss: 0.2080 | lr: 0.001000
+[12.18.25|00:52:05] 	train_mean_loss: 0.3014874053852899
+[12.18.25|00:52:05] Training epoch: 287
+[12.18.25|00:52:08] 	train_mean_loss: 0.3150952330657414
+[12.18.25|00:52:08] Training epoch: 288
+[12.18.25|00:52:12] 	train_mean_loss: 0.3000043013266155
+[12.18.25|00:52:12] Training epoch: 289
+[12.18.25|00:52:15] 	train_mean_loss: 0.3194543293544224
+[12.18.25|00:52:15] Training epoch: 290
+[12.18.25|00:52:18] 	train_mean_loss: 0.30375984736851286
+[12.18.25|00:52:18] Eval epoch: 290
+[12.18.25|00:52:34] 	Avg inference time per sequence: 0.010794 s
+[12.18.25|00:52:34] 	eval_mean_loss: 2.1321263164281845
+[12.18.25|00:52:34] 	avg_infer_time_per_seq: 0.010793514717790418
+[12.18.25|00:52:34] 	Top1: 54.06%
+[12.18.25|00:52:34] 	Top5: 96.39%
+[12.18.25|00:52:34] 	Best Top1: 56.39%
+[12.18.25|00:52:34] current 54.06%, best 56.39%
+[12.18.25|00:52:34] The model has been saved as config/three-stream/finetune/20%/epoch290_acc54.06_model.pt.
+[12.18.25|00:52:35] Training epoch: 291
+[12.18.25|00:52:38] 	train_mean_loss: 0.31014704278537203
+[12.18.25|00:52:38] Training epoch: 292
+[12.18.25|00:52:42] 	train_mean_loss: 0.28764168279511587
+[12.18.25|00:52:42] Training epoch: 293
+[12.18.25|00:52:46] 	train_mean_loss: 0.318499424627849
+[12.18.25|00:52:46] Training epoch: 294
+[12.18.25|00:52:49] 	train_mean_loss: 0.29133797543389456
+[12.18.25|00:52:49] Training epoch: 295
+[12.18.25|00:52:52] 	train_mean_loss: 0.27456456635679516
+[12.18.25|00:52:52] Eval epoch: 295
+[12.18.25|00:53:06] 	Avg inference time per sequence: 0.009320 s
+[12.18.25|00:53:06] 	eval_mean_loss: 2.1015045515128543
+[12.18.25|00:53:06] 	avg_infer_time_per_seq: 0.009319580049443065
+[12.18.25|00:53:06] 	Top1: 54.96%
+[12.18.25|00:53:06] 	Top5: 96.84%
+[12.18.25|00:53:06] 	Best Top1: 56.39%
+[12.18.25|00:53:06] current 54.96%, best 56.39%
+[12.18.25|00:53:06] The model has been saved as config/three-stream/finetune/20%/epoch295_acc54.96_model.pt.
+[12.18.25|00:53:06] Training epoch: 296
+[12.18.25|00:53:10] 	train_mean_loss: 0.30945777893066406
+[12.18.25|00:53:10] Training epoch: 297
+[12.18.25|00:53:14] 	train_mean_loss: 0.29116385749408175
+[12.18.25|00:53:14] Training epoch: 298
+[12.18.25|00:53:18] 	train_mean_loss: 0.29308584545339855
+[12.18.25|00:53:18] Training epoch: 299
+[12.18.25|00:53:22] 	train_mean_loss: 0.29374722072056364
+[12.18.25|00:53:22] Training epoch: 300
+[12.18.25|00:53:27] 	train_mean_loss: 0.2968136987515858
+[12.18.25|00:53:27] Eval epoch: 300
+[12.18.25|00:53:42] 	Avg inference time per sequence: 0.010429 s
+[12.18.25|00:53:42] 	eval_mean_loss: 2.1052118795258656
+[12.18.25|00:53:42] 	avg_infer_time_per_seq: 0.01042866115283249
+[12.18.25|00:53:42] 	Top1: 54.74%
+[12.18.25|00:53:42] 	Top5: 96.69%
+[12.18.25|00:53:42] 	Best Top1: 56.39%
+[12.18.25|00:53:42] current 54.74%, best 56.39%
+[12.18.25|00:53:42] The model has been saved as config/three-stream/finetune/20%/epoch300_acc54.74_model.pt.
+[12.18.25|00:53:42] Training epoch: 301
+[12.18.25|00:53:43] 	Iter 2100 Done. | loss: 0.3064 | lr: 0.001000
+[12.18.25|00:53:45] 	train_mean_loss: 0.28336890254701885
+[12.18.25|00:53:45] Training epoch: 302
+[12.18.25|00:53:48] 	train_mean_loss: 0.29774963217122213
+[12.18.25|00:53:48] Training epoch: 303
+[12.18.25|00:53:52] 	train_mean_loss: 0.27366248837539126
+[12.18.25|00:53:52] Training epoch: 304
+[12.18.25|00:53:55] 	train_mean_loss: 0.280737715108054
+[12.18.25|00:53:55] Training epoch: 305
+[12.18.25|00:53:58] 	train_mean_loss: 0.31121992000511717
+[12.18.25|00:53:58] Eval epoch: 305
+[12.18.25|00:54:13] 	Avg inference time per sequence: 0.010173 s
+[12.18.25|00:54:13] 	eval_mean_loss: 2.095674779443514
+[12.18.25|00:54:13] 	avg_infer_time_per_seq: 0.010173015307663078
+[12.18.25|00:54:13] 	Top1: 55.64%
+[12.18.25|00:54:14] 	Top5: 96.92%
+[12.18.25|00:54:14] 	Best Top1: 56.39%
+[12.18.25|00:54:14] current 55.64%, best 56.39%
+[12.18.25|00:54:14] The model has been saved as config/three-stream/finetune/20%/epoch305_acc55.64_model.pt.
+[12.18.25|00:54:14] Training epoch: 306
+[12.18.25|00:54:17] 	train_mean_loss: 0.26942004902022226
+[12.18.25|00:54:17] Training epoch: 307
+[12.18.25|00:54:21] 	train_mean_loss: 0.27477203948157175
+[12.18.25|00:54:21] Training epoch: 308
+[12.18.25|00:54:24] 	train_mean_loss: 0.2935784714562552
+[12.18.25|00:54:24] Training epoch: 309
+[12.18.25|00:54:28] 	train_mean_loss: 0.31308302389723913
+[12.18.25|00:54:28] Training epoch: 310
+[12.18.25|00:54:31] 	train_mean_loss: 0.28686649458748953
+[12.18.25|00:54:31] Eval epoch: 310
+[12.18.25|00:54:44] 	Avg inference time per sequence: 0.008803 s
+[12.18.25|00:54:44] 	eval_mean_loss: 2.1656972425324574
+[12.18.25|00:54:44] 	avg_infer_time_per_seq: 0.00880308671105177
+[12.18.25|00:54:44] 	Top1: 55.86%
+[12.18.25|00:54:44] 	Top5: 96.69%
+[12.18.25|00:54:44] 	Best Top1: 56.39%
+[12.18.25|00:54:44] current 55.86%, best 56.39%
+[12.18.25|00:54:44] The model has been saved as config/three-stream/finetune/20%/epoch310_acc55.86_model.pt.
+[12.18.25|00:54:44] Training epoch: 311
+[12.18.25|00:54:47] 	train_mean_loss: 0.29476170028959003
+[12.18.25|00:54:47] Training epoch: 312
+[12.18.25|00:54:50] 	train_mean_loss: 0.3304226653916495
+[12.18.25|00:54:50] Training epoch: 313
+[12.18.25|00:54:53] 	train_mean_loss: 0.2795921925987516
+[12.18.25|00:54:53] Training epoch: 314
+[12.18.25|00:54:55] 	train_mean_loss: 0.2810176270348685
+[12.18.25|00:54:55] Training epoch: 315
+[12.18.25|00:54:56] 	Iter 2200 Done. | loss: 0.2794 | lr: 0.001000
+[12.18.25|00:54:58] 	train_mean_loss: 0.2747997598988669
+[12.18.25|00:54:58] Eval epoch: 315
+[12.18.25|00:55:10] 	Avg inference time per sequence: 0.008255 s
+[12.18.25|00:55:10] 	eval_mean_loss: 2.15151845628307
+[12.18.25|00:55:10] 	avg_infer_time_per_seq: 0.00825475391588713
+[12.18.25|00:55:10] 	Top1: 55.19%
+[12.18.25|00:55:10] 	Top5: 96.77%
+[12.18.25|00:55:10] 	Best Top1: 56.39%
+[12.18.25|00:55:10] current 55.19%, best 56.39%
+[12.18.25|00:55:10] The model has been saved as config/three-stream/finetune/20%/epoch315_acc55.19_model.pt.
+[12.18.25|00:55:10] Training epoch: 316
+[12.18.25|00:55:13] 	train_mean_loss: 0.2819220040525709
+[12.18.25|00:55:13] Training epoch: 317
+[12.18.25|00:55:16] 	train_mean_loss: 0.30123951605388094
+[12.18.25|00:55:16] Training epoch: 318
+[12.18.25|00:55:19] 	train_mean_loss: 0.2740325459412166
+[12.18.25|00:55:19] Training epoch: 319
+[12.18.25|00:55:22] 	train_mean_loss: 0.26628553228718893
+[12.18.25|00:55:22] Training epoch: 320
+[12.18.25|00:55:25] 	train_mean_loss: 0.2649820361818586
+[12.18.25|00:55:25] Eval epoch: 320
+[12.18.25|00:55:38] 	Avg inference time per sequence: 0.009306 s
+[12.18.25|00:55:38] 	eval_mean_loss: 2.1469702536151525
+[12.18.25|00:55:38] 	avg_infer_time_per_seq: 0.009305532892843834
+[12.18.25|00:55:38] 	Top1: 55.86%
+[12.18.25|00:55:38] 	Top5: 96.99%
+[12.18.25|00:55:38] 	Best Top1: 56.39%
+[12.18.25|00:55:38] current 55.86%, best 56.39%
+[12.18.25|00:55:39] The model has been saved as config/three-stream/finetune/20%/epoch320_acc55.86_model.pt.
+[12.18.25|00:55:39] Training epoch: 321
+[12.18.25|00:55:42] 	train_mean_loss: 0.2694378154618399
+[12.18.25|00:55:42] Training epoch: 322
+[12.18.25|00:55:44] 	train_mean_loss: 0.2769626932484763
+[12.18.25|00:55:44] Training epoch: 323
+[12.18.25|00:55:47] 	train_mean_loss: 0.27079828296388897
+[12.18.25|00:55:47] Training epoch: 324
+[12.18.25|00:55:50] 	train_mean_loss: 0.26099840870925356
+[12.18.25|00:55:50] Training epoch: 325
+[12.18.25|00:55:52] 	train_mean_loss: 0.26097047541822704
+[12.18.25|00:55:52] Eval epoch: 325
+[12.18.25|00:56:04] 	Avg inference time per sequence: 0.008265 s
+[12.18.25|00:56:04] 	eval_mean_loss: 2.1816197463444302
+[12.18.25|00:56:04] 	avg_infer_time_per_seq: 0.008265211349143122
+[12.18.25|00:56:04] 	Top1: 56.77%
+[12.18.25|00:56:04] 	Top5: 96.77%
+[12.18.25|00:56:04] 	Best Top1: 56.77%
+[12.18.25|00:56:04] current 56.77%, best 56.77%
+[12.18.25|00:56:04] The model has been saved as config/three-stream/finetune/20%/epoch325_acc56.77_model.pt.
+[12.18.25|00:56:04] The model has been saved as config/three-stream/finetune/20%/best_model.pt.
+[12.18.25|00:56:04] Training epoch: 326
+[12.18.25|00:56:07] 	train_mean_loss: 0.27001977818352835
+[12.18.25|00:56:07] Training epoch: 327
+[12.18.25|00:56:09] 	train_mean_loss: 0.27962695700781687
+[12.18.25|00:56:09] Training epoch: 328
+[12.18.25|00:56:12] 	train_mean_loss: 0.261113991694791
+[12.18.25|00:56:12] Training epoch: 329
+[12.18.25|00:56:14] 	Iter 2300 Done. | loss: 0.2781 | lr: 0.001000
+[12.18.25|00:56:15] 	train_mean_loss: 0.25764029153755735
+[12.18.25|00:56:15] Training epoch: 330
+[12.18.25|00:56:17] 	train_mean_loss: 0.2677102131502969
+[12.18.25|00:56:17] Eval epoch: 330
+[12.18.25|00:56:30] 	Avg inference time per sequence: 0.008658 s
+[12.18.25|00:56:30] 	eval_mean_loss: 2.2174785023643855
+[12.18.25|00:56:30] 	avg_infer_time_per_seq: 0.008658233979590854
+[12.18.25|00:56:30] 	Top1: 55.34%
+[12.18.25|00:56:30] 	Top5: 96.54%
+[12.18.25|00:56:30] 	Best Top1: 56.77%
+[12.18.25|00:56:30] current 55.34%, best 56.77%
+[12.18.25|00:56:30] The model has been saved as config/three-stream/finetune/20%/epoch330_acc55.34_model.pt.
+[12.18.25|00:56:30] Training epoch: 331
+[12.18.25|00:56:34] 	train_mean_loss: 0.25947910121509005
+[12.18.25|00:56:34] Training epoch: 332
+[12.18.25|00:56:36] 	train_mean_loss: 0.24325462324278696
+[12.18.25|00:56:36] Training epoch: 333
+[12.18.25|00:56:39] 	train_mean_loss: 0.2749873868056706
+[12.18.25|00:56:39] Training epoch: 334
+[12.18.25|00:56:42] 	train_mean_loss: 0.24926011902945383
+[12.18.25|00:56:42] Training epoch: 335
+[12.18.25|00:56:45] 	train_mean_loss: 0.25885056384972166
+[12.18.25|00:56:45] Eval epoch: 335
+[12.18.25|00:56:57] 	Avg inference time per sequence: 0.008500 s
+[12.18.25|00:56:57] 	eval_mean_loss: 2.223934217577889
+[12.18.25|00:56:57] 	avg_infer_time_per_seq: 0.008500295653379054
+[12.18.25|00:56:57] 	Top1: 56.24%
+[12.18.25|00:56:57] 	Top5: 96.69%
+[12.18.25|00:56:57] 	Best Top1: 56.77%
+[12.18.25|00:56:57] current 56.24%, best 56.77%
+[12.18.25|00:56:57] The model has been saved as config/three-stream/finetune/20%/epoch335_acc56.24_model.pt.
+[12.18.25|00:56:57] Training epoch: 336
+[12.18.25|00:57:00] 	train_mean_loss: 0.2579228803515434
+[12.18.25|00:57:00] Training epoch: 337
+[12.18.25|00:57:03] 	train_mean_loss: 0.2591202642236437
+[12.18.25|00:57:03] Training epoch: 338
+[12.18.25|00:57:05] 	train_mean_loss: 0.26507619874817984
+[12.18.25|00:57:06] Training epoch: 339
+[12.18.25|00:57:08] 	train_mean_loss: 0.28106263067041126
+[12.18.25|00:57:08] Training epoch: 340
+[12.18.25|00:57:11] 	train_mean_loss: 0.2713499367237091
+[12.18.25|00:57:11] Eval epoch: 340
+[12.18.25|00:57:25] 	Avg inference time per sequence: 0.009463 s
+[12.18.25|00:57:25] 	eval_mean_loss: 2.2286527575481507
+[12.18.25|00:57:25] 	avg_infer_time_per_seq: 0.009463118610525489
+[12.18.25|00:57:25] 	Top1: 55.49%
+[12.18.25|00:57:25] 	Top5: 96.69%
+[12.18.25|00:57:25] 	Best Top1: 56.77%
+[12.18.25|00:57:25] current 55.49%, best 56.77%
+[12.18.25|00:57:25] The model has been saved as config/three-stream/finetune/20%/epoch340_acc55.49_model.pt.
+[12.18.25|00:57:25] Training epoch: 341
+[12.18.25|00:57:28] 	train_mean_loss: 0.24953946896961757
+[12.18.25|00:57:28] Training epoch: 342
+[12.18.25|00:57:30] 	train_mean_loss: 0.27268517443111967
+[12.18.25|00:57:30] Training epoch: 343
+[12.18.25|00:57:33] 	Iter 2400 Done. | loss: 0.4162 | lr: 0.001000
+[12.18.25|00:57:33] 	train_mean_loss: 0.26693217882088255
+[12.18.25|00:57:33] Training epoch: 344
+[12.18.25|00:57:35] 	train_mean_loss: 0.25394289940595627
+[12.18.25|00:57:36] Training epoch: 345
+[12.18.25|00:57:38] 	train_mean_loss: 0.24054473212787084
+[12.18.25|00:57:38] Eval epoch: 345
+[12.18.25|00:57:51] 	Avg inference time per sequence: 0.009076 s
+[12.18.25|00:57:51] 	eval_mean_loss: 2.278415161938894
+[12.18.25|00:57:51] 	avg_infer_time_per_seq: 0.009075666011724257
+[12.18.25|00:57:51] 	Top1: 55.64%
+[12.18.25|00:57:52] 	Top5: 96.62%
+[12.18.25|00:57:52] 	Best Top1: 56.77%
+[12.18.25|00:57:52] current 55.64%, best 56.77%
+[12.18.25|00:57:52] The model has been saved as config/three-stream/finetune/20%/epoch345_acc55.64_model.pt.
+[12.18.25|00:57:52] Training epoch: 346
+[12.18.25|00:57:55] 	train_mean_loss: 0.2753142842224666
+[12.18.25|00:57:55] Training epoch: 347
+[12.18.25|00:57:58] 	train_mean_loss: 0.2613311686686107
+[12.18.25|00:57:58] Training epoch: 348
+[12.18.25|00:58:00] 	train_mean_loss: 0.24766582889216288
+[12.18.25|00:58:00] Training epoch: 349
+[12.18.25|00:58:03] 	train_mean_loss: 0.22367205790110997
+[12.18.25|00:58:03] Training epoch: 350
+[12.18.25|00:58:07] 	train_mean_loss: 0.27656879808221546
+[12.18.25|00:58:07] Eval epoch: 350
+[12.18.25|00:58:20] 	Avg inference time per sequence: 0.008536 s
+[12.18.25|00:58:20] 	eval_mean_loss: 2.294284407581602
+[12.18.25|00:58:20] 	avg_infer_time_per_seq: 0.008535641118099815
+[12.18.25|00:58:20] 	Top1: 56.17%
+[12.18.25|00:58:20] 	Top5: 96.54%
+[12.18.25|00:58:20] 	Best Top1: 56.77%
+[12.18.25|00:58:20] current 56.17%, best 56.77%
+[12.18.25|00:58:20] The model has been saved as config/three-stream/finetune/20%/epoch350_acc56.17_model.pt.
+[12.18.25|00:58:20] Training epoch: 351
+[12.18.25|00:58:22] 	train_mean_loss: 0.259995841554233
+[12.18.25|00:58:22] Training epoch: 352
+[12.18.25|00:58:25] 	train_mean_loss: 0.26586983246462687
+[12.18.25|00:58:25] Training epoch: 353
+[12.18.25|00:58:27] 	train_mean_loss: 0.2637936824134418
+[12.18.25|00:58:27] Training epoch: 354
+[12.18.25|00:58:30] 	train_mean_loss: 0.2561111386333193
+[12.18.25|00:58:30] Training epoch: 355
+[12.18.25|00:58:33] 	train_mean_loss: 0.2545651836054666
+[12.18.25|00:58:33] Eval epoch: 355
+[12.18.25|00:58:44] 	Avg inference time per sequence: 0.007133 s
+[12.18.25|00:58:44] 	eval_mean_loss: 2.2732419676723934
+[12.18.25|00:58:44] 	avg_infer_time_per_seq: 0.007133423475394572
+[12.18.25|00:58:44] 	Top1: 55.86%
+[12.18.25|00:58:44] 	Top5: 96.77%
+[12.18.25|00:58:44] 	Best Top1: 56.77%
+[12.18.25|00:58:44] current 55.86%, best 56.77%
+[12.18.25|00:58:44] The model has been saved as config/three-stream/finetune/20%/epoch355_acc55.86_model.pt.
+[12.18.25|00:58:44] Training epoch: 356
+[12.18.25|00:58:47] 	train_mean_loss: 0.24609105501856124
+[12.18.25|00:58:47] Training epoch: 357
+[12.18.25|00:58:49] 	train_mean_loss: 0.2262332077537264
+[12.18.25|00:58:49] Training epoch: 358
+[12.18.25|00:58:50] 	Iter 2500 Done. | loss: 0.2424 | lr: 0.001000
+[12.18.25|00:58:52] 	train_mean_loss: 0.22333174305302755
+[12.18.25|00:58:52] Training epoch: 359
+[12.18.25|00:58:55] 	train_mean_loss: 0.2508034365517752
+[12.18.25|00:58:55] Training epoch: 360
+[12.18.25|00:58:59] 	train_mean_loss: 0.2425105039562498
+[12.18.25|00:58:59] Eval epoch: 360
+[12.18.25|00:59:12] 	Avg inference time per sequence: 0.008961 s
+[12.18.25|00:59:12] 	eval_mean_loss: 2.2765265589668635
+[12.18.25|00:59:12] 	avg_infer_time_per_seq: 0.008960508583183575
+[12.18.25|00:59:12] 	Top1: 56.47%
+[12.18.25|00:59:12] 	Top5: 96.84%
+[12.18.25|00:59:12] 	Best Top1: 56.77%
+[12.18.25|00:59:12] current 56.47%, best 56.77%
+[12.18.25|00:59:12] The model has been saved as config/three-stream/finetune/20%/epoch360_acc56.47_model.pt.
+[12.18.25|00:59:12] Training epoch: 361
+[12.18.25|00:59:15] 	train_mean_loss: 0.24857504133667266
+[12.18.25|00:59:15] Training epoch: 362
+[12.18.25|00:59:18] 	train_mean_loss: 0.23996195835726603
+[12.18.25|00:59:18] Training epoch: 363
+[12.18.25|00:59:21] 	train_mean_loss: 0.2501232113157
+[12.18.25|00:59:21] Training epoch: 364
+[12.18.25|00:59:24] 	train_mean_loss: 0.24639836379459926
+[12.18.25|00:59:24] Training epoch: 365
+[12.18.25|00:59:26] 	train_mean_loss: 0.2572586727993829
+[12.18.25|00:59:26] Eval epoch: 365
+[12.18.25|00:59:38] 	Avg inference time per sequence: 0.007863 s
+[12.18.25|00:59:38] 	eval_mean_loss: 2.3268458268472125
+[12.18.25|00:59:38] 	avg_infer_time_per_seq: 0.00786296156115998
+[12.18.25|00:59:38] 	Top1: 56.02%
+[12.18.25|00:59:38] 	Top5: 96.77%
+[12.18.25|00:59:38] 	Best Top1: 56.77%
+[12.18.25|00:59:38] current 56.02%, best 56.77%
+[12.18.25|00:59:38] The model has been saved as config/three-stream/finetune/20%/epoch365_acc56.02_model.pt.
+[12.18.25|00:59:38] Training epoch: 366
+[12.18.25|00:59:41] 	train_mean_loss: 0.22952771825449808
+[12.18.25|00:59:41] Training epoch: 367
+[12.18.25|00:59:44] 	train_mean_loss: 0.2424543329647609
+[12.18.25|00:59:44] Training epoch: 368
+[12.18.25|00:59:46] 	train_mean_loss: 0.23438039422035217
+[12.18.25|00:59:46] Training epoch: 369
+[12.18.25|00:59:49] 	train_mean_loss: 0.24678698075669153
+[12.18.25|00:59:49] Training epoch: 370
+[12.18.25|00:59:52] 	train_mean_loss: 0.23324846157005855
+[12.18.25|00:59:52] Eval epoch: 370
+[12.18.25|01:00:06] 	Avg inference time per sequence: 0.009599 s
+[12.18.25|01:00:06] 	eval_mean_loss: 2.354285017365501
+[12.18.25|01:00:06] 	avg_infer_time_per_seq: 0.009599496009654568
+[12.18.25|01:00:06] 	Top1: 55.41%
+[12.18.25|01:00:06] 	Top5: 96.69%
+[12.18.25|01:00:06] 	Best Top1: 56.77%
+[12.18.25|01:00:06] current 55.41%, best 56.77%
+[12.18.25|01:00:06] The model has been saved as config/three-stream/finetune/20%/epoch370_acc55.41_model.pt.
+[12.18.25|01:00:06] Training epoch: 371
+[12.18.25|01:00:09] 	train_mean_loss: 0.25501909639154163
+[12.18.25|01:00:09] Training epoch: 372
+[12.18.25|01:00:11] 	Iter 2600 Done. | loss: 0.3757 | lr: 0.001000
+[12.18.25|01:00:12] 	train_mean_loss: 0.2528596286262785
+[12.18.25|01:00:12] Training epoch: 373
+[12.18.25|01:00:15] 	train_mean_loss: 0.24714057573250361
+[12.18.25|01:00:15] Training epoch: 374
+[12.18.25|01:00:18] 	train_mean_loss: 0.2313922005040305
+[12.18.25|01:00:18] Training epoch: 375
+[12.18.25|01:00:20] 	train_mean_loss: 0.23296248061316355
+[12.18.25|01:00:20] Eval epoch: 375
+[12.18.25|01:00:32] 	Avg inference time per sequence: 0.007767 s
+[12.18.25|01:00:32] 	eval_mean_loss: 2.350969273419607
+[12.18.25|01:00:32] 	avg_infer_time_per_seq: 0.007767428312086521
+[12.18.25|01:00:32] 	Top1: 55.86%
+[12.18.25|01:00:32] 	Top5: 96.99%
+[12.18.25|01:00:32] 	Best Top1: 56.77%
+[12.18.25|01:00:32] current 55.86%, best 56.77%
+[12.18.25|01:00:32] The model has been saved as config/three-stream/finetune/20%/epoch375_acc55.86_model.pt.
+[12.18.25|01:00:32] Training epoch: 376
+[12.18.25|01:00:35] 	train_mean_loss: 0.2441077083349228
+[12.18.25|01:00:35] Training epoch: 377
+[12.18.25|01:00:37] 	train_mean_loss: 0.2507402407271521
+[12.18.25|01:00:37] Training epoch: 378
+[12.18.25|01:00:41] 	train_mean_loss: 0.225152493587562
+[12.18.25|01:00:41] Training epoch: 379
+[12.18.25|01:00:44] 	train_mean_loss: 0.25017599974359783
+[12.18.25|01:00:44] Training epoch: 380
+[12.18.25|01:00:47] 	train_mean_loss: 0.2364511787891388
+[12.18.25|01:00:47] Eval epoch: 380
+[12.18.25|01:00:59] 	Avg inference time per sequence: 0.008404 s
+[12.18.25|01:00:59] 	eval_mean_loss: 2.3949716985225677
+[12.18.25|01:00:59] 	avg_infer_time_per_seq: 0.008403553460773669
+[12.18.25|01:00:59] 	Top1: 55.64%
+[12.18.25|01:00:59] 	Top5: 96.69%
+[12.18.25|01:00:59] 	Best Top1: 56.77%
+[12.18.25|01:00:59] current 55.64%, best 56.77%
+[12.18.25|01:00:59] The model has been saved as config/three-stream/finetune/20%/epoch380_acc55.64_model.pt.
+[12.18.25|01:00:59] Training epoch: 381
+[12.18.25|01:01:02] 	train_mean_loss: 0.2328453872885023
+[12.18.25|01:01:02] Training epoch: 382
+[12.18.25|01:01:04] 	train_mean_loss: 0.24933295590536936
+[12.18.25|01:01:04] Training epoch: 383
+[12.18.25|01:01:07] 	train_mean_loss: 0.23704250476190022
+[12.18.25|01:01:07] Training epoch: 384
+[12.18.25|01:01:10] 	train_mean_loss: 0.20933272583144052
+[12.18.25|01:01:10] Training epoch: 385
+[12.18.25|01:01:12] 	train_mean_loss: 0.23461121959345682
+[12.18.25|01:01:13] Eval epoch: 385
+[12.18.25|01:01:25] 	Avg inference time per sequence: 0.008740 s
+[12.18.25|01:01:25] 	eval_mean_loss: 2.3790761090460277
+[12.18.25|01:01:25] 	avg_infer_time_per_seq: 0.008739655179188665
+[12.18.25|01:01:25] 	Top1: 55.79%
+[12.18.25|01:01:25] 	Top5: 96.77%
+[12.18.25|01:01:25] 	Best Top1: 56.77%
+[12.18.25|01:01:25] current 55.79%, best 56.77%
+[12.18.25|01:01:25] The model has been saved as config/three-stream/finetune/20%/epoch385_acc55.79_model.pt.
+[12.18.25|01:01:25] Training epoch: 386
+[12.18.25|01:01:27] 	Iter 2700 Done. | loss: 0.3110 | lr: 0.001000
+[12.18.25|01:01:28] 	train_mean_loss: 0.23620644637516566
+[12.18.25|01:01:28] Training epoch: 387
+[12.18.25|01:01:31] 	train_mean_loss: 0.22874254626887186
+[12.18.25|01:01:31] Training epoch: 388
+[12.18.25|01:01:34] 	train_mean_loss: 0.21341291495731898
+[12.18.25|01:01:34] Training epoch: 389
+[12.18.25|01:01:37] 	train_mean_loss: 0.22182570504290716
+[12.18.25|01:01:37] Training epoch: 390
+[12.18.25|01:01:40] 	train_mean_loss: 0.23087932914495468
+[12.18.25|01:01:40] Eval epoch: 390
+[12.18.25|01:01:52] 	Avg inference time per sequence: 0.007778 s
+[12.18.25|01:01:52] 	eval_mean_loss: 2.4056186370906376
+[12.18.25|01:01:52] 	avg_infer_time_per_seq: 0.0077781216542523604
+[12.18.25|01:01:52] 	Top1: 55.64%
+[12.18.25|01:01:52] 	Top5: 96.69%
+[12.18.25|01:01:52] 	Best Top1: 56.77%
+[12.18.25|01:01:52] current 55.64%, best 56.77%
+[12.18.25|01:01:52] The model has been saved as config/three-stream/finetune/20%/epoch390_acc55.64_model.pt.
+[12.18.25|01:01:52] Training epoch: 391
+[12.18.25|01:01:55] 	train_mean_loss: 0.19431765058210917
+[12.18.25|01:01:55] Training epoch: 392
+[12.18.25|01:01:58] 	train_mean_loss: 0.2263002853308405
+[12.18.25|01:01:58] Training epoch: 393
+[12.18.25|01:02:00] 	train_mean_loss: 0.2297616441334997
+[12.18.25|01:02:00] Training epoch: 394
+[12.18.25|01:02:03] 	train_mean_loss: 0.24748894572257996
+[12.18.25|01:02:03] Training epoch: 395
+[12.18.25|01:02:06] 	train_mean_loss: 0.2454977110028267
+[12.18.25|01:02:06] Eval epoch: 395
+[12.18.25|01:02:17] 	Avg inference time per sequence: 0.007937 s
+[12.18.25|01:02:17] 	eval_mean_loss: 2.4149462523914518
+[12.18.25|01:02:17] 	avg_infer_time_per_seq: 0.007937320551477877
+[12.18.25|01:02:17] 	Top1: 55.34%
+[12.18.25|01:02:17] 	Top5: 96.69%
+[12.18.25|01:02:17] 	Best Top1: 56.77%
+[12.18.25|01:02:17] current 55.34%, best 56.77%
+[12.18.25|01:02:17] The model has been saved as config/three-stream/finetune/20%/epoch395_acc55.34_model.pt.
+[12.18.25|01:02:17] Training epoch: 396
+[12.18.25|01:02:20] 	train_mean_loss: 0.21675517090729304
+[12.18.25|01:02:20] Training epoch: 397
+[12.18.25|01:02:23] 	train_mean_loss: 0.20975900334971292
+[12.18.25|01:02:23] Training epoch: 398
+[12.18.25|01:02:26] 	train_mean_loss: 0.23995061431612288
+[12.18.25|01:02:26] Training epoch: 399
+[12.18.25|01:02:30] 	train_mean_loss: 0.22991780298096792
+[12.18.25|01:02:30] Training epoch: 400
+[12.18.25|01:02:33] 	train_mean_loss: 0.21898386840309417
+[12.18.25|01:02:33] Eval epoch: 400
+[12.18.25|01:02:44] 	Avg inference time per sequence: 0.007838 s
+[12.18.25|01:02:44] 	eval_mean_loss: 2.4295427479914258
+[12.18.25|01:02:44] 	avg_infer_time_per_seq: 0.007838024232620583
+[12.18.25|01:02:44] 	Top1: 56.17%
+[12.18.25|01:02:44] 	Top5: 96.69%
+[12.18.25|01:02:45] 	Best Top1: 56.77%
+[12.18.25|01:02:45] current 56.17%, best 56.77%
+[12.18.25|01:02:45] The model has been saved as config/three-stream/finetune/20%/epoch400_acc56.17_model.pt.

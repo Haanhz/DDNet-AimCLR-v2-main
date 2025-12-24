@@ -291,7 +291,7 @@ def sample_by_label_percent(data_dict, label_percent, le):
 Train_sampled = sample_by_label_percent(Train, label_percent, le)
 
 
-X_0,X_1,Y = data_generator(Train,C,le)
+X_0,X_1,Y = data_generator(Train_sampled,C,le)
 X_test_0,X_test_1,Y_test = data_generator(Test,C,le)
 
 
