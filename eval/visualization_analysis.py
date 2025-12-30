@@ -32,11 +32,8 @@ class COBOTVisualizationAnalyzer:
         self.num_classes = num_classes
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-        self.action_names = [
-            'Start', 'Stop', 'Slower', 'Faster', 'Done', 'FollowMe', 
-            'Lift', 'Home', 'Interaction', 'Look', 'PickPart', 'DepositPart', 
-            'Report', 'Ok', 'Again', 'Help', 'Joystick', 'Identification', 'Change'
-        ]
+        self.action_names = [str(i) for i in range(19)]
+
         self.colors = plt.cm.tab20(np.linspace(0, 1, num_classes))
 
     def load_model_and_data(self):
@@ -178,6 +175,10 @@ class COBOTVisualizationAnalyzer:
         fig, ax = plt.subplots(figsize=figsize)
         fig.patch.set_facecolor('white')
         ax.set_facecolor('white')
+        for spine in ax.spines.values():
+          spine.set_visible(True)
+          spine.set_edgecolor('black')
+          spine.set_linewidth(1.5)
 
         # Discrete categorical colors (one fixed color per class)
         if self.num_classes <= 20:
@@ -206,7 +207,7 @@ class COBOTVisualizationAnalyzer:
                              label=(self.action_names[i] if i < len(self.action_names) else f'Class {i}'))
             for i in uniq
         ]
-        leg = ax.legend(handles=handles, title="Actions", loc="upper left",
+        leg = ax.legend(handles=handles, title="Actions", loc="lower left",
                         frameon=True, fancybox=True, shadow=False, framealpha=0.72)
         # Light legend background with a subtle black edge for clarity
         try:
@@ -225,7 +226,7 @@ class COBOTVisualizationAnalyzer:
             ax.text(
                 0.98, 0.98, f"NMI: {nmi_score:.4f}",
                 transform=ax.transAxes, ha='right', va='top',
-                fontsize=20, weight='bold',
+                fontsize=30, weight='bold',
                 bbox=dict(boxstyle="round,pad=0.3", facecolor="white", edgecolor="black", alpha=0.85)
             )
 

@@ -191,9 +191,13 @@ cython_debug/
 *.gz
 action_segment/
 Annotation_v4/
+Annotation_delete/
+augment/
+cleaned_haanh/
 cleaned_action_segment/
 data_cobot_clr/
 data_cobot_clr_zoom/
+st-gcn/
 pose_new_v2/
 
 

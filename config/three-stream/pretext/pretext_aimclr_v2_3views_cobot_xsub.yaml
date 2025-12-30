@@ -8,7 +8,7 @@ train_feeder_args:
   shear_amplitude: 0.2
   temperal_padding_ratio: 6
   mmap: True
-  aug_method: '1234'
+  aug_method: '123478'
   zero_z: True
 
 # model
@@ -36,7 +36,7 @@ optimizer: SGD
 step: [120]
 
 # training
-device: [3]
+device: [0]
 batch_size: 64
 test_batch_size: 64
 num_epoch: 400
